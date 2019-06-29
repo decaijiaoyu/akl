@@ -1,0 +1,61 @@
+﻿<form type="1002" code="form_materialInfo" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[1064]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form_materialInfo_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[物料信息维护]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGPanel BorderStyle="None" Code="Pnl_Fill" Dock="Fill" Height="450" LayoutType="BorderLayout" Left="10" PercentHeight="100%" PercentWidth="97.7%" TabIndex="1" Width="1040">
+      <JGPanel BorderStyle="None" Code="Pnl_Center" Dock="Fill" Height="388" LayoutType="BorderLayout" PercentHeight="86.2%" PercentWidth="100%" TabIndex="5" Top="50" Width="1040">
+        <JGDataGrid ChooseMode="3" Code="JGDataGrid1" Dock="Fill" FetchMode="paged" Height="388" LabelText="列表" OnDoubleClick="JGButton4_OnClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" PercentHeight="100%" PercentWidth="100%" ReadOnly="True" TabIndex="9" TableName="bo_akl_MM_materialInfo" Width="1040">
+          <JGTextBoxColumn Code="JGTextBoxColumn9" ColumnName="materialNo" LabelText="内部编号" TableName="bo_akl_MM_materialInfo" Width="150" />
+          <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="cusNo" LabelText="客户/供应商编号" TableName="bo_akl_MM_materialInfo" Width="114" />
+          <JGTextBoxColumn Code="JGTextBoxColumn10" ColumnName="materialName" LabelText="物料名称" TableName="bo_akl_MM_materialInfo" Width="110" />
+          <JGTextBoxColumn Code="JGTextBoxColumn11" ColumnName="materialType" LabelText="物料类型" TableName="bo_akl_MM_materialInfo" />
+          <JGTextBoxColumn Code="JGTextBoxColumn12" ColumnName="unit" LabelText="单位" TableName="bo_akl_MM_materialInfo" />
+          <JGTextBoxColumn Code="JGTextBoxColumn13" ColumnName="bomUnit" LabelText="BOM单位" TableName="bo_akl_MM_materialInfo" />
+          <JGIntegerBoxColumn Code="JGIntegerBoxColumn2" ColumnName="packNum" LabelText="包装数量" TableName="bo_akl_MM_materialInfo" />
+          <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="maxSendNum" LabelText="最大允许发料量" TableName="bo_akl_MM_materialInfo" />
+          <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="waterLevel" LabelText="水位" TableName="bo_akl_MM_materialInfo" />
+          <JGTextBoxColumn Code="JGTextBoxColumn14" ColumnName="remark" LabelText="备注" TableName="bo_akl_MM_materialInfo" Width="110" />
+          <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="projectNo" LabelText="所属项目" TableName="bo_akl_MM_materialInfo" />
+          <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="ecn" LabelText="工程变更" TableName="bo_akl_MM_materialInfo" />
+        </JGDataGrid>
+      </JGPanel>
+      <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="50" LayoutType="BorderLayout" PercentHeight="11.1%" PercentWidth="100%" TabIndex="1" Width="1040">
+        <JGFlowLayoutPanel BorderStyle="None" Code="JGFlowLayoutPanel1" Dock="Fill" Height="50" ItemMargin="0, 12, 12, 12" PercentHeight="100%" PercentWidth="100%" TabIndex="8" Width="1040">
+          <JGButton Code="JGButton1" LabelText="新增" OnClick="JGButton1_OnClick" PercentHeight="54.2%" PercentWidth="5%" TabIndex="22" Top="12" />
+          <JGButton Code="JGButton4" LabelText="修改" Left="64" OnClick="JGButton4_OnClick" PercentHeight="54.2%" PercentWidth="5%" TabIndex="23" Top="12" />
+          <JGButton BackColor="255, 0, 0" Code="JGButton5" LabelText="删除" Left="128" OnClick="JGButton5_OnClick" PercentHeight="54.2%" PercentWidth="5%" TabIndex="24" Top="12" Visible="False" />
+          <JGButton Code="JGButton6" LabelText="修改记录" Left="192" OnClick="JGButton6_OnClick" PercentHeight="54.2%" PercentWidth="7.4%" TabIndex="25" Top="12" Width="77" />
+          <JGButton Code="JGButton2" LabelText="下载模板" Left="87" OnClick="JGButton2_OnClick" PercentHeight="54.2%" PercentWidth="7.4%" TabIndex="11" Top="12" Width="77" />
+          <JGAttachment Code="JGAttachment1" LabelText="文件" LabelVisible="False" Left="281" PercentHeight="54.2%" PercentWidth="28.3%" TabIndex="13" Top="12" />
+          <JGButton Code="JGButton3" LabelText="导入" Left="676" OnClick="JGButton3_OnClick" PercentHeight="54.2%" PercentWidth="5%" TabIndex="12" Top="12" />
+          <JGButton Code="JGButton7" LabelText="导出" Left="740" OnClick="JGButton7_OnClick" PercentHeight="54.2%" PercentWidth="5%" TabIndex="27" Top="12" />
+          <JGLocateBox Code="JGLocateBox1" Left="546" OnClick="JGLocateBox1_OnClick" PercentHeight="58.3%" PercentWidth="21.2%" TabIndex="14" Top="12" />
+        </JGFlowLayoutPanel>
+      </JGPanel>
+      <JGPanel BorderStyle="None" Code="Pnl_Bottom" Dock="Bottom" Height="12" LayoutType="BorderLayout" PercentHeight="2.7%" PercentWidth="100%" TabIndex="1" Top="438" Width="1040" />
+    </JGPanel>
+    <JGPanel BorderStyle="None" Code="Pnl_Left" Dock="Left" Height="450" LayoutType="BorderLayout" PercentHeight="100%" PercentWidth="1.1%" TabIndex="1" Width="12" />
+    <JGPanel BorderStyle="None" Code="Pnl_Right" Dock="Right" Height="450" LayoutType="BorderLayout" Left="948" PercentHeight="100%" PercentWidth="1.1%" TabIndex="1" Width="12">
+      <JGLabel Code="Lab_Help" Dock="Top" FontStyle="微软雅黑, 6.75pt" LabelText="" PercentHeight="5.3%" PercentWidth="100%" TabIndex="7" ToolTip="&quot;帮助&quot;" Width="12" />
+      <JGLabel Code="Lab_Info" Dock="Bottom" FontStyle="微软雅黑, 6.75pt" LabelText="" PercentHeight="5.3%" PercentWidth="100%" TabIndex="6" ToolTip="&quot;获取当前窗口信息&quot;" Top="426" Width="12" />
+    </JGPanel>
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

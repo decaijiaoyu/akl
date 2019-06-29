@@ -1,0 +1,56 @@
+﻿<form type="1002" code="ExaminationRecords" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[1170]]></property>
+    <property name="Height"><![CDATA[480]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[TrainingRecords_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[考核记录]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGPanel BorderWidth="0" Code="JGPanel2" Dock="Fill" Height="480" Left="20" PercentHeight="100%" PercentWidth="98.3%" TabIndex="15" Width="1150">
+      <JGTabControl Code="JGTabControl1" Dock="Fill" Height="480" PercentHeight="100%" PercentWidth="100%" TabIndex="1" Width="1150">
+        <JGTabPage Code="JGTabPage2" LabelText="未考核员工" TabIndex="1">
+          <JGPanel Code="JGPanel4" Dock="Fill" Height="394" PercentHeight="89.5%" PercentWidth="100%" TabIndex="17" Top="46" Width="1150">
+            <JGDataGrid ChooseMode="3" Code="JGDataGrid2" CriteriaStyle="[{&quot;Criteria&quot;:&quot;[bo_akl_base_examEmployee].[haveUnqualifiedRecord]==\&quot;存在\&quot;&quot;,&quot;ValueForeColor&quot;:&quot;255,0,0&quot;,&quot;ValueBackColor&quot;:null,&quot;ValueFontStyle&quot;:null,&quot;Columns&quot;:[&quot;JGTextBoxColumn12&quot;,&quot;JGTextBoxColumn7&quot;]},{&quot;Criteria&quot;:&quot;[bo_akl_base_examEmployee].[sState]==\&quot;离职\&quot;&quot;,&quot;ValueForeColor&quot;:&quot;255,0,0&quot;,&quot;ValueBackColor&quot;:null,&quot;ValueFontStyle&quot;:null,&quot;Columns&quot;:[&quot;JGTextBoxColumn12&quot;,&quot;JGTextBoxColumn7&quot;,&quot;JGTextBoxColumn2&quot;]}]" Dock="Fill" FetchMode="paged" Height="394" LabelText="列表" OnDoubleClick="JGDataGrid2_OnDoubleClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" PercentHeight="100%" PercentWidth="100%" ReadOnly="True" TabIndex="4" TableName="bo_akl_base_examEmployee" Width="1150">
+              <JGTextBoxColumn Code="JGTextBoxColumn12" ColumnName="teId" LabelText="员工编号" TableName="bo_akl_base_examEmployee" Width="120" />
+              <JGTextBoxColumn Code="JGTextBoxColumn7" ColumnName="teName" LabelText="员工姓名" TableName="bo_akl_base_examEmployee" Width="300" />
+              <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="sState" LabelText="员工状态" TableName="bo_akl_base_examEmployee" />
+            </JGDataGrid>
+          </JGPanel>
+          <JGPanel BorderWidth="0" Code="JGPanel3" Dock="Top" Height="46" PercentHeight="10.5%" PercentWidth="100%" TabIndex="16" Width="1150">
+            <JGLocateBox Code="JGLocateBox2" Left="3" OnClick="JGLocateBox1_OnKeyDown" PercentHeight="60.9%" PercentWidth="19.1%" TabIndex="1" Top="8" />
+            <JGButton BackColor="255, 0, 0" Code="JGButton1" LabelText="删除" Left="287" OnClick="JGButton1_OnClick_2" PercentHeight="56.5%" PercentWidth="4.5%" TabIndex="3" Top="10" Visible="False" />
+            <JGButton Code="JGButton5" LabelText="重置" Left="229" OnClick="TrainingRecords_FormLoadAction" PercentHeight="56.5%" PercentWidth="4.5%" TabIndex="2" Top="10" />
+          </JGPanel>
+        </JGTabPage>
+        <JGTabPage Code="JGTabPage1" LabelText="已考核员工" TabIndex="2">
+          <JGPanel Code="JGPanel6" Dock="Fill" Height="394" PercentHeight="89.5%" PercentWidth="100%" TabIndex="19" Top="46" Width="1150">
+            <JGDataGrid Code="JGDataGrid1" CriteriaStyle="[{&quot;Criteria&quot;:&quot;[bo_akl_base_examEmployee_1].[haveUnqualifiedRecord]==\&quot;存在\&quot;&quot;,&quot;ValueForeColor&quot;:&quot;255,0,0&quot;,&quot;ValueBackColor&quot;:null,&quot;ValueFontStyle&quot;:null,&quot;Columns&quot;:[&quot;JGTextBoxColumn10&quot;,&quot;JGTextBoxColumn9&quot;]},{&quot;Criteria&quot;:&quot;[bo_akl_base_examEmployee_1].[sState]==\&quot;离职\&quot;&quot;,&quot;ValueForeColor&quot;:&quot;255,0,0&quot;,&quot;ValueBackColor&quot;:null,&quot;ValueFontStyle&quot;:null,&quot;Columns&quot;:[&quot;JGTextBoxColumn10&quot;,&quot;JGTextBoxColumn9&quot;,&quot;JGTextBoxColumn3&quot;]}]" Dock="Fill" FetchMode="paged" Height="394" LabelText="列表" OnDoubleClick="JGDataGrid1_OnDoubleClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" PercentHeight="100%" PercentWidth="100%" ReadOnly="True" TabIndex="3" TableName="bo_akl_base_examEmployee_1" Width="1150">
+              <JGTextBoxColumn Code="JGTextBoxColumn10" ColumnName="teId" LabelText="员工编号" TableName="bo_akl_base_examEmployee_1" Width="120" />
+              <JGTextBoxColumn Code="JGTextBoxColumn9" ColumnName="teName" LabelText="员工姓名" TableName="bo_akl_base_examEmployee_1" Width="300" />
+              <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="sState" LabelText="员工状态" TableName="bo_akl_base_examEmployee_1" />
+            </JGDataGrid>
+          </JGPanel>
+          <JGPanel BorderWidth="0" Code="JGPanel5" Dock="Top" Height="46" PercentHeight="10.5%" PercentWidth="100%" TabIndex="18" Width="1150">
+            <JGLocateBox Code="JGLocateBox1" Left="3" OnClick="JGLocateBox1_OnClick" PercentHeight="60.9%" PercentWidth="19.1%" TabIndex="1" Top="8" />
+            <JGButton Code="JGButton3" LabelText="重置" Left="229" OnClick="TrainingRecords_FormLoadAction" PercentHeight="56.5%" PercentWidth="4.5%" TabIndex="2" Top="10" />
+          </JGPanel>
+        </JGTabPage>
+      </JGTabControl>
+    </JGPanel>
+    <JGPanel BorderWidth="0" Code="JGPanel1" Dock="Left" Height="480" PercentHeight="100%" PercentWidth="1.7%" TabIndex="14" Width="20" />
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

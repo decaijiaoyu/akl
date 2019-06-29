@@ -1,0 +1,46 @@
+﻿<form type="1002" code="EquipmentInfo1" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[1263]]></property>
+    <property name="Height"><![CDATA[480]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[equipmentDataGrid_OnValueLoaded]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[设备信息]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGPanel Code="JGPanel3" Dock="Fill" Height="434" Left="20" PercentHeight="90.4%" PercentWidth="98.4%" TabIndex="12" Top="46" Width="1243">
+      <JGDataGrid ChooseMode="3" Code="equipmentDataGrid" Dock="Fill" FetchMode="paged" Height="434" LabelText="列表" OnDoubleClick="changeButton_OnClick" OnSelectionChanged="equipmentDataGrid_OnSelectionChanged" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" PercentHeight="100%" PercentWidth="100%" ReadOnly="True" TabIndex="5" TableName="bo_akl_EM_EquipmentInformation" Width="1243">
+        <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn6" ColumnName="type" LabelText="设备性质" TableName="bo_akl_EM_EquipmentInformation" Width="196" />
+        <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn1" ColumnName="equipNo" LabelText="设备编号" TableName="bo_akl_EM_EquipmentInformation" Width="227" />
+        <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn2" ColumnName="equipName" LabelText="设备名称" TableName="bo_akl_EM_EquipmentInformation" Width="140" />
+        <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn3" ColumnName="pNo" LabelText="产线编号" TableName="bo_akl_EM_EquipmentInformation" Width="175" />
+        <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="fixedAssetsNo" LabelText="固定资产编号" TableName="bo_akl_EM_EquipmentInformation" Width="175" />
+      </JGDataGrid>
+    </JGPanel>
+    <JGPanel BorderWidth="0" Code="JGPanel1" Dock="Left" Height="434" PercentHeight="90.4%" PercentWidth="1.6%" TabIndex="11" Top="46" Width="20" />
+    <JGPanel BorderWidth="0" Code="JGPanel2" Dock="Top" Height="46" PercentHeight="9.6%" PercentWidth="100%" TabIndex="11" Width="1263">
+      <JGButton Code="JGButton7" LabelText="导出" Left="1136" OnClick="JGButton7_OnClick" PercentHeight="56.5%" PercentWidth="4.1%" TabIndex="18" Top="12" />
+      <JGButton Code="JGButton6" LabelText="导入数据" Left="1053" OnClick="JGButton6_OnClick" PercentHeight="56.5%" PercentWidth="6.1%" TabIndex="16" Top="12" Width="77" />
+      <JGAttachment Code="JGAttachment1" LabelText="文件" LabelWidth="0" Left="936" PercentHeight="56.5%" PercentWidth="8.8%" TabIndex="15" TableName="bo_akl_EM_EquipmentInformation" Top="12" Width="111" />
+      <JGComboBox Code="JGComboBox1" ColumnName="type" DropDownSource="{&quot;DataSourceSetting&quot;:{&quot;DataConfig&quot;:{&quot;DefaultSaveColumn&quot;:null,&quot;DefaultShowColumn&quot;:null,&quot;SourceType&quot;:null,&quot;SourceID&quot;:null,&quot;SourceName&quot;:null,&quot;MapTable&quot;:null,&quot;SaveColumn&quot;:null,&quot;ShowColumn&quot;:null,&quot;SortField&quot;:null,&quot;SortType&quot;:null,&quot;MaxRecCount&quot;:0,&quot;QueryField&quot;:null,&quot;QueryMethod&quot;:null,&quot;IsPickListFields&quot;:false,&quot;ConstData&quot;:[{&quot;id&quot;:&quot;量检具&quot;,&quot;text&quot;:&quot;量检具&quot;,&quot;selected&quot;:&quot;False&quot;},{&quot;id&quot;:&quot;产线设备&quot;,&quot;text&quot;:&quot;产线设备&quot;,&quot;selected&quot;:&quot;False&quot;},{&quot;id&quot;:&quot;载具&quot;,&quot;text&quot;:&quot;载具&quot;,&quot;selected&quot;:&quot;False&quot;},{&quot;id&quot;:&quot;注塑模具&quot;,&quot;text&quot;:&quot;注塑模具&quot;,&quot;selected&quot;:&quot;False&quot;},{&quot;id&quot;:&quot;公共设备&quot;,&quot;text&quot;:&quot;公共设备&quot;,&quot;selected&quot;:&quot;False&quot;},{&quot;id&quot;:&quot;信息设备&quot;,&quot;text&quot;:&quot;信息设备&quot;,&quot;selected&quot;:&quot;False&quot;},{&quot;id&quot;:&quot;全部&quot;,&quot;text&quot;:&quot;全部&quot;,&quot;selected&quot;:&quot;True&quot;}],&quot;SqlQueryConstData&quot;:null,&quot;EntityConstData&quot;:null,&quot;Condition&quot;:null,&quot;QueryParam&quot;:null,&quot;PickListFields&quot;:null},&quot;DataSourceType&quot;:&quot;CustomConst&quot;}}" IDColumnName="type" LabelText="设备性质" LabelWidth="80" Left="647" OnValueChanged="JGComboBox1_OnValueChanged" PercentHeight="56.5%" PercentWidth="15.8%" TabIndex="14" TableName="A" Top="12" Width="200" />
+      <JGButton Code="JGButton5" LabelText="下载模板" Left="853" OnClick="JGButton5_OnClick" PercentHeight="56.5%" PercentWidth="6.1%" TabIndex="13" Top="12" Width="77" />
+      <JGLocateBox Code="JGLocateBox1" Left="20" OnClick="JGLocateBox1_OnClick" PercentHeight="60.9%" PercentWidth="17.4%" TabIndex="1103" Top="12" />
+      <JGButton Code="JGButton2" LabelText="重置" Left="246" OnClick="refreshButton_OnClick" PercentHeight="56.5%" PercentWidth="4.1%" TabIndex="1104" Top="14" />
+      <JGButton BackColor="255, 0, 0" Code="JGButton4" LabelText="删除" Left="1194" OnClick="deleteButton_OnClick" PercentHeight="56.5%" PercentWidth="4.1%" TabIndex="1102" Top="12" Visible="False" />
+      <JGButton Code="JGButton1" LabelText="新建" Left="531" OnClick="newButton_OnClick" PercentHeight="56.5%" PercentWidth="4.1%" TabIndex="1100" Top="12" />
+      <JGButton Code="JGButton3" LabelText="修改" Left="589" OnClick="changeButton_OnClick" PercentHeight="56.5%" PercentWidth="4.1%" TabIndex="1101" Top="12" />
+    </JGPanel>
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

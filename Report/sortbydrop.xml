@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-16"?>
+<NavigationInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <NavigationNode>
+      <Code>b001</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>人员能力矩阵图</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>abs9_weldingline_data</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>abs9_weldingline_data</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>abs9_weldingline_data_w2</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>abs9_weldingline_data_w2</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>proline_output</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>产线产出报表</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+  </Nodes>
+</NavigationInfo>

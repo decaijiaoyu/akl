@@ -1,0 +1,31 @@
+﻿<Query id="53de7d09d79b41189c2c89d0e2e0e7a5" code="proline_output" name="产线产出报表" type="VSql">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[liub]]></Creator>
+  <CreationTime><![CDATA[2018-08-21 11:01:21]]></CreationTime>
+  <Modifier><![CDATA[liub]]></Modifier>
+  <ModificationTime><![CDATA[2018-09-11 14:52:04]]></ModificationTime>
+  <VSql><![CDATA[SELECT lineCode, equCode, FORMATDATE(startTime, 'yyyy-mm-dd') AS startTime, DAYNAME(startTime) AS weekName, outputNum
+FROM Line_output order by lineCode,equCode,startTime
+]]></VSql>
+  <Columns>
+    <Column id="Column_0" code="lineCode" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_1" code="equCode" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_2" code="startTime" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_3" code="weekName" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_4" code="outputNum" name="" dataType="integer" length="" precision="">
+      <Remark></Remark>
+    </Column>
+  </Columns>
+  <Params />
+  <DataItems>
+    <DataItem type="Table" key="Line_output" tokenIndexes="35" />
+  </DataItems>
+</Query>

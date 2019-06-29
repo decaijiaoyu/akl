@@ -1,0 +1,24 @@
+﻿<Table id="a8b3390502c34cba98d03dd31db928c8" code="Exchange" name="产线设备数据">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[]]></Creator>
+  <CreationTime><![CDATA[2018-07-06 10:37:19]]></CreationTime>
+  <Modifier><![CDATA[liub]]></Modifier>
+  <ModificationTime><![CDATA[2018-07-10 14:03:44]]></ModificationTime>
+  <Columns>
+    <Column id="d194eb9839bd4a4cb4870804d2d3388c" code="Name" name="" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="75d653b6ed81472a87882cf47b4ffa9f" code="Value" name="" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="5b910b89352b4545a79280f70f6fced5" code="Timepoint" name="" domain="" dataType="text" length="1000" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+  </Columns>
+  <Indexes />
+  <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
+  <Data isInitialData="false" isReplaceDataById="false" />
+</Table>

@@ -1,0 +1,99 @@
+﻿<form type="1002" code="AddProductLineFile" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[867]]></property>
+    <property name="Height"><![CDATA[594]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[AddProductLineFile_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[新建产线档案]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton8" LabelText="导出" Left="490" OnClick="JGButton8_OnClick" PercentHeight="4.4%" PercentWidth="6%" TabIndex="28" Top="299" />
+    <JGRadioGroup Code="JGRadioGroup1" ColumnName="isCheck" DropDownSource="{&quot;DataSourceSetting&quot;:{&quot;DataConfig&quot;:{&quot;DefaultSaveColumn&quot;:null,&quot;DefaultShowColumn&quot;:null,&quot;SourceType&quot;:null,&quot;SourceID&quot;:null,&quot;SourceName&quot;:null,&quot;MapTable&quot;:null,&quot;SaveColumn&quot;:null,&quot;ShowColumn&quot;:null,&quot;SortField&quot;:null,&quot;SortType&quot;:null,&quot;MaxRecCount&quot;:0,&quot;QueryField&quot;:null,&quot;QueryMethod&quot;:null,&quot;IsPickListFields&quot;:false,&quot;ConstData&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;text&quot;:&quot;是&quot;,&quot;selected&quot;:&quot;True&quot;},{&quot;id&quot;:&quot;0&quot;,&quot;text&quot;:&quot;否&quot;,&quot;selected&quot;:&quot;False&quot;}],&quot;SqlQueryConstData&quot;:null,&quot;EntityConstData&quot;:null,&quot;Condition&quot;:null,&quot;QueryParam&quot;:null,&quot;PickListFields&quot;:null},&quot;DataSourceType&quot;:&quot;CustomConst&quot;}}" Height="30" IDColumnName="isCheck" LabelFontStyle="微软雅黑, 11.25pt" LabelText="是否需要点检" LabelWidth="100" Left="478" PercentHeight="5.1%" PercentWidth="42.7%" TabIndex="27" TableName="bo_akl_base_productlines" Top="169" Width="370" />
+    <JGTextBox Code="JGTextBox4" ColumnName="resetPassword" Height="30" LabelFontStyle="微软雅黑, 11pt" LabelText="复位密码" LabelWidth="100" Left="11" PercentHeight="5.1%" PercentWidth="42.7%" TabIndex="3" TableName="bo_akl_base_productlines" Top="169" ValueFontStyle="微软雅黑, 11pt" Width="370" />
+    <JGTextBox Code="JGTextBox3" ColumnName="placePosition" Height="30" LabelFontStyle="微软雅黑, 11pt" LabelText="产线放置仓位" LabelWidth="100" Left="478" PercentHeight="5.1%" PercentWidth="42.7%" TabIndex="3" TableName="bo_akl_base_productlines" Top="133" ValueFontStyle="微软雅黑, 11pt" Width="370" />
+    <JGBaseDictBox Code="JGBaseDictBox3" ColumnName="productionName" Height="30" IDColumnName="productionId" LabelFontStyle="微软雅黑, 11pt" LabelText="生产时间标题" LabelWidth="100" Left="11" OpenModuleAction="JGBaseDictBox3_OpenModuleAction" PercentHeight="5.1%" PercentWidth="42.7%" TabIndex="24" TableName="bo_akl_base_productlines" Top="133" ValueFontStyle="微软雅黑, 11pt" Width="370" />
+    <JGTextBox Code="JGTextBox2" ColumnName="pNote" Height="30" LabelText="备注" LabelWidth="100" Left="11" PercentHeight="5.1%" PercentWidth="96.4%" TabIndex="7" TableName="bo_akl_base_productlines" TextLength="128" Top="205" Width="836" />
+    <JGButton Code="JGButton3" LabelText="下载模板" Left="128" OnClick="JGButton3_OnClick" PercentHeight="4.4%" PercentWidth="8.9%" TabIndex="11" Top="300" Width="77" />
+    <JGButton Code="JGButton7" LabelText="导入工站信息" Left="376" OnClick="JGButton7_OnClick" PercentHeight="4.4%" PercentWidth="10.7%" TabIndex="13" Top="299" Width="93" />
+    <JGAttachment Code="JGAttachment1" LabelText="" LabelWidth="0" Left="212" PercentHeight="4.4%" PercentWidth="18.1%" TabIndex="12" Top="299" Width="157" />
+    <JGButton Code="JGButton1" LabelText="重置" Left="796" OnClick="JGButton1_OnClick_1" PercentHeight="4.4%" PercentWidth="6%" TabIndex="16" Top="299" />
+    <JGLocateBox Code="JGLocateBox1" Left="622" OnClick="JGLocateBox1_OnClick" PercentHeight="4.7%" PercentWidth="19.4%" TabIndex="15" Top="297" Width="168" />
+    <JGButton Code="JGButton6" LabelText="修改" Left="69" OnClick="JGButton6_OnClick" PercentHeight="4.4%" PercentWidth="6%" TabIndex="10" Top="299" />
+    <JGBaseDictBox Code="JGBaseDictBox2" ColumnName="equNo" Height="30" IDColumnName="equNo" IsMust="True" LabelFontStyle="微软雅黑, 11pt" LabelText="设备编号" LabelWidth="100" Left="478" OpenModuleAction="JGBaseDictBox2_OpenModuleAction" PercentHeight="5.1%" PercentWidth="42.7%" TabIndex="4" TableName="bo_akl_base_productlines" Top="61" ValueFontStyle="微软雅黑, 11.25pt" Width="370" />
+    <JGBaseDictBox Code="JGBaseDictBox1" ColumnName="belongProjectName" Height="30" IDColumnName="belongProjectName" IsMust="True" LabelFontStyle="微软雅黑, 11pt" LabelText="所属项目" LabelWidth="100" Left="478" OpenModuleAction="JGBaseDictBox1_OpenModuleAction" PercentHeight="5.1%" PercentWidth="42.7%" TabIndex="6" TableName="bo_akl_base_productlines" Top="97" ValueFontStyle="微软雅黑, 11pt" Width="370" />
+    <JGButton Code="JGButton5" LabelText="保存" Left="796" OnClick="JGButton5_OnClick" PercentHeight="4.4%" PercentWidth="6%" TabIndex="2" Top="19" />
+    <JGButton BackColor="255, 0, 0" Code="JGButton4" LabelText="删除" Left="564" OnClick="JGButton4_OnClick" PercentHeight="4.4%" PercentWidth="6%" TabIndex="14" Top="299" Visible="False" />
+    <JGButton Code="JGButton2" LabelText="新建" Left="11" OnClick="JGButton2_OnClick" PercentHeight="4.4%" PercentWidth="6%" TabIndex="9" Top="299" />
+    <JGDataGrid ChooseMode="3" Code="JGDataGrid1" EditTrigger="click" Height="244" LabelText="列表" Left="10" OnDoubleClick="JGButton6_OnClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" PercentHeight="41.1%" PercentWidth="96.5%" ReadOnly="True" TabIndex="17" TableName="bo_akl_base_productling_ws" Top="336" Width="837">
+      <JGTextBoxColumn Code="JGTextBoxColumn6" ColumnName="wsNo" LabelText="工站编号" TableName="bo_akl_base_productling_ws" TextLength="128" />
+      <JGTextBoxColumn Code="JGTextBoxColumn7" ColumnName="workEName" LabelText="作业内容英文" TableName="bo_akl_base_productling_ws" TextLength="128" />
+      <JGTextBoxColumn Code="JGTextBoxColumn8" ColumnName="workCName" LabelText="作业内容中文" TableName="bo_akl_base_productling_ws" TextLength="128" />
+      <JGTextBoxColumn Code="JGTextBoxColumn9" ColumnName="pNatureName" LabelText="岗位性质" TableName="bo_akl_base_productling_ws" />
+      <JGTextBoxColumn Code="JGTextBoxColumn10" ColumnName="isReal" LabelText="是否虚拟工站" TableName="bo_akl_base_productling_ws" TextLength="128" />
+      <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="isAutomatic" LabelText="是否自动工站" TableName="bo_akl_base_productling_ws" TextLength="128" />
+      <JGTextBoxColumn Code="JGTextBoxColumn11" ColumnName="vwsNature" LabelText="虚拟工站性质" TableName="bo_akl_base_productling_ws" />
+    </JGDataGrid>
+    <JGLabel Code="JGLabel2" FontStyle="微软雅黑, 12pt, style=Bold" Height="27" LabelText="产线工站信息" Left="11" PercentHeight="4.5%" PercentWidth="14.3%" TabIndex="8" TextAlign="Center" Top="266" Width="124" />
+    <JGLabel Code="JGLabel1" FontStyle="微软雅黑, 16pt, style=Bold" Height="42" LabelText="产线档案" Left="376" PercentHeight="7.1%" PercentWidth="15.2%" TabIndex="1" TextAlign="Center" Top="3" Width="132" />
+    <JGTextBox Code="JGTextBox1" ColumnName="pNo" Height="30" IsMust="True" LabelFontStyle="微软雅黑, 11pt" LabelText="产线编号" LabelWidth="100" Left="11" PercentHeight="5.1%" PercentWidth="42.7%" TabIndex="3" TableName="bo_akl_base_productlines" TextLength="128" Top="61" ValueFontStyle="微软雅黑, 11pt" Width="370" />
+    <JGDateTimePicker Code="JGDateTimePicker1" ColumnName="startTime" Height="30" LabelFontStyle="微软雅黑, 11pt" LabelText="批准时间" LabelWidth="100" Left="11" PercentHeight="5.1%" PercentWidth="42.7%" TabIndex="5" TableName="bo_akl_base_productlines" Top="97" ValueFontStyle="微软雅黑, 11pt" Width="370" />
+  </controls>
+  <outputs>
+    <variable code="equNo" name="设备编号" fieldType="char" defaultValue="" description="" isRestore="false" />
+    <variable code="cxda" name="" fieldType="entity" defaultValue="" description="" isRestore="false">
+      <entity>
+        <field code="id" name="" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="pNo" name="产线编号" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="belongProject" name="隶属项目" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="pEName" name="英文名称" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="pCName" name="中文名称" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="pNote" name="备注" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="equNo" name="设备编号" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="startTime" name="启动时间" fieldType="date" defaultValue="" isRestore="false" />
+        <field code="belongProjectName" name="项目名称" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="productionId" name="生产时间id" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="productionName" name="生产时间标题" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="placePosition" name="产线放置仓位" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="resetPassword" name="复位密码" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="qrCodeSign" name="二维码标识" fieldType="char" defaultValue="" isRestore="false" />
+      </entity>
+    </variable>
+  </outputs>
+  <inputs>
+    <variable code="id" name="产线id" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+    <variable code="equ_id" name="设备id" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+    <variable code="state" name="状态" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+    <variable code="pid" name="项目id" fieldType="char" defaultValue="0" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+    <variable code="isSave" name="主表是否保存" fieldType="boolean" defaultValue="False" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+    <variable code="pname" name="项目名称" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+    <variable code="bookName" name="返回的作业指导书" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+    <variable code="resetPassword" name="复位密码" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+  </inputs>
+  <remark><![CDATA[]]></remark>
+</form>

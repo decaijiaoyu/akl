@@ -1,0 +1,33 @@
+﻿<form type="1002" code="wbrxz" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[400]]></property>
+    <property name="Height"><![CDATA[300]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[wbrxz_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[维保人选择]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton1" LabelText="搜索" Left="229" OnClick="JGLocateBox1_OnClick" PercentHeight="8.7%" PercentWidth="13%" TabIndex="4" Top="5" />
+    <JGLocateBox Code="JGLocateBox1" Left="3" OnClick="JGLocateBox1_OnClick" PercentHeight="9.3%" PercentWidth="55%" TabIndex="3" Top="3" />
+    <JGDataGrid Code="JGDataGrid1" Height="263" LabelText="列表" Left="3" OnDoubleClick="JGDataGrid1_OnDoubleClick" PercentHeight="87.7%" PercentWidth="99.2%" ReadOnly="True" TabIndex="0" TableName="bo_akl_base_staffInfo" Top="37" Width="397">
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="sNo" LabelText="员工号" TableName="bo_akl_base_staffInfo" TextLength="128" Width="153" />
+      <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="sName" LabelText="员工姓名" TableName="bo_akl_base_staffInfo" TextLength="128" Width="162" />
+    </JGDataGrid>
+  </controls>
+  <outputs>
+    <variable code="userName" name="" fieldType="char" defaultValue="" description="" isRestore="false" />
+    <variable code="userNo" name="" fieldType="char" defaultValue="" description="" isRestore="false" />
+  </outputs>
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>
