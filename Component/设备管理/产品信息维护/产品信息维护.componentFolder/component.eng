@@ -56,15 +56,15 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>bo_akl_base_productInfo_ws</Code>
-      <Top>340</Top>
-      <Left>150</Left>
-      <Width>132</Width>
-      <Height>357</Height>
+      <Top>307</Top>
+      <Left>33</Left>
+      <Width>264</Width>
+      <Height>301</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
       <FontColor />
-      <IsCollapsed>false</IsCollapsed>
+      <IsCollapsed>true</IsCollapsed>
     </GraphNodeFormat>
   </Graphs>
 </EntityGraphConfig>

@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-06-20 20:32:26]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2019-05-05 14:46:33]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-07-02 21:20:06]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -41,6 +41,19 @@
       <ColumnData code="id"><![CDATA[6f53f973b9de8fa225ee7a450fcfa1cf]]></ColumnData>
       <ColumnData code="cus_No"><![CDATA[bs]]></ColumnData>
       <ColumnData code="cus_Name"><![CDATA[博世]]></ColumnData>
+      <ColumnData code="platform"><![CDATA[]]></ColumnData>
+      <ColumnData code="fullName"><![CDATA[]]></ColumnData>
+      <ColumnData code="address"><![CDATA[]]></ColumnData>
+      <ColumnData code="supNo"><![CDATA[]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[61c2f71b6a12f4c5308d272e4b77c3d7]]></ColumnData>
+      <ColumnData code="cus_No"><![CDATA[okkk]]></ColumnData>
+      <ColumnData code="cus_Name"><![CDATA[欧克]]></ColumnData>
+      <ColumnData code="platform"><![CDATA[]]></ColumnData>
+      <ColumnData code="fullName"><![CDATA[]]></ColumnData>
+      <ColumnData code="address"><![CDATA[]]></ColumnData>
+      <ColumnData code="supNo"><![CDATA[]]></ColumnData>
     </RowData>
   </Data>
 </Table>
