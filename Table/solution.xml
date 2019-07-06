@@ -1050,17 +1050,10 @@
           <SubNodes />
         </NavigationNode>
         <NavigationNode>
-          <Code>bo_akl_base_customer_1</Code>
+          <Code>bo_akl_base_equmainuser_clone</Code>
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
-          <FileSystemObjectName>bo_akl_base_customer_1</FileSystemObjectName>
-          <SubNodes />
-        </NavigationNode>
-        <NavigationNode>
-          <Code>bo_akl_base_customer_clone</Code>
-          <NodeType>Table</NodeType>
-          <FileSystemObjectType>File</FileSystemObjectType>
-          <FileSystemObjectName>bo_akl_base_customer_clone</FileSystemObjectName>
+          <FileSystemObjectName>bo_akl_base_equmainuser_clone</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>

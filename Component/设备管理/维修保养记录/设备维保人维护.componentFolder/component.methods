@@ -168,4 +168,84 @@
       </RuleInstance>
     </RuleInstances>
   </Method>
+  <Method Code="JGButton7_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_Attachmentoperation1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="Attachmentoperation" ruleName="附件操作" instanceCode="BR_Attachmentoperation1" instanceName="附件操作" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-07-04 11:34:56">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"componentControlCode":null,"dataProcess":"Fileno_27.xlsx","fileName":"维保人信息","function":"2","fileType":"static","componentCode":"lmes","reviewScheme":"","watermarkEnable":false,"previewTargetType":"","isPreviewInModalWindow":false,"previewWindowSize":"","watermarkSet":null,"picWatermarkStyle":null,"docProtectSet":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><operate>2</operate><documentColumn>Fileno_27.xlsx</documentColumn><fileType>static</fileType><componentCode>lmes</componentCode><fileCode>Fileno_27</fileCode><fileName>维保人信息</fileName><watermarkEnable>False</watermarkEnable></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton2_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_DeleteConditionRelationData1" />
+  <evaluateRule code="BR_ImportExcelToDB1" />
+  <evaluateRule code="BR_CopyDataBetweenTables1" />
+  <evaluateRule code="BR_ExecuteRuleSet1" />
+  <evaluateRule code="BR_ShowMessage1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData1" instanceName="删除数据库中的记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-07-04 11:44:44">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dtChileMaps":[{"orderNo":"1","tableName":"bo_akl_base_equmainuser_clone","dsWhere":null}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtConditionMaster><TableName>bo_akl_base_equmainuser_clone</TableName><Condition><![CDATA[<NewDataSet />]]]]><![CDATA[></Condition><OrderNo>1</OrderNo></dtConditionMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ImportExcelToDB" ruleName="Excel导入到数据库表" instanceCode="BR_ImportExcelToDB1" instanceName="Excel导入到数据库表" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-07-04 14:16:16">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"fileSource":"JGAttachment1","items":[{"targetTable":"bo_akl_base_equmainuser_clone","sheetNum":"0","dataStartRow":"3","importNodeId":"","mapping":[{"fieldCode":"equName","fieldName":"设备名称","sourceType":"excelColName","sourceValue":"设备名称"},{"fieldCode":"equNo","fieldName":"设备编号","sourceType":"excelColName","sourceValue":"设备编号"},{"fieldCode":"userName","fieldName":"维保人姓名","sourceType":"excelColName","sourceValue":"维保人姓名"},{"fieldCode":"userNo","fieldName":"维保人编号","sourceType":"excelColName","sourceValue":"维保人编号"}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFileSource><FileSource>JGAttachment1</FileSource></dtFileSource><dtSheetMapping><ID>3551509ac6ca4b5ab82c3440fe8d935a</ID><TargetTable>bo_akl_base_equmainuser_clone</TargetTable><SheetNum>0</SheetNum><DataStartRow>3</DataStartRow><ImportNodeId /></dtSheetMapping><dtFieldMapping><PID>3551509ac6ca4b5ab82c3440fe8d935a</PID><TableCode>bo_akl_base_equmainuser_clone</TableCode><FieldCode>equName</FieldCode><FieldName>设备名称</FieldName><SourceType>excelColName</SourceType><SourceValue>设备名称</SourceValue></dtFieldMapping><dtFieldMapping><PID>3551509ac6ca4b5ab82c3440fe8d935a</PID><TableCode>bo_akl_base_equmainuser_clone</TableCode><FieldCode>equNo</FieldCode><FieldName>设备编号</FieldName><SourceType>excelColName</SourceType><SourceValue>设备编号</SourceValue></dtFieldMapping><dtFieldMapping><PID>3551509ac6ca4b5ab82c3440fe8d935a</PID><TableCode>bo_akl_base_equmainuser_clone</TableCode><FieldCode>userName</FieldCode><FieldName>维保人姓名</FieldName><SourceType>excelColName</SourceType><SourceValue>维保人姓名</SourceValue></dtFieldMapping><dtFieldMapping><PID>3551509ac6ca4b5ab82c3440fe8d935a</PID><TableCode>bo_akl_base_equmainuser_clone</TableCode><FieldCode>userNo</FieldCode><FieldName>维保人编号</FieldName><SourceType>excelColName</SourceType><SourceValue>维保人编号</SourceValue></dtFieldMapping></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="CopyDataBetweenTables" ruleName="表间数据复制" instanceCode="BR_CopyDataBetweenTables1" instanceName="表间数据复制" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-07-04 11:56:57">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"condition":null,"destTableName":"bo_akl_base_equmainuser","equalFields":[{"checkRepeat":"False","destField":"bo_akl_base_equmainuser.equName","sourceField":"bo_akl_base_equmainuser_clone.equName","sourcetype":"tableField","treatRepeattype":""},{"checkRepeat":"False","destField":"bo_akl_base_equmainuser.equNo","sourceField":"bo_akl_base_equmainuser_clone.equNo","sourcetype":"tableField","treatRepeattype":""},{"checkRepeat":"False","destField":"bo_akl_base_equmainuser.userName","sourceField":"bo_akl_base_equmainuser_clone.userName","sourcetype":"tableField","treatRepeattype":""},{"checkRepeat":"False","destField":"bo_akl_base_equmainuser.userNo","sourceField":"bo_akl_base_equmainuser_clone.userNo","sourcetype":"tableField","treatRepeattype":""}],"repeatType":"1","sourceTableName":"bo_akl_base_equmainuser_clone","sourceType":"Table","queryParam":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><destTableName>bo_akl_base_equmainuser</destTableName><sourceTableName>bo_akl_base_equmainuser_clone</sourceTableName><sourceType>Table</sourceType><repeatType>1</repeatType><condition><![CDATA[<NewDataSet />]]]]><![CDATA[></condition></dtMaster><dtField><destField>bo_akl_base_equmainuser.equName</destField><sourcetype>tableField</sourcetype><sourceField>bo_akl_base_equmainuser_clone.equName</sourceField><checkeRepeat>False</checkeRepeat><TreatRepeattype /></dtField><dtField><destField>bo_akl_base_equmainuser.equNo</destField><sourcetype>tableField</sourcetype><sourceField>bo_akl_base_equmainuser_clone.equNo</sourceField><checkeRepeat>False</checkeRepeat><TreatRepeattype /></dtField><dtField><destField>bo_akl_base_equmainuser.userName</destField><sourcetype>tableField</sourcetype><sourceField>bo_akl_base_equmainuser_clone.userName</sourceField><checkeRepeat>False</checkeRepeat><TreatRepeattype /></dtField><dtField><destField>bo_akl_base_equmainuser.userNo</destField><sourcetype>tableField</sourcetype><sourceField>bo_akl_base_equmainuser_clone.userNo</sourceField><checkeRepeat>False</checkeRepeat><TreatRepeattype /></dtField></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_equ_main_user_FormLoadAction(equ_main_user_窗体加载事件)" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-07-04 11:57:27">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"filter":{"windowInstanceCode":""},"invokeTarget":{"sourceType":"client-ruleSet","invokeType":"local","ruleLocation":"window","componentCode":"","windowCode":"","ruleSetCode":"equ_main_user_FormLoadAction","isParallelism":"False"},"invokeParams":null,"returnMapping":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFilter><windowInstanceCode /></dtFilter><dtInvokeTarget><sourceType>client-ruleSet</sourceType><invokeType>local</invokeType><ruleLocation>window</ruleLocation><componentCode /><windowCode /><ruleSetCode>equ_main_user_FormLoadAction</ruleSetCode><isParallelism>False</isParallelism></dtInvokeTarget></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-07-04 11:57:48">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"\"导入完成\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"导入完成"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton6_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_ExportDataToExcel1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ExportDataToExcel" ruleName="导出数据库数据到Excel" instanceCode="BR_ExportDataToExcel1" instanceName="导出数据库数据到Excel" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-07-04 14:21:20">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"defaultFileName":"\"设备维保人\"","fileType":"xls","items":[{"sheetName":"\"设备维保人\"","dataSource":"bo_akl_base_equmainuser","dataSourceType":"Table","filterCondition":null,"queryParam":null,"mapping":[{"fieldCode":"equName","excelColName":"设备名称","exportData":true,"orderType":""},{"fieldCode":"equNo","excelColName":"设备编号","exportData":true,"orderType":""},{"fieldCode":"userName","excelColName":"维保人姓名","exportData":true,"orderType":""},{"fieldCode":"userNo","excelColName":"维保人编号","exportData":true,"orderType":""}]}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><DefaultFileName>"设备维保人"</DefaultFileName><FileType>xls</FileType></dtMaster><dtItems><ID>0e1e065b225140d1a895fd74f80a47af</ID><SheetName>"设备维保人"</SheetName><DataSource>bo_akl_base_equmainuser</DataSource><DataSourceType>Table</DataSourceType><dsFilterCondition><![CDATA[<NewDataSet />]]]]><![CDATA[></dsFilterCondition></dtItems><dtMapping><FieldCode>equName</FieldCode><ExcelColName>设备名称</ExcelColName><ExportData>True</ExportData><OrderType /><ItemID>0e1e065b225140d1a895fd74f80a47af</ItemID></dtMapping><dtMapping><FieldCode>equNo</FieldCode><ExcelColName>设备编号</ExcelColName><ExportData>True</ExportData><OrderType /><ItemID>0e1e065b225140d1a895fd74f80a47af</ItemID></dtMapping><dtMapping><FieldCode>userName</FieldCode><ExcelColName>维保人姓名</ExcelColName><ExportData>True</ExportData><OrderType /><ItemID>0e1e065b225140d1a895fd74f80a47af</ItemID></dtMapping><dtMapping><FieldCode>userNo</FieldCode><ExcelColName>维保人编号</ExcelColName><ExportData>True</ExportData><OrderType /><ItemID>0e1e065b225140d1a895fd74f80a47af</ItemID></dtMapping></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
 </Methods>

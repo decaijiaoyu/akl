@@ -17,6 +17,8 @@
     <property name="RefResources"><![CDATA[]]></property>
   </propertys>
   <controls>
+    <JGButton Code="JGButton6" LabelText="所有数据导出" Left="770" OnClick="JGButton6_OnClick" PercentHeight="5.5%" PercentWidth="8.5%" TabIndex="26" Top="22" Width="102" />
+    <JGButton Code="JGButton5" LabelText="导出当前" Left="878" OnClick="JGButton5_OnClick" PercentHeight="5.5%" PercentWidth="6.4%" TabIndex="25" Top="22" Width="77" />
     <JGButton Code="JGButton1" LabelText="保存" Left="1077" OnClick="JGButton1_OnClick" PercentHeight="5.5%" PercentWidth="4.3%" TabIndex="4" Top="22" />
     <JGButton BackColor="255, 0, 0" Code="JGButton4" LabelText="删除" Left="1019" OnClick="JGButton4_OnClick" PercentHeight="5.5%" PercentWidth="4.3%" TabIndex="3" Top="22" Visible="False" />
     <JGButton Code="JGButton3" LabelText="新增" Left="961" OnClick="JGButton3_OnClick" PercentHeight="5.5%" PercentWidth="4.3%" TabIndex="2" Top="22" Visible="False" />

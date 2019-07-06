@@ -24,6 +24,7 @@
         <JGTextBoxColumn Code="JGTextBoxColumn32" ColumnName="cycle" LabelText="点检周期" TableName="bo_akl_base_checkInfo" TextLength="128" Width="103" />
         <JGDateTimePickerColumn AllowSort="True" Code="JGDateTimePickerColumn4" ColumnName="checkDate" LabelText="点检时间" TableName="bo_akl_base_checkInfo" Width="126" />
         <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="classes" LabelText="白/晚班" TableName="bo_akl_base_checkInfo" TextLength="128" Width="108" />
+        <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="position" LabelText="点检位置" TableName="bo_akl_base_checkInfo" />
       </JGDataGrid>
     </JGPanel>
     <JGPanel BorderWidth="0" Code="JGPanel1" Dock="Left" Height="434" PercentHeight="90.4%" PercentWidth="1.7%" TabIndex="12" Top="46" Width="20" />

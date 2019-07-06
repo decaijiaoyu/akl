@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-06-20 20:32:26]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2018-08-14 11:52:24]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-07-04 18:19:32]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -43,6 +43,10 @@
     </Column>
     <Column id="33ce8049fe884c61893f3ad333020bdf" code="isop" name="是否操作过" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[0]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="0d3f34ce724640b2b06d9861e283ba83" code="position" name="点检位置" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
   </Columns>

@@ -4,9 +4,22 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>bo_akl_base_equmainuser</Code>
-      <Top>84</Top>
-      <Left>230</Left>
+      <Top>107</Top>
+      <Left>154</Left>
       <Width>185</Width>
+      <Height>182</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_base_equmainuser_clone</Code>
+      <Top>109</Top>
+      <Left>418</Left>
+      <Width>269</Width>
       <Height>182</Height>
       <Background />
       <BorderColor />

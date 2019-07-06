@@ -25,6 +25,10 @@
       <JGTextBoxColumn Code="JGTextBoxColumn7" ColumnName="equNo" LabelText="设备编号" TableName="bo_akl_base_equmainuser" />
     </JGDataGrid>
     <JGPanel BorderWidth="0" Code="JGPanel1" Dock="Top" Height="46" PercentHeight="9.6%" PercentWidth="100%" TabIndex="11" Width="1170">
+      <JGAttachment Code="JGAttachment1" LabelText="文件" Left="265" PercentHeight="56.5%" PercentWidth="18.5%" TabIndex="15" Top="10" Width="217" />
+      <JGButton Code="JGButton7" LabelText="下载模板" Left="571" OnClick="JGButton7_OnClick" PercentHeight="56.5%" PercentWidth="6.6%" TabIndex="14" Top="10" Width="77" />
+      <JGButton Code="JGButton6" LabelText="导出" Left="207" OnClick="JGButton6_OnClick" PercentHeight="56.5%" PercentWidth="4.4%" TabIndex="13" Top="10" />
+      <JGButton Code="JGButton2" LabelText="导入数据" Left="488" OnClick="JGButton2_OnClick" PercentHeight="56.5%" PercentWidth="6.6%" TabIndex="12" Top="10" Width="77" />
       <JGButton Code="JGButton5" LabelText="重置" Left="880" OnClick="equ_main_user_FormLoadAction" PercentHeight="56.5%" PercentWidth="4.4%" TabIndex="1104" Top="8" />
       <JGLocateBox Code="JGLocateBox1" Left="654" OnClick="JGLocateBox1_OnClick" PercentHeight="60.9%" PercentWidth="18.8%" TabIndex="1103" Top="8" />
       <JGButton Code="JGButton1" LabelText="新建" Left="20" OnClick="newButton_OnClick" PercentHeight="56.5%" PercentWidth="4.4%" TabIndex="1100" Top="10" />

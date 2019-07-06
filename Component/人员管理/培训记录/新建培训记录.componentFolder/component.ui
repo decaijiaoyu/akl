@@ -20,20 +20,6 @@
     <JGBaseDictBox Code="JGBaseDictBox2" ColumnName="sName" IDColumnName="sName" IsMust="True" LabelText="员工姓名" Left="439" OpenModuleAction="JGTextBox2_OnEnter" PercentHeight="5.7%" PercentWidth="50.5%" TabIndex="4" TableName="bo_akl_base_staffInfo" Top="51" Width="463" />
     <JGBaseDictBox Code="JGBaseDictBox1" ColumnName="sNo" IDColumnName="sNo" IsMust="True" LabelText="员工编号" Left="12" OpenModuleAction="JGTextBox2_OnEnter" PercentHeight="5.7%" PercentWidth="46%" TabIndex="3" TableName="bo_akl_base_staffInfo" Top="51" Width="421" />
     <JGTabControl Code="JGTabControl1" Height="320" Left="12" PercentHeight="70.3%" PercentWidth="97.2%" TabIndex="7" Top="114" Width="890">
-      <JGTabPage Code="JGTabPage1" LabelText="培训记录_通用培训" TabIndex="1">
-        <JGButton BackColor="255, 0, 0" Code="JGButton7" LabelText="删除" Left="119" OnClick="JGButton7_OnClick_1" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="3" Top="2" Visible="False" />
-        <JGButton Code="JGButton8" LabelText="重置" Left="831" OnClick="JGButton2_OnClick" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="5" Top="2" />
-        <JGLocateBox Code="JGLocateBox1" Left="605" OnClick="JGLocateBox1_OnClick" PercentHeight="10%" PercentWidth="24.7%" TabIndex="4" Top="3" />
-        <JGButton Code="JGButton4" LabelText="修改" Left="61" OnClick="JGDataGrid1_OnDoubleClick" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="2" Top="2" />
-        <JGDataGrid ChooseMode="3" Code="JGDataGrid1" EditTrigger="click" FetchMode="paged" Height="234" LabelText="列表" Left="3" OnDoubleClick="JGDataGrid1_OnDoubleClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" PageInfo="{&quot;PageList&quot;:[5,20,30,40,50],&quot;DefaultPageSize&quot;:5}" PercentHeight="83.6%" PercentWidth="98.9%" ReadOnly="True" TabIndex="6" TableName="bo_akl_base_trainRecordLA" Top="34" Width="880">
-          <JGTextBoxColumn Code="JGTextBoxColumn10" ColumnName="trainInfo" IsMust="True" LabelText="培训性质" TableName="bo_akl_base_trainRecordLA" TextLength="128" Width="350" />
-          <JGDateTimePickerColumn Code="JGTextBoxColumn11" ColumnName="trainDate" IsMust="True" LabelText="培训时间" TableName="bo_akl_base_trainRecordLA" ValueTextAlign="Left" Width="200" />
-          <JGTextBoxColumn Code="JGTextBoxColumn12" ColumnName="trainUser" IsMust="True" LabelText="培训人员" TableName="bo_akl_base_trainRecordLA" TextLength="128" Width="200" />
-          <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="teId" LabelText="员工Id" TableName="bo_akl_base_trainRecordLA" TextLength="128" Visible="False" Width="0" />
-          <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="state" LabelText="考核状态" TableName="bo_akl_base_trainRecordLA" TextLength="128" Visible="False" Width="0" />
-        </JGDataGrid>
-        <JGButton Code="JGButton3" LabelText="新建" Left="3" OnClick="JGButton3_OnClick" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="1" Top="2" />
-      </JGTabPage>
       <JGTabPage Code="JGTabPage2" LabelText="培训记录_技能培训" TabIndex="2">
         <JGButton BackColor="255, 0, 0" Code="JGButton9" LabelText="删除" Left="119" OnClick="JGButton9_OnClick" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="3" Top="2" Visible="False" />
         <JGButton Code="JGButton2" LabelText="重置" Left="831" OnClick="JGButton7_OnClick" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="5" Top="2" />
@@ -52,6 +38,20 @@
           <JGTextBoxColumn Code="JGTextBoxColumn5" ColumnName="state" LabelText="考核状态" TableName="bo_akl_base_trainRecordLB" TextLength="128" Visible="False" Width="0" />
         </JGDataGrid>
         <JGButton Code="JGButton6" LabelText="新建" Left="3" OnClick="JGButton6_OnClick" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="1" Top="2" />
+      </JGTabPage>
+      <JGTabPage Code="JGTabPage1" LabelText="培训记录_通用培训" TabIndex="1">
+        <JGButton BackColor="255, 0, 0" Code="JGButton7" LabelText="删除" Left="119" OnClick="JGButton7_OnClick_1" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="3" Top="2" Visible="False" />
+        <JGButton Code="JGButton8" LabelText="重置" Left="831" OnClick="JGButton2_OnClick" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="5" Top="2" />
+        <JGLocateBox Code="JGLocateBox1" Left="605" OnClick="JGLocateBox1_OnClick" PercentHeight="10%" PercentWidth="24.7%" TabIndex="4" Top="3" />
+        <JGButton Code="JGButton4" LabelText="修改" Left="61" OnClick="JGDataGrid1_OnDoubleClick" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="2" Top="2" />
+        <JGDataGrid ChooseMode="3" Code="JGDataGrid1" EditTrigger="click" FetchMode="paged" Height="234" LabelText="列表" Left="3" OnDoubleClick="JGDataGrid1_OnDoubleClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" PageInfo="{&quot;PageList&quot;:[5,20,30,40,50],&quot;DefaultPageSize&quot;:5}" PercentHeight="83.6%" PercentWidth="98.9%" ReadOnly="True" TabIndex="6" TableName="bo_akl_base_trainRecordLA" Top="34" Width="880">
+          <JGTextBoxColumn Code="JGTextBoxColumn10" ColumnName="trainInfo" IsMust="True" LabelText="培训性质" TableName="bo_akl_base_trainRecordLA" TextLength="128" Width="350" />
+          <JGDateTimePickerColumn Code="JGTextBoxColumn11" ColumnName="trainDate" IsMust="True" LabelText="培训时间" TableName="bo_akl_base_trainRecordLA" ValueTextAlign="Left" Width="200" />
+          <JGTextBoxColumn Code="JGTextBoxColumn12" ColumnName="trainUser" IsMust="True" LabelText="培训人员" TableName="bo_akl_base_trainRecordLA" TextLength="128" Width="200" />
+          <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="teId" LabelText="员工Id" TableName="bo_akl_base_trainRecordLA" TextLength="128" Visible="False" Width="0" />
+          <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="state" LabelText="考核状态" TableName="bo_akl_base_trainRecordLA" TextLength="128" Visible="False" Width="0" />
+        </JGDataGrid>
+        <JGButton Code="JGButton3" LabelText="新建" Left="3" OnClick="JGButton3_OnClick" PercentHeight="9.3%" PercentWidth="5.8%" TabIndex="1" Top="2" />
       </JGTabPage>
     </JGTabControl>
     <JGButton Code="JGButton1" LabelText="保存" Left="850" OnClick="JGButton1_OnClick" PercentHeight="5.7%" PercentWidth="5.7%" TabIndex="2" Top="19" />

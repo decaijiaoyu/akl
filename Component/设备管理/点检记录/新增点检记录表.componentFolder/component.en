@@ -660,6 +660,15 @@
           <DefaultValue></DefaultValue>
           <Expression></Expression>
         </Column>
+        <Column>
+          <Code>position</Code>
+          <Name>点检位置</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+        </Column>
       </Columns>
       <Events>
         <EntityEvent Code="OnLoaded" Value="" />
