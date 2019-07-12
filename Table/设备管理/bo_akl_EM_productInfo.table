@@ -3,7 +3,7 @@
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-06-28 15:59:58]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-03-12 14:29:04]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-07-11 20:09:29]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -73,6 +73,10 @@
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
+    <Column id="4f25d69fdfc94e54b6f264301473bd49" code="boardNum" name="系统看板大小" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
   </Columns>
   <Indexes />
   <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
@@ -95,6 +99,7 @@
       <ColumnData code="testInterval"><![CDATA[4]]></ColumnData>
       <ColumnData code="mouldId"><![CDATA[]]></ColumnData>
       <ColumnData code="mouldNo"><![CDATA[]]></ColumnData>
+      <ColumnData code="boardNum"><![CDATA[]]></ColumnData>
     </RowData>
     <RowData>
       <ColumnData code="id"><![CDATA[b4733255ded905f487676f5174062769]]></ColumnData>
@@ -114,6 +119,7 @@
       <ColumnData code="testInterval"><![CDATA[4]]></ColumnData>
       <ColumnData code="mouldId"><![CDATA[]]></ColumnData>
       <ColumnData code="mouldNo"><![CDATA[]]></ColumnData>
+      <ColumnData code="boardNum"><![CDATA[]]></ColumnData>
     </RowData>
   </Data>
 </Table>

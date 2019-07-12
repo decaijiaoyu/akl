@@ -218,6 +218,27 @@
           <FileSystemObjectName>bo_akl_MM_insulateRec</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_MM_productionDemand</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_MM_productionDemand</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_MM_productEntryRecode</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_MM_productEntryRecode</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_MM_productDemandClone</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_MM_productDemandClone</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
@@ -280,6 +301,13 @@
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>uploadUpkeepPictureSign</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>firstWeekOfYear</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>firstWeekOfYear</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EntityGraphConfig version="2.0">
+  <Graphs>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>weekSelect</Code>
+      <Top>70</Top>
+      <Left>641</Left>
+      <Width>172</Width>
+      <Height>85</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_productEntryRecode</Code>
+      <Top>66</Top>
+      <Left>385</Left>
+      <Width>212</Width>
+      <Height>215</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>firstWeekOfYear</Code>
+      <Top>346</Top>
+      <Left>63</Left>
+      <Width>132</Width>
+      <Height>107</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_productEntryRecode_1</Code>
+      <Top>311.095276</Top>
+      <Left>335</Left>
+      <Width>212</Width>
+      <Height>215</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_productionDemand</Code>
+      <Top>65</Top>
+      <Left>74</Left>
+      <Width>245</Width>
+      <Height>232</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_productDemandClone</Code>
+      <Top>176</Top>
+      <Left>607</Left>
+      <Width>245</Width>
+      <Height>232</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+  </Graphs>
+</EntityGraphConfig>

@@ -70,4 +70,5 @@
   <menuItem code="form_removeInsulateHandle3" name="让步接受处理" isDisabled="false" type="0" ruleName="" windowCode="form_removeInsulateHandle3" parameters="" />
   <menuItem code="form_removeInsulateHandle4" name="不良品确认不合格处理" isDisabled="false" type="0" ruleName="" windowCode="form_removeInsulateHandle4" parameters="" />
   <menuItem code="form_printHalfProLabel" name="打印半成品标签" isDisabled="false" type="0" ruleName="" windowCode="form_printProductLabel2" parameters="" />
+  <menuItem code="from_productqx" name="生产需求维护" isDisabled="false" type="0" ruleName="" windowCode="form_productionDemand" parameters="" />
 </dir>

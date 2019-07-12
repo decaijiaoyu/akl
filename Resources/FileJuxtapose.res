@@ -40,4 +40,5 @@
   <FileReference code="Fileno_25" Filename="载具检查项维护.xlsx" ParentDirFullName="" Desc="" Dimension="" FileSize="9.74" FileFullname="载具检查项维护.xlsx" Updator="user_20180828002" UpdateFileDate="01/23/2019 15:58:00" />
   <FileReference code="Fileno" Filename="客户信息.xlsx" ParentDirFullName="" Desc="" Dimension="" FileSize="18.50" FileFullname="客户信息.xlsx" Updator="liub" UpdateFileDate="05/15/2019 18:12:02" />
   <FileReference code="Fileno_27" Filename="维保人信息.xlsx" ParentDirFullName="" Desc="" Dimension="" FileSize="9.42" FileFullname="维保人信息.xlsx" Updator="user_20190304004" UpdateFileDate="07/04/2019 11:34:29" />
+  <FileReference code="Fileno_28" Filename="生产需求导入模板.xlsx" ParentDirFullName="" Desc="" Dimension="" FileSize="226.66" FileFullname="生产需求导入模板.xlsx" Updator="user_20190304004" UpdateFileDate="07/09/2019 17:34:53" />
 </FileReferences>

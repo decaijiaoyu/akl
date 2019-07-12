@@ -1,0 +1,54 @@
+﻿<form type="1002" code="form_productionDemand" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[1309]]></property>
+    <property name="Height"><![CDATA[499]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form_production_plan_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[生产需求维护]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGPanel BorderStyle="None" Code="Pnl_Fill" Dock="Fill" Height="499" LayoutType="BorderLayout" Left="10" PercentHeight="100%" PercentWidth="98.2%" TabIndex="1" Width="1285">
+      <JGPanel BorderStyle="None" Code="Pnl_Center" Dock="Fill" Height="391" LayoutType="BorderLayout" PercentHeight="78.4%" PercentWidth="100%" TabIndex="5" Top="96" Width="1285">
+        <JGDataGrid ChooseMode="3" Code="JGDataGrid1" Dock="Fill" FetchMode="paged" Height="391" LabelText="列表" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" PercentHeight="100%" PercentWidth="100%" TabIndex="14" TableName="bo_akl_MM_productEntryRecode" Width="1285">
+          <JGComboBoxColumn Code="JGIntegerBoxColumn1" ColumnName="weekNumber" LabelText="周次" TableName="bo_akl_MM_productEntryRecode" Width="200" />
+          <JGDateTimePickerColumn Code="JGDateTimePickerColumn1" ColumnName="beginTime" LabelText="开始时间" TableName="bo_akl_MM_productEntryRecode" Width="318" />
+          <JGDateTimePickerColumn Code="JGDateTimePickerColumn2" ColumnName="endTime" LabelText="结束时间" TableName="bo_akl_MM_productEntryRecode" Width="271" />
+          <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="fettle" LabelText="状态" TableName="bo_akl_MM_productEntryRecode" Width="447" />
+        </JGDataGrid>
+      </JGPanel>
+      <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="96" LayoutType="BorderLayout" PercentHeight="19.2%" PercentWidth="100%" TabIndex="1" Width="1285">
+        <JGButton Code="JGButton7" LabelText="查看生成需求明细" Left="480" OnClick="JGButton7_OnClick" PercentHeight="27.1%" PercentWidth="9.8%" TabIndex="24" Top="45" Width="126" />
+        <JGButton Code="JGButton6" LabelText="生成计划" Left="388" PercentHeight="27.1%" PercentWidth="6%" TabIndex="23" Top="45" Width="77" />
+        <JGButton Code="JGButton5" LabelText="导入" Left="318" OnClick="JGButton2_OnClick_1" PercentHeight="27.1%" PercentWidth="4%" TabIndex="21" Top="45" />
+        <JGAttachment Code="JGAttachment1" LabelText="文件" LabelWidth="40" Left="89" PercentHeight="27.1%" PercentWidth="16.1%" TabIndex="23" Top="45" Width="207" />
+        <JGButton Code="JGButton4" LabelText="下载模板" Left="6" OnClick="JGButton1_OnClick" PercentHeight="27.1%" PercentWidth="6%" TabIndex="10" Top="45" Width="77" />
+        <JGButton Code="JGButton3" LabelText="保存" Left="837" OnClick="JGButton4_OnClick_1" PercentHeight="27.1%" PercentWidth="4%" TabIndex="24" Top="13" />
+        <JGButton BackColor="255, 0, 0" Code="JGButton2" LabelText="删除" Left="779" OnClick="JGButton5_OnClick" PercentHeight="27.1%" PercentWidth="4%" TabIndex="10" Top="13" />
+        <JGButton Code="JGButton1" LabelText="新增" Left="715" OnClick="JGButton6_OnClick" PercentHeight="27.1%" PercentWidth="4%" TabIndex="25" Top="13" />
+        <JGTextBox Code="JGTextBox1" ColumnName="weekNumber" LabelText="周次" LabelWidth="35" Left="567" PercentHeight="27.1%" PercentWidth="10.6%" TabIndex="24" TableName="bo_akl_MM_productEntryRecode_1" TextLength="50" Top="13" Width="136" />
+        <JGDateTimePicker Code="JGDateTimePicker3" ColumnName="endTime" LabelText="至" LabelWidth="20" Left="417" PercentHeight="27.1%" PercentWidth="10.7%" ReadOnly="True" TabIndex="30" TableName="bo_akl_MM_productEntryRecode_1" Top="13" Width="138" />
+        <JGDateTimePicker Code="JGDateTimePicker2" ColumnName="beginTime" LabelText="" LabelWidth="10" Left="253" OnValueChanged="JGDateTimePicker1_OnValueChanged" PercentHeight="27.1%" PercentWidth="11.8%" TabIndex="29" TableName="bo_akl_MM_productEntryRecode_1" Top="13" Width="152" />
+        <JGDateTimePicker Code="JGDateTimePicker1" ColumnName="firstDate" LabelText="第一周第一天" Left="6" OnValueChanged="JGDateTimePicker3_OnValueChanged" PercentHeight="27.1%" PercentWidth="18.3%" TabIndex="23" TableName="firstWeekOfYear" Top="13" />
+      </JGPanel>
+      <JGPanel BorderStyle="None" Code="Pnl_Bottom" Dock="Bottom" Height="12" LayoutType="BorderLayout" PercentHeight="2.4%" PercentWidth="100%" TabIndex="1" Top="487" Width="1285" />
+    </JGPanel>
+    <JGPanel BorderStyle="None" Code="Pnl_Left" Dock="Left" Height="499" LayoutType="BorderLayout" PercentHeight="100%" PercentWidth="0.9%" TabIndex="1" Width="12" />
+    <JGPanel BorderStyle="None" Code="Pnl_Right" Dock="Right" Height="499" LayoutType="BorderLayout" Left="1297" PercentHeight="100%" PercentWidth="0.9%" TabIndex="1" Width="12">
+      <JGLabel Code="Lab_Help" Dock="Top" FontStyle="微软雅黑, 6.75pt" LabelText="" PercentHeight="4.8%" PercentWidth="100%" TabIndex="7" ToolTip="&quot;帮助&quot;" Width="12" />
+      <JGLabel Code="Lab_Info" Dock="Bottom" FontStyle="微软雅黑, 6.75pt" LabelText="" PercentHeight="4.8%" PercentWidth="100%" TabIndex="6" ToolTip="&quot;获取当前窗口信息&quot;" Top="475" Width="12" />
+    </JGPanel>
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

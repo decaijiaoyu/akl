@@ -48,7 +48,7 @@
       <JGButton Code="JGButton13" LabelText="休息重启" Left="327" OnClick="JGButton13_OnClick" PercentHeight="33.3%" PercentWidth="6.6%" TabIndex="24" Top="42" Width="77" />
       <JGButton Code="JGButton12" Enabled="False" LabelText="过程样品点检" Left="902" OnClick="JGButton12_OnClick" PercentHeight="33.3%" PercentWidth="8.7%" TabIndex="23" Top="41" Visible="False" Width="102" />
       <JGButton Code="JGButton9" LabelText="历史数据" Left="684" OnClick="JGButton9_OnClick" PercentHeight="33.3%" PercentWidth="6.6%" TabIndex="1407" Top="10" Width="77" />
-      <JGButton Code="JGButton2" LabelText="开线" Left="20" OnClick="JGButton2_OnClick" PercentHeight="33.3%" PercentWidth="4.4%" TabIndex="1400" Top="10" />
+      <JGButton Code="JGButton2" LabelText="开线" Left="20" OnClick="JGButton2_OnClick" PercentHeight="33.3%" PercentWidth="5%" TabIndex="1400" Top="10" Width="59" />
       <JGButton Code="JGButton7" LabelText="查看拉力测试" Left="244" OnClick="JGButton4_OnClick" PercentHeight="33.3%" PercentWidth="8.7%" TabIndex="1403" Top="10" Width="102" />
       <JGButton Code="JGButton1" Enabled="False" LabelText="员工点检" Left="78" OnClick="JGButton1_OnClick" PercentHeight="33.3%" PercentWidth="6.6%" TabIndex="1401" Top="10" Width="77" />
       <JGButton BackColor="255, 0, 0" Code="JGButton4" LabelText="删除" Left="626" OnClick="JGButton4_OnClick_1" PercentHeight="33.3%" PercentWidth="4.4%" TabIndex="1406" Top="10" Visible="False" />

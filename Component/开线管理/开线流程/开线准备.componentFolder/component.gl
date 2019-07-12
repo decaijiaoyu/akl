@@ -2,6 +2,7 @@
 <Methods>
   <Method MethodDir="WindowMethod" FileName="lineStart_lineReady_FormLoadAction.method" Code="lineStart_lineReady_FormLoadAction" Name="窗体加载事件" />
   <Method MethodDir="ControlMethod" FileName="deleteButton_OnClick.method" Code="deleteButton_OnClick" Name="删除开机检测项按钮" />
+  <Method MethodDir="ControlMethod" FileName="getBatch.method" Code="getBatch" Name="获取默认批次号" />
   <Method MethodDir="ControlMethod" FileName="JGBaseDictBox1_OnValueChanged.method" Code="JGBaseDictBox1_OnValueChanged" Name="启动类型值改变事件" />
   <Method MethodDir="ControlMethod" FileName="JGBaseDictBox1_OpenModuleAction.method" Code="JGBaseDictBox1_OpenModuleAction" Name="启动类型链接事件" />
   <Method MethodDir="ControlMethod" FileName="JGBaseDictBox2_OpenModuleAction.method" Code="JGBaseDictBox2_OpenModuleAction" Name="巡检员_链接事件" />

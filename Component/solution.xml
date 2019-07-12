@@ -2,13 +2,13 @@
 <NavigationInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Nodes>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\人员管理</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\人员管理</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>人员管理</FileSystemObjectName>
       <SubNodes>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\人员管理\考核记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\人员管理\考核记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>考核记录</FileSystemObjectName>
@@ -79,7 +79,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\人员管理\培训记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\人员管理\培训记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>培训记录</FileSystemObjectName>
@@ -164,7 +164,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\人员管理\维护岗位性质</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\人员管理\维护岗位性质</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>维护岗位性质</FileSystemObjectName>
@@ -186,7 +186,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\人员管理\维护技能培训内容</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\人员管理\维护技能培训内容</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>维护技能培训内容</FileSystemObjectName>
@@ -222,7 +222,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\人员管理\维护通用培训内容</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\人员管理\维护通用培训内容</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>维护通用培训内容</FileSystemObjectName>
@@ -251,7 +251,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\人员管理\维护员工信息</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\人员管理\维护员工信息</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>维护员工信息</FileSystemObjectName>
@@ -303,13 +303,13 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>开线管理</FileSystemObjectName>
       <SubNodes>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\开机检测项维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\开机检测项维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>开机检测项维护</FileSystemObjectName>
@@ -338,7 +338,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\拉力测试维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\拉力测试维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>拉力测试维护</FileSystemObjectName>
@@ -388,7 +388,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\样品点检维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\样品点检维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>样品点检维护</FileSystemObjectName>
@@ -431,7 +431,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\启动类型维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\启动类型维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>启动类型维护</FileSystemObjectName>
@@ -453,7 +453,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\反控点维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\反控点维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>反控点维护</FileSystemObjectName>
@@ -482,7 +482,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\开线流程</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\开线流程</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>开线流程</FileSystemObjectName>
@@ -826,7 +826,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\PLC反向控制停机原因维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\PLC反向控制停机原因维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>PLC反向控制停机原因维护</FileSystemObjectName>
@@ -848,7 +848,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\生产时间维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\生产时间维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>生产时间维护</FileSystemObjectName>
@@ -884,7 +884,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\异常解冻维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\异常解冻维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>异常解冻维护</FileSystemObjectName>
@@ -906,7 +906,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\参数点检维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\参数点检维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>参数点检维护</FileSystemObjectName>
@@ -949,7 +949,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\确认不良品</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\确认不良品</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>确认不良品</FileSystemObjectName>
@@ -985,7 +985,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\开线管理\不良原因标示</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\不良原因标示</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>不良原因标示</FileSystemObjectName>
@@ -1016,13 +1016,13 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>设备管理</FileSystemObjectName>
       <SubNodes>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\产线信息</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\产线信息</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>产线信息</FileSystemObjectName>
@@ -1079,7 +1079,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\点检记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\点检记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>点检记录</FileSystemObjectName>
@@ -1143,7 +1143,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\客户信息</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\客户信息</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>客户信息</FileSystemObjectName>
@@ -1172,7 +1172,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\量检具校准记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\量检具校准记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>量检具校准记录</FileSystemObjectName>
@@ -1201,7 +1201,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\设备信息</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\设备信息</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>设备信息</FileSystemObjectName>
@@ -1307,7 +1307,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\维修保养记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\维修保养记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>维修保养记录</FileSystemObjectName>
@@ -1406,7 +1406,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\项目信息</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\项目信息</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>项目信息</FileSystemObjectName>
@@ -1435,7 +1435,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\载具检测记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\载具检测记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>载具检测记录</FileSystemObjectName>
@@ -1499,7 +1499,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\作业指导书</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\作业指导书</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>作业指导书</FileSystemObjectName>
@@ -1528,7 +1528,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\产品信息维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\产品信息维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>产品信息维护</FileSystemObjectName>
@@ -1585,7 +1585,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\维护模具日常检查项</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\维护模具日常检查项</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>维护模具日常检查项</FileSystemObjectName>
@@ -1607,7 +1607,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\维护模具寿命检查项</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\维护模具寿命检查项</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>维护模具寿命检查项</FileSystemObjectName>
@@ -1629,7 +1629,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\模具日常保养记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\模具日常保养记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>模具日常保养记录</FileSystemObjectName>
@@ -1672,7 +1672,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\模具寿命保养记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\模具寿命保养记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>模具寿命保养记录</FileSystemObjectName>
@@ -1701,7 +1701,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\公共设备保养记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\公共设备保养记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>公共设备保养记录</FileSystemObjectName>
@@ -1730,7 +1730,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\设备管理\信息设备保养记录</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\信息设备保养记录</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>信息设备保养记录</FileSystemObjectName>
@@ -1761,7 +1761,7 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\数据报表</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\数据报表</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>数据报表</FileSystemObjectName>
@@ -1804,7 +1804,7 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\其他</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\其他</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>其他</FileSystemObjectName>
@@ -1833,7 +1833,7 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\test</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\test</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>test</FileSystemObjectName>
@@ -1876,13 +1876,13 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\标签管理</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\标签管理</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>标签管理</FileSystemObjectName>
       <SubNodes>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\标签管理\产品标签打印</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\标签管理\产品标签打印</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>产品标签打印</FileSystemObjectName>
@@ -1953,7 +1953,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\标签管理\来料标签打印</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\标签管理\来料标签打印</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>来料标签打印</FileSystemObjectName>
@@ -2010,7 +2010,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\标签管理\仓库标签打印</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\标签管理\仓库标签打印</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>仓库标签打印</FileSystemObjectName>
@@ -2046,7 +2046,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\标签管理\卡板标签打印</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\标签管理\卡板标签打印</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>卡板标签打印</FileSystemObjectName>
@@ -2096,7 +2096,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\标签管理\退料标签打印</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\标签管理\退料标签打印</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>退料标签打印</FileSystemObjectName>
@@ -2118,7 +2118,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\标签管理\半成品标签打印</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\标签管理\半成品标签打印</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>半成品标签打印</FileSystemObjectName>
@@ -2170,13 +2170,13 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\物料管理</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>物料管理</FileSystemObjectName>
       <SubNodes>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\物料管理\物料信息维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理\物料信息维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>物料信息维护</FileSystemObjectName>
@@ -2205,7 +2205,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\物料管理\BOM维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理\BOM维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>BOM维护</FileSystemObjectName>
@@ -2220,7 +2220,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\物料管理\库存信息</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理\库存信息</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>库存信息</FileSystemObjectName>
@@ -2270,7 +2270,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\物料管理\出库信息</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理\出库信息</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>出库信息</FileSystemObjectName>
@@ -2313,7 +2313,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\物料管理\入库信息</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理\入库信息</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>入库信息</FileSystemObjectName>
@@ -2377,7 +2377,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\物料管理\仓库类型维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理\仓库类型维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>仓库类型维护</FileSystemObjectName>
@@ -2392,7 +2392,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\物料管理\仓库看板</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理\仓库看板</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>仓库看板</FileSystemObjectName>
@@ -2414,7 +2414,7 @@
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\物料管理\解除隔离</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理\解除隔离</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>解除隔离</FileSystemObjectName>
@@ -2557,13 +2557,13 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\生产计划</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\生产计划</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>生产计划</FileSystemObjectName>
       <SubNodes>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\生产计划\生产计划维护</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\生产计划\生产计划维护</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>生产计划维护</FileSystemObjectName>
@@ -2612,16 +2612,66 @@
             </NavigationNode>
           </SubNodes>
         </NavigationNode>
+        <NavigationNode>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\生产计划\生产需求维护</Code>
+          <NodeType>Folder</NodeType>
+          <FileSystemObjectType>Directory</FileSystemObjectType>
+          <FileSystemObjectName>生产需求维护</FileSystemObjectName>
+          <SubNodes>
+            <NavigationNode>
+              <Code>form_productionDemand</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>生产需求维护</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form9</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>生产需求明细维护</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form10</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>生产需求明细新增</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form11</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>选择项目</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form12</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>选择产品</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form13</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>选择客户</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+          </SubNodes>
+        </NavigationNode>
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\追溯管理</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\追溯管理</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>追溯管理</FileSystemObjectName>
       <SubNodes>
         <NavigationNode>
-          <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\追溯管理\物料追溯</Code>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\追溯管理\物料追溯</Code>
           <NodeType>Folder</NodeType>
           <FileSystemObjectType>Directory</FileSystemObjectType>
           <FileSystemObjectName>物料追溯</FileSystemObjectName>
@@ -2666,7 +2716,7 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
-      <Code>D:\项目\爱珂勒\爱珂勒LMES\lmes\Component\移动端</Code>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\移动端</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>移动端</FileSystemObjectName>

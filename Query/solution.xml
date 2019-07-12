@@ -457,5 +457,19 @@
       <FileSystemObjectName>getCusByproLine</FileSystemObjectName>
       <SubNodes />
     </NavigationNode>
+    <NavigationNode>
+      <Code>selectProjectProduct</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>selectProjectProduct</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>selectProDemand</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>selectProDemand</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
   </Nodes>
 </NavigationInfo>
