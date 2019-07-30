@@ -3,7 +3,7 @@
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-04-08 10:41:24]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-04-08 10:53:27]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-07-12 10:33:41]]></ModificationTime>
   <VSql><![CDATA[SELECT b.* from bo_akl_line_start b,bo_akl_MM_materialInfo k where k.materialNo=b.equName and k.materialType='成品' and b.state='物料确认']]></VSql>
   <Columns>
     <Column id="Column_0" code="id" name="" dataType="char" length="" precision="">

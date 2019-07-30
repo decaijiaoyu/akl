@@ -3,10 +3,10 @@
   <Graphs>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_MM_materialInfo</Code>
+      <Code>bo_akl_MM_materialInfo_old</Code>
       <Top>100</Top>
-      <Left>20</Left>
-      <Width>291</Width>
+      <Left>331.0001</Left>
+      <Width>355</Width>
       <Height>287</Height>
       <Background />
       <BorderColor />
@@ -16,11 +16,11 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_MM_materialInfo_old</Code>
+      <Code>bo_akl_MM_materialInfo</Code>
       <Top>100</Top>
-      <Left>331.0001</Left>
-      <Width>355</Width>
-      <Height>287</Height>
+      <Left>20</Left>
+      <Width>291</Width>
+      <Height>327</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

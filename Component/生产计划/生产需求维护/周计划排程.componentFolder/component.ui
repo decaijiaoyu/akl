@@ -1,0 +1,42 @@
+﻿<form type="1002" code="form18" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[1163]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form18_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[周计划排程]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGDataGrid Code="JGDataGrid1" Height="326" LabelText="列表" Left="3" PercentHeight="72.4%" PercentWidth="99%" TabIndex="0" TableName="bo_akl_MM_weeklyplan_schedule" Top="60" Width="1151">
+      <JGDateTimePickerColumn Code="JGDateTimePickerColumn1" ColumnName="productPlan_time" DisplayFormat="&lt;DisplayFormat&gt;&lt;Num Type='7'&gt;&lt;Index&gt;M月d日|4&lt;/Index&gt;&lt;Format&gt;M月d日&lt;/Format&gt;&lt;/Num&gt;&lt;/DisplayFormat&gt;" LabelText="计划生产时间" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="demand" LabelText="客户需求" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn2" ColumnName="newWaterLevel" LabelText="初期新水位" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn3" ColumnName="maxActiveBoard" LabelText="激活看板（最大）" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn4" ColumnName="maxActiveBoardNum" LabelText="激活看板张数（最大）" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn5" ColumnName="minActiveBoard" LabelText="激活看板（最小）" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn6" ColumnName="minActiveBoardNum" LabelText="激活看板张数（最小）" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn7" ColumnName="productPlanNum" LabelText="计划产出" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn8" ColumnName="boardSchedule" LabelText="看板排程" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn9" ColumnName="planLastWaterLevel" LabelText="计划期末新水位" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="sequence" LabelText="7天中的第几天" TableName="bo_akl_MM_weeklyplan_schedule" />
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="prNo" LabelText="P/N产品型号" TableName="bo_akl_MM_weeklyplan_schedule" />
+    </JGDataGrid>
+  </controls>
+  <outputs />
+  <inputs>
+    <variable code="summaryId" name="汇总表id" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+  </inputs>
+  <remark><![CDATA[]]></remark>
+</form>

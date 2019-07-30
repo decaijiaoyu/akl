@@ -3,7 +3,7 @@
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-06-28 15:59:58]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-07-11 20:09:29]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-07-22 17:18:37]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -77,6 +77,22 @@
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
+    <Column id="6985f64c3a4e45428616f325429dfd48" code="boardMax" name="最大看板数量" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="6eadf942bb72429ca21c8bf06bf6dd6f" code="boardMin" name="最小看板数量" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="5529136e453c4397895c94d3d2908adc" code="OEE" name="目标OEE" domain="" dataType="number" length="50" precision="4" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="20bac774a8b24d2ca0f1a27ced189c26" code="minCompletionRate" name="最小完成率" domain="" dataType="number" length="50" precision="4" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
   </Columns>
   <Indexes />
   <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
@@ -100,6 +116,10 @@
       <ColumnData code="mouldId"><![CDATA[]]></ColumnData>
       <ColumnData code="mouldNo"><![CDATA[]]></ColumnData>
       <ColumnData code="boardNum"><![CDATA[]]></ColumnData>
+      <ColumnData code="boardMax"><![CDATA[]]></ColumnData>
+      <ColumnData code="boardMin"><![CDATA[]]></ColumnData>
+      <ColumnData code="OEE"><![CDATA[]]></ColumnData>
+      <ColumnData code="minCompletionRate"><![CDATA[]]></ColumnData>
     </RowData>
     <RowData>
       <ColumnData code="id"><![CDATA[b4733255ded905f487676f5174062769]]></ColumnData>
@@ -120,6 +140,10 @@
       <ColumnData code="mouldId"><![CDATA[]]></ColumnData>
       <ColumnData code="mouldNo"><![CDATA[]]></ColumnData>
       <ColumnData code="boardNum"><![CDATA[]]></ColumnData>
+      <ColumnData code="boardMax"><![CDATA[]]></ColumnData>
+      <ColumnData code="boardMin"><![CDATA[]]></ColumnData>
+      <ColumnData code="OEE"><![CDATA[]]></ColumnData>
+      <ColumnData code="minCompletionRate"><![CDATA[]]></ColumnData>
     </RowData>
   </Data>
 </Table>

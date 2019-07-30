@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2019-04-08 14:28:12]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2019-04-08 14:35:08]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-07-12 10:33:42]]></ModificationTime>
   <VSql><![CDATA[select mi.materialNo,mi.unit,
 st1.stockType,osi.outstocknum,osi.batchNo,osi.operatorName,osi.operateTime,osi.remark,qq.qrCodeInfo from bo_akl_MM_outStockInfo_QRCode qq
 left join bo_akl_MM_outStockInfo as osi on qq.outStockInfoId=osi.id

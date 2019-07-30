@@ -17,9 +17,9 @@
     <property name="RefResources"><![CDATA[]]></property>
   </propertys>
   <controls>
+    <JGIntegerBox Code="JGIntegerBox1" ColumnName="quantity" LabelText="需求数量" Left="28" PercentHeight="6.8%" PercentWidth="82.1%" TabIndex="6" TableName="bo_akl_MM_productionDemand" Top="234" Width="288" />
     <JGLabel Code="JGLabel1" FontStyle="微软雅黑, 14.25pt, style=Bold" Height="35" LabelText="生产需求明细" Left="100" PercentHeight="9.2%" PercentWidth="37.3%" TabIndex="9" Top="33" Width="131" />
     <JGButton Code="JGButton1" LabelText="保存" Left="122" OnClick="JGButton1_OnClick" PercentHeight="6.8%" PercentWidth="22.8%" TabIndex="7" Top="328" Width="80" />
-    <JGIntegerBox Code="JGIntegerBox1" ColumnName="quantity" LabelText="需求数量" Left="28" PercentHeight="6.8%" PercentWidth="82.1%" TabIndex="5" TableName="bo_akl_MM_productionDemand" Top="228" Value="0" Width="288" />
     <JGDateTimePicker Code="JGDateTimePicker1" ColumnName="shippingDate" LabelText="发货日期" Left="28" PercentHeight="6.8%" PercentWidth="82.1%" TabIndex="4" TableName="bo_akl_MM_productionDemand" Top="272" Width="288" />
     <JGBaseDictBox Code="JGBaseDictBox3" ColumnName="partNo" IDColumnName="partNo" LabelText="生产产品" Left="28" OpenModuleAction="JGBaseDictBox3_OpenModuleAction" PercentHeight="6.8%" PercentWidth="82.1%" TabIndex="2" TableName="bo_akl_MM_productionDemand" Top="186" Width="288" />
     <JGBaseDictBox Code="JGBaseDictBox2" ColumnName="term" IDColumnName="term" LabelText="项目" Left="28" OpenModuleAction="JGBaseDictBox2_OpenModuleAction" PercentHeight="6.8%" PercentWidth="82.1%" TabIndex="1" TableName="bo_akl_MM_productionDemand" Top="144" Width="288" />

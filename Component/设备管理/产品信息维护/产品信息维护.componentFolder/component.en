@@ -77,166 +77,6 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_productInfo" Name="成品信息维护" EntityType="" TableOrQueryCode="">
-      <Columns>
-        <Column>
-          <Code>id</Code>
-          <Name></Name>
-          <DataType>char</DataType>
-          <Length>128</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>prName</Code>
-          <Name>产品名称</Name>
-          <DataType>char</DataType>
-          <Length>128</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>prLine</Code>
-          <Name>所属产线</Name>
-          <DataType>char</DataType>
-          <Length>128</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>pid</Code>
-          <Name>产线id</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>prNo</Code>
-          <Name>产品型号</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>prNoFor</Code>
-          <Name>型号简称</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>remark</Code>
-          <Name>备注</Name>
-          <DataType>char</DataType>
-          <Length>1000</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>standardWorkingHours</Code>
-          <Name>标准工时</Name>
-          <DataType>number</DataType>
-          <Length>50</Length>
-          <Precision>4</Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>prNameb</Code>
-          <Name>产品名称2</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>prNamec</Code>
-          <Name>产品名称3</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>prNamed</Code>
-          <Name>产品名称4</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>standardProductivity</Code>
-          <Name>标准生产力</Name>
-          <DataType>integer</DataType>
-          <Length>50</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>boxPartsNum</Code>
-          <Name>每箱零件数</Name>
-          <DataType>integer</DataType>
-          <Length>50</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>testNum</Code>
-          <Name>数量要求</Name>
-          <DataType>integer</DataType>
-          <Length>50</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>testInterval</Code>
-          <Name>测试间隔</Name>
-          <DataType>number</DataType>
-          <Length>50</Length>
-          <Precision>1</Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>mouldId</Code>
-          <Name>模具Id</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>mouldNo</Code>
-          <Name>模具编号</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-      </Columns>
-      <Events>
-        <EntityEvent Code="OnLoaded" Value="" />
-      </Events>
-    </Entity>
     <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_EquipmentInformation" Name="设备信息" EntityType="" TableOrQueryCode="">
       <Columns>
         <Column>
@@ -269,6 +109,130 @@
         <Column>
           <Code>equipName</Code>
           <Name>设备名称</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_productInfo_ws" Name="产品工站信息" EntityType="" TableOrQueryCode="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>pNo</Code>
+          <Name>产品编号</Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>pName</Code>
+          <Name>产品名称</Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>wsNo</Code>
+          <Name>工站编号</Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>workEName</Code>
+          <Name>作业内容英文</Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>workCName</Code>
+          <Name>作业内容中文</Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>pNature</Code>
+          <Name>岗位性质(id)</Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>isReal</Code>
+          <Name>是否虚拟工站</Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>isAutomatic</Code>
+          <Name>是否自动工站</Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>bookName</Code>
+          <Name>作业指导书名称</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>vwsNature</Code>
+          <Name>虚拟工站性质</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>pNatureName</Code>
+          <Name>岗位性质</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>bookVersion</Code>
+          <Name>作业指导书版本</Name>
           <DataType>char</DataType>
           <Length>255</Length>
           <Precision></Precision>
@@ -435,10 +399,46 @@
           <DefaultValue></DefaultValue>
           <Expression></Expression>
         </Column>
+        <Column>
+          <Code>boardNum</Code>
+          <Name>系统看板大小</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>boardMax</Code>
+          <Name>最大看板数量</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>boardMin</Code>
+          <Name>最小看板数量</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>OEE</Code>
+          <Name>目标OEE</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_productInfo_ws" Name="产品工站信息" EntityType="" TableOrQueryCode="">
+    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_productInfo" Name="成品信息维护" EntityType="" TableOrQueryCode="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -450,16 +450,7 @@
           <Expression></Expression>
         </Column>
         <Column>
-          <Code>pNo</Code>
-          <Name>产品编号</Name>
-          <DataType>char</DataType>
-          <Length>128</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>pName</Code>
+          <Code>prName</Code>
           <Name>产品名称</Name>
           <DataType>char</DataType>
           <Length>128</Length>
@@ -468,8 +459,8 @@
           <Expression></Expression>
         </Column>
         <Column>
-          <Code>wsNo</Code>
-          <Name>工站编号</Name>
+          <Code>prLine</Code>
+          <Name>所属产线</Name>
           <DataType>char</DataType>
           <Length>128</Length>
           <Precision></Precision>
@@ -477,53 +468,8 @@
           <Expression></Expression>
         </Column>
         <Column>
-          <Code>workEName</Code>
-          <Name>作业内容英文</Name>
-          <DataType>char</DataType>
-          <Length>128</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>workCName</Code>
-          <Name>作业内容中文</Name>
-          <DataType>char</DataType>
-          <Length>128</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>pNature</Code>
-          <Name>岗位性质(id)</Name>
-          <DataType>char</DataType>
-          <Length>128</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>isReal</Code>
-          <Name>是否虚拟工站</Name>
-          <DataType>char</DataType>
-          <Length>128</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>isAutomatic</Code>
-          <Name>是否自动工站</Name>
-          <DataType>char</DataType>
-          <Length>128</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>bookName</Code>
-          <Name>作业指导书名称</Name>
+          <Code>pid</Code>
+          <Name>产线id</Name>
           <DataType>char</DataType>
           <Length>255</Length>
           <Precision></Precision>
@@ -531,8 +477,8 @@
           <Expression></Expression>
         </Column>
         <Column>
-          <Code>vwsNature</Code>
-          <Name>虚拟工站性质</Name>
+          <Code>prNo</Code>
+          <Name>产品型号</Name>
           <DataType>char</DataType>
           <Length>255</Length>
           <Precision></Precision>
@@ -540,8 +486,8 @@
           <Expression></Expression>
         </Column>
         <Column>
-          <Code>pNatureName</Code>
-          <Name>岗位性质</Name>
+          <Code>prNoFor</Code>
+          <Name>型号简称</Name>
           <DataType>char</DataType>
           <Length>255</Length>
           <Precision></Precision>
@@ -549,13 +495,148 @@
           <Expression></Expression>
         </Column>
         <Column>
-          <Code>bookVersion</Code>
-          <Name>作业指导书版本</Name>
+          <Code>remark</Code>
+          <Name>备注</Name>
+          <DataType>char</DataType>
+          <Length>1000</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>standardWorkingHours</Code>
+          <Name>标准工时</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>prNameb</Code>
+          <Name>产品名称2</Name>
           <DataType>char</DataType>
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
           <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>prNamec</Code>
+          <Name>产品名称3</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>prNamed</Code>
+          <Name>产品名称4</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>standardProductivity</Code>
+          <Name>标准生产力</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>boxPartsNum</Code>
+          <Name>每箱零件数</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>testNum</Code>
+          <Name>数量要求</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>testInterval</Code>
+          <Name>测试间隔</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>1</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>mouldId</Code>
+          <Name>模具Id</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>mouldNo</Code>
+          <Name>模具编号</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>boardNum</Code>
+          <Name>系统看板大小</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>boardMax</Code>
+          <Name>最大看板数量</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>boardMin</Code>
+          <Name>最小看板数量</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>OEE</Code>
+          <Name>目标OEE</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>minCompletionRate</Code>
+          <Name>最小完成率</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
         </Column>
       </Columns>
       <Events>

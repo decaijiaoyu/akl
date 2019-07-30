@@ -15,6 +15,7 @@
   <Method MethodDir="ComponentServerMethod" FileName="mouldDayCheckFinish.method" Code="mouldDayCheckFinish" Name="模具日常保养任务是否完成" />
   <Method MethodDir="ComponentServerMethod" FileName="mouldLifeAlert.method" Code="mouldLifeAlert" Name="模具寿命警报" />
   <Method MethodDir="ComponentServerMethod" FileName="nightEquCheckFinish.method" Code="nightEquCheckFinish" Name="每天晚班设备点检任务是否完成" />
+  <Method MethodDir="ComponentServerMethod" FileName="productPlanMonitor.method" Code="productPlanMonitor" Name="生产计划监控" />
   <Method MethodDir="ComponentServerMethod" FileName="pullTest.method" Code="pullTest" Name="拉力测试任务推送" />
   <Method MethodDir="ComponentServerMethod" FileName="rds_setsql.method" Code="rds_setsql" Name="" />
   <Method MethodDir="ComponentServerMethod" FileName="resetCheck.method" Code="resetCheck" Name="手动复位超时检查" />
@@ -28,6 +29,7 @@
   <Method MethodDir="ComponentServerMethod" FileName="tpm_publicEquUpkeep.method" Code="tpm_publicEquUpkeep" Name="公共设备保养任务推送" />
   <Method MethodDir="ComponentServerMethod" FileName="tpm_wb.method" Code="tpm_wb" Name="TPM_产线设备维保" />
   <Method MethodDir="ComponentServerMethod" FileName="updateNextPullTestTime.method" Code="updateNextPullTestTime" Name="更新下次拉力测试时间" />
+  <Method MethodDir="ComponentServerMethod" FileName="updateProductPlan.method" Code="updateProductPlan" Name="定时更新生产计划" />
   <Method MethodDir="ComponentServerMethod" FileName="waterLevelReminder.method" Code="waterLevelReminder" Name="水位提醒" />
   <Method MethodDir="ComponentServerMethod" FileName="weekEquCheckFinish.method" Code="weekEquCheckFinish" Name="每周设备点检任务是否完成" />
   <MethodFolder MethodDir="ComponentServerMethod" Name="machineAPI" ChineseName="machineAPI" Remark="" />

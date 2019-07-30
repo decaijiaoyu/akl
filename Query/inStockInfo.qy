@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[user_20180828002]]></Creator>
   <CreationTime><![CDATA[2018-11-21 11:11:26]]></CreationTime>
-  <Modifier><![CDATA[user_20180828002]]></Modifier>
-  <ModificationTime><![CDATA[2019-01-18 16:11:59]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-07-12 10:33:41]]></ModificationTime>
   <VSql><![CDATA[select mi.materialNo,mi.unit,
 st1.stockType,isi.* from bo_akl_MM_inStockInfo as isi 
 left join bo_akl_MM_materialInfo as mi on isi.materialId=mi.id

@@ -1,0 +1,39 @@
+﻿<form type="1002" code="form28" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[960]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form28_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[看板排程]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton3" LabelText="修改" Left="464" OnClick="JGButton3_OnClick" PercentHeight="5.8%" PercentWidth="5.4%" TabIndex="9" Top="32" />
+    <JGTextBox Code="JGTextBox1" LabelText="审批意见" Left="108" PercentHeight="5.8%" PercentWidth="34.6%" TabIndex="8" Top="32" Width="332" />
+    <JGButton Code="JGButton2" Height="38" LabelText="审核通过" Left="835" OnClick="JGButton2_OnClick" PercentHeight="8.4%" PercentWidth="12.4%" TabIndex="7" Top="20" Width="119" />
+    <JGButton Code="JGButton1" Height="38" LabelText="审批不通过" Left="3" OnClick="JGButton1_OnClick" PercentHeight="8.4%" PercentWidth="9.4%" TabIndex="6" Top="20" Width="90" />
+    <JGDataGrid Code="JGDataGrid1" Height="372" LabelText="列表" PercentHeight="82.7%" PercentWidth="99.4%" TabIndex="0" TableName="bo_akl_MM_boardSchedule" Top="66" Width="954">
+      <JGDateTimePickerColumn Code="JGDateTimePickerColumn1" ColumnName="createdDate" LabelText="创建时间" TableName="bo_akl_MM_boardSchedule" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="depleteHour" LabelText="耗时" TableName="bo_akl_MM_boardSchedule" />
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="prLine" LabelText="产线" TableName="bo_akl_MM_boardSchedule" />
+      <JGDateTimePickerColumn Code="JGDateTimePickerColumn2" ColumnName="productDate" LabelText="生产日期" TableName="bo_akl_MM_boardSchedule" />
+      <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="prNo" LabelText="产品" TableName="bo_akl_MM_boardSchedule" />
+    </JGDataGrid>
+  </controls>
+  <outputs />
+  <inputs>
+    <variable code="recodeId" name="导入记录id" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+  </inputs>
+  <remark><![CDATA[]]></remark>
+</form>

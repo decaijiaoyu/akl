@@ -3,7 +3,7 @@
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-04-03 17:42:55]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-04-03 18:11:41]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-07-12 10:33:40]]></ModificationTime>
   <VSql><![CDATA[select bo_akl_MM_materialInfo.materialType as materialType,bo_akl_line_start.id as id,bo_akl_line_start.prolineName as prolineName,bo_akl_line_start.prolineId as prolineId,bo_akl_line_start.equName as equName,bo_akl_line_start.equId as equId,bo_akl_line_start.planCode as planCode,bo_akl_line_start.planId as planId,bo_akl_line_start.state as state,bo_akl_line_start.startTime as startTime,bo_akl_line_start.startClasses as startClasses,bo_akl_line_start.batchNum as batchNum,bo_akl_line_start.boxPartsNum as boxPartsNum from bo_akl_MM_materialInfo bo_akl_MM_materialInfo inner join bo_akl_line_start bo_akl_line_start on  bo_akl_line_start.equName = bo_akl_MM_materialInfo.materialNo]]></VSql>
   <Columns>
     <Column id="Column_0" code="materialType" name="" dataType="char" length="" precision="">

@@ -32,6 +32,8 @@
           <JGTextBoxColumn Code="JGTextBoxColumn14" ColumnName="remark" LabelText="备注" TableName="bo_akl_MM_materialInfo" Width="110" />
           <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="projectNo" LabelText="所属项目" TableName="bo_akl_MM_materialInfo" />
           <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="ecn" LabelText="工程变更" TableName="bo_akl_MM_materialInfo" />
+          <JGIntegerBoxColumn Code="JGIntegerBoxColumn3" ColumnName="minWaterLevel" LabelText="最小水位" TableName="bo_akl_MM_materialInfo" />
+          <JGIntegerBoxColumn Code="JGIntegerBoxColumn4" ColumnName="maxWaterLevel" LabelText="最大水位" TableName="bo_akl_MM_materialInfo" />
         </JGDataGrid>
       </JGPanel>
       <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="50" LayoutType="BorderLayout" PercentHeight="11.1%" PercentWidth="100%" TabIndex="1" Width="1040">

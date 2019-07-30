@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-07-16 19:57:56]]></CreationTime>
-  <Modifier><![CDATA[user_20180828002]]></Modifier>
-  <ModificationTime><![CDATA[2018-11-08 14:40:27]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-07-12 09:54:33]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -70,6 +70,22 @@
       <Remark><![CDATA[]]></Remark>
     </Column>
     <Column id="05c47a429dd4497cacf5c49ee12bee34" code="mouldNo" name="模具编号" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="2ff8a7f9b9ae4b2eacab8654acd9334c" code="boardNum" name="系统看板大小" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="d96794c8ce7040d5ab9771840e58a9ba" code="boardMax" name="最大看板数量" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="c5b6d805084e41fd95e9450c750a8c7b" code="boardMin" name="最小看板数量" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="cd7176f08cdb4e0a8331617dbd7c1b2f" code="OEE" name="目标OEE" domain="" dataType="number" length="50" precision="4" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>

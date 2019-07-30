@@ -3,7 +3,7 @@
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2019-07-08 11:48:38]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-07-11 16:09:57]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-07-12 17:10:15]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -18,10 +18,6 @@
       <Remark><![CDATA[]]></Remark>
     </Column>
     <Column id="ee5b965d307546d18a38769b56f4c71f" code="partNo" name="产品型号" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
-      <DefaultValue><![CDATA[]]></DefaultValue>
-      <Remark><![CDATA[]]></Remark>
-    </Column>
-    <Column id="a789f0624b1e4cc38804bead42d00aa9" code="quantity" name="需求数量" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
@@ -46,6 +42,10 @@
       <Remark><![CDATA[]]></Remark>
     </Column>
     <Column id="7b13381695e3433d800434009c0e4c8f" code="advanceDays" name="计划生产提前量/天" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="c1f44b9409e74d47a6fcc6d35e209fbc" code="quantity" name="需求数量" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>

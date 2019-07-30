@@ -1,0 +1,33 @@
+﻿<form type="1002" code="form23" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[960]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form23_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[周计划看板排程]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton1" LabelText="查询" Left="514" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="7.5%" TabIndex="7" Top="30" Width="72" />
+    <JGIntegerBox Code="JGIntegerBox1" LabelText="周次" Left="259" PercentHeight="5.8%" PercentWidth="24.5%" TabIndex="6" Top="30" Value="0" />
+    <JGDateTimePicker Code="JGDateTimePicker1" ColumnName="firstDate" LabelText="生产日期" Left="3" PercentHeight="5.8%" PercentWidth="24.5%" TabIndex="5" TableName="firstWeekOfYear" Top="31" />
+    <JGDataGrid Code="JGDataGrid1" FetchMode="paged" Height="340" LabelText="列表" Left="3" PercentHeight="75.6%" PercentWidth="98.9%" TabIndex="0" TableName="bo_akl_MM_boardSchedule" Top="63" Width="949">
+      <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="depleteHour" LabelText="耗时" TableName="bo_akl_MM_boardSchedule" />
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="prLine" LabelText="产线" TableName="bo_akl_MM_boardSchedule" />
+      <JGDateTimePickerColumn Code="JGDateTimePickerColumn1" ColumnName="productDate" LabelText="生产日期" TableName="bo_akl_MM_boardSchedule" />
+      <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="prNo" LabelText="产品" TableName="bo_akl_MM_boardSchedule" />
+    </JGDataGrid>
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

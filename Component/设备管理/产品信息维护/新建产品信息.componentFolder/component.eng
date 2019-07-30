@@ -16,11 +16,11 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_EM_productInfo</Code>
-      <Top>100</Top>
-      <Left>389</Left>
-      <Width>315</Width>
-      <Height>367</Height>
+      <Code>bo_akl_base_productInfo_ws</Code>
+      <Top>315</Top>
+      <Left>20</Left>
+      <Width>348</Width>
+      <Height>357</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -29,11 +29,11 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_base_productInfo_ws</Code>
-      <Top>315</Top>
-      <Left>20</Left>
-      <Width>348</Width>
-      <Height>357</Height>
+      <Code>bo_akl_EM_productInfo</Code>
+      <Top>100</Top>
+      <Left>389</Left>
+      <Width>315</Width>
+      <Height>467</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

@@ -16,19 +16,6 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_EM_productInfo</Code>
-      <Top>100</Top>
-      <Left>826</Left>
-      <Width>315</Width>
-      <Height>367</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
       <Code>bo_akl_EM_EquipmentInformation</Code>
       <Top>100</Top>
       <Left>347</Left>
@@ -42,11 +29,24 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_EM_productInfo_clone</Code>
-      <Top>227</Top>
-      <Left>347</Left>
-      <Width>459</Width>
-      <Height>367</Height>
+      <Code>bo_akl_base_productInfo_ws</Code>
+      <Top>374</Top>
+      <Left>31</Left>
+      <Width>180</Width>
+      <Height>277</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>true</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_EM_productInfo</Code>
+      <Top>100</Top>
+      <Left>826</Left>
+      <Width>315</Width>
+      <Height>467</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -55,16 +55,16 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_base_productInfo_ws</Code>
-      <Top>307</Top>
-      <Left>33</Left>
-      <Width>264</Width>
-      <Height>301</Height>
+      <Code>bo_akl_EM_productInfo_clone</Code>
+      <Top>227</Top>
+      <Left>347</Left>
+      <Width>459</Width>
+      <Height>447</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
       <FontColor />
-      <IsCollapsed>true</IsCollapsed>
+      <IsCollapsed>false</IsCollapsed>
     </GraphNodeFormat>
   </Graphs>
 </EntityGraphConfig>

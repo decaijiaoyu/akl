@@ -71,4 +71,12 @@
   <menuItem code="form_removeInsulateHandle4" name="不良品确认不合格处理" isDisabled="false" type="0" ruleName="" windowCode="form_removeInsulateHandle4" parameters="" />
   <menuItem code="form_printHalfProLabel" name="打印半成品标签" isDisabled="false" type="0" ruleName="" windowCode="form_printProductLabel2" parameters="" />
   <menuItem code="from_productqx" name="生产需求维护" isDisabled="false" type="0" ruleName="" windowCode="form_productionDemand" parameters="" />
+  <menuItem code="form_productionMode" name="生产模式维护" isDisabled="false" type="0" ruleName="" windowCode="form14" parameters="" />
+  <menuItem code="from_planWeeklySummary" name="周计划-汇总" isDisabled="false" type="0" ruleName="" windowCode="form20" parameters="" />
+  <menuItem code="form_workingHourOutput" name="周计划-工时产出" isDisabled="false" type="0" ruleName="" windowCode="form21" parameters="" />
+  <menuItem code="from_weeklyplan_schedule" name="周计划-排期" isDisabled="false" type="0" ruleName="" windowCode="form22" parameters="" />
+  <menuItem code="from_boardSchedule" name="看板排程" isDisabled="false" type="0" ruleName="" windowCode="form23" parameters="" />
+  <menuItem code="form_review" name="生产计划审核" isDisabled="false" type="0" ruleName="" windowCode="form24" parameters="" />
+  <menuItem code="from_productPlanChangeLog" name="生产计划修改日志" isDisabled="false" type="0" ruleName="" windowCode="form33" parameters="" />
+  <menuItem code="from_stockInfo" name="erp库存信息" isDisabled="false" type="0" ruleName="" windowCode="form34" parameters="" />
 </dir>

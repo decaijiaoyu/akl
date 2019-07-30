@@ -19,16 +19,20 @@
   <controls>
     <JGPanel BorderStyle="None" Code="Pnl_Fill" Dock="Fill" Height="499" LayoutType="BorderLayout" Left="10" PercentHeight="100%" PercentWidth="98.2%" TabIndex="1" Width="1285">
       <JGPanel BorderStyle="None" Code="Pnl_Center" Dock="Fill" Height="391" LayoutType="BorderLayout" PercentHeight="78.4%" PercentWidth="100%" TabIndex="5" Top="96" Width="1285">
-        <JGDataGrid ChooseMode="3" Code="JGDataGrid1" Dock="Fill" FetchMode="paged" Height="391" LabelText="列表" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" PercentHeight="100%" PercentWidth="100%" TabIndex="14" TableName="bo_akl_MM_productEntryRecode" Width="1285">
-          <JGComboBoxColumn Code="JGIntegerBoxColumn1" ColumnName="weekNumber" LabelText="周次" TableName="bo_akl_MM_productEntryRecode" Width="200" />
-          <JGDateTimePickerColumn Code="JGDateTimePickerColumn1" ColumnName="beginTime" LabelText="开始时间" TableName="bo_akl_MM_productEntryRecode" Width="318" />
+        <JGDataGrid ChooseMode="3" Code="JGDataGrid1" CriteriaStyle="[{&quot;Criteria&quot;:&quot;[bo_akl_MM_productEntryRecode].[fettle]==\&quot;异常\&quot;&quot;,&quot;ValueForeColor&quot;:null,&quot;ValueBackColor&quot;:&quot;242,24,12&quot;,&quot;ValueFontStyle&quot;:null,&quot;Columns&quot;:[&quot;JGTextBoxColumn2&quot;]}]" Dock="Fill" FetchMode="paged" Height="391" LabelText="列表" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" PercentHeight="100%" PercentWidth="100%" TabIndex="14" TableName="bo_akl_MM_productEntryRecode" Width="1285">
+          <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="weekNumber" LabelText="周次" OnValueChanged="JGIntegerBoxColumn1_OnValueChanged" TableName="bo_akl_MM_productEntryRecode" Width="200" />
+          <JGDateTimePickerColumn Code="JGDateTimePickerColumn1" ColumnName="beginTime" DisplayFormat="&lt;DisplayFormat&gt;&lt;Num Type='7'&gt;&lt;Index&gt;yy年M月d日|2&lt;/Index&gt;&lt;Format&gt;yy年M月d日&lt;/Format&gt;&lt;/Num&gt;&lt;/DisplayFormat&gt;" LabelText="开始时间" TableName="bo_akl_MM_productEntryRecode" Width="318" />
           <JGDateTimePickerColumn Code="JGDateTimePickerColumn2" ColumnName="endTime" LabelText="结束时间" TableName="bo_akl_MM_productEntryRecode" Width="271" />
           <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="fettle" LabelText="状态" TableName="bo_akl_MM_productEntryRecode" Width="447" />
         </JGDataGrid>
       </JGPanel>
       <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="96" LayoutType="BorderLayout" PercentHeight="19.2%" PercentWidth="100%" TabIndex="1" Width="1285">
-        <JGButton Code="JGButton7" LabelText="查看生成需求明细" Left="480" OnClick="JGButton7_OnClick" PercentHeight="27.1%" PercentWidth="9.8%" TabIndex="24" Top="45" Width="126" />
-        <JGButton Code="JGButton6" LabelText="生成计划" Left="388" PercentHeight="27.1%" PercentWidth="6%" TabIndex="23" Top="45" Width="77" />
+        <JGButton Code="JGButton11" LabelText="发起审批" Left="988" OnClick="JGButton11_OnClick" PercentHeight="27.1%" PercentWidth="6.5%" TabIndex="28" Top="45" Width="84" />
+        <JGButton Code="JGButton10" LabelText="查看工时产出" Left="856" OnClick="JGButton10_OnClick" PercentHeight="27.1%" PercentWidth="9.8%" TabIndex="27" Top="45" Width="126" />
+        <JGButton Code="JGButton9" LabelText="生成工时产出" Left="496" OnClick="JGButton9_OnClick" PercentHeight="27.1%" PercentWidth="7.9%" TabIndex="26" Top="45" Width="102" />
+        <JGButton Code="JGButton8" LabelText="查看周计划汇总" Left="604" OnClick="JGButton8_OnClick" PercentHeight="27.1%" PercentWidth="8.9%" TabIndex="25" Top="45" Width="114" />
+        <JGButton Code="JGButton7" LabelText="查看生产需求明细" Left="724" OnClick="JGButton7_OnClick" PercentHeight="27.1%" PercentWidth="9.8%" TabIndex="24" Top="45" Width="126" />
+        <JGButton Code="JGButton6" LabelText="生成计划汇总" Left="388" OnClick="JGButton6_OnClick_1" PercentHeight="27.1%" PercentWidth="7.9%" TabIndex="23" Top="45" Width="102" />
         <JGButton Code="JGButton5" LabelText="导入" Left="318" OnClick="JGButton2_OnClick_1" PercentHeight="27.1%" PercentWidth="4%" TabIndex="21" Top="45" />
         <JGAttachment Code="JGAttachment1" LabelText="文件" LabelWidth="40" Left="89" PercentHeight="27.1%" PercentWidth="16.1%" TabIndex="23" Top="45" Width="207" />
         <JGButton Code="JGButton4" LabelText="下载模板" Left="6" OnClick="JGButton1_OnClick" PercentHeight="27.1%" PercentWidth="6%" TabIndex="10" Top="45" Width="77" />

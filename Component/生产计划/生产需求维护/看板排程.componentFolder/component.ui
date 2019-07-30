@@ -1,0 +1,36 @@
+﻿<form type="1002" code="form19" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[775]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form19_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[看板排程]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton1" LabelText="查询" Left="258" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="12.4%" TabIndex="6" Top="33" Width="96" />
+    <JGDateTimePicker Code="JGDateTimePicker1" LabelText="生产日期" Left="3" PercentHeight="5.8%" PercentWidth="30.3%" TabIndex="6" Top="33" />
+    <JGDataGrid Code="JGDataGrid1" Height="348" LabelText="列表" Left="3" PercentHeight="77.3%" PercentWidth="95.9%" TabIndex="0" TableName="bo_akl_MM_boardSchedule" Top="76" Width="743">
+      <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="depleteHour" LabelText="耗时/h" TableName="bo_akl_MM_boardSchedule" Width="183" />
+      <JGDateTimePickerColumn Code="JGDateTimePickerColumn2" ColumnName="productDate" LabelText="生产日期" TableName="bo_akl_MM_boardSchedule" Width="206" />
+      <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="prNo" LabelText="产品" TableName="bo_akl_MM_boardSchedule" Width="151" />
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="prLine" LabelText="产线" TableName="bo_akl_MM_boardSchedule" Width="144" />
+    </JGDataGrid>
+  </controls>
+  <outputs />
+  <inputs>
+    <variable code="recodeId" name="导入记录Id" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+  </inputs>
+  <remark><![CDATA[]]></remark>
+</form>

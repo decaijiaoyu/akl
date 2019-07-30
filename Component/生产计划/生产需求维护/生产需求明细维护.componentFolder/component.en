@@ -41,8 +41,8 @@
         <Column>
           <Code>quantity</Code>
           <Name>需求数量</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
+          <DataType>integer</DataType>
+          <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
           <Expression></Expression>

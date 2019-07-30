@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Methods>
+  <Method MethodDir="WindowMethod" FileName="form18_FormLoadAction.method" Code="form18_FormLoadAction" Name="form18_窗体加载事件" />
+</Methods>

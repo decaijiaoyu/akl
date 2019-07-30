@@ -1,0 +1,35 @@
+﻿<form type="1002" code="form34" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[989]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form34_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[erp系统库存]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton1" LabelText="查询" Left="265" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="5.3%" TabIndex="10" Top="41" />
+    <JGTextBox Code="JGTextBox1" LabelText="物料编号" Left="6" PercentHeight="5.8%" PercentWidth="23.8%" TabIndex="9" Top="42" />
+    <JGDataGrid Code="JGDataGrid1" FetchMode="paged" Height="327" LabelText="列表" Left="6" PercentHeight="72.7%" PercentWidth="99.4%" TabIndex="0" TableName="stockInfo" Top="74" Width="983">
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="materialNo" LabelText="物料编号" TableName="stockInfo" Width="127" />
+      <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="materialName" LabelText="物料名称" TableName="stockInfo" Width="119" />
+      <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="materialType" LabelText="物料类型" TableName="stockInfo" Width="158" />
+      <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="unit" LabelText="单位" TableName="stockInfo" Width="102" />
+      <JGTextBoxColumn Code="JGTextBoxColumn5" ColumnName="stockType" LabelText="仓库类型" TableName="stockInfo" Width="107" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="stockNum" LabelText="库存" TableName="stockInfo" Width="127" />
+      <JGTextBoxColumn Code="JGTextBoxColumn7" ColumnName="batchNo" LabelText="批次" TableName="stockInfo" Width="144" />
+    </JGDataGrid>
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

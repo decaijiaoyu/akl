@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[user_20180828002]]></Creator>
   <CreationTime><![CDATA[2018-12-11 16:10:22]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2019-03-06 11:17:01]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-07-12 10:33:42]]></ModificationTime>
   <VSql><![CDATA[select mi.materialNo,mi.unit,mi.materialName,mi.materialType,
 st1.stockType,si.materialId,si.stockTypeId,SUM(si.stockNum) as total
 from bo_akl_MM_stockInfo as si 

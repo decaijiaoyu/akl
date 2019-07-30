@@ -3,7 +3,7 @@
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2019-07-08 16:54:40]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-07-10 17:12:19]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-07-12 17:10:10]]></ModificationTime>
   <Columns>
     <Column id="id" code="id" name="" domain="" dataType="char" length="128" precision="" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -18,10 +18,6 @@
       <Remark><![CDATA[]]></Remark>
     </Column>
     <Column id="partNo" code="partNo" name="产品型号" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
-      <DefaultValue><![CDATA[]]></DefaultValue>
-      <Remark><![CDATA[]]></Remark>
-    </Column>
-    <Column id="quantity" code="quantity" name="需求数量" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
@@ -41,11 +37,15 @@
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="65251106b9e94fce986d4eaa8d886f2a" code="spacingDays" name="间隔时间/天" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="65251106b9e94fce986d4eaa8d886f2a" code="spacingDays" name="间隔时间/天" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="bc7811872ea74490a99a15c5bf88430e" code="advanceDays" name="计划生产提前量/天" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="bc7811872ea74490a99a15c5bf88430e" code="advanceDays" name="计划生产提前量/天" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="79330dcfd9af4803a5eb0fa3217fb351" code="quantity" name="需求数量" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
