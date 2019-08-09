@@ -5,6 +5,7 @@
   <Method MethodDir="ControlMethod" FileName="JGButton10_OnClick.method" Code="JGButton10_OnClick" Name="开(新)按钮单击事件" />
   <Method MethodDir="ControlMethod" FileName="JGButton10_OnClick_1.method" Code="JGButton10_OnClick_1" Name="JGButton10_单击事件" />
   <Method MethodDir="ControlMethod" FileName="JGButton11_OnClick.method" Code="JGButton11_OnClick" Name="改(新)按钮单击事件" />
+  <Method MethodDir="ControlMethod" FileName="JGButton11_OnClick_1.method" Code="JGButton11_OnClick_1" Name="JGButton11_单击事件" />
   <Method MethodDir="ControlMethod" FileName="JGButton12_OnClick.method" Code="JGButton12_OnClick" Name="过程样品点检按钮单击事件" />
   <Method MethodDir="ControlMethod" FileName="JGButton13_OnClick.method" Code="JGButton13_OnClick" Name="暂停开机" />
   <Method MethodDir="ControlMethod" FileName="JGButton14_OnClick.method" Code="JGButton14_OnClick" Name="物料确认" />
@@ -32,5 +33,6 @@
   <Method MethodDir="UserMethod" FileName="getDownUnusualMaterial.method" Code="getDownUnusualMaterial" Name="获取下级异常物料" />
   <Method MethodDir="UserMethod" FileName="getUpUnusualMaterial.method" Code="getUpUnusualMaterial" Name="获取上级异常物料" />
   <Method MethodDir="UserMethod" FileName="insulateChangeStock.method" Code="insulateChangeStock" Name="隔离转仓" />
+  <Method MethodDir="UserMethod" FileName="returnM.method" Code="returnM" Name="退料_开线准备调用" />
   <Method MethodDir="UserMethod" FileName="returnOfMaterial.method" Code="returnOfMaterial" Name="退料" />
 </Methods>

@@ -61,6 +61,40 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
+    <Entity TemplateId="" TemplateCode="" Code="firstWeekOfYear" Name="年第一周天" EntityType="" TableOrQueryCode="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>yearW</Code>
+          <Name>年份</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>firstDate</Code>
+          <Name>周第一天</Name>
+          <DataType>date</DataType>
+          <Length></Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
     <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_weeklyplan_schedule" Name="周计划排期表" EntityType="" TableOrQueryCode="">
       <Columns>
         <Column>
@@ -189,36 +223,20 @@
           <DefaultValue></DefaultValue>
           <Expression></Expression>
         </Column>
-      </Columns>
-      <Events>
-        <EntityEvent Code="OnLoaded" Value="" />
-      </Events>
-    </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="firstWeekOfYear" Name="年第一周天" EntityType="" TableOrQueryCode="">
-      <Columns>
         <Column>
-          <Code>id</Code>
-          <Name></Name>
+          <Code>scheduleCode</Code>
+          <Name>排期编号</Name>
           <DataType>char</DataType>
-          <Length>128</Length>
+          <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
           <Expression></Expression>
         </Column>
         <Column>
-          <Code>yearW</Code>
-          <Name>年份</Name>
-          <DataType>integer</DataType>
-          <Length>50</Length>
-          <Precision></Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>firstDate</Code>
-          <Name>周第一天</Name>
-          <DataType>date</DataType>
-          <Length></Length>
+          <Code>fettle</Code>
+          <Name>状态</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
           <Expression></Expression>

@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2019/8/8 14:32:03-->
+<Methods>
+  <Method Code="form47_FormLoadAction" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_DataBaseDataToInterfaceEntity1" />
+  <foreach isEnabled="True" isDebug="False" code="ForeachCode1">
+    <define>
+      <varCode>f</varCode>
+      <entityType>ruleSetVar</entityType>
+      <entityCode>taskInfo</entityCode>
+      <remark></remark>
+    </define>
+    <sequence>
+      <if isEnabled="True" isDebug="False" code="IfCode1">
+        <define>
+          <expression>LV.f.taskName=="设备每年保养"</expression>
+          <remark></remark>
+        </define>
+        <sequence>
+          <evaluateRule code="BR_DataBaseDataToInterfaceEntity2" />
+          <evaluateRule code="BR_AddTableRecord1" />
+          <foreach isEnabled="True" isDebug="False" code="ForeachCode2">
+            <define>
+              <varCode>r</varCode>
+              <entityType>window</entityType>
+              <entityCode>bo_akl_taskPushRecode</entityCode>
+              <remark></remark>
+            </define>
+            <sequence>
+              <evaluateRule code="BR_DataBaseDataToInterfaceEntity2_1" />
+              <if isEnabled="True" isDebug="False" code="IfCode2">
+                <define>
+                  <expression>GetEntityRowCount("BR_VAR_PARENT.year_tmp") &gt; 0</expression>
+                  <remark></remark>
+                </define>
+                <sequence>
+                  <evaluateRule code="BR_ModifyDataBaseRecord1" />
+                </sequence>
+              </if>
+              <else isEnabled="True" isDebug="False">
+                <define>
+                  <remark />
+                </define>
+                <sequence>
+                  <evaluateRule code="BR_SetEntityVarControlValue1" />
+                </sequence>
+              </else>
+            </sequence>
+          </foreach>
+          <evaluateRule code="BR_SetEntityVarControlValue2" />
+        </sequence>
+      </if>
+      <if isEnabled="True" isDebug="False" code="IfCode3">
+        <define>
+          <expression>LV.f.taskName=="设备每半年保养"</expression>
+          <remark></remark>
+        </define>
+        <sequence>
+          <evaluateRule code="BR_DataBaseDataToInterfaceEntity2_2" />
+          <evaluateRule code="BR_AddTableRecord1_1" />
+          <foreach isEnabled="True" isDebug="False" code="ForeachCode2_1">
+            <define>
+              <varCode>r1</varCode>
+              <entityType>window</entityType>
+              <entityCode>bo_akl_taskPushRecode</entityCode>
+              <remark></remark>
+            </define>
+            <sequence>
+              <evaluateRule code="BR_DataBaseDataToInterfaceEntity2_1_1" />
+              <if isEnabled="True" isDebug="False" code="IfCode4">
+                <define>
+                  <expression>GetEntityRowCount("BR_VAR_PARENT.halfyear_tmp") &gt; 0</expression>
+                  <remark></remark>
+                </define>
+                <sequence>
+                  <evaluateRule code="BR_ModifyDataBaseRecord1_1" />
+                </sequence>
+              </if>
+              <else isEnabled="True" isDebug="False">
+                <define>
+                  <remark />
+                </define>
+                <sequence>
+                  <evaluateRule code="BR_SetEntityVarControlValue1_1" />
+                </sequence>
+              </else>
+            </sequence>
+          </foreach>
+          <evaluateRule code="BR_SetEntityVarControlValue2_1" />
+        </sequence>
+      </if>
+      <if isEnabled="True" isDebug="False" code="IfCode5">
+        <define>
+          <expression>LV.f.taskName=="设备每季度保养"</expression>
+          <remark></remark>
+        </define>
+        <sequence>
+          <evaluateRule code="BR_DataBaseDataToInterfaceEntity2_2_1" />
+          <evaluateRule code="BR_AddTableRecord1_1_1" />
+          <foreach isEnabled="True" isDebug="False" code="ForeachCode2_1_1">
+            <define>
+              <varCode>r2</varCode>
+              <entityType>window</entityType>
+              <entityCode>bo_akl_taskPushRecode</entityCode>
+              <remark></remark>
+            </define>
+            <sequence>
+              <evaluateRule code="BR_DataBaseDataToInterfaceEntity2_1_1_1" />
+              <if isEnabled="True" isDebug="False" code="IfCode6">
+                <define>
+                  <expression>GetEntityRowCount("BR_VAR_PARENT.quarter_tmp") &gt; 0</expression>
+                  <remark></remark>
+                </define>
+                <sequence>
+                  <evaluateRule code="BR_ModifyDataBaseRecord1_1_1" />
+                </sequence>
+              </if>
+              <else isEnabled="True" isDebug="False">
+                <define>
+                  <remark />
+                </define>
+                <sequence>
+                  <evaluateRule code="BR_SetEntityVarControlValue1_1_1" />
+                </sequence>
+              </else>
+            </sequence>
+          </foreach>
+          <evaluateRule code="BR_SetEntityVarControlValue2_1_1" />
+        </sequence>
+      </if>
+      <if isEnabled="True" isDebug="False" code="IfCode7">
+        <define>
+          <expression>LV.f.taskName=="设备每月保养"</expression>
+          <remark></remark>
+        </define>
+        <sequence>
+          <evaluateRule code="BR_DataBaseDataToInterfaceEntity2_2_1_1" />
+          <evaluateRule code="BR_AddTableRecord1_1_1_1" />
+          <foreach isEnabled="True" isDebug="False" code="ForeachCode2_1_1_1">
+            <define>
+              <varCode>r3</varCode>
+              <entityType>window</entityType>
+              <entityCode>bo_akl_taskPushRecode</entityCode>
+              <remark></remark>
+            </define>
+            <sequence>
+              <evaluateRule code="BR_DataBaseDataToInterfaceEntity2_1_1_1_1" />
+              <if isEnabled="True" isDebug="False" code="IfCode8">
+                <define>
+                  <expression>GetEntityRowCount("BR_VAR_PARENT.month_tmp") &gt; 0</expression>
+                  <remark></remark>
+                </define>
+                <sequence>
+                  <evaluateRule code="BR_ModifyDataBaseRecord1_1_1_1" />
+                </sequence>
+              </if>
+              <else isEnabled="True" isDebug="False">
+                <define>
+                  <remark />
+                </define>
+                <sequence>
+                  <evaluateRule code="BR_SetEntityVarControlValue1_1_1_1" />
+                </sequence>
+              </else>
+            </sequence>
+          </foreach>
+          <evaluateRule code="BR_SetEntityVarControlValue2_1_1_1" />
+        </sequence>
+      </if>
+    </sequence>
+  </foreach>
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体_(获取分组推送任务)" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Query","dsWhere":null,"entityType":"ruleSetVar","entityName":"taskInfo","itemqueryparam":null,"items":[{"destName":"taskInfo.taskName","sourceName":"taskWaitRecode.taskName","type":"entityField"},{"destName":"taskInfo.taskCode","sourceName":"taskWaitRecode.taskCode","type":"entityField"},{"destName":"taskInfo.sums","sourceName":"taskWaitRecode.sums","type":"entityField"}],"orderBy":null,"sourceName":"taskWaitRecode","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>ruleSetVar</EntityType><EntityName>taskInfo</EntityName><SourceType>Query</SourceType><SourceName>taskWaitRecode</SourceName><dsWhere><![CDATA[<NewDataSet />]]]]><![CDATA[></dsWhere><dsQueryParam><![CDATA[<dsQueryParam />]]]]><![CDATA[></dsQueryParam><ID>51690f0805014a0495345e1d1d5f7960</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>51690f0805014a0495345e1d1d5f7960</MasterID><DestName>taskInfo.taskName</DestName><SourceType>entityField</SourceType><SourceName>taskWaitRecode.taskName</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>51690f0805014a0495345e1d1d5f7960</MasterID><DestName>taskInfo.taskCode</DestName><SourceType>entityField</SourceType><SourceName>taskWaitRecode.taskCode</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>51690f0805014a0495345e1d1d5f7960</MasterID><DestName>taskInfo.sums</DestName><SourceType>entityField</SourceType><SourceName>taskWaitRecode.sums</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>51690f0805014a0495345e1d1d5f7960</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>51690f0805014a0495345e1d1d5f7960</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1_1_1" instanceName="给界面实体/控件/变量赋值_累计代办数量_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:48:47">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"statistics.taskNum","SourceType":"expression","SourceEntityType":"","Source":"[statistics].[taskNum]+1","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>statistics.taskNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>[statistics].[taskNum]+1</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2_2_1_1" instanceName="从数据库获取数据到实体_获取未完成的推送_1_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:51:12">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"bo_akl_taskPushRecode.taskName","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.f.taskName","valueType":"9"},{"columnType":"1","field":"bo_akl_taskPushRecode.isFinish","fieldType":"integer","leftBracket":"(","logicOperation":"and","operation":"!=","rightBracket":")","value":"1","valueType":"9"}],"entityType":"window","entityName":"bo_akl_taskPushRecode","itemqueryparam":null,"items":[{"destName":"bo_akl_taskPushRecode.crux","sourceName":"bo_akl_taskPushRecode.crux","type":"entityField"},{"destName":"bo_akl_taskPushRecode.id","sourceName":"bo_akl_taskPushRecode.id","type":"entityField"},{"destName":"bo_akl_taskPushRecode.isFinish","sourceName":"bo_akl_taskPushRecode.isFinish","type":"entityField"},{"destName":"bo_akl_taskPushRecode.pushTime","sourceName":"bo_akl_taskPushRecode.pushTime","type":"entityField"},{"destName":"bo_akl_taskPushRecode.tabelName","sourceName":"bo_akl_taskPushRecode.tabelName","type":"entityField"},{"destName":"bo_akl_taskPushRecode.taskCode","sourceName":"bo_akl_taskPushRecode.taskCode","type":"entityField"},{"destName":"bo_akl_taskPushRecode.taskName","sourceName":"bo_akl_taskPushRecode.taskName","type":"entityField"}],"orderBy":null,"sourceName":"bo_akl_taskPushRecode","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>bo_akl_taskPushRecode</EntityName><SourceType>Table</SourceType><SourceName>bo_akl_taskPushRecode</SourceName><dsWhere><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.taskName</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.f.taskName</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.isFinish</field><fieldType>integer</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>!=</operation><rightBracket>)</rightBracket><value>1</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>c08b978f6ebe416dbab525cbbb7f4a6e</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.crux</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.crux</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.id</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.id</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.isFinish</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.isFinish</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.pushTime</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.pushTime</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.tabelName</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.tabelName</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.taskCode</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.taskCode</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.taskName</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.taskName</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>c08b978f6ebe416dbab525cbbb7f4a6e</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>c08b978f6ebe416dbab525cbbb7f4a6e</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord1_1_1_1" instanceName="新增实体记录_1_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:49:30">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"AddLocation":"2","Mappings":[{"destField":"statistics.taskName","fieldtype":"expression","srcField":"LV.f.taskName"},{"destField":"statistics.taskCode","fieldtype":"expression","srcField":"LV.f.taskCode"},{"destField":"statistics.taskNum","fieldtype":"expression","srcField":"0"}],"TableType":"window","TableName":"statistics","NumCount":"1"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><Location>2</Location><EntityType>window</EntityType><EntityName>statistics</EntityName></dtMaster><dtEntityColumns><DestName>statistics.taskName</DestName><SourceType>expression</SourceType><SourceName>LV.f.taskName</SourceName></dtEntityColumns><dtEntityColumns><DestName>statistics.taskCode</DestName><SourceType>expression</SourceType><SourceName>LV.f.taskCode</SourceName></dtEntityColumns><dtEntityColumns><DestName>statistics.taskNum</DestName><SourceType>expression</SourceType><SourceName>0</SourceName></dtEntityColumns></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue2_1_1_1" instanceName="给界面实体/控件/变量赋值_清除计数_1_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:51:04">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"4","Target":"waitNum","SourceType":"expression","SourceEntityType":"","Source":"0","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>4</TargetType><Target>waitNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>0</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1" instanceName="给界面实体/控件/变量赋值_累计代办数量" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:14:56">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"statistics.taskNum","SourceType":"expression","SourceEntityType":"","Source":"[statistics].[taskNum]+1","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>statistics.taskNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>[statistics].[taskNum]+1</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2_1_1_1" instanceName="获取季度保养记录_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:48:21">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.cycle","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"\"每季度\"","valueType":"9"},{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.equipId","fieldType":"char","leftBracket":"(","logicOperation":"and","operation":"=","rightBracket":")","value":"LV.r2.crux","valueType":"9"},{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.upkeepDate","fieldType":"date","leftBracket":"(","logicOperation":"and","operation":">","rightBracket":")","value":"DateAdd(DateTimeNow(),-3,\"M\")","valueType":"9"}],"entityType":"ruleSetVar","entityName":"quarter_tmp","itemqueryparam":null,"items":[{"destName":"quarter_tmp.id","sourceName":"bo_akl_EM_infoEquUpkeepRec.id","type":"entityField"},{"destName":"quarter_tmp.equipId","sourceName":"bo_akl_EM_infoEquUpkeepRec.equipId","type":"entityField"},{"destName":"quarter_tmp.upkeepDate","sourceName":"bo_akl_EM_infoEquUpkeepRec.upkeepDate","type":"entityField"},{"destName":"quarter_tmp.cycle","sourceName":"bo_akl_EM_infoEquUpkeepRec.cycle","type":"entityField"}],"orderBy":null,"sourceName":"bo_akl_EM_infoEquUpkeepRec","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>ruleSetVar</EntityType><EntityName>quarter_tmp</EntityName><SourceType>Table</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec</SourceName><dsWhere><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.cycle</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>"每季度"</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.equipId</field><fieldType>char</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>=</operation><rightBracket>)</rightBracket><value>LV.r2.crux</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.upkeepDate</field><fieldType>date</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>&gt;</operation><rightBracket>)</rightBracket><value>DateAdd(DateTimeNow(),-3,"M")</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>d2864208c61f405bb5a7e0dc18a01a08</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>quarter_tmp.id</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.id</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>quarter_tmp.equipId</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.equipId</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>quarter_tmp.upkeepDate</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.upkeepDate</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>quarter_tmp.cycle</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.cycle</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>d2864208c61f405bb5a7e0dc18a01a08</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>d2864208c61f405bb5a7e0dc18a01a08</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ModifyDataBaseRecord" ruleName="修改数据库中的记录" instanceCode="BR_ModifyDataBaseRecord1" instanceName="修改数据库中的记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:13:58">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourcesMapping":[{"condition":[{"columnType":"1","field":"bo_akl_taskPushRecode.id","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.r.id","valueType":"9"}],"dataMap":[{"colName":"bo_akl_taskPushRecode.isFinish","colValue":"1","valueType":"expression"}],"dataSource":"bo_akl_taskPushRecode","opperType":"update"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><orderNo>1</orderNo><destTableName>bo_akl_taskPushRecode</destTableName><opperType>update</opperType><condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.id</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.r.id</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></condition><dtField><![CDATA[<NewDataSet><dtField><destField>bo_akl_taskPushRecode.isFinish</destField><sourceType>expression</sourceType><sourceField>1</sourceField></dtField></NewDataSet>]]]]><![CDATA[></dtField></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2_2_1" instanceName="从数据库获取数据到实体_获取未完成的推送_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:47:17">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"bo_akl_taskPushRecode.taskName","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.f.taskName","valueType":"9"},{"columnType":"1","field":"bo_akl_taskPushRecode.isFinish","fieldType":"integer","leftBracket":"(","logicOperation":"and","operation":"!=","rightBracket":")","value":"1","valueType":"9"}],"entityType":"window","entityName":"bo_akl_taskPushRecode","itemqueryparam":null,"items":[{"destName":"bo_akl_taskPushRecode.crux","sourceName":"bo_akl_taskPushRecode.crux","type":"entityField"},{"destName":"bo_akl_taskPushRecode.id","sourceName":"bo_akl_taskPushRecode.id","type":"entityField"},{"destName":"bo_akl_taskPushRecode.isFinish","sourceName":"bo_akl_taskPushRecode.isFinish","type":"entityField"},{"destName":"bo_akl_taskPushRecode.pushTime","sourceName":"bo_akl_taskPushRecode.pushTime","type":"entityField"},{"destName":"bo_akl_taskPushRecode.tabelName","sourceName":"bo_akl_taskPushRecode.tabelName","type":"entityField"},{"destName":"bo_akl_taskPushRecode.taskCode","sourceName":"bo_akl_taskPushRecode.taskCode","type":"entityField"},{"destName":"bo_akl_taskPushRecode.taskName","sourceName":"bo_akl_taskPushRecode.taskName","type":"entityField"}],"orderBy":null,"sourceName":"bo_akl_taskPushRecode","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>bo_akl_taskPushRecode</EntityName><SourceType>Table</SourceType><SourceName>bo_akl_taskPushRecode</SourceName><dsWhere><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.taskName</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.f.taskName</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.isFinish</field><fieldType>integer</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>!=</operation><rightBracket>)</rightBracket><value>1</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>c08b978f6ebe416dbab525cbbb7f4a6e</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.crux</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.crux</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.id</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.id</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.isFinish</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.isFinish</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.pushTime</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.pushTime</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.tabelName</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.tabelName</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.taskCode</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.taskCode</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.taskName</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.taskName</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>c08b978f6ebe416dbab525cbbb7f4a6e</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>c08b978f6ebe416dbab525cbbb7f4a6e</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord1_1_1" instanceName="新增实体记录_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:47:22">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"AddLocation":"2","Mappings":[{"destField":"statistics.taskName","fieldtype":"expression","srcField":"LV.f.taskName"},{"destField":"statistics.taskCode","fieldtype":"expression","srcField":"LV.f.taskCode"},{"destField":"statistics.taskNum","fieldtype":"expression","srcField":"0"}],"TableType":"window","TableName":"statistics","NumCount":"1"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><Location>2</Location><EntityType>window</EntityType><EntityName>statistics</EntityName></dtMaster><dtEntityColumns><DestName>statistics.taskName</DestName><SourceType>expression</SourceType><SourceName>LV.f.taskName</SourceName></dtEntityColumns><dtEntityColumns><DestName>statistics.taskCode</DestName><SourceType>expression</SourceType><SourceName>LV.f.taskCode</SourceName></dtEntityColumns><dtEntityColumns><DestName>statistics.taskNum</DestName><SourceType>expression</SourceType><SourceName>0</SourceName></dtEntityColumns></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue2_1_1" instanceName="给界面实体/控件/变量赋值_清除计数_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:48:50">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"4","Target":"waitNum","SourceType":"expression","SourceEntityType":"","Source":"0","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>4</TargetType><Target>waitNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>0</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1_1_1_1" instanceName="给界面实体/控件/变量赋值_累计代办数量_1_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:51:01">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"statistics.taskNum","SourceType":"expression","SourceEntityType":"","Source":"[statistics].[taskNum]+1","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>statistics.taskNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>[statistics].[taskNum]+1</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2_1_1" instanceName="获取年度保养记录_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:39:04">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.cycle","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"\"每半年\"","valueType":"9"},{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.equipId","fieldType":"char","leftBracket":"(","logicOperation":"and","operation":"=","rightBracket":")","value":"LV.r1.crux","valueType":"9"},{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.upkeepDate","fieldType":"date","leftBracket":"(","logicOperation":"and","operation":">","rightBracket":")","value":"DateAdd(DateTimeNow(),-6,\"M\")","valueType":"9"}],"entityType":"ruleSetVar","entityName":"halfyear_tmp","itemqueryparam":null,"items":[{"destName":"halfyear_tmp.id","sourceName":"bo_akl_EM_infoEquUpkeepRec.id","type":"entityField"},{"destName":"halfyear_tmp.equipId","sourceName":"bo_akl_EM_infoEquUpkeepRec.equipId","type":"entityField"},{"destName":"halfyear_tmp.upkeepDate","sourceName":"bo_akl_EM_infoEquUpkeepRec.upkeepDate","type":"entityField"},{"destName":"halfyear_tmp.cycle","sourceName":"bo_akl_EM_infoEquUpkeepRec.cycle","type":"entityField"}],"orderBy":null,"sourceName":"bo_akl_EM_infoEquUpkeepRec","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>ruleSetVar</EntityType><EntityName>halfyear_tmp</EntityName><SourceType>Table</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec</SourceName><dsWhere><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.cycle</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>"每半年"</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.equipId</field><fieldType>char</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>=</operation><rightBracket>)</rightBracket><value>LV.r1.crux</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.upkeepDate</field><fieldType>date</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>&gt;</operation><rightBracket>)</rightBracket><value>DateAdd(DateTimeNow(),-6,"M")</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>d2864208c61f405bb5a7e0dc18a01a08</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>halfyear_tmp.id</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.id</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>halfyear_tmp.equipId</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.equipId</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>halfyear_tmp.upkeepDate</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.upkeepDate</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>halfyear_tmp.cycle</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.cycle</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>d2864208c61f405bb5a7e0dc18a01a08</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>d2864208c61f405bb5a7e0dc18a01a08</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ModifyDataBaseRecord" ruleName="修改数据库中的记录" instanceCode="BR_ModifyDataBaseRecord1_1_1" instanceName="修改数据库中的记录_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:48:43">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourcesMapping":[{"condition":[{"columnType":"1","field":"bo_akl_taskPushRecode.id","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.r2.id","valueType":"9"}],"dataMap":[{"colName":"bo_akl_taskPushRecode.isFinish","colValue":"1","valueType":"expression"}],"dataSource":"bo_akl_taskPushRecode","opperType":"update"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><orderNo>1</orderNo><destTableName>bo_akl_taskPushRecode</destTableName><opperType>update</opperType><condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.id</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.r2.id</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></condition><dtField><![CDATA[<NewDataSet><dtField><destField>bo_akl_taskPushRecode.isFinish</destField><sourceType>expression</sourceType><sourceField>1</sourceField></dtField></NewDataSet>]]]]><![CDATA[></dtField></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ModifyDataBaseRecord" ruleName="修改数据库中的记录" instanceCode="BR_ModifyDataBaseRecord1_1_1_1" instanceName="修改数据库中的记录_1_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:50:58">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourcesMapping":[{"condition":[{"columnType":"1","field":"bo_akl_taskPushRecode.id","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.r3.id","valueType":"9"}],"dataMap":[{"colName":"bo_akl_taskPushRecode.isFinish","colValue":"1","valueType":"expression"}],"dataSource":"bo_akl_taskPushRecode","opperType":"update"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><orderNo>1</orderNo><destTableName>bo_akl_taskPushRecode</destTableName><opperType>update</opperType><condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.id</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.r3.id</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></condition><dtField><![CDATA[<NewDataSet><dtField><destField>bo_akl_taskPushRecode.isFinish</destField><sourceType>expression</sourceType><sourceField>1</sourceField></dtField></NewDataSet>]]]]><![CDATA[></dtField></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2_1_1_1_1" instanceName="获取每月保养记录_1_1_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:50:37">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.cycle","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"\"每月\"","valueType":"9"},{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.equipId","fieldType":"char","leftBracket":"(","logicOperation":"and","operation":"=","rightBracket":")","value":"LV.r3.crux","valueType":"9"},{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.upkeepDate","fieldType":"date","leftBracket":"(","logicOperation":"and","operation":">","rightBracket":")","value":"DateAdd(DateTimeNow(),-1,\"M\")","valueType":"9"}],"entityType":"ruleSetVar","entityName":"month_tmp","itemqueryparam":null,"items":[{"destName":"month_tmp.id","sourceName":"bo_akl_EM_infoEquUpkeepRec.id","type":"entityField"},{"destName":"month_tmp.equipId","sourceName":"bo_akl_EM_infoEquUpkeepRec.equipId","type":"entityField"},{"destName":"month_tmp.upkeepDate","sourceName":"bo_akl_EM_infoEquUpkeepRec.upkeepDate","type":"entityField"},{"destName":"month_tmp.cycle","sourceName":"bo_akl_EM_infoEquUpkeepRec.cycle","type":"entityField"}],"orderBy":null,"sourceName":"bo_akl_EM_infoEquUpkeepRec","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>ruleSetVar</EntityType><EntityName>month_tmp</EntityName><SourceType>Table</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec</SourceName><dsWhere><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.cycle</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>"每月"</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.equipId</field><fieldType>char</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>=</operation><rightBracket>)</rightBracket><value>LV.r3.crux</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.upkeepDate</field><fieldType>date</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>&gt;</operation><rightBracket>)</rightBracket><value>DateAdd(DateTimeNow(),-1,"M")</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>d2864208c61f405bb5a7e0dc18a01a08</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>month_tmp.id</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.id</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>month_tmp.equipId</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.equipId</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>month_tmp.upkeepDate</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.upkeepDate</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>month_tmp.cycle</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.cycle</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>d2864208c61f405bb5a7e0dc18a01a08</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>d2864208c61f405bb5a7e0dc18a01a08</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ModifyDataBaseRecord" ruleName="修改数据库中的记录" instanceCode="BR_ModifyDataBaseRecord1_1" instanceName="修改数据库中的记录_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:39:30">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourcesMapping":[{"condition":[{"columnType":"1","field":"bo_akl_taskPushRecode.id","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.r1.id","valueType":"9"}],"dataMap":[{"colName":"bo_akl_taskPushRecode.isFinish","colValue":"1","valueType":"expression"}],"dataSource":"bo_akl_taskPushRecode","opperType":"update"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><orderNo>1</orderNo><destTableName>bo_akl_taskPushRecode</destTableName><opperType>update</opperType><condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.id</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.r1.id</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></condition><dtField><![CDATA[<NewDataSet><dtField><destField>bo_akl_taskPushRecode.isFinish</destField><sourceType>expression</sourceType><sourceField>1</sourceField></dtField></NewDataSet>]]]]><![CDATA[></dtField></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2" instanceName="从数据库获取数据到实体_获取未完成的推送" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:36:03">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"bo_akl_taskPushRecode.taskName","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.f.taskName","valueType":"9"},{"columnType":"1","field":"bo_akl_taskPushRecode.isFinish","fieldType":"integer","leftBracket":"(","logicOperation":"and","operation":"!=","rightBracket":")","value":"1","valueType":"9"}],"entityType":"window","entityName":"bo_akl_taskPushRecode","itemqueryparam":null,"items":[{"destName":"bo_akl_taskPushRecode.crux","sourceName":"bo_akl_taskPushRecode.crux","type":"entityField"},{"destName":"bo_akl_taskPushRecode.id","sourceName":"bo_akl_taskPushRecode.id","type":"entityField"},{"destName":"bo_akl_taskPushRecode.isFinish","sourceName":"bo_akl_taskPushRecode.isFinish","type":"entityField"},{"destName":"bo_akl_taskPushRecode.pushTime","sourceName":"bo_akl_taskPushRecode.pushTime","type":"entityField"},{"destName":"bo_akl_taskPushRecode.tabelName","sourceName":"bo_akl_taskPushRecode.tabelName","type":"entityField"},{"destName":"bo_akl_taskPushRecode.taskCode","sourceName":"bo_akl_taskPushRecode.taskCode","type":"entityField"},{"destName":"bo_akl_taskPushRecode.taskName","sourceName":"bo_akl_taskPushRecode.taskName","type":"entityField"}],"orderBy":null,"sourceName":"bo_akl_taskPushRecode","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>bo_akl_taskPushRecode</EntityName><SourceType>Table</SourceType><SourceName>bo_akl_taskPushRecode</SourceName><dsWhere><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.taskName</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.f.taskName</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.isFinish</field><fieldType>integer</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>!=</operation><rightBracket>)</rightBracket><value>1</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>c08b978f6ebe416dbab525cbbb7f4a6e</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.crux</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.crux</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.id</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.id</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.isFinish</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.isFinish</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.pushTime</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.pushTime</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.tabelName</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.tabelName</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.taskCode</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.taskCode</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.taskName</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.taskName</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>c08b978f6ebe416dbab525cbbb7f4a6e</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>c08b978f6ebe416dbab525cbbb7f4a6e</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord1" instanceName="新增实体记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:12:09">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"AddLocation":"2","Mappings":[{"destField":"statistics.taskName","fieldtype":"expression","srcField":"LV.f.taskName"},{"destField":"statistics.taskCode","fieldtype":"expression","srcField":"LV.f.taskCode"},{"destField":"statistics.taskNum","fieldtype":"expression","srcField":"0"}],"TableType":"window","TableName":"statistics","NumCount":"1"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><Location>2</Location><EntityType>window</EntityType><EntityName>statistics</EntityName></dtMaster><dtEntityColumns><DestName>statistics.taskName</DestName><SourceType>expression</SourceType><SourceName>LV.f.taskName</SourceName></dtEntityColumns><dtEntityColumns><DestName>statistics.taskCode</DestName><SourceType>expression</SourceType><SourceName>LV.f.taskCode</SourceName></dtEntityColumns><dtEntityColumns><DestName>statistics.taskNum</DestName><SourceType>expression</SourceType><SourceName>0</SourceName></dtEntityColumns></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue2" instanceName="给界面实体/控件/变量赋值_清除计数" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:40:58">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"4","Target":"waitNum","SourceType":"expression","SourceEntityType":"","Source":"0","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>4</TargetType><Target>waitNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>0</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1_1" instanceName="给界面实体/控件/变量赋值_累计代办数量_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:39:37">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"statistics.taskNum","SourceType":"expression","SourceEntityType":"","Source":"[statistics].[taskNum]+1","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>statistics.taskNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>[statistics].[taskNum]+1</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2_1" instanceName="获取年度保养记录" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.cycle","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"\"每年\"","valueType":"9"},{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.equipId","fieldType":"char","leftBracket":"(","logicOperation":"and","operation":"=","rightBracket":")","value":"LV.r.crux","valueType":"9"},{"columnType":"1","field":"bo_akl_EM_infoEquUpkeepRec.upkeepDate","fieldType":"date","leftBracket":"(","logicOperation":"and","operation":">","rightBracket":")","value":"DateAddFunc(DateTimeNow(),-1,\"y\")","valueType":"9"}],"entityType":"ruleSetVar","entityName":"year_tmp","itemqueryparam":null,"items":[{"destName":"year_tmp.id","sourceName":"bo_akl_EM_infoEquUpkeepRec.id","type":"entityField"},{"destName":"year_tmp.equipId","sourceName":"bo_akl_EM_infoEquUpkeepRec.equipId","type":"entityField"},{"destName":"year_tmp.upkeepDate","sourceName":"bo_akl_EM_infoEquUpkeepRec.upkeepDate","type":"entityField"},{"destName":"year_tmp.cycle","sourceName":"bo_akl_EM_infoEquUpkeepRec.cycle","type":"entityField"}],"orderBy":null,"sourceName":"bo_akl_EM_infoEquUpkeepRec","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>ruleSetVar</EntityType><EntityName>year_tmp</EntityName><SourceType>Table</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec</SourceName><dsWhere><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.cycle</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>"每年"</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.equipId</field><fieldType>char</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>=</operation><rightBracket>)</rightBracket><value>LV.r.crux</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_EM_infoEquUpkeepRec.upkeepDate</field><fieldType>date</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>&gt;</operation><rightBracket>)</rightBracket><value>DateAddFunc(DateTimeNow(),-1,"y")</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>d2864208c61f405bb5a7e0dc18a01a08</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>year_tmp.id</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.id</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>year_tmp.equipId</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.equipId</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>year_tmp.upkeepDate</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.upkeepDate</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>d2864208c61f405bb5a7e0dc18a01a08</MasterID><DestName>year_tmp.cycle</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_EM_infoEquUpkeepRec.cycle</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>d2864208c61f405bb5a7e0dc18a01a08</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>d2864208c61f405bb5a7e0dc18a01a08</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2_2" instanceName="从数据库获取数据到实体_获取未完成的推送_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:35:50">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"bo_akl_taskPushRecode.taskName","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.f.taskName","valueType":"9"},{"columnType":"1","field":"bo_akl_taskPushRecode.isFinish","fieldType":"integer","leftBracket":"(","logicOperation":"and","operation":"!=","rightBracket":")","value":"1","valueType":"9"}],"entityType":"window","entityName":"bo_akl_taskPushRecode","itemqueryparam":null,"items":[{"destName":"bo_akl_taskPushRecode.crux","sourceName":"bo_akl_taskPushRecode.crux","type":"entityField"},{"destName":"bo_akl_taskPushRecode.id","sourceName":"bo_akl_taskPushRecode.id","type":"entityField"},{"destName":"bo_akl_taskPushRecode.isFinish","sourceName":"bo_akl_taskPushRecode.isFinish","type":"entityField"},{"destName":"bo_akl_taskPushRecode.pushTime","sourceName":"bo_akl_taskPushRecode.pushTime","type":"entityField"},{"destName":"bo_akl_taskPushRecode.tabelName","sourceName":"bo_akl_taskPushRecode.tabelName","type":"entityField"},{"destName":"bo_akl_taskPushRecode.taskCode","sourceName":"bo_akl_taskPushRecode.taskCode","type":"entityField"},{"destName":"bo_akl_taskPushRecode.taskName","sourceName":"bo_akl_taskPushRecode.taskName","type":"entityField"}],"orderBy":null,"sourceName":"bo_akl_taskPushRecode","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>bo_akl_taskPushRecode</EntityName><SourceType>Table</SourceType><SourceName>bo_akl_taskPushRecode</SourceName><dsWhere><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.taskName</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.f.taskName</value><valueType>9</valueType></dtWhere><dtWhere><columnType>1</columnType><field>bo_akl_taskPushRecode.isFinish</field><fieldType>integer</fieldType><leftBracket>(</leftBracket><logicOperation>and</logicOperation><operation>!=</operation><rightBracket>)</rightBracket><value>1</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>c08b978f6ebe416dbab525cbbb7f4a6e</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.crux</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.crux</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.id</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.id</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.isFinish</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.isFinish</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.pushTime</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.pushTime</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.tabelName</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.tabelName</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.taskCode</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.taskCode</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c08b978f6ebe416dbab525cbbb7f4a6e</MasterID><DestName>bo_akl_taskPushRecode.taskName</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_taskPushRecode.taskName</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>c08b978f6ebe416dbab525cbbb7f4a6e</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>c08b978f6ebe416dbab525cbbb7f4a6e</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord1_1" instanceName="新增实体记录_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:36:21">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"AddLocation":"2","Mappings":[{"destField":"statistics.taskName","fieldtype":"expression","srcField":"LV.f.taskName"},{"destField":"statistics.taskCode","fieldtype":"expression","srcField":"LV.f.taskCode"},{"destField":"statistics.taskNum","fieldtype":"expression","srcField":"0"}],"TableType":"window","TableName":"statistics","NumCount":"1"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><Location>2</Location><EntityType>window</EntityType><EntityName>statistics</EntityName></dtMaster><dtEntityColumns><DestName>statistics.taskName</DestName><SourceType>expression</SourceType><SourceName>LV.f.taskName</SourceName></dtEntityColumns><dtEntityColumns><DestName>statistics.taskCode</DestName><SourceType>expression</SourceType><SourceName>LV.f.taskCode</SourceName></dtEntityColumns><dtEntityColumns><DestName>statistics.taskNum</DestName><SourceType>expression</SourceType><SourceName>0</SourceName></dtEntityColumns></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue2_1" instanceName="给界面实体/控件/变量赋值_清除计数_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-08 23:40:58">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"4","Target":"waitNum","SourceType":"expression","SourceEntityType":"","Source":"0","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>4</TargetType><Target>waitNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>0</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+    <Variables>
+      <Variable code="taskInfo" name="待办任务分组" fieldType="entity" initValue="" isMust="false" desc="">
+        <Entity>
+          <Field code="taskName" name="任务名称" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="taskCode" name="任务编号" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="sums" name="任务数量" fieldType="integer" length="50" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+        </Entity>
+      </Variable>
+      <Variable code="year_tmp" name="每年" fieldType="entity" initValue="" isMust="false" desc="">
+        <Entity>
+          <Field code="id" name="" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="equipId" name="设备id" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="upkeepDate" name="保养时间" fieldType="date" length="" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="cycle" name="周期" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+        </Entity>
+      </Variable>
+      <Variable code="halfyear_tmp" name="每半年" fieldType="entity" initValue="" isMust="false" desc="">
+        <Entity>
+          <Field code="id" name="" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="equipId" name="设备id" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="upkeepDate" name="保养时间" fieldType="date" length="" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="cycle" name="周期" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+        </Entity>
+      </Variable>
+      <Variable code="quarter_tmp" name="每季度" fieldType="entity" initValue="" isMust="false" desc="">
+        <Entity>
+          <Field code="id" name="" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="equipId" name="设备id" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="upkeepDate" name="保养时间" fieldType="date" length="" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="cycle" name="周期" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+        </Entity>
+      </Variable>
+      <Variable code="month_tmp" name="每月" fieldType="entity" initValue="" isMust="false" desc="">
+        <Entity>
+          <Field code="id" name="" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="equipId" name="设备id" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="upkeepDate" name="保养时间" fieldType="date" length="" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="cycle" name="周期" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+        </Entity>
+      </Variable>
+      <Variable code="waitNum" name="代办数量" fieldType="integer" initValue="0" isMust="false" desc="" />
+    </Variables>
+  </Method>
+</Methods>

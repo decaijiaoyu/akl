@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2018-08-18 15:01:43]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2019-05-15 18:59:48]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-07-30 16:53:04]]></ModificationTime>
   <VSql><![CDATA[select
 proLineName,
 proEquName,

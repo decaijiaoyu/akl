@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-06-25 10:58:55]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2019-03-04 17:27:25]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-07-30 16:57:58]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -169,6 +169,14 @@
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[1-有退料]]></Remark>
     </Column>
+    <Column id="6f25e0b33f8b4c7a88d082c15c830c38" code="lineStartType" name="开线类型" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[1.注塑 2.产品]]></Remark>
+    </Column>
+    <Column id="768bfc3ed6f646778876d3444c597846" code="qualityCheck" name="是否质检" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[1.是,2 否]]></Remark>
+    </Column>
   </Columns>
   <Indexes />
   <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
@@ -215,6 +223,8 @@
       <ColumnData code="unusualStartClasses"><![CDATA[]]></ColumnData>
       <ColumnData code="unusualStartClassesId"><![CDATA[]]></ColumnData>
       <ColumnData code="returnMaterialState"><![CDATA[]]></ColumnData>
+      <ColumnData code="lineStartType"><![CDATA[]]></ColumnData>
+      <ColumnData code="qualityCheck"><![CDATA[]]></ColumnData>
     </RowData>
     <RowData>
       <ColumnData code="id"><![CDATA[9c31470f54c47f4b38f7f13f241b83ec]]></ColumnData>
@@ -258,6 +268,8 @@
       <ColumnData code="unusualStartClasses"><![CDATA[]]></ColumnData>
       <ColumnData code="unusualStartClassesId"><![CDATA[]]></ColumnData>
       <ColumnData code="returnMaterialState"><![CDATA[]]></ColumnData>
+      <ColumnData code="lineStartType"><![CDATA[]]></ColumnData>
+      <ColumnData code="qualityCheck"><![CDATA[]]></ColumnData>
     </RowData>
   </Data>
 </Table>

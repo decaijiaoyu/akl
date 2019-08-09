@@ -3,7 +3,7 @@
     <property name="Width"><![CDATA[722]]></property>
     <property name="Height"><![CDATA[379]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
-    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[bo_akl_PM_TCGeneralTraining]]></property>
     <property name="FormLoadAction"><![CDATA[NewMaintenanceOfGeneralTrainingContent_FormLoadAction]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>

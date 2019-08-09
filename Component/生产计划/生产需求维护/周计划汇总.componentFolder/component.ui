@@ -1,7 +1,7 @@
 ﻿<form type="1002" code="form15" IsLocked="False">
   <propertys>
-    <property name="Width"><![CDATA[1864]]></property>
-    <property name="Height"><![CDATA[445]]></property>
+    <property name="Width"><![CDATA[2049]]></property>
+    <property name="Height"><![CDATA[742]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
     <property name="LayoutType"><![CDATA[None]]></property>
     <property name="TableName"><![CDATA[]]></property>
@@ -17,12 +17,12 @@
     <property name="RefResources"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGButton Code="JGButton2" LabelText="工时产出模式" Left="463" OnClick="JGButton2_OnClick_1" PercentHeight="5.8%" PercentWidth="5.5%" TabIndex="22" Top="21" Width="102" />
-    <JGButton Code="JGButton6" LabelText="查看看板排程" Left="344" OnClick="JGButton6_OnClick" PercentHeight="5.8%" PercentWidth="5.5%" TabIndex="22" Top="21" Width="102" />
-    <JGButton Code="JGButton5" LabelText="查看周计划排程" Left="215" OnClick="JGButton5_OnClick" PercentHeight="5.8%" PercentWidth="6.1%" TabIndex="21" Top="21" Width="114" />
-    <JGButton Code="JGButton4" LabelText="周计划排期" Left="93" OnClick="JGButton4_OnClick" PercentHeight="5.8%" PercentWidth="5.5%" TabIndex="20" Top="21" Width="102" />
-    <JGButton BackColor="255, 0, 0" Code="JGButton1" LabelText="删除" Left="24" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="2.8%" TabIndex="18" Top="21" />
-    <JGDataGrid AllowMerge="True" Code="JGDataGrid1" Height="368" LabelText="列表" Left="24" PercentHeight="82.7%" PercentWidth="97.3%" RowsFixedCount="2" TabIndex="0" TableName="bo_akl_MM_weeklyPlan_summary" Top="53" Width="1813">
+    <JGButton Code="JGButton2" LabelText="工时产出模式" Left="463" OnClick="JGButton2_OnClick_1" PercentHeight="3.5%" PercentWidth="5%" TabIndex="22" Top="21" Width="102" />
+    <JGButton Code="JGButton6" LabelText="查看看板排程" Left="344" OnClick="JGButton6_OnClick" PercentHeight="3.5%" PercentWidth="5%" TabIndex="22" Top="21" Width="102" />
+    <JGButton Code="JGButton5" LabelText="查看周计划排程" Left="215" OnClick="JGButton5_OnClick" PercentHeight="3.5%" PercentWidth="5.6%" TabIndex="21" Top="21" Width="114" />
+    <JGButton Code="JGButton4" LabelText="周计划排期" Left="93" OnClick="JGButton4_OnClick" PercentHeight="3.5%" PercentWidth="5%" TabIndex="20" Top="21" Width="102" />
+    <JGButton BackColor="255, 0, 0" Code="JGButton1" LabelText="删除" Left="24" OnClick="JGButton1_OnClick" PercentHeight="3.5%" PercentWidth="2.5%" TabIndex="18" Top="21" />
+    <JGDataGrid AllowMerge="True" Code="JGDataGrid1" Height="634" LabelText="列表" Left="24" PercentHeight="85.4%" PercentWidth="96%" RowsFixedCount="2" TabIndex="0" TableName="bo_akl_MM_weeklyPlan_summary" Top="53" Width="1968">
       <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="productType" LabelText="产品类型|产品类型" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="prLine" LabelText="产线|产线" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="prNo" LabelText="P/N产品型号|P/N产品型号" TableName="bo_akl_MM_weeklyPlan_summary" />

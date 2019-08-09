@@ -24,6 +24,7 @@
           <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="num" LabelText="数量" TableName="materialConfirm" />
           <JGTextBoxColumn Code="JGTextBoxColumn5" ColumnName="batchNo" LabelText="批次号" TableName="materialConfirm" Width="180" />
           <JGTextBoxColumn Code="JGTextBoxColumn6" ColumnName="qrCodeInfo" LabelText="二维码信息" TableName="materialConfirm" Width="200" />
+          <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="returnNum" LabelText="转移数量" TableName="materialConfirm" Width="163" />
         </JGDataGrid>
       </JGPanel>
       <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="50" LayoutType="BorderLayout" PercentHeight="11.1%" PercentWidth="100%" TabIndex="1" Width="839">

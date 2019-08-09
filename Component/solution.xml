@@ -823,6 +823,13 @@
               <FileSystemObjectName>物料确认_查看信息</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
+            <NavigationNode>
+              <Code>form35</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>选择是否注塑开线</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
@@ -1009,6 +1016,57 @@
               <NodeType>Component</NodeType>
               <FileSystemObjectType>File</FileSystemObjectType>
               <FileSystemObjectName>不良原因标示(成品)</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+          </SubNodes>
+        </NavigationNode>
+        <NavigationNode>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\三次元报告维护</Code>
+          <NodeType>Folder</NodeType>
+          <FileSystemObjectType>Directory</FileSystemObjectType>
+          <FileSystemObjectName>三次元报告维护</FileSystemObjectName>
+          <SubNodes>
+            <NavigationNode>
+              <Code>form36</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>三次元报告维护</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form37</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>上传报告</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form39</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>新增三次元报告</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form40</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>选择已开线主表</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+          </SubNodes>
+        </NavigationNode>
+        <NavigationNode>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\待质检产品产线</Code>
+          <NodeType>Folder</NodeType>
+          <FileSystemObjectType>Directory</FileSystemObjectType>
+          <FileSystemObjectName>待质检产品产线</FileSystemObjectName>
+          <SubNodes>
+            <NavigationNode>
+              <Code>form38</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>待质检产品产线</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
           </SubNodes>
@@ -1302,6 +1360,13 @@
               <NodeType>Component</NodeType>
               <FileSystemObjectType>File</FileSystemObjectType>
               <FileSystemObjectName>修改设备信息_2</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form46</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>设备信息查询</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
           </SubNodes>
@@ -1758,6 +1823,56 @@
             </NavigationNode>
           </SubNodes>
         </NavigationNode>
+        <NavigationNode>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\维修记录</Code>
+          <NodeType>Folder</NodeType>
+          <FileSystemObjectType>Directory</FileSystemObjectType>
+          <FileSystemObjectName>维修记录</FileSystemObjectName>
+          <SubNodes>
+            <NavigationNode>
+              <Code>form41</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>维修记录维护</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form42</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>新增维修记录</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form43</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>选择工站</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form44</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>选择产线</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form45</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>选择维修人</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form421</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>编辑维修记录</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+          </SubNodes>
+        </NavigationNode>
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
@@ -1828,6 +1943,13 @@
           <NodeType>Component</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>产线设备变动数据历史记录</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>form47</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>待办任务</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>

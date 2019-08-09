@@ -79,4 +79,7 @@
   <menuItem code="form_review" name="生产计划审核" isDisabled="false" type="0" ruleName="" windowCode="form24" parameters="" />
   <menuItem code="from_productPlanChangeLog" name="生产计划修改日志" isDisabled="false" type="0" ruleName="" windowCode="form33" parameters="" />
   <menuItem code="from_stockInfo" name="erp库存信息" isDisabled="false" type="0" ruleName="" windowCode="form34" parameters="" />
+  <menuItem code="from_threeReport" name="三次元报告" isDisabled="false" type="0" ruleName="" windowCode="form36" parameters="" />
+  <menuItem code="waitQualityCheck" name="待检测注塑产品" isDisabled="false" type="0" ruleName="" windowCode="form38" parameters="" />
+  <menuItem code="repairRecode" name="维修记录" isDisabled="false" type="0" ruleName="" windowCode="form41" parameters="" />
 </dir>

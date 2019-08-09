@@ -26,7 +26,7 @@
           <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="packNum" LabelText="包装数量" TableName="materialConfirm" />
           <JGTextBoxColumn Code="JGTextBoxColumn10" ColumnName="materialType" LabelText="物料类型" ReadOnly="True" TableName="materialConfirm" />
           <JGFloatBoxColumn Code="JGFloatBoxColumn3" ColumnName="residueNum" LabelText="剩余量" TableName="materialConfirm" />
-          <JGIntegerBoxColumn Code="JGIntegerBoxColumn2" ColumnName="returnNum" LabelText="已退数量" ReadOnly="True" TableName="materialConfirm" />
+          <JGIntegerBoxColumn Code="JGIntegerBoxColumn2" ColumnName="returnNum" LabelText="退料数量" TableName="materialConfirm" />
         </JGDataGrid>
       </JGPanel>
       <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="50" LayoutType="BorderLayout" PercentHeight="10%" PercentWidth="100%" TabIndex="1" Width="869">
@@ -43,7 +43,9 @@
       <JGLabel Code="Lab_Info" Dock="Bottom" FontStyle="微软雅黑, 6.75pt" LabelText="" PercentHeight="4.8%" PercentWidth="100%" TabIndex="6" ToolTip="&quot;获取当前窗口信息&quot;" Top="476" Width="10" />
     </JGPanel>
   </controls>
-  <outputs />
+  <outputs>
+    <variable code="isOk" name="isOk" fieldType="char" defaultValue="" description="" isRestore="false" />
+  </outputs>
   <inputs>
     <variable code="lId" name="开线Id" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
       <EnumValue><![CDATA[]]></EnumValue>

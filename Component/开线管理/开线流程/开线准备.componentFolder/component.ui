@@ -21,7 +21,7 @@
     <JGTextBox Code="JGTextBox5" ColumnName="batchNum" IsMust="True" LabelText="批次号" Left="348" PercentHeight="3.2%" PercentWidth="48.8%" TabIndex="31" TableName="bo_akl_line_start" Top="207" Width="349" />
     <JGLongDateTimePicker Code="JGLongDateTimePicker1" ColumnName="prepareStop" IsMust="True" LabelText="预停机时间" Left="12" PercentHeight="3.2%" PercentWidth="46.2%" TabIndex="30" TableName="bo_akl_line_start" Top="207" Width="330" />
     <JGBaseDictBox Code="JGBaseDictBox4" ColumnName="proTimeTitle" IDColumnName="proTimeTitle" LabelText="生产时间标题" Left="348" OpenModuleAction="JGBaseDictBox4_OpenModuleAction" PercentHeight="3.2%" PercentWidth="48.8%" TabIndex="29" TableName="bo_akl_line_start" Top="175" Width="349" />
-    <JGBaseDictBox Code="JGBaseDictBox3" ColumnName="planCode" IDColumnName="planCode" IsMust="True" LabelText="制令/计划单号" Left="12" OpenModuleAction="JGBaseDictBox3_OpenModuleAction" PercentHeight="3.2%" PercentWidth="46.2%" TabIndex="29" TableName="bo_akl_line_start" Top="175" Width="330" />
+    <JGBaseDictBox Code="JGBaseDictBox3" ColumnName="planCode" IDColumnName="planCode" LabelText="制令/计划单号" Left="12" OpenModuleAction="JGBaseDictBox3_OpenModuleAction" PercentHeight="3.2%" PercentWidth="46.2%" TabIndex="29" TableName="bo_akl_line_start" Top="175" Width="330" />
     <JGButton Code="JGButton1" LabelText="确认开机" Left="301" OnClick="JGButton3_OnClick" PercentHeight="3.2%" PercentWidth="13%" TabIndex="20" Top="758" Width="93" />
     <JGButton Code="JGButton6" LabelText="确定换人" Left="86" OnClick="JGButton6_OnClick" PercentHeight="3.2%" PercentWidth="10.8%" TabIndex="12" Top="269" Visible="False" Width="77" />
     <JGBaseDictBox Code="JGBaseDictBox2" ColumnName="inspectorName" IDColumnName="inspectorCode" IsMust="True" LabelText="巡检员" Left="12" OpenModuleAction="JGBaseDictBox2_OpenModuleAction" PercentHeight="3.2%" PercentWidth="46.2%" TabIndex="10" TableName="bo_akl_line_start" Top="239" Width="330" />
@@ -116,6 +116,12 @@
       <EnumValue><![CDATA[]]></EnumValue>
     </variable>
     <variable code="inspectorOpen" name="是否为巡检员打开" fieldType="boolean" defaultValue="false" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+    <variable code="injection" name="是否注塑" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+    <variable code="detection" name="是否需要质检测" fieldType="integer" defaultValue="" description="" isRestore="false" isPrivate="false">
       <EnumValue><![CDATA[]]></EnumValue>
     </variable>
   </inputs>

@@ -3,7 +3,7 @@
     <property name="Width"><![CDATA[1263]]></property>
     <property name="Height"><![CDATA[480]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
-    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[equipmentDataGrid_OnValueLoaded]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
@@ -28,6 +28,7 @@
     </JGPanel>
     <JGPanel BorderWidth="0" Code="JGPanel1" Dock="Left" Height="434" PercentHeight="90.4%" PercentWidth="1.6%" TabIndex="11" Top="46" Width="20" />
     <JGPanel BorderWidth="0" Code="JGPanel2" Dock="Top" Height="46" PercentHeight="9.6%" PercentWidth="100%" TabIndex="11" Width="1263">
+      <JGButton Code="JGButton8" LabelText="设备信息查询" Left="315" OnClick="JGButton8_OnClick" PercentHeight="56.5%" PercentWidth="8.1%" TabIndex="19" Top="14" Width="102" />
       <JGButton Code="JGButton7" LabelText="导出" Left="1136" OnClick="JGButton7_OnClick" PercentHeight="56.5%" PercentWidth="4.1%" TabIndex="18" Top="12" />
       <JGButton Code="JGButton6" LabelText="导入数据" Left="1053" OnClick="JGButton6_OnClick" PercentHeight="56.5%" PercentWidth="6.1%" TabIndex="16" Top="12" Width="77" />
       <JGAttachment Code="JGAttachment1" LabelText="文件" LabelWidth="0" Left="936" PercentHeight="56.5%" PercentWidth="8.8%" TabIndex="15" TableName="bo_akl_EM_EquipmentInformation" Top="12" Width="111" />

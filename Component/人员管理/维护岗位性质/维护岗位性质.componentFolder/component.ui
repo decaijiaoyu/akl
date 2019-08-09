@@ -3,7 +3,7 @@
     <property name="Width"><![CDATA[1170]]></property>
     <property name="Height"><![CDATA[480]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
-    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[bo_akl_base_positionType]]></property>
     <property name="FormLoadAction"><![CDATA[NatureOfMaintainingThePost_FormLoadAction]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>

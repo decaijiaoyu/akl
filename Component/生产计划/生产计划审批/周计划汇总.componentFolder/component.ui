@@ -1,9 +1,9 @@
 ﻿<form type="1002" code="form25" IsLocked="False">
   <propertys>
-    <property name="Width"><![CDATA[966]]></property>
-    <property name="Height"><![CDATA[450]]></property>
+    <property name="Width"><![CDATA[1279]]></property>
+    <property name="Height"><![CDATA[878]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
-    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[form25_FormLoadAction]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
@@ -17,12 +17,12 @@
     <property name="RefResources"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGButton Code="JGButton4" LabelText="修改" Left="680" OnClick="JGButton4_OnClick_1" PercentHeight="5.8%" PercentWidth="5.4%" TabIndex="22" Top="31" />
-    <JGButton Code="JGButton3" Height="27" LabelText="查看周计划排期" Left="523" OnClick="JGButton3_OnClick" PercentHeight="6%" PercentWidth="14.4%" TabIndex="20" Top="31" Width="139" />
-    <JGTextBox Code="JGTextBox1" Height="27" LabelText="审批意见" Left="105" PercentHeight="6%" PercentWidth="42.7%" TabIndex="19" Top="31" Width="412" />
-    <JGButton Code="JGButton2" Height="40" LabelText="同意并下一步(工时产出)" Left="795" OnClick="JGButton2_OnClick" PercentHeight="8.9%" PercentWidth="16.5%" TabIndex="18" Top="18" Width="159" />
-    <JGButton Code="JGButton1" Height="40" LabelText="审批不通过" Left="3" OnClick="JGButton1_OnClick" PercentHeight="8.9%" PercentWidth="9.9%" TabIndex="17" Top="18" Width="96" />
-    <JGDataGrid Code="JGDataGrid1" FetchMode="paged" Height="374" LabelText="列表" Left="3" PercentHeight="83.1%" PercentWidth="98.4%" ReadOnly="True" TabIndex="0" TableName="bo_akl_MM_weeklyPlan_summary" Top="64" Width="951">
+    <JGButton Code="JGButton4" LabelText="修改" Left="680" OnClick="JGButton4_OnClick_1" PercentHeight="3%" PercentWidth="4.1%" TabIndex="22" Top="31" />
+    <JGButton Code="JGButton3" Height="27" LabelText="查看周计划排期" Left="523" OnClick="JGButton3_OnClick" PercentHeight="3.1%" PercentWidth="10.9%" TabIndex="20" Top="31" Width="139" />
+    <JGTextBox Code="JGTextBox1" Height="27" LabelText="审批意见" Left="105" PercentHeight="3.1%" PercentWidth="32.2%" TabIndex="19" Top="31" Width="412" />
+    <JGButton Code="JGButton2" Height="40" LabelText="同意并下一步(工时产出)" Left="795" OnClick="JGButton2_OnClick" PercentHeight="4.6%" PercentWidth="12.4%" TabIndex="18" Top="18" Width="159" />
+    <JGButton Code="JGButton1" Height="40" LabelText="审批不通过" Left="3" OnClick="JGButton1_OnClick" PercentHeight="4.6%" PercentWidth="7.5%" TabIndex="17" Top="18" Width="96" />
+    <JGDataGrid Code="JGDataGrid1" FetchMode="paged" Height="764" LabelText="列表" Left="3" PercentHeight="87%" PercentWidth="99.5%" ReadOnly="True" TabIndex="0" TableName="bo_akl_MM_weeklyPlan_summary" Top="64" Width="1273">
       <JGTextBoxColumn Code="JGTextBoxColumn5" ColumnName="productType" LabelText="产品类型" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="prLine" LabelText="产线" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="prNo" LabelText="P/N产品型号" TableName="bo_akl_MM_weeklyPlan_summary" />

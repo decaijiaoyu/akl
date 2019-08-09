@@ -3,19 +3,6 @@
   <Graphs>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_MM_weeklyPlan_summary</Code>
-      <Top>48</Top>
-      <Left>50</Left>
-      <Width>476</Width>
-      <Height>507</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
       <Code>bo_akl_MM_productEntryRecode</Code>
       <Top>51</Top>
       <Left>551</Left>
@@ -34,6 +21,19 @@
       <Left>825</Left>
       <Width>183</Width>
       <Height>107</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_weeklyPlan_summary</Code>
+      <Top>48</Top>
+      <Left>50</Left>
+      <Width>476</Width>
+      <Height>507</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

@@ -32,7 +32,7 @@
       </JGDataGrid>
     </JGPanel>
     <JGPanel BorderWidth="0" Code="JGPanel3" Dock="Left" Height="434" Padding="1, 1, 1, 1" PercentHeight="90.4%" PercentWidth="1.7%" TabIndex="21" Top="46" Width="20" />
-    <JGPanel BorderWidth="0" Code="JGPanel1" Dock="Top" Height="46" Padding="1, 1, 1, 1" PercentHeight="9.6%" PercentWidth="100%" TabIndex="1" Width="1170">
+    <JGPanel BorderWidth="0" Code="JGPanel1" Dock="Top" Height="46" LayoutType="BorderLayout" Padding="1, 1, 1, 1" PercentHeight="9.6%" PercentWidth="100%" TabIndex="1" Width="1170">
       <JGButton Code="JGButton8" LabelText="" Left="1128" OnClick="JGButton8_OnClick" PercentHeight="56.5%" PercentWidth="0.9%" TabIndex="22" Top="14" Width="10" />
       <JGButton Code="JGButton7" LabelText="导出" Left="426" OnClick="JGButton7_OnClick" PercentHeight="56.5%" PercentWidth="4.4%" TabIndex="22" Top="10" />
       <JGButton Code="JGButton6" LabelText="导入数据" Left="343" OnClick="JGButton6_OnClick" PercentHeight="56.5%" PercentWidth="6.6%" TabIndex="5" Top="10" Width="77" />

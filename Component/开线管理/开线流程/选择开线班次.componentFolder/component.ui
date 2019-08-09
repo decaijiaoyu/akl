@@ -44,6 +44,7 @@
       <entity>
         <field code="id" name="" fieldType="char" defaultValue="" isRestore="false" />
         <field code="startClasses" name="开线班次" fieldType="char" defaultValue="" isRestore="false" />
+        <field code="returnMaterialState" name="退料状态" fieldType="integer" defaultValue="" isRestore="false" />
       </entity>
     </variable>
   </outputs>

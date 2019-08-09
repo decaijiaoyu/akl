@@ -1,0 +1,34 @@
+﻿<form type="1002" code="form41" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[960]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form41_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[维修记录维护]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton4" LabelText="修改" Left="471" OnClick="JGButton4_OnClick" PercentHeight="5.8%" PercentWidth="6.4%" TabIndex="8" Top="22" Width="61" />
+    <JGButton Code="JGButton3" LabelText="删除" Left="401" OnClick="JGButton3_OnClick" PercentHeight="5.8%" PercentWidth="5.4%" TabIndex="7" Top="23" />
+    <JGButton Code="JGButton2" LabelText="新增" Left="330" OnClick="JGButton2_OnClick" PercentHeight="5.8%" PercentWidth="5.4%" TabIndex="6" Top="23" />
+    <JGButton Code="JGButton1" Height="28" LabelText="重置" Left="247" OnClick="JGButton1_OnClick" PercentHeight="6.2%" PercentWidth="6%" TabIndex="5" Top="23" Width="58" />
+    <JGLocateBox Code="JGLocateBox1" Left="21" PercentHeight="6.2%" PercentWidth="22.9%" TabIndex="4" Top="21" />
+    <JGDataGrid Code="JGDataGrid1" Height="349" LabelText="列表" Left="21" PercentHeight="77.6%" PercentWidth="97.5%" TabIndex="0" TableName="bo_akl_EM_maintainRecord" Top="57" Width="936">
+      <JGDateTimePickerColumn Code="JGDateTimePickerColumn1" ColumnName="startDate" LabelText="维修日期" TableName="bo_akl_EM_maintainRecord" Width="190" />
+      <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="repairType" LabelText="维修类型" TableName="bo_akl_EM_maintainRecord" Width="228" />
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="repaircontent" LabelText="维修内容" TableName="bo_akl_EM_maintainRecord" Width="227" />
+    </JGDataGrid>
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

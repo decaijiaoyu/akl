@@ -288,6 +288,27 @@
           <FileSystemObjectName>bo_akl_MM_productPlanlog</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_MM_qualityInspection</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_MM_qualityInspection</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_MM_erpStock</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_MM_erpStock</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_MM_erpStock_clone</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_MM_erpStock_clone</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
@@ -357,6 +378,13 @@
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>firstWeekOfYear</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_taskPushRecode</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_taskPushRecode</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>
@@ -561,6 +589,13 @@
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>bo_akl_line_returnMaterialRel</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_line_threeReport</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_line_threeReport</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>
@@ -800,6 +835,13 @@
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>bo_akl_EM_carrierItem_clone</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_EM_maintainRecord</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_EM_maintainRecord</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>

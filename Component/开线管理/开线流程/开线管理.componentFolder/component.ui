@@ -3,7 +3,7 @@
     <property name="Width"><![CDATA[1170]]></property>
     <property name="Height"><![CDATA[480]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
-    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[lineStart_list_FormLoadAction]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
@@ -30,6 +30,7 @@
     </JGPanel>
     <JGPanel BorderWidth="0" Code="JGPanel2" Dock="Left" Height="402" PercentHeight="83.8%" PercentWidth="1.7%" TabIndex="15" Top="78" Width="20" />
     <JGPanel BorderWidth="0" Code="JGPanel1" Dock="Top" Height="78" PercentHeight="16.2%" PercentWidth="100%" TabIndex="14" Width="1170">
+      <JGButton Code="JGButton11" LabelText="成功" Left="800" OnClick="JGButton11_OnClick_1" PercentHeight="33.3%" PercentWidth="4.4%" TabIndex="36" Top="42" />
       <JGButton Code="JGButton10" Height="25" LabelText="测试用别点" Left="1062" OnClick="JGButton10_OnClick_1" PercentHeight="32.1%" PercentWidth="7.6%" RemindText="测试" TabIndex="35" Top="10" Width="89" />
       <JGButton Code="JGButton24" LabelText="手动复位" Left="717" OnClick="JGButton24_OnClick" PercentHeight="33.3%" PercentWidth="6.6%" TabIndex="36" Top="42" Visible="False" Width="77" />
       <JGButton Code="JGButton23" LabelText="退料" Left="576" OnClick="JGButton23_OnClick" PercentHeight="33.3%" PercentWidth="4.4%" TabIndex="35" Top="42" />

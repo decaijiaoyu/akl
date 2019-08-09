@@ -1,9 +1,9 @@
 ﻿<form type="1002" code="form33" IsLocked="False">
   <propertys>
-    <property name="Width"><![CDATA[960]]></property>
+    <property name="Width"><![CDATA[1001]]></property>
     <property name="Height"><![CDATA[450]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
-    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[form33_FormLoadAction]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
@@ -17,9 +17,9 @@
     <property name="RefResources"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGTextBox Code="JGTextBox1" LabelText="修改表单" Left="18" PercentHeight="5.8%" PercentWidth="24.5%" TabIndex="9" Top="27" />
-    <JGButton Code="JGButton1" LabelText="查询" Left="269" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="10.3%" TabIndex="8" Top="27" Width="99" />
-    <JGDataGrid Code="JGDataGrid1" Height="275" LabelText="列表" Left="18" PercentHeight="61.1%" PercentWidth="90.9%" TabIndex="0" TableName="bo_akl_MM_productPlanlog" Top="77" Width="873">
+    <JGTextBox Code="JGTextBox1" LabelText="修改表单" Left="18" PercentHeight="5.8%" PercentWidth="23.5%" TabIndex="9" Top="27" />
+    <JGButton Code="JGButton1" LabelText="查询" Left="269" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="9.9%" TabIndex="8" Top="27" Width="99" />
+    <JGDataGrid Code="JGDataGrid1" FetchMode="paged" Height="370" LabelText="列表" Left="18" PercentHeight="82.2%" PercentWidth="97.9%" TabIndex="0" TableName="bo_akl_MM_productPlanlog" Top="77" Width="980">
       <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="changeDate" LabelText="修改时间" TableName="bo_akl_MM_productPlanlog" Width="148" />
       <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="changeTabel" LabelText="修改表单" TableName="bo_akl_MM_productPlanlog" Width="160" />
       <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="changeName" LabelText="修改人" TableName="bo_akl_MM_productPlanlog" Width="139" />

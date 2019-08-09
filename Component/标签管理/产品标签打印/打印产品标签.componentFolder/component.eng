@@ -3,22 +3,9 @@
   <Graphs>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_line_start</Code>
-      <Top>100</Top>
-      <Left>20</Left>
-      <Width>251</Width>
-      <Height>267</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
       <Code>bo_akl_MM_productionPlan</Code>
-      <Top>387</Top>
-      <Left>20</Left>
+      <Top>467</Top>
+      <Left>17</Left>
       <Width>339</Width>
       <Height>227</Height>
       <Background />
@@ -69,10 +56,36 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>bo_akl_LM_printProductLabel</Code>
-      <Top>100</Top>
-      <Left>378.999878</Left>
+      <Top>114</Top>
+      <Left>380.999878</Left>
       <Width>379</Width>
       <Height>547</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_line_start</Code>
+      <Top>110</Top>
+      <Left>53</Left>
+      <Width>288</Width>
+      <Height>307</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_weeklyplan_schedule</Code>
+      <Top>515.2095</Top>
+      <Left>1037</Left>
+      <Width>132</Width>
+      <Height>457</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

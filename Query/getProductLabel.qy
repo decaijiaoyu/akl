@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[user_20180828002]]></Creator>
   <CreationTime><![CDATA[2018-12-18 19:38:22]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2019-04-18 12:06:35]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-07-30 16:52:55]]></ModificationTime>
   <VSql><![CDATA[select s.id,s.prolineUserName,s.inspectorName,s.startTime,s.planCode,pii.prName,pji.pNo,pji.pName
 from bo_akl_line_start as s
 left join bo_akl_EM_productInfo as pii on s.equId=pii.id
