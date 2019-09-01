@@ -7,7 +7,7 @@
       <Top>100</Top>
       <Left>641.170654</Left>
       <Width>195</Width>
-      <Height>59</Height>
+      <Height>61</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -20,20 +20,7 @@
       <Top>218</Top>
       <Left>639</Left>
       <Width>132</Width>
-      <Height>60</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
-      <Code>bo_akl_MM_bomInfo</Code>
-      <Top>100</Top>
-      <Left>20</Left>
-      <Width>243</Width>
-      <Height>227</Height>
+      <Height>62</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -47,6 +34,19 @@
       <Left>282.983551</Left>
       <Width>338</Width>
       <Height>187</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_bomInfo</Code>
+      <Top>100</Top>
+      <Left>20</Left>
+      <Width>243</Width>
+      <Height>287</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

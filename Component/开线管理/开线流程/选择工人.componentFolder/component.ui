@@ -29,6 +29,7 @@
   <outputs>
     <variable code="workerId" name="工人编号" fieldType="char" defaultValue="" description="" isRestore="false" />
     <variable code="workerName" name="工人姓名" fieldType="char" defaultValue="" description="" isRestore="false" />
+    <variable code="selectNum" name="可选工人数" fieldType="integer" defaultValue="" description="" isRestore="false" />
   </outputs>
   <inputs>
     <variable code="V" name="" fieldType="entity" defaultValue="" description="" isRestore="false" isPrivate="false">

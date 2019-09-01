@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_productionPlan" Name="生产计划信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_productionPlan" Name="生产计划信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -97,7 +97,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="Exchange" Name="产线设备数据" EntityType="" TableOrQueryCode="">
+    <Entity Code="Exchange" Name="产线设备数据" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>Name</Code>
@@ -131,7 +131,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_materialInfo" Name="物料信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_materialInfo" Name="物料信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -255,7 +255,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="castomer" Name="客户信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="castomer" Name="客户信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -325,7 +325,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_LM_printProductLabel" Name="已打印产品标签" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_LM_printProductLabel" Name="已打印产品标签" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -566,7 +566,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_start" Name="开线主表" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_line_start" Name="开线主表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -699,7 +699,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_weeklyplan_schedule" Name="周计划排期表" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_weeklyplan_schedule" Name="周计划排期表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

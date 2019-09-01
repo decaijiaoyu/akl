@@ -20,6 +20,27 @@
         <reportfield FieldConfigString="&lt;combi&gt;0&lt;/combi&gt;&lt;combionegroup&gt;0&lt;/combionegroup&gt;&lt;fieldname&gt;clean5s&lt;/fieldname&gt;&lt;showcontent&gt;1&lt;/showcontent&gt;&lt;table&gt;abs9weldingline&lt;/table&gt;" TableColumnName="abs9_welding_line.clean5s" TableName="abs9_welding_line" FieldRow="16" FieldCol="2" FieldType="2" />
         <reportfield FieldConfigString="&lt;combi&gt;0&lt;/combi&gt;&lt;combionegroup&gt;0&lt;/combionegroup&gt;&lt;fieldname&gt;otherTime&lt;/fieldname&gt;&lt;showcontent&gt;1&lt;/showcontent&gt;&lt;table&gt;abs9weldingline&lt;/table&gt;" TableColumnName="abs9_welding_line.otherTime" TableName="abs9_welding_line" FieldRow="17" FieldCol="2" FieldType="2" />
       </reportfields>
+      <entityFields>
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="startTime" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="equCode" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="dayShift" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="nightShift" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="workTime" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="dayOutput" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="nightOutput" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="actualTotal" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="dayProductivity" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="nightProductivity" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="unTime" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="pullTest" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="repairTime" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="changeTime" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="reworked" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="clean5s" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="assemblyTime" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="fpg2" />
+        <entityField EntityType="Main" EntityCode="abs9_welding_line" EntityColumnName="" EntityColumnCode="otherTime" />
+      </entityFields>
     </reportsource>
   </reportsources>
 </report>

@@ -1,0 +1,30 @@
+﻿<form type="1002" code="form51" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[960]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form51_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[不良品原因]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton3" LabelText="保存" Left="129" OnClick="JGButton3_OnClick" PercentHeight="5.8%" PercentWidth="5.4%" TabIndex="4" Top="25" />
+    <JGButton BackColor="255, 0, 0" Code="JGButton2" LabelText="删除" Left="71" OnClick="JGButton2_OnClick" PercentHeight="5.8%" PercentWidth="5.4%" TabIndex="3" Top="25" />
+    <JGButton Code="JGButton1" LabelText="新增" Left="13" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="5.4%" TabIndex="2" Top="25" />
+    <JGDataGrid Code="JGDataGrid1" Height="339" LabelText="列表" Left="13" PercentHeight="75.3%" PercentWidth="57.2%" TabIndex="0" TableName="bo_akl_line_badReason" Top="57" Width="549">
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="reason" LabelText="不良品原因" TableName="bo_akl_line_badReason" Width="404" />
+    </JGDataGrid>
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

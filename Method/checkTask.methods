@@ -14,7 +14,7 @@
       <if isEnabled="True" isDebug="False" code="IfCode2">
         <define>
           <expression>GetEntityRowCountFunc("BR_VAR_PARENT.isCheck") == 0</expression>
-          <remark />
+          <remark></remark>
         </define>
         <sequence>
           <evaluateRule code="BR_UpdateRecord1" />
@@ -22,13 +22,16 @@
           <evaluateRule code="BR_ExecuteRuleSet3_1_1" />
           <evaluateRule code="BR_AddTableRecord1" />
           <evaluateRule code="BR_ExecuteRuleSet1_1" />
+          <evaluateRule code="BR_AddTableRecord5" />
+          <evaluateRule code="BR_UpdateRecord2" />
+          <evaluateRule code="BR_ClearEntityData2" />
         </sequence>
       </if>
     </sequence>
   </if>
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="liub" lastModifiedTime="2018-08-31 09:02:57">
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
@@ -69,6 +72,27 @@
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"filter":{"windowInstanceCode":""},"invokeTarget":{"sourceType":"server-ruleSet","invokeType":"api","ruleLocation":"out","componentCode":"vbase_mail","windowCode":"","ruleSetCode":"API_MailSendMessage","isParallelism":"False","executeType":"confirm"},"invokeParams":[{"paramCode":"mailEntity","paramType":"entity","paramValue":"sendMail","paramSource":"ruleSetVar","dataFilterType":"all","paramFieldMapping":[{"paramEntityField":"title","fieldValueType":"expression","fieldValue":"\"点检任务提醒\""},{"paramEntityField":"message","fieldValueType":"expression","fieldValue":"\"点检任务提醒\""},{"paramEntityField":"sendAccountId","fieldValueType":"expression","fieldValue":"BR_VAR_PARENT.[sendMail].[sendAccountId]"},{"paramEntityField":"sendAccountName","fieldValueType":"expression","fieldValue":"BR_VAR_PARENT.[sendMail].[sendAccountName]"},{"paramEntityField":"receiveAccountId","fieldValueType":"expression","fieldValue":"BR_VAR_PARENT.[sendMail].[receiveAccountId]"},{"paramEntityField":"receiveAccountName","fieldValueType":"expression","fieldValue":"BR_VAR_PARENT.[sendMail].[receiveAccountName]"},{"paramEntityField":"receiveType","fieldValueType":"expression","fieldValue":"\"user\""}]}],"returnMapping":null}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtFilter><windowInstanceCode /></dtFilter><dtInvokeTarget><sourceType>server-ruleSet</sourceType><invokeType>api</invokeType><ruleLocation>out</ruleLocation><windowCode /><executeType>confirm</executeType><componentCode>vbase_mail</componentCode><ruleSetCode>API_MailSendMessage</ruleSetCode><isParallelism>False</isParallelism></dtInvokeTarget><dtInvokeParams><paramCode>mailEntity</paramCode><paramType>entity</paramType><paramValue>sendMail</paramValue><paramSource>ruleSetVar</paramSource><paramSourceDisplayText>方法变量实体</paramSourceDisplayText><dataFilterType>all</dataFilterType><paramFieldMapping><![CDATA[<NewDataSet><dtParamFieldMapping><paramEntityField>title</paramEntityField><paramEntityType>ruleSetVar</paramEntityType><fieldValueType>expression</fieldValueType><fieldValue>"点检任务提醒"</fieldValue></dtParamFieldMapping><dtParamFieldMapping><paramEntityField>message</paramEntityField><paramEntityType>ruleSetVar</paramEntityType><fieldValueType>expression</fieldValueType><fieldValue>"点检任务提醒"</fieldValue></dtParamFieldMapping><dtParamFieldMapping><paramEntityField>sendAccountId</paramEntityField><paramEntityType>ruleSetVar</paramEntityType><fieldValueType>expression</fieldValueType><fieldValue>BR_VAR_PARENT.[sendMail].[sendAccountId]</fieldValue></dtParamFieldMapping><dtParamFieldMapping><paramEntityField>sendAccountName</paramEntityField><fieldValueType>expression</fieldValueType><fieldValue>BR_VAR_PARENT.[sendMail].[sendAccountName]</fieldValue></dtParamFieldMapping><dtParamFieldMapping><paramEntityField>receiveAccountId</paramEntityField><fieldValueType>expression</fieldValueType><fieldValue>BR_VAR_PARENT.[sendMail].[receiveAccountId]</fieldValue></dtParamFieldMapping><dtParamFieldMapping><paramEntityField>receiveAccountName</paramEntityField><fieldValueType>expression</fieldValueType><fieldValue>BR_VAR_PARENT.[sendMail].[receiveAccountName]</fieldValue></dtParamFieldMapping><dtParamFieldMapping><paramEntityField>receiveType</paramEntityField><fieldValueType>expression</fieldValueType><fieldValue>"user"</fieldValue></dtParamFieldMapping></NewDataSet>]]]]><![CDATA[></paramFieldMapping></dtInvokeParams></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord5" instanceName="新增实体记录_推送记录" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"AddLocation":"","Mappings":[{"destField":"taskPushRecode.taskName","fieldtype":"expression","srcField":"\"点检任务\""},{"destField":"taskPushRecode.taskCode","fieldtype":"expression","srcField":"\"isCheck\""},{"destField":"taskPushRecode.pushTime","fieldtype":"expression","srcField":"DateTimeNow()"},{"destField":"taskPushRecode.crux","fieldtype":"expression","srcField":"BR_VAR_PARENT.[equ].[equipNo]"},{"destField":"taskPushRecode.tabelName","fieldtype":"expression","srcField":"\"bo_akl_base_checkInfo\""}],"TableType":"ruleSetVar","TableName":"taskPushRecode","NumCount":"1"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><EntityType>ruleSetVar</EntityType><EntityName>taskPushRecode</EntityName></dtMaster><dtEntityColumns><DestName>taskPushRecode.taskName</DestName><SourceType>expression</SourceType><SourceName>"点检任务"</SourceName></dtEntityColumns><dtEntityColumns><DestName>taskPushRecode.taskCode</DestName><SourceType>expression</SourceType><SourceName>"isCheck"</SourceName></dtEntityColumns><dtEntityColumns><DestName>taskPushRecode.pushTime</DestName><SourceType>expression</SourceType><SourceName>DateTimeNow()</SourceName></dtEntityColumns><dtEntityColumns><DestName>taskPushRecode.crux</DestName><SourceType>expression</SourceType><SourceName>BR_VAR_PARENT.[equ].[equipNo]</SourceName></dtEntityColumns><dtEntityColumns><DestName>taskPushRecode.tabelName</DestName><SourceType>expression</SourceType><SourceName>"bo_akl_base_checkInfo"</SourceName></dtEntityColumns></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord2" instanceName="保存实体到数据库_推送记录" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourceMap":[{"dataMap":[{"colName":"bo_akl_taskPushRecode.crux","colValue":"taskPushRecode.crux","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.id","colValue":"taskPushRecode.id","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.isFinish","colValue":"taskPushRecode.isFinish","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.pushTime","colValue":"taskPushRecode.pushTime","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.tabelName","colValue":"taskPushRecode.tabelName","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.taskCode","colValue":"taskPushRecode.taskCode","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.taskName","colValue":"taskPushRecode.taskName","valueType":"entityField"}],"dataSource":"taskPushRecode","dataSourceType":"ruleSetVar","destTab":"bo_akl_taskPushRecode","isSaveAll":true}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><ID>c1819d8173ac400890f2072ee754de20</ID><SourceName>taskPushRecode</SourceName><SourceType>ruleSetVar</SourceType><SourceNameType>taskPushRecode(方法变量)</SourceNameType><IsSaveAll>True</IsSaveAll><TableName>bo_akl_taskPushRecode</TableName></dtMaster><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.crux</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.crux</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.id</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.id</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.isFinish</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.isFinish</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.pushTime</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.pushTime</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.tabelName</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.tabelName</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.taskCode</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.taskCode</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.taskName</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.taskName</Value></dtDetails></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ClearEntityData" ruleName="清除实体记录" instanceCode="BR_ClearEntityData2" instanceName="清除实体记录_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-10 14:44:04">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dtMaster":[{"entityName":"taskPushRecode","entityType":"ruleSetVar","dsWhere":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><EntityName>taskPushRecode</EntityName><EntityType>ruleSetVar</EntityType><Condition><![CDATA[<NewDataSet />]]]]><![CDATA[></Condition></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
     </RuleInstances>
     <Inputs>
@@ -241,6 +265,31 @@
             <description><![CDATA[]]></description>
           </Field>
           <Field code="isop" name="是否操作过" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+        </Entity>
+      </Variable>
+      <Variable code="taskPushRecode" name="任务推送记录" fieldType="entity" initValue="" isMust="false" desc="">
+        <Entity>
+          <Field code="id" name="" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="taskName" name="任务名称" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="taskCode" name="任务编号" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="isFinish" name="是否已经完成" fieldType="integer" length="50" accuracy="">
+            <description><![CDATA[1.完成 ]]></description>
+          </Field>
+          <Field code="pushTime" name="任务推送时间" fieldType="date" length="" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="crux" name="关键查询数据" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="tabelName" name="相关表名" fieldType="char" length="255" accuracy="">
             <description><![CDATA[]]></description>
           </Field>
         </Entity>

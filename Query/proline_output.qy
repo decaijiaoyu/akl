@@ -2,8 +2,8 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2018-08-21 11:01:21]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2018-09-11 14:52:04]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-08-22 10:06:23]]></ModificationTime>
   <VSql><![CDATA[SELECT lineCode, equCode, FORMATDATE(startTime, 'yyyy-mm-dd') AS startTime, DAYNAME(startTime) AS weekName, outputNum
 FROM Line_output order by lineCode,equCode,startTime
 ]]></VSql>

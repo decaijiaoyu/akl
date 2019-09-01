@@ -183,5 +183,18 @@
       <FontColor />
       <IsCollapsed>false</IsCollapsed>
     </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>proline_status_fpg2evow1</Code>
+      <Top>1491.146</Top>
+      <Left>645</Left>
+      <Width>283</Width>
+      <Height>327</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
   </Graphs>
 </EntityGraphConfig>

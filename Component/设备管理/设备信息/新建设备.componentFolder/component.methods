@@ -699,7 +699,7 @@
   </else>
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="100466" lastModifiedTime="2018-07-29 13:47:35">
+      <RuleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-14 15:21:03">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>

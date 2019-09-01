@@ -28,6 +28,7 @@
       <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="50" LayoutType="BorderLayout" PercentHeight="11.1%" PercentWidth="100%" TabIndex="1" Width="496">
         <JGFlowLayoutPanel BorderStyle="None" Code="JGFlowLayoutPanel1" Dock="Fill" Height="50" ItemMargin="0, 12, 12, 12" PercentHeight="100%" PercentWidth="100%" TabIndex="16" Width="496">
           <JGButton Code="JGButton1" LabelText="保存" OnClick="JGButton1_OnClick" PercentHeight="54.2%" PercentWidth="10.5%" TabIndex="17" />
+          <JGButton Code="JGButton2" LabelText="不良原因" Left="64" OnClick="JGButton2_OnClick" PercentHeight="54.2%" PercentWidth="16.8%" TabIndex="14" Top="12" Width="83" />
         </JGFlowLayoutPanel>
       </JGPanel>
       <JGPanel BorderStyle="None" Code="Pnl_Bottom" Dock="Bottom" Height="12" LayoutType="BorderLayout" PercentHeight="2.7%" PercentWidth="100%" TabIndex="1" Top="438" Width="496" />

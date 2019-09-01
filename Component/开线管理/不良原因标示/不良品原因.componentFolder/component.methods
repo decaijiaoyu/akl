@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2019/8/19 21:48:03-->
+<Methods>
+  <Method Code="form51_FormLoadAction" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_DataBaseDataToInterfaceEntity1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-19 21:49:21">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"bo_akl_line_badReason","itemqueryparam":null,"items":[{"destName":"bo_akl_line_badReason.id","sourceName":"bo_akl_line_badReason.id","type":"entityField"},{"destName":"bo_akl_line_badReason.reason","sourceName":"bo_akl_line_badReason.reason","type":"entityField"}],"orderBy":null,"sourceName":"bo_akl_line_badReason","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>bo_akl_line_badReason</EntityName><SourceType>Table</SourceType><SourceName>bo_akl_line_badReason</SourceName><dsWhere><![CDATA[<NewDataSet />]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>1b88938d641244cdb011a5ebd75770ab</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>1b88938d641244cdb011a5ebd75770ab</MasterID><DestName>bo_akl_line_badReason.id</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_line_badReason.id</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>1b88938d641244cdb011a5ebd75770ab</MasterID><DestName>bo_akl_line_badReason.reason</DestName><SourceType>entityField</SourceType><SourceName>bo_akl_line_badReason.reason</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>1b88938d641244cdb011a5ebd75770ab</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>1b88938d641244cdb011a5ebd75770ab</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton1_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_AddTableRecord1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord1" instanceName="新增实体记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-19 21:56:35">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"AddLocation":"3","Mappings":null,"TableType":"window","TableName":"bo_akl_line_badReason","NumCount":"1"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><Location>3</Location><EntityType>window</EntityType><EntityName>bo_akl_line_badReason</EntityName></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton2_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_DeleteListSelectRow1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DeleteListSelectRow" ruleName="删除实体记录" instanceCode="BR_DeleteListSelectRow1" instanceName="删除实体记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-19 21:57:04">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"Condition":"","deleteType":"0","TableName":"bo_akl_line_badReason","EntityType":"window"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><Condition /><DeleteType>0</DeleteType><TableName>bo_akl_line_badReason</TableName><EntityType>window</EntityType></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton3_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_UpdateRecord1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1" instanceName="保存实体到数据库" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-19 21:57:21">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourceMap":[{"dataMap":[{"colName":"bo_akl_line_badReason.id","colValue":"bo_akl_line_badReason.id","valueType":"entityField"},{"colName":"bo_akl_line_badReason.reason","colValue":"bo_akl_line_badReason.reason","valueType":"entityField"}],"dataSource":"bo_akl_line_badReason","dataSourceType":"window","destTab":"bo_akl_line_badReason","isSaveAll":false}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><ID>d22d414ca1624f0db2527f348f74c615</ID><SourceName>bo_akl_line_badReason</SourceName><SourceType>window</SourceType><SourceNameType>bo_akl_line_badReason(界面实体)</SourceNameType><IsSaveAll>False</IsSaveAll><TableName>bo_akl_line_badReason</TableName></dtMaster><dtDetails><PID>d22d414ca1624f0db2527f348f74c615</PID><SourceField>bo_akl_line_badReason.id</SourceField><DataFrom>entityField</DataFrom><Value>bo_akl_line_badReason.id</Value></dtDetails><dtDetails><PID>d22d414ca1624f0db2527f348f74c615</PID><SourceField>bo_akl_line_badReason.reason</SourceField><DataFrom>entityField</DataFrom><Value>bo_akl_line_badReason.reason</Value></dtDetails></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+</Methods>

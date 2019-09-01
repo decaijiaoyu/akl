@@ -3,7 +3,7 @@
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2018-08-18 15:01:43]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-07-30 16:53:04]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-08-22 10:06:23]]></ModificationTime>
   <VSql><![CDATA[select
 proLineName,
 proEquName,
@@ -12,8 +12,8 @@ acceptNum,
 (badNum-checkNumber) as badNum,
 checkNumber,
 CASE WHEN startTime = null THEN '未生产'
-     WHEN proLineStatus='1' THEN '生产中'  
-	 ELSE '停机'  END as proLineStatus,
+     WHEN proLineStatus='0' THEN '停机'  
+	 ELSE '生产中'  END as proLineStatus,
 '0' AS achievingRate, --达成率 最终生产数量与投料数的比例
 round(CAST(acceptNum,'Decimal',10,4)/CAST(acceptNum+badNum-checkNumber+1,'Decimal',10,4),4) AS passRate, --合格率合格的数量于最终生产的数量的比例
 userNumber,

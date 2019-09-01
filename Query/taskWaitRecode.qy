@@ -3,9 +3,9 @@
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-08-08 14:40:34]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-08-08 17:09:38]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-08-12 09:59:34]]></ModificationTime>
   <VSql><![CDATA[select t.taskCode, t.taskName,COUNT(t.id) as sums from bo_akl_taskPushRecode as t
-where t.isFinish<>1  
+where t.isFinish!=1 or t.isFinish is null 
 group by t.taskCode,t.taskName]]></VSql>
   <Columns>
     <Column id="Column_0" code="taskCode" name="" dataType="char" length="" precision="">
@@ -21,9 +21,9 @@ group by t.taskCode,t.taskName]]></VSql>
   <Params />
   <DataItems>
     <DataItem type="Table" key="bo_akl_taskPushRecode" tokenIndexes="24" />
-    <DataItem type="TableField" key="bo_akl_taskPushRecode.taskCode" tokenIndexes="4,44" />
-    <DataItem type="TableField" key="bo_akl_taskPushRecode.taskName" tokenIndexes="9,48" />
+    <DataItem type="TableField" key="bo_akl_taskPushRecode.taskCode" tokenIndexes="4,54" />
+    <DataItem type="TableField" key="bo_akl_taskPushRecode.taskName" tokenIndexes="9,58" />
     <DataItem type="TableField" key="bo_akl_taskPushRecode.id" tokenIndexes="15" />
-    <DataItem type="TableField" key="bo_akl_taskPushRecode.isFinish" tokenIndexes="34" />
+    <DataItem type="TableField" key="bo_akl_taskPushRecode.isFinish" tokenIndexes="34,42" />
   </DataItems>
 </Query>

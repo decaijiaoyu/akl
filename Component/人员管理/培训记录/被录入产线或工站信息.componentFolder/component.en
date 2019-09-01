@@ -237,6 +237,15 @@
           <DefaultValue></DefaultValue>
           <Expression></Expression>
         </Column>
+        <Column>
+          <Code>isAutomatic</Code>
+          <Name>是否自动工站</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue />
+          <Expression />
+        </Column>
       </Columns>
       <Events />
     </Entity>

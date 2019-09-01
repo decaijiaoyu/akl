@@ -3,7 +3,7 @@
     <property name="Width"><![CDATA[960]]></property>
     <property name="Height"><![CDATA[450]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
-    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[form47_FormLoadAction]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
@@ -17,9 +17,11 @@
     <property name="RefResources"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGDataGrid Code="JGDataGrid1" Height="290" LabelText="列表" Left="15" PercentHeight="64.4%" PercentWidth="86.2%" TabIndex="0" TableName="statistics" Top="73" Width="828">
-      <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="taskNum" LabelText="代办数量" TableName="statistics" Width="163" />
-      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="taskName" LabelText="代办任务名称" TableName="statistics" Width="230" />
+    <JGButton Code="JGButton2" LabelText="新增【测试用】" Left="163" OnClick="JGButton2_OnClick" PercentHeight="5.8%" PercentWidth="11.9%" TabIndex="4" Top="29" Width="114" />
+    <JGButton Code="JGButton1" LabelText="手动完成" Left="15" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="13.1%" TabIndex="3" Top="29" Width="126" />
+    <JGDataGrid Code="JGDataGrid1" FetchMode="paged" Height="314" LabelText="列表" Left="15" PercentHeight="69.8%" PercentWidth="90.5%" TabIndex="0" TableName="statistics" Top="73" Width="869">
+      <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="taskNum" LabelText="代办数量" TableName="statistics" Width="236" />
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="taskName" LabelText="代办任务名称" OnClick="JGTextBoxColumn1_OnClick" TableName="statistics" Width="230" />
     </JGDataGrid>
   </controls>
   <outputs />

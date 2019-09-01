@@ -55,19 +55,6 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_line_start</Code>
-      <Top>207</Top>
-      <Left>20</Left>
-      <Width>267</Width>
-      <Height>447</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
       <Code>downUnusualMaterial</Code>
       <Top>434</Top>
       <Left>346.830627</Left>
@@ -99,6 +86,32 @@
       <Left>20</Left>
       <Width>307</Width>
       <Height>92</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_line_resourceOccupancy</Code>
+      <Top>594.1079</Top>
+      <Left>330</Left>
+      <Width>312</Width>
+      <Height>132</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_line_start</Code>
+      <Top>207</Top>
+      <Left>20</Left>
+      <Width>267</Width>
+      <Height>467</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

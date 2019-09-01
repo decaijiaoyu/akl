@@ -137,6 +137,7 @@
   </foreach>
   <evaluateRule code="BR_ResetSelectedControlValue1" />
   <evaluateRule code="BR_DeleteListSelectRow2_1" />
+  <evaluateRule code="BR_SetEntityVarControlValue2" />
 ]]></MethodChain>
     <RuleInstances>
       <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体_获取所有考核记录符合要求的员工信息和人力资源占用信息" isNeedLog="False" isEnabled="True" isDebug="False">
@@ -181,12 +182,12 @@
         <RuleConfig><![CDATA[{"Condition":"!Contains([bo_akl_base_staffInfo].[tLine],@workStation)","deleteType":"1","TableName":"bo_akl_base_staffInfo","EntityType":"window"}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><Condition>!Contains([bo_akl_base_staffInfo].[tLine],@workStation)</Condition><DeleteType>1</DeleteType><TableName>bo_akl_base_staffInfo</TableName><EntityType>window</EntityType></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="DeleteListSelectRow" ruleName="删除实体记录" instanceCode="BR_DeleteListSelectRow1" instanceName="删除实体记录_去掉已经被选择了的工人" isNeedLog="False" isEnabled="True" isDebug="False">
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue2" instanceName="给界面实体/控件/变量赋值_获取可选的员工数量" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-20 19:36:02">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"Condition":"[bo_akl_base_staffInfo].[sNo]==LV.i.workerId","deleteType":"1","TableName":"bo_akl_base_staffInfo","EntityType":"window"}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><Condition>[bo_akl_base_staffInfo].[sNo]==LV.i.workerId</Condition><DeleteType>1</DeleteType><TableName>bo_akl_base_staffInfo</TableName><EntityType>window</EntityType></dtMaster></dsConfig>]]></XmlRuleConfig>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"6","Target":"selectNum","SourceType":"expression","SourceEntityType":"","Source":"GetEntityRowCount(\"bo_akl_base_staffInfo\")","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>6</TargetType><Target>selectNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>GetEntityRowCount("bo_akl_base_staffInfo")</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
       <RuleInstance ruleCode="DeleteListSelectRow" ruleName="删除实体记录" instanceCode="BR_DeleteListSelectRow4" instanceName="删除实体记录_去掉已经在人力资源表中的人,因为已被其他开线占用了" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
@@ -194,6 +195,13 @@
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"Condition":"[bo_akl_base_staffInfo].[sNo]==LV.k.sNo","deleteType":"1","TableName":"bo_akl_base_staffInfo","EntityType":"window"}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><Condition>[bo_akl_base_staffInfo].[sNo]==LV.k.sNo</Condition><DeleteType>1</DeleteType><TableName>bo_akl_base_staffInfo</TableName><EntityType>window</EntityType></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DeleteListSelectRow" ruleName="删除实体记录" instanceCode="BR_DeleteListSelectRow1" instanceName="删除实体记录_去掉已经被选择了的工人" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"Condition":"[bo_akl_base_staffInfo].[sNo]==LV.i.workerId","deleteType":"1","TableName":"bo_akl_base_staffInfo","EntityType":"window"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><Condition>[bo_akl_base_staffInfo].[sNo]==LV.i.workerId</Condition><DeleteType>1</DeleteType><TableName>bo_akl_base_staffInfo</TableName><EntityType>window</EntityType></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
       <RuleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord1" instanceName="新增实体记录_若没有则将线长添加进去" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>

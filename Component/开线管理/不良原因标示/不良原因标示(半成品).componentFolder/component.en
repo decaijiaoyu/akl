@@ -54,7 +54,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>createTime</Code>
@@ -63,7 +63,25 @@
           <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>descriptionOne</Code>
+          <Name>描述一</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>descriptionTwo</Code>
+          <Name>描述二</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

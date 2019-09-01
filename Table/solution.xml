@@ -70,6 +70,55 @@
           <FileSystemObjectName>bo_akl_LM_RmInsProductLabel</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_LM_printInMaterial_del</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_LM_printInMaterial_del</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_LM_printProduct_del</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_LM_printProduct_del</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_LM_printStock_del</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_LM_printStock_del</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_LM_printCardBoard_del</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_LM_printCardBoard_del</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_LM_returnMaterial_del</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_LM_returnMaterial_del</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_LM_tailing_del</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_LM_tailing_del</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_LM_LabeldelLog</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_LM_LabeldelLog</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
@@ -309,6 +358,13 @@
           <FileSystemObjectName>bo_akl_MM_erpStock_clone</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_MM_inheritMateriral</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_MM_inheritMateriral</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
@@ -385,6 +441,13 @@
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>bo_akl_taskPushRecode</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>fff</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>fff</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>
@@ -596,6 +659,27 @@
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>bo_akl_line_threeReport</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_line_badReason</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_line_badReason</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_line_stationBadReason</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_line_stationBadReason</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_line_materialBadReason</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_line_materialBadReason</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>
@@ -842,6 +926,20 @@
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>bo_akl_EM_maintainRecord</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_EM_toolequUpkeepRec</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_EM_toolequUpkeepRec</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_EM_toolcEquUpkeepSub</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_EM_toolcEquUpkeepSub</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>

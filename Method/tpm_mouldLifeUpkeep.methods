@@ -31,6 +31,9 @@
               <evaluateRule code="BR_ExecuteRuleSet1_1" />
               <evaluateRule code="BR_ModifyDataBaseRecord1" />
               <evaluateRule code="BR_ClearEntityData1" />
+              <evaluateRule code="BR_AddTableRecord5_1" />
+              <evaluateRule code="BR_UpdateRecord2_1" />
+              <evaluateRule code="BR_ClearEntityData2" />
             </sequence>
           </if>
         </sequence>
@@ -53,7 +56,7 @@
         <RuleConfig><![CDATA[{"AddLocation":"","Mappings":[{"destField":"mouldLifeUpkeep.equipId","fieldtype":"expression","srcField":"LV.equ.id"},{"destField":"mouldLifeUpkeep.upkeepDate","fieldtype":"expression","srcField":"DateTimeNow()"},{"destField":"mouldLifeUpkeep.upkeepNum","fieldtype":"expression","srcField":"LV.equ.residueNum"}],"TableType":"ruleSetVar","TableName":"mouldLifeUpkeep","NumCount":"1"}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><EntityType>ruleSetVar</EntityType><EntityName>mouldLifeUpkeep</EntityName></dtMaster><dtEntityColumns><DestName>mouldLifeUpkeep.equipId</DestName><SourceType>expression</SourceType><SourceName>LV.equ.id</SourceName></dtEntityColumns><dtEntityColumns><DestName>mouldLifeUpkeep.upkeepDate</DestName><SourceType>expression</SourceType><SourceName>DateTimeNow()</SourceName></dtEntityColumns><dtEntityColumns><DestName>mouldLifeUpkeep.upkeepNum</DestName><SourceType>expression</SourceType><SourceName>LV.equ.residueNum</SourceName></dtEntityColumns></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1" instanceName="保存实体到数据库" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20180828002" lastModifiedTime="2018-11-29 11:40:19">
+      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1" instanceName="保存实体到数据库" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
@@ -80,6 +83,27 @@
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"dtMaster":[{"entityName":"mouldLifeUpkeep","entityType":"ruleSetVar","dsWhere":null}]}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><EntityName>mouldLifeUpkeep</EntityName><EntityType>ruleSetVar</EntityType><Condition><![CDATA[<NewDataSet />]]]]><![CDATA[></Condition></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord5_1" instanceName="新增实体记录_推送记录_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-10 14:43:39">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"AddLocation":"","Mappings":[{"destField":"taskPushRecode.taskName","fieldtype":"expression","srcField":"\"模具寿命保养\""},{"destField":"taskPushRecode.taskCode","fieldtype":"expression","srcField":"\"moldLife\""},{"destField":"taskPushRecode.pushTime","fieldtype":"expression","srcField":"DateTimeNow()"},{"destField":"taskPushRecode.crux","fieldtype":"expression","srcField":"BR_VAR_PARENT.[mouldLifeUpkeep].[id]"},{"destField":"taskPushRecode.tabelName","fieldtype":"expression","srcField":"\"bo_akl_base_checkInfo\""}],"TableType":"ruleSetVar","TableName":"taskPushRecode","NumCount":"1"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><EntityType>ruleSetVar</EntityType><EntityName>taskPushRecode</EntityName></dtMaster><dtEntityColumns><DestName>taskPushRecode.taskName</DestName><SourceType>expression</SourceType><SourceName>"模具寿命保养"</SourceName></dtEntityColumns><dtEntityColumns><DestName>taskPushRecode.taskCode</DestName><SourceType>expression</SourceType><SourceName>"moldLife"</SourceName></dtEntityColumns><dtEntityColumns><DestName>taskPushRecode.pushTime</DestName><SourceType>expression</SourceType><SourceName>DateTimeNow()</SourceName></dtEntityColumns><dtEntityColumns><DestName>taskPushRecode.crux</DestName><SourceType>expression</SourceType><SourceName>BR_VAR_PARENT.[mouldLifeUpkeep].[id]</SourceName></dtEntityColumns><dtEntityColumns><DestName>taskPushRecode.tabelName</DestName><SourceType>expression</SourceType><SourceName>"bo_akl_base_checkInfo"</SourceName></dtEntityColumns></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord2_1" instanceName="保存实体到数据库_推送记录_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-10 14:43:43">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourceMap":[{"dataMap":[{"colName":"bo_akl_taskPushRecode.crux","colValue":"taskPushRecode.crux","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.id","colValue":"taskPushRecode.id","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.isFinish","colValue":"taskPushRecode.isFinish","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.pushTime","colValue":"taskPushRecode.pushTime","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.tabelName","colValue":"taskPushRecode.tabelName","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.taskCode","colValue":"taskPushRecode.taskCode","valueType":"entityField"},{"colName":"bo_akl_taskPushRecode.taskName","colValue":"taskPushRecode.taskName","valueType":"entityField"}],"dataSource":"taskPushRecode","dataSourceType":"ruleSetVar","destTab":"bo_akl_taskPushRecode","isSaveAll":true}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><ID>c1819d8173ac400890f2072ee754de20</ID><SourceName>taskPushRecode</SourceName><SourceType>ruleSetVar</SourceType><SourceNameType>taskPushRecode(方法变量)</SourceNameType><IsSaveAll>True</IsSaveAll><TableName>bo_akl_taskPushRecode</TableName></dtMaster><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.crux</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.crux</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.id</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.id</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.isFinish</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.isFinish</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.pushTime</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.pushTime</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.tabelName</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.tabelName</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.taskCode</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.taskCode</Value></dtDetails><dtDetails><PID>c1819d8173ac400890f2072ee754de20</PID><SourceField>bo_akl_taskPushRecode.taskName</SourceField><DataFrom>entityField</DataFrom><Value>taskPushRecode.taskName</Value></dtDetails></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ClearEntityData" ruleName="清除实体记录" instanceCode="BR_ClearEntityData2" instanceName="清除实体记录_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-10 14:44:04">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dtMaster":[{"entityName":"taskPushRecode","entityType":"ruleSetVar","dsWhere":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><EntityName>taskPushRecode</EntityName><EntityType>ruleSetVar</EntityType><Condition><![CDATA[<NewDataSet />]]]]><![CDATA[></Condition></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
       <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_OrgQueryPost(岗位单表数据查询)" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
@@ -131,6 +155,31 @@
             <description><![CDATA[]]></description>
           </Field>
           <Field code="upkeepNum" name="当前保养量" fieldType="integer" length="50" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+        </Entity>
+      </Variable>
+      <Variable code="taskPushRecode" name="任务推送记录" fieldType="entity" initValue="" isMust="false" desc="">
+        <Entity>
+          <Field code="id" name="" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="taskName" name="任务名称" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="taskCode" name="任务编号" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="isFinish" name="是否已经完成" fieldType="integer" length="50" accuracy="">
+            <description><![CDATA[1.完成 ]]></description>
+          </Field>
+          <Field code="pushTime" name="任务推送时间" fieldType="date" length="" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="crux" name="关键查询数据" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="tabelName" name="相关表名" fieldType="char" length="255" accuracy="">
             <description><![CDATA[]]></description>
           </Field>
         </Entity>

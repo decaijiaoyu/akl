@@ -352,6 +352,40 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
+    <Entity TemplateId="" TemplateCode="" Code="roleInfo" Name="角色信息" EntityType="" TableOrQueryCode="">
+      <Columns>
+        <Column>
+          <Code>roleId</Code>
+          <Name>角色ID</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>roleCode</Code>
+          <Name>角色编号</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>roleName</Code>
+          <Name>角色名称</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
   </Entitys>
   <Relations />
 </EntityConfig>

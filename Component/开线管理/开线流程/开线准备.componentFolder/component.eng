@@ -7,7 +7,7 @@
       <Top>828</Top>
       <Left>20</Left>
       <Width>403</Width>
-      <Height>87</Height>
+      <Height>92</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -203,6 +203,19 @@
       <Left>752</Left>
       <Width>381</Width>
       <Height>264</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_inheritMateriral</Code>
+      <Top>1641.176</Top>
+      <Left>420</Left>
+      <Width>132</Width>
+      <Height>357</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

@@ -1,0 +1,38 @@
+﻿<Query id="7804181897014397805b7c09c16d573f" code="eqq" name="12" type="VSql" APICode="">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[user_20190304004]]></Creator>
+  <CreationTime><![CDATA[2019-08-29 19:58:14]]></CreationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-08-30 16:58:02]]></ModificationTime>
+  <VSql><![CDATA[alter table Exchange drop column 'id']]></VSql>
+  <Columns>
+    <Column id="Column_0" code="materialNo" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_1" code="badNum" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_2" code="price" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_3" code="prName" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_4" code="priceSum" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+  </Columns>
+  <Params>
+    <Param code="inputMonth" name="" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="inputYear" name="" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+  </Params>
+  <DataItems>
+    <DataItem type="Table" key="Exchange" tokenIndexes="4" />
+  </DataItems>
+</Query>

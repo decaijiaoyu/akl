@@ -13,7 +13,7 @@
     </metaInfo>
     <metaInfo type="server-ruleSet">
       <ruleSetMetas>
-        <ruleSetMeta windowCode="" metaCode="testAPI" desc="" name="测试API">
+        <ruleSetMeta windowCode="" metaCode="testAPI" transactionType="transaction" desc="" name="测试API">
           <inputs>
             <variables>
               <variable code="name" name="工站名" type="char" desc="" initValue="" enumValue="" />

@@ -32,19 +32,19 @@
   </else>
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="MakeControlRVE" ruleName="控制控件的只读、使能、显示" instanceCode="BR_MakeControlRVE2" instanceName="控制控件的只读、使能、显示_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-05 13:43:02">
+      <RuleInstance ruleCode="MakeControlRVE" ruleName="控制控件的只读、使能、显示" instanceCode="BR_MakeControlRVE1" instanceName="控制控件的只读、使能、显示" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-24 14:58:20">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"mapping":[{"componentControlCode":"JGBaseDictBox1","control":"False"},{"componentControlCode":"JGBaseDictBox2","control":"False"},{"componentControlCode":"JGTextBox2","control":"True"}],"type":"3"}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OperType>3</OperType></dtMaster><dtControlColumns><ControlCode>JGBaseDictBox1</ControlCode><IsCheck>False</IsCheck></dtControlColumns><dtControlColumns><ControlCode>JGBaseDictBox2</ControlCode><IsCheck>False</IsCheck></dtControlColumns><dtControlColumns><ControlCode>JGTextBox2</ControlCode><IsCheck>True</IsCheck></dtControlColumns></dsConfig>]]></XmlRuleConfig>
+        <RuleConfig><![CDATA[{"mapping":[{"componentControlCode":"JGBaseDictBox1","control":"True"},{"componentControlCode":"JGBaseDictBox2","control":"True"},{"componentControlCode":"JGBaseDictBox4","control":"False"}],"type":"3"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OperType>3</OperType></dtMaster><dtControlColumns><ControlCode>JGBaseDictBox1</ControlCode><IsCheck>True</IsCheck></dtControlColumns><dtControlColumns><ControlCode>JGBaseDictBox2</ControlCode><IsCheck>True</IsCheck></dtControlColumns><dtControlColumns><ControlCode>JGBaseDictBox4</ControlCode><IsCheck>False</IsCheck></dtControlColumns></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="MakeControlRVE" ruleName="控制控件的只读、使能、显示" instanceCode="BR_MakeControlRVE1" instanceName="控制控件的只读、使能、显示" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-05 13:42:47">
+      <RuleInstance ruleCode="MakeControlRVE" ruleName="控制控件的只读、使能、显示" instanceCode="BR_MakeControlRVE2" instanceName="控制控件的只读、使能、显示_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-24 14:58:44">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"mapping":[{"componentControlCode":"JGBaseDictBox1","control":"True"},{"componentControlCode":"JGBaseDictBox2","control":"True"},{"componentControlCode":"JGTextBox2","control":"False"}],"type":"3"}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OperType>3</OperType></dtMaster><dtControlColumns><ControlCode>JGBaseDictBox1</ControlCode><IsCheck>True</IsCheck></dtControlColumns><dtControlColumns><ControlCode>JGBaseDictBox2</ControlCode><IsCheck>True</IsCheck></dtControlColumns><dtControlColumns><ControlCode>JGTextBox2</ControlCode><IsCheck>False</IsCheck></dtControlColumns></dsConfig>]]></XmlRuleConfig>
+        <RuleConfig><![CDATA[{"mapping":[{"componentControlCode":"JGBaseDictBox1","control":"False"},{"componentControlCode":"JGBaseDictBox2","control":"False"},{"componentControlCode":"JGBaseDictBox4","control":"True"}],"type":"3"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OperType>3</OperType></dtMaster><dtControlColumns><ControlCode>JGBaseDictBox1</ControlCode><IsCheck>False</IsCheck></dtControlColumns><dtControlColumns><ControlCode>JGBaseDictBox2</ControlCode><IsCheck>False</IsCheck></dtControlColumns><dtControlColumns><ControlCode>JGBaseDictBox4</ControlCode><IsCheck>True</IsCheck></dtControlColumns></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
     </RuleInstances>
   </Method>

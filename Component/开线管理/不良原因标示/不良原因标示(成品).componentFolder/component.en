@@ -9,7 +9,7 @@
           <Length>128</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>startId</Code>
@@ -18,7 +18,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>stationName</Code>
@@ -27,7 +27,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>badProNum</Code>
@@ -36,7 +36,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>resetNum</Code>
@@ -45,7 +45,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>sampleNum</Code>
@@ -54,7 +54,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>inputBadProNum</Code>
@@ -63,7 +63,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>isPass</Code>
@@ -72,7 +72,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>isAutomatic</Code>
@@ -81,7 +81,7 @@
           <Length>128</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>remark</Code>
@@ -90,7 +90,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>badProNum_actual</Code>
@@ -99,7 +99,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

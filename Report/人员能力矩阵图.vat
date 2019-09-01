@@ -7,6 +7,14 @@
         <reportfield FieldConfigString="&lt;combi&gt;0&lt;/combi&gt;&lt;fieldname&gt;sName&lt;/fieldname&gt;" TableColumnName="personnel_matrix.sName" TableName="personnel_matrix" FieldRow="2" FieldCol="2" FieldType="6" />
         <reportfield FieldConfigString="workPower" TableColumnName="personnel_matrix.workPower" TableName="personnel_matrix" FieldRow="2" FieldCol="3" FieldType="7" />
       </reportfields>
+      <entityFields>
+        <entityField EntityType="Main" EntityCode="personnel_matrix" EntityColumnName="" EntityColumnCode="pNo" />
+        <entityField EntityType="Main" EntityCode="personnel_matrix" EntityColumnName="" EntityColumnCode="sNo" />
+        <entityField EntityType="Main" EntityCode="personnel_matrix" EntityColumnName="" EntityColumnCode="sName" />
+        <entityField EntityType="Main" EntityCode="personnel_matrix" EntityColumnName="" EntityColumnCode="workKey" />
+        <entityField EntityType="Main" EntityCode="personnel_matrix" EntityColumnName="" EntityColumnCode="workPower" />
+        <entityField EntityType="Main" EntityCode="personnel_matrix" EntityColumnName="" EntityColumnCode="sortNum" />
+      </entityFields>
     </reportsource>
   </reportsources>
 </report>

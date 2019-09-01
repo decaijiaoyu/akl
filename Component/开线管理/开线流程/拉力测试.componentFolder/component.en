@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_operation" Name="开线操作记录表" EntityType="" TableOrQueryCode="bo_akl_line_operation">
+    <Entity Code="bo_akl_line_operation" Name="开线操作记录表" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_line_operation" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -68,7 +68,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_examRecordLB" Name="考核记录_技能培训" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_base_examRecordLB" Name="考核记录_技能培训" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -237,7 +237,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="controlPoint" Name="反控点" EntityType="" TableOrQueryCode="controlPoint">
+    <Entity Code="controlPoint" Name="反控点" IsExtendable="false" EntityType="" TableOrQueryCode="controlPoint" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -278,7 +278,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_start_user" Name="开线准备_人员资质" EntityType="" TableOrQueryCode="bo_akl_line_start_user">
+    <Entity Code="bo_akl_line_start_user" Name="开线准备_人员资质" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_line_start_user" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -355,7 +355,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_start" Name="开线主表" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_line_start" Name="开线主表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -569,7 +569,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_pullTestInfo" Name="拉力测试维护信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_line_pullTestInfo" Name="拉力测试维护信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -702,7 +702,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_pullTest" Name="拉力测试" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_line_pullTest" Name="拉力测试" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

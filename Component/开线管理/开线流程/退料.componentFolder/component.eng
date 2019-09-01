@@ -84,7 +84,7 @@
       <Code>bo_akl_line_start</Code>
       <Top>701</Top>
       <Left>353</Left>
-      <Width>132</Width>
+      <Width>312</Width>
       <Height>1107</Height>
       <Background />
       <BorderColor />
@@ -95,8 +95,8 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>bo_akl_MM_bomInfo_1</Code>
-      <Top>728</Top>
-      <Left>544</Left>
+      <Top>732</Top>
+      <Left>661</Left>
       <Width>385</Width>
       <Height>232</Height>
       <Background />
@@ -108,8 +108,8 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>materiral_1</Code>
-      <Top>1036</Top>
-      <Left>587</Left>
+      <Top>1030</Top>
+      <Left>725</Left>
       <Width>315</Width>
       <Height>132</Height>
       <Background />

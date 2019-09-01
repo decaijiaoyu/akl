@@ -144,5 +144,18 @@
       <FontColor />
       <IsCollapsed>false</IsCollapsed>
     </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>roleInfo</Code>
+      <Top>1508.482</Top>
+      <Left>570</Left>
+      <Width>238</Width>
+      <Height>141</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
   </Graphs>
 </EntityGraphConfig>

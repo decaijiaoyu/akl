@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_productionPlanSub" Name="生产计划关联BOM" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_productionPlanSub" Name="生产计划关联BOM" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -88,7 +88,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="controlPoint" Name="反控点" EntityType="" TableOrQueryCode="controlPoint">
+    <Entity Code="controlPoint" Name="反控点" IsExtendable="false" EntityType="" TableOrQueryCode="controlPoint" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -129,7 +129,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_stockInfo" Name="库存信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_stockInfo" Name="库存信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -181,7 +181,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="outStockInfo_clone" Name="出库信息_整合" EntityType="" TableOrQueryCode="">
+    <Entity Code="outStockInfo_clone" Name="出库信息_整合" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -233,7 +233,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="outStockInfo" Name="出库信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="outStockInfo" Name="出库信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>materialNo</Code>
@@ -312,7 +312,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="qrCodeInfo" Name="二维码信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="qrCodeInfo" Name="二维码信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>outStockInfo</Code>
@@ -346,7 +346,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_productionPlan" Name="生产计划信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_productionPlan" Name="生产计划信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -443,7 +443,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_bomInfo" Name="BOM信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_bomInfo" Name="BOM信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -522,7 +522,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="materialConfirm" Name="物料确认" EntityType="" TableOrQueryCode="">
+    <Entity Code="materialConfirm" Name="物料确认" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>materialNo</Code>
@@ -603,7 +603,167 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+    <Entity Code="bo_akl_MM_weeklyplan_schedule" Name="周计划排期表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>productPlan_time</Code>
+          <Name>计划生产时间</Name>
+          <DataType>date</DataType>
+          <Length></Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>demand</Code>
+          <Name>客户需求</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>newWaterLevel</Code>
+          <Name>初期新水位</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>maxActiveBoard</Code>
+          <Name>激活看板（最大）</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>maxActiveBoardNum</Code>
+          <Name>激活看板张数（最大）</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>minActiveBoard</Code>
+          <Name>激活看板（最小）</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>minActiveBoardNum</Code>
+          <Name>激活看板张数（最小）</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>productPlanNum</Code>
+          <Name>计划产出</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>boardSchedule</Code>
+          <Name>看板排程</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>planLastWaterLevel</Code>
+          <Name>计划期末新水位</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>summaryId</Code>
+          <Name>关联汇总表Id</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>sequence</Code>
+          <Name>7天中的第几天</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>recodeId</Code>
+          <Name>周计划导入记录id</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>prNo</Code>
+          <Name>P/N产品型号</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>scheduleCode</Code>
+          <Name>排期编号</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>fettle</Code>
+          <Name>状态</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

@@ -222,5 +222,18 @@
       <FontColor />
       <IsCollapsed>false</IsCollapsed>
     </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>roleInfo</Code>
+      <Top>1511</Top>
+      <Left>701</Left>
+      <Width>238</Width>
+      <Height>140</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
   </Graphs>
 </EntityGraphConfig>

@@ -29,19 +29,6 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>materialConfirm</Code>
-      <Top>227</Top>
-      <Left>714.0003</Left>
-      <Width>235</Width>
-      <Height>207</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
       <Code>bo_akl_MM_stockInfo</Code>
       <Top>100</Top>
       <Left>427.000061</Left>
@@ -82,8 +69,8 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>qrCodeInfo</Code>
-      <Top>434</Top>
-      <Left>714.0003</Left>
+      <Top>490</Top>
+      <Left>718.0003</Left>
       <Width>227</Width>
       <Height>92</Height>
       <Background />
@@ -112,6 +99,32 @@
       <Left>296</Left>
       <Width>296</Width>
       <Height>232</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>materialConfirm</Code>
+      <Top>227</Top>
+      <Left>714.0003</Left>
+      <Width>235</Width>
+      <Height>207</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_weeklyplan_schedule</Code>
+      <Top>633</Top>
+      <Left>644</Left>
+      <Width>295</Width>
+      <Height>457</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

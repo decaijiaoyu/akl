@@ -26,13 +26,13 @@
           <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="packNum" LabelText="包装数量" TableName="materialConfirm" />
           <JGTextBoxColumn Code="JGTextBoxColumn10" ColumnName="materialType" LabelText="物料类型" ReadOnly="True" TableName="materialConfirm" />
           <JGFloatBoxColumn Code="JGFloatBoxColumn3" ColumnName="residueNum" LabelText="剩余量" TableName="materialConfirm" />
-          <JGIntegerBoxColumn Code="JGIntegerBoxColumn2" ColumnName="returnNum" LabelText="退料数量" TableName="materialConfirm" />
+          <JGIntegerBoxColumn Code="JGIntegerBoxColumn2" ColumnName="returnNum" LabelText="退料数量" OnValueChanged="JGIntegerBoxColumn2_OnValueChanged" TableName="materialConfirm" />
         </JGDataGrid>
       </JGPanel>
       <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="50" LayoutType="BorderLayout" PercentHeight="10%" PercentWidth="100%" TabIndex="1" Width="869">
         <JGFlowLayoutPanel BorderStyle="None" Code="JGFlowLayoutPanel1" Dock="Fill" Height="50" ItemMargin="0, 12, 12, 12" PercentHeight="100%" PercentWidth="100%" TabIndex="8" Width="869">
           <JGButton Code="JGButton1" LabelText="确认" OnClick="JGButton1_OnClick" PercentHeight="54.2%" PercentWidth="6%" TabIndex="13" Top="12" />
-          <JGLongTextBox Code="JGLongTextBox1" LabelForeColor="255, 0, 0" LabelText="请填写剩余量" Left="64" PercentHeight="54.2%" PercentWidth="10.6%" TabIndex="18" Top="12" ValueForeColor="0, 0, 0" Width="92" />
+          <JGLongTextBox Code="JGLongTextBox1" LabelForeColor="255, 0, 0" LabelText="请填写退料数量" Left="64" PercentHeight="54.2%" PercentWidth="10.6%" TabIndex="18" Top="12" ValueForeColor="0, 0, 0" Width="92" />
         </JGFlowLayoutPanel>
       </JGPanel>
       <JGPanel BorderStyle="None" Code="Pnl_Bottom" Dock="Bottom" Height="12" LayoutType="BorderLayout" PercentHeight="2.4%" PercentWidth="100%" TabIndex="1" Top="438" Width="869" />

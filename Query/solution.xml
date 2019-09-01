@@ -520,5 +520,54 @@
       <FileSystemObjectName>taskWaitRecode</FileSystemObjectName>
       <SubNodes />
     </NavigationNode>
+    <NavigationNode>
+      <Code>cxsa</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>cxsa</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>toolEquUpkeepRec</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>toolEquUpkeepRec</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>getBomJoinMaterial</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>getBomJoinMaterial</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>repairHistory</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>repairHistory</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>badAnalysis</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>badAnalysis</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>eqq</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>eqq</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>qualityQuestion</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>qualityQuestion</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
   </Nodes>
 </NavigationInfo>

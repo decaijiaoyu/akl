@@ -16,19 +16,6 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_base_tendingInfo</Code>
-      <Top>100</Top>
-      <Left>777.98584</Left>
-      <Width>363</Width>
-      <Height>227</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
       <Code>bo_akl_EM_EIMaintenancePlan</Code>
       <Top>307</Top>
       <Left>322.98587</Left>
@@ -60,6 +47,19 @@
       <Left>322.98587</Left>
       <Width>299</Width>
       <Height>187</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_base_tendingInfo</Code>
+      <Top>100</Top>
+      <Left>777.98584</Left>
+      <Width>363</Width>
+      <Height>227</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

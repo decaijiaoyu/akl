@@ -1,7 +1,7 @@
 ﻿<form type="1002" code="form19" IsLocked="False">
   <propertys>
-    <property name="Width"><![CDATA[1375]]></property>
-    <property name="Height"><![CDATA[750]]></property>
+    <property name="Width"><![CDATA[895]]></property>
+    <property name="Height"><![CDATA[650]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
     <property name="LayoutType"><![CDATA[None]]></property>
     <property name="TableName"><![CDATA[]]></property>
@@ -17,9 +17,9 @@
     <property name="RefResources"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGButton Code="JGButton1" LabelText="查询" Left="258" OnClick="JGButton1_OnClick" PercentHeight="3.5%" PercentWidth="7%" TabIndex="6" Top="33" Width="96" />
-    <JGDateTimePicker Code="JGDateTimePicker1" LabelText="生产日期" Left="3" PercentHeight="3.5%" PercentWidth="17.1%" TabIndex="6" Top="33" />
-    <JGDataGrid Code="JGDataGrid1" Height="648" LabelText="列表" Left="3" PercentHeight="86.4%" PercentWidth="54%" TabIndex="0" TableName="bo_akl_MM_boardSchedule" Top="76" Width="743">
+    <JGButton Code="JGButton1" LabelText="查询" Left="258" OnClick="JGButton1_OnClick" PercentHeight="4%" PercentWidth="10.7%" TabIndex="6" Top="33" Width="96" />
+    <JGDateTimePicker Code="JGDateTimePicker1" LabelText="生产日期" Left="3" PercentHeight="4%" PercentWidth="26.3%" TabIndex="6" Top="33" />
+    <JGDataGrid Code="JGDataGrid1" Height="548" LabelText="列表" Left="3" PercentHeight="84.3%" PercentWidth="83%" TabIndex="0" TableName="bo_akl_MM_boardSchedule" Top="76" Width="743">
       <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="depleteHour" LabelText="耗时/h" TableName="bo_akl_MM_boardSchedule" Width="183" />
       <JGDateTimePickerColumn Code="JGDateTimePickerColumn2" ColumnName="productDate" LabelText="生产日期" TableName="bo_akl_MM_boardSchedule" Width="206" />
       <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="prNo" LabelText="产品" TableName="bo_akl_MM_boardSchedule" Width="151" />

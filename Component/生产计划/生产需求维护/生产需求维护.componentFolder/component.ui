@@ -22,8 +22,9 @@
         <JGDataGrid ChooseMode="3" Code="JGDataGrid1" CriteriaStyle="[{&quot;Criteria&quot;:&quot;[bo_akl_MM_productEntryRecode].[fettle]==\&quot;异常\&quot;&quot;,&quot;ValueForeColor&quot;:null,&quot;ValueBackColor&quot;:&quot;242,24,12&quot;,&quot;ValueFontStyle&quot;:null,&quot;Columns&quot;:[&quot;JGTextBoxColumn2&quot;]}]" Dock="Fill" FetchMode="paged" Height="391" LabelText="列表" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" PercentHeight="100%" PercentWidth="100%" TabIndex="14" TableName="bo_akl_MM_productEntryRecode" Width="1285">
           <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="weekNumber" LabelText="周次" OnValueChanged="JGIntegerBoxColumn1_OnValueChanged" TableName="bo_akl_MM_productEntryRecode" Width="200" />
           <JGDateTimePickerColumn Code="JGDateTimePickerColumn1" ColumnName="beginTime" DisplayFormat="&lt;DisplayFormat&gt;&lt;Num Type='7'&gt;&lt;Index&gt;yy年M月d日|2&lt;/Index&gt;&lt;Format&gt;yy年M月d日&lt;/Format&gt;&lt;/Num&gt;&lt;/DisplayFormat&gt;" LabelText="开始时间" TableName="bo_akl_MM_productEntryRecode" Width="318" />
-          <JGDateTimePickerColumn Code="JGDateTimePickerColumn2" ColumnName="endTime" LabelText="结束时间" TableName="bo_akl_MM_productEntryRecode" Width="271" />
-          <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="fettle" LabelText="状态" TableName="bo_akl_MM_productEntryRecode" Width="447" />
+          <JGDateTimePickerColumn Code="JGDateTimePickerColumn2" ColumnName="endTime" LabelText="结束时间" TableName="bo_akl_MM_productEntryRecode" Width="296" />
+          <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="fettle" LabelText="状态" TableName="bo_akl_MM_productEntryRecode" Width="109" />
+          <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="opinion" LabelText="审批意见" TableName="bo_akl_MM_productEntryRecode" Width="251" />
         </JGDataGrid>
       </JGPanel>
       <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="96" LayoutType="BorderLayout" PercentHeight="19.2%" PercentWidth="100%" TabIndex="1" Width="1285">

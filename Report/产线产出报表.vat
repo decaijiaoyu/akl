@@ -12,6 +12,13 @@
         <reportfield FieldConfigString="&lt;fieldname&gt;横向求和&lt;/fieldname&gt;&lt;sumfield&gt;outputNum&lt;/sumfield&gt;&lt;vname&gt;outputNum&lt;/vname&gt;&lt;type&gt;0&lt;/type&gt;" TableColumnName="proline_output.outputNum" TableName="proline_output" FieldRow="3" FieldCol="4" FieldType="3" />
         <reportfield FieldConfigString="&lt;fieldname&gt;lineCode&lt;/fieldname&gt;&lt;onegroupaddsubtotal&gt;1&lt;/onegroupaddsubtotal&gt;&lt;type&gt;0&lt;/type&gt;" TableColumnName="proline_output.lineCode" TableName="proline_output" FieldRow="4" FieldCol="3" FieldType="8" />
       </reportfields>
+      <entityFields>
+        <entityField EntityType="Main" EntityCode="proline_output" EntityColumnName="" EntityColumnCode="lineCode" />
+        <entityField EntityType="Main" EntityCode="proline_output" EntityColumnName="" EntityColumnCode="equCode" />
+        <entityField EntityType="Main" EntityCode="proline_output" EntityColumnName="" EntityColumnCode="startTime" />
+        <entityField EntityType="Main" EntityCode="proline_output" EntityColumnName="" EntityColumnCode="weekName" />
+        <entityField EntityType="Main" EntityCode="proline_output" EntityColumnName="" EntityColumnCode="outputNum" />
+      </entityFields>
     </reportsource>
   </reportsources>
 </report>

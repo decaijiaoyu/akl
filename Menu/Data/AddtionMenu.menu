@@ -82,4 +82,12 @@
   <menuItem code="from_threeReport" name="三次元报告" isDisabled="false" type="0" ruleName="" windowCode="form36" parameters="" />
   <menuItem code="waitQualityCheck" name="待检测注塑产品" isDisabled="false" type="0" ruleName="" windowCode="form38" parameters="" />
   <menuItem code="repairRecode" name="维修记录" isDisabled="false" type="0" ruleName="" windowCode="form41" parameters="" />
+  <menuItem code="taskCode" name="代办任务" isDisabled="false" type="0" ruleName="" windowCode="form47" parameters="" />
+  <menuItem code="fromwaitTask" name="代办任务" isDisabled="false" type="0" ruleName="" windowCode="form47" parameters="" />
+  <menuItem code="lebelDeleteLog" name="标签删除记录" isDisabled="false" type="0" ruleName="" windowCode="form50" parameters="" />
+  <menuItem code="labelManage" name="标签管理" isDisabled="false" type="0" ruleName="" windowCode="form49" parameters="" />
+  <menuItem code="form_toolEquUpkeepRec" name="载具保养记录" isDisabled="false" type="0" ruleName="" windowCode="form_toolEquUpkeepRec" parameters="" />
+  <menuItem code="form_badReason" name="不良品原因" isDisabled="false" type="0" ruleName="" windowCode="form51" parameters="" />
+  <menuItem code="prlineRepairRecode" name="产线工站维修历史记录" isDisabled="false" type="0" ruleName="" windowCode="personnel_matrix1" parameters="" />
+  <menuItem code="badAnalysis" name="报废成本分析" isDisabled="false" type="0" ruleName="" windowCode="form53" parameters="" />
 </dir>

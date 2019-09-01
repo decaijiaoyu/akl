@@ -1,0 +1,61 @@
+﻿<Query id="bdb2e5510f7e43ba97cbb100260fb2e5" code="qualityQuestion" name="每日质量问题一览" type="VSql" APICode="">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[user_20190304004]]></Creator>
+  <CreationTime><![CDATA[2019-08-30 16:22:04]]></CreationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-08-30 18:00:41]]></ModificationTime>
+  <VSql><![CDATA[(select mat.materialNo,SUM(ins.inStockNum) as badNum,ep.price as price,ep.prName as prName,mat.materialType as materialType
+from bo_akl_MM_inStockInfo  as ins 
+left join bo_akl_MM_materialInfo as mat on ins.materialId=mat.id
+left join bo_akl_EM_productInfo as ep on mat.materialNo=ep.prNo  
+where  MONTH(ins.operateTime)=:inputMonth and YEAR(ins.operateTime)=:inputYear and ins.remark='确认不良品入库'
+group by mat.materialNo)]]></VSql>
+  <Columns />
+  <Params>
+    <Param code="nowDay" name="当前天" dataType="integer">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="nowWeek" name="当前周" dataType="integer">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="nowMonth" name="当前月" dataType="integer">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="nowYear" name="当前年" dataType="integer">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="nowsDay" name="当前天(早晚8点)" dataType="date">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="inputMonth" name="" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="inputYear" name="" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+  </Params>
+  <DataItems>
+    <DataItem type="Table" key="bo_akl_MM_inStockInfo" tokenIndexes="44" />
+    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="54" />
+    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="74" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialNo" tokenIndexes="5,84,128" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.inStockNum" tokenIndexes="11" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.price" tokenIndexes="20" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prName" tokenIndexes="28" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialType" tokenIndexes="36" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.materialId" tokenIndexes="64" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.id" tokenIndexes="68" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prNo" tokenIndexes="88" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.operateTime" tokenIndexes="96,108" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.remark" tokenIndexes="118" />
+    <DataItem type="QueryParam" key="inputMonth" tokenIndexes="100" />
+    <DataItem type="QueryParam" key="inputYear" tokenIndexes="112" />
+  </DataItems>
+</Query>

@@ -11,7 +11,7 @@
   <evaluateRule code="BR_MakeControlRVE1" />
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet2" instanceName="执行方法_API_QueryLoginInfo(API_查询登录信息)_1" isNeedLog="False" isEnabled="True" isDebug="False">
+      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet2" instanceName="执行方法_API_QueryLoginInfo(API_查询登录信息)_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-17 16:49:54">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
@@ -32,7 +32,7 @@
         <RuleConfig><![CDATA[{"AddLocation":"3","Mappings":[{"destField":"bo_akl_base_tending.operatorCode","fieldtype":"expression","srcField":"BR_VAR_PARENT.[user].[userNo]"},{"destField":"bo_akl_base_tending.operator","fieldtype":"expression","srcField":"BR_VAR_PARENT.[user].[userName]"}],"TableType":"window","TableName":"bo_akl_base_tending","NumCount":"1"}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><Location>3</Location><EntityType>window</EntityType><EntityName>bo_akl_base_tending</EntityName></dtMaster><dtEntityColumns><DestName>bo_akl_base_tending.operatorCode</DestName><SourceType>expression</SourceType><SourceName>BR_VAR_PARENT.[user].[userNo]</SourceName></dtEntityColumns><dtEntityColumns><DestName>bo_akl_base_tending.operator</DestName><SourceType>expression</SourceType><SourceName>BR_VAR_PARENT.[user].[userName]</SourceName></dtEntityColumns></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="MakeControlRVE" ruleName="控制控件的只读、使能、显示" instanceCode="BR_MakeControlRVE1" instanceName="控制控件的只读、使能、显示" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="liub" lastModifiedTime="2018-08-06 10:57:42">
+      <RuleInstance ruleCode="MakeControlRVE" ruleName="控制控件的只读、使能、显示" instanceCode="BR_MakeControlRVE1" instanceName="控制控件的只读、使能、显示" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>

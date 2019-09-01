@@ -621,8 +621,8 @@
           <DataType>char</DataType>
           <Length>1000</Length>
           <Precision></Precision>
-          <DefaultValue />
-          <Expression />
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

@@ -48,6 +48,10 @@
       </entity>
     </variable>
   </outputs>
-  <inputs />
+  <inputs>
+    <variable code="prlineId" name="产线id" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+  </inputs>
   <remark><![CDATA[]]></remark>
 </form>

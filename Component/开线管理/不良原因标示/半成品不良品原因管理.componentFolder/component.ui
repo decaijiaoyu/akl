@@ -1,0 +1,35 @@
+﻿<form type="1002" code="form521" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[654]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form521_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[半成品不良品原因管理]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton BackColor="255, 0, 0" Code="JGButton3" LabelText="删除" Left="167" OnClick="JGButton3_OnClick" PercentHeight="5.8%" PercentWidth="9.9%" TabIndex="5" Top="22" Width="65" />
+    <JGButton Code="JGButton2" LabelText="保存" Left="93" OnClick="JGButton2_OnClick" PercentHeight="5.8%" PercentWidth="10.4%" TabIndex="4" Top="22" Width="68" />
+    <JGButton Code="JGButton1" LabelText="新增" Left="12" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="11.5%" TabIndex="3" Top="22" Width="75" />
+    <JGDataGrid Code="JGDataGrid1" Height="374" LabelText="列表" Left="12" PercentHeight="83.1%" PercentWidth="84.4%" TabIndex="0" TableName="bo_akl_line_materialBadReason" Top="54" Width="552">
+      <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="reason" LabelText="不良原因" TableName="bo_akl_line_materialBadReason" Width="305" />
+      <JGIntegerBoxColumn Code="JGIntegerBoxColumn2" ColumnName="badNum" LabelText="不良品数量" TableName="bo_akl_line_materialBadReason" Width="136" />
+    </JGDataGrid>
+  </controls>
+  <outputs />
+  <inputs>
+    <variable code="mid" name="原材料不良id" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+  </inputs>
+  <remark><![CDATA[]]></remark>
+</form>

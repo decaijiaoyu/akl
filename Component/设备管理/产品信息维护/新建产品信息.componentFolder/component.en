@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_productlines" Name="产线信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_base_productlines" Name="产线信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -79,7 +79,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_productInfo_ws" Name="产品工站信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_base_productInfo_ws" Name="产品工站信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -203,7 +203,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_productInfo" Name="成品信息维护" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_EM_productInfo" Name="成品信息维护" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -397,6 +397,15 @@
         <Column>
           <Code>minCompletionRate</Code>
           <Name>最小完成率</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>price</Code>
+          <Name>单价</Name>
           <DataType>number</DataType>
           <Length>50</Length>
           <Precision>4</Precision>

@@ -1,0 +1,73 @@
+﻿<Query id="fd4ed012414f41a092aa0651bb3d6371" code="badAnalysis" name="报废成本分析" type="VSql" APICode="">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[user_20190304004]]></Creator>
+  <CreationTime><![CDATA[2019-08-29 16:55:18]]></CreationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-08-30 16:31:57]]></ModificationTime>
+  <VSql><![CDATA[select bn.materialNo,bn.badNum,bn.price,bn.prName,(bn.price*bn.badNum) as priceSum,bn.materialType
+from
+(select mat.materialNo,SUM(ins.inStockNum) as badNum,ep.price as price,ep.prName as prName,mat.materialType as materialType
+from bo_akl_MM_inStockInfo  as ins 
+left join bo_akl_MM_materialInfo as mat on ins.materialId=mat.id
+left join bo_akl_EM_productInfo as ep on mat.materialNo=ep.prNo  
+where MONTH(ins.operateTime)=:inputMonth and YEAR(ins.operateTime)=:inputYear and ins.remark='确认不良品入库'
+group by mat.materialNo)
+as bn 
+where bn.materialType=:materialType and bn.materialNo is not null
+
+
+
+]]></VSql>
+  <Columns>
+    <Column id="Column_0" code="materialNo" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_1" code="badNum" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_2" code="price" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_3" code="prName" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_4" code="priceSum" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_5" code="materialType" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+  </Columns>
+  <Params>
+    <Param code="inputMonth" name="月份" dataType="integer">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="inputYear" name="年份" dataType="integer">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="materialType" name="物料类型" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+  </Params>
+  <DataItems>
+    <DataItem type="Table" key="bo_akl_MM_inStockInfo" tokenIndexes="82" />
+    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="92" />
+    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="112" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialNo" tokenIndexes="43,122,166" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.inStockNum" tokenIndexes="49" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.price" tokenIndexes="58" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prName" tokenIndexes="66" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialType" tokenIndexes="74" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.materialId" tokenIndexes="102" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.id" tokenIndexes="106" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prNo" tokenIndexes="126" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.operateTime" tokenIndexes="134,146" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.remark" tokenIndexes="156" />
+    <DataItem type="QueryParam" key="inputMonth" tokenIndexes="138" />
+    <DataItem type="QueryParam" key="inputYear" tokenIndexes="150" />
+    <DataItem type="QueryParam" key="materialType" tokenIndexes="180" />
+  </DataItems>
+</Query>

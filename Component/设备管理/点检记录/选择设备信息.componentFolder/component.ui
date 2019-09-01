@@ -1,7 +1,7 @@
 ﻿<form type="1002" code="chooseEquipInfo" IsLocked="False">
   <propertys>
-    <property name="Width"><![CDATA[484]]></property>
-    <property name="Height"><![CDATA[282]]></property>
+    <property name="Width"><![CDATA[599]]></property>
+    <property name="Height"><![CDATA[349]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
     <property name="LayoutType"><![CDATA[None]]></property>
     <property name="TableName"><![CDATA[]]></property>
@@ -17,10 +17,10 @@
     <property name="RefResources"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGButton Code="JGButton1" LabelText="重置" Left="359" OnClick="JGButton1_OnClick" PercentHeight="9.2%" PercentWidth="10.7%" TabIndex="2" Top="10" />
-    <JGLocateBox Code="JGLocateBox1" Left="103" OnClick="JGLocateBox1_OnClick" PercentHeight="9.9%" PercentWidth="51.7%" TabIndex="1" Top="8" Width="250" />
-    <JGButton Code="sureButton" LabelText="确定" Left="417" OnClick="sureButton_OnClick" PercentHeight="9.2%" PercentWidth="10.7%" TabIndex="3" Top="10" />
-    <JGDataGrid Code="JGDataGrid1" FetchMode="paged" Height="228" LabelText="列表" Left="12" OnDoubleClick="sureButton_OnClick" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,5],&quot;DefaultPageSize&quot;:5}" PercentHeight="80.9%" PercentWidth="94.4%" ReadOnly="True" TabIndex="4" TableName="bo_akl_EM_EquipmentInformation" Top="42" Width="457">
+    <JGButton Code="JGButton1" LabelText="重置" Left="416" OnClick="JGButton1_OnClick" PercentHeight="7.4%" PercentWidth="10.9%" TabIndex="2" Top="10" Width="65" />
+    <JGLocateBox Code="JGLocateBox1" Left="103" OnClick="JGLocateBox1_OnClick" PercentHeight="8%" PercentWidth="41.7%" TabIndex="1" Top="8" Width="250" />
+    <JGButton Code="sureButton" LabelText="确定" Left="487" OnClick="sureButton_OnClick" PercentHeight="7.4%" PercentWidth="11.9%" TabIndex="3" Top="10" Width="71" />
+    <JGDataGrid Code="JGDataGrid1" FetchMode="paged" Height="278" LabelText="列表" Left="12" OnDoubleClick="sureButton_OnClick" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,5],&quot;DefaultPageSize&quot;:5}" PercentHeight="79.7%" PercentWidth="91.2%" ReadOnly="True" TabIndex="4" TableName="bo_akl_EM_EquipmentInformation" Top="42" Width="546">
       <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn1" ColumnName="equipNo" LabelText="设备编号" TableName="bo_akl_EM_EquipmentInformation" Width="153" />
       <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn2" ColumnName="equipName" LabelText="设备名称" TableName="bo_akl_EM_EquipmentInformation" Width="167" />
     </JGDataGrid>
