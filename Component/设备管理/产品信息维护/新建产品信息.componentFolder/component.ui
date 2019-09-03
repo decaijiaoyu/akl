@@ -25,7 +25,7 @@
     <JGIntegerBox Code="JGIntegerBox6" LabelText="最小看板张数" Width="384" Height="34" PercentHeight="3.8%" PercentWidth="44.3%" Top="329" Left="464" TabIndex="34" TableName="bo_akl_EM_productInfo" ColumnName="boardMin" IsMust="True" Value="0" />
     <JGIntegerBox Code="JGIntegerBox5" LabelText="最大看板张数" Width="374" Height="34" PercentHeight="3.8%" PercentWidth="43.1%" Top="329" Left="13" TabIndex="33" LabelWidth="100" TableName="bo_akl_EM_productInfo" ColumnName="boardMax" IsMust="True" Value="0" />
     <JGIntegerBox Code="JGIntegerBox4" LabelText="系统看板大小" Width="384" Height="30" PercentHeight="3.4%" PercentWidth="44.3%" Top="283" Left="464" TabIndex="32" TableName="bo_akl_EM_productInfo" ColumnName="boardNum" IsMust="True" Value="0" />
-    <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="835" Height="262" PercentHeight="29.3%" PercentWidth="96.3%" Top="558" Left="13" TabIndex="27" OnDoubleClick="JGButton6_OnClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" TableName="bo_akl_base_productInfo_ws" ReadOnly="True" ChooseMode="3">
+    <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="835" Height="262" PercentHeight="29.3%" PercentWidth="96.3%" Top="582" Left="13" TabIndex="27" OnDoubleClick="JGButton6_OnClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" TableName="bo_akl_base_productInfo_ws" ReadOnly="True" ChooseMode="3">
       <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="wsNo" LabelText="工站编号" TableName="bo_akl_base_productInfo_ws" TextLength="128" />
       <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="workEName" LabelText="作业内容英文" TableName="bo_akl_base_productInfo_ws" TextLength="128" />
       <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="workCName" LabelText="作业内容中文" TableName="bo_akl_base_productInfo_ws" TextLength="128" />
@@ -34,12 +34,12 @@
       <JGTextBoxColumn Code="JGTextBoxColumn6" ColumnName="isAutomatic" LabelText="是否自动工站" TableName="bo_akl_base_productInfo_ws" TextLength="128" />
       <JGTextBoxColumn Code="JGTextBoxColumn8" ColumnName="vwsNature" LabelText="虚拟工站性质" TableName="bo_akl_base_productInfo_ws" />
     </JGDataGrid>
-    <JGButton Code="JGButton2" LabelText="选择工站" Width="77" PercentHeight="2.9%" PercentWidth="8.9%" Top="508" Left="13" TabIndex="9" OnClick="JGButton2_OnClick" />
-    <JGButton Code="JGButton4" LabelText="删除" PercentHeight="2.9%" PercentWidth="6%" Top="508" Left="287" TabIndex="14" Visible="False" BackColor="255, 0, 0" OnClick="JGButton4_OnClick_1" />
-    <JGLocateBox Code="JGLocateBox1" PercentHeight="3.1%" PercentWidth="25.4%" Top="508" Left="565" TabIndex="15" OnClick="JGLocateBox1_OnClick" />
-    <JGButton Code="JGButton1" LabelText="重置" PercentHeight="2.9%" PercentWidth="6%" Top="508" Left="796" TabIndex="16" OnClick="JGButton1_OnClick_1" />
-    <JGAttachment Code="JGAttachment1" LabelText="" Width="185" PercentHeight="2.9%" PercentWidth="21.3%" Top="508" Left="96" TabIndex="12" LabelWidth="0" />
-    <JGLabel Code="JGLabel4" LabelText="产品工站信息" Height="27" Width="124" PercentHeight="3%" PercentWidth="14.3%" Top="475" Left="13" TabIndex="8" FontStyle="微软雅黑, 12pt, style=Bold" TextAlign="Center" />
+    <JGButton Code="JGButton2" LabelText="选择工站" Width="77" PercentHeight="2.9%" PercentWidth="8.9%" Top="548" Left="13" TabIndex="9" OnClick="JGButton2_OnClick" />
+    <JGButton Code="JGButton4" LabelText="删除" PercentHeight="2.9%" PercentWidth="6%" Top="548" Left="287" TabIndex="14" Visible="False" BackColor="255, 0, 0" OnClick="JGButton4_OnClick_1" />
+    <JGLocateBox Code="JGLocateBox1" PercentHeight="3.1%" PercentWidth="25.4%" Top="548" Left="565" TabIndex="15" OnClick="JGLocateBox1_OnClick" />
+    <JGButton Code="JGButton1" LabelText="重置" PercentHeight="2.9%" PercentWidth="6%" Top="548" Left="796" TabIndex="16" OnClick="JGButton1_OnClick_1" />
+    <JGAttachment Code="JGAttachment1" LabelText="" Width="185" PercentHeight="2.9%" PercentWidth="21.3%" Top="548" Left="96" TabIndex="12" LabelWidth="0" />
+    <JGLabel Code="JGLabel4" LabelText="产品工站信息" Height="27" Width="124" PercentHeight="3%" PercentWidth="14.3%" Top="515" Left="13" TabIndex="8" FontStyle="微软雅黑, 12pt, style=Bold" TextAlign="Center" />
     <JGBaseDictBox Code="JGBaseDictBox3" LabelText="产品型号" Width="374" Height="30" PercentHeight="3.4%" PercentWidth="43.1%" Top="130" Left="13" TabIndex="18" LabelWidth="100" LabelFontStyle="微软雅黑, 11pt" ValueFontStyle="微软雅黑, 11pt" OpenModuleAction="JGBaseDictBox3_OpenModuleAction" TableName="bo_akl_EM_productInfo" IDColumnName="prNo" ColumnName="prNo" IsMust="True" />
     <JGBaseDictBox Code="JGBaseDictBox2" LabelText="模具编号" Width="384" Height="30" PercentHeight="3.4%" PercentWidth="44.3%" Top="166" Left="464" TabIndex="2" LabelWidth="100" LabelFontStyle="微软雅黑, 11pt" ValueFontStyle="微软雅黑, 11pt" OpenModuleAction="JGBaseDictBox1_OpenModuleAction_1" TableName="bo_akl_EM_productInfo" IDColumnName="mouldNo" ColumnName="mouldNo" />
     <JGLabel Code="JGLabel3" LabelText="时" Height="30" Width="24" PercentHeight="3.4%" PercentWidth="2.8%" Top="130" Left="824" TabIndex="6" FontStyle="微软雅黑, 12pt" />
@@ -55,10 +55,11 @@
     <JGButton Code="JGButton5" LabelText="保存" Height="30" PercentHeight="3.4%" PercentWidth="6%" Top="15" Left="796" TabIndex="12" OnClick="JGButton4_OnClick" />
     <JGLabel Code="JGLabel1" LabelText="产品信息维护" Height="42" Width="201" PercentHeight="4.7%" PercentWidth="23.2%" Top="3" Left="266" TabIndex="1" FontStyle="微软雅黑, 15.75pt, style=Bold" TextAlign="Center" />
     <JGTextBox Code="JGTextBox1" LabelText="产品名称" Width="374" Height="30" PercentHeight="3.4%" PercentWidth="43.1%" Top="166" Left="13" TabIndex="7" LabelWidth="100" LabelFontStyle="微软雅黑, 11pt" ValueFontStyle="微软雅黑, 11pt" TableName="bo_akl_EM_productInfo" ColumnName="prName" TextLength="128" ReadOnly="True" IsMust="True" IsMustBehavior="Simple" />
-    <JGLongTextBox Code="JGLongTextBox1" LabelText="备注" Width="384" PercentHeight="2.9%" PercentWidth="44.3%" Top="426" Left="464" TabIndex="11" LabelFontStyle="微软雅黑, 11pt" ValueFontStyle="微软雅黑, 11pt" TableName="bo_akl_EM_productInfo" ColumnName="remark" TextLength="1000" />
+    <JGLongTextBox Code="JGLongTextBox1" LabelText="备注" Width="835" PercentHeight="2.9%" PercentWidth="96.3%" Top="474" Left="13" TabIndex="11" LabelFontStyle="微软雅黑, 11pt" ValueFontStyle="微软雅黑, 11pt" TableName="bo_akl_EM_productInfo" ColumnName="remark" TextLength="1000" />
     <JGIntegerBox Code="JGIntegerBox1" LabelText="标准生产力" Width="384" Height="30" PercentHeight="3.4%" PercentWidth="44.3%" Top="202" Left="464" LabelWidth="100" LabelFontStyle="微软雅黑, 11pt" ValueFontStyle="微软雅黑, 11pt" TableName="bo_akl_EM_productInfo" ColumnName="standardProductivity" Value="0" />
     <JGFloatBox Code="JGFloatBox1" LabelText="标准工时" Width="344" Height="30" PercentHeight="3.4%" PercentWidth="39.7%" Top="202" Left="13" TabIndex="8" LabelWidth="100" LabelFontStyle="微软雅黑, 11pt" ValueFontStyle="微软雅黑, 11pt" TableName="bo_akl_EM_productInfo" ColumnName="standardWorkingHours" IsMust="True" />
     <JGFloatBox Code="JGFloatBox5" LabelText="单价" Width="374" PercentHeight="2.9%" PercentWidth="43.1%" Top="426" Left="13" TabIndex="0" LabelWidth="100" TableName="bo_akl_EM_productInfo" ColumnName="price" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox6" LabelText="不良率季度目标(%)" Width="384" PercentHeight="2.9%" PercentWidth="44.3%" Top="426" Left="464" TabIndex="0" TableName="bo_akl_EM_productInfo" ColumnName="badGoal" />
   </controls>
   <outputs>
     <variable code="cpxxwh" name="" fieldType="entity" defaultValue="" description="" isRestore="false">

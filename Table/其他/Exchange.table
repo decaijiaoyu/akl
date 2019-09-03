@@ -1,28 +1,28 @@
-﻿<Table id="a8b3390502c34cba98d03dd31db928c8" code="Exchange" name="产线设备数据">
+﻿<Table id="c2b74b26424b4c94a057c397b38ed2d4" code="Exchange" name="产线设备数据记录表">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[]]></Creator>
-  <CreationTime><![CDATA[2018-07-06 10:37:19]]></CreationTime>
+  <CreationTime><![CDATA[2019-09-01 22:09:11]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-08-31 12:00:35]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-09-01 22:09:22]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="d194eb9839bd4a4cb4870804d2d3388c" code="Name" name="" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+    <Column id="05b5fda648264212bcd97f99aba57351" code="Name" name="Name" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="75d653b6ed81472a87882cf47b4ffa9f" code="Value" name="" domain="" dataType="integer" length="50" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+    <Column id="0718baf0428e4e8f95dc16c6cb1ee18b" code="Value" name="Value" domain="" dataType="integer" length="50" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="5b910b89352b4545a79280f70f6fced5" code="Timepoint" name="" domain="" dataType="text" length="1000" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+    <Column id="58c9ab4afe83433b9a844049d166a3a4" code="Timepoint" name="Timepoint" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
   </Columns>
   <Indexes />
   <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
-  <Data isInitialData="false" isReplaceDataById="false" />
+  <Data isInitialData="true" isReplaceDataById="true" />
 </Table>

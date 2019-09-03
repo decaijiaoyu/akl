@@ -412,6 +412,15 @@
           <DefaultValue></DefaultValue>
           <Expression></Expression>
         </Column>
+        <Column>
+          <Code>badGoal</Code>
+          <Name>不良率季度目标</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
       </Columns>
       <Events>
         <EntityEvent Code="OnLoaded" Value="" />

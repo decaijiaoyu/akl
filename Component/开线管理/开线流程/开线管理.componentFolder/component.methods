@@ -1418,7 +1418,7 @@
     <Description><![CDATA[]]></Description>
     <Remark><![CDATA[]]></Remark>
     <MethodChain><![CDATA[
-  <if isEnabled="True" isDebug="False" code="IfCode1">
+  <if isEnabled="False" isDebug="False" code="IfCode1">
     <define>
       <expression>!IsEmpty([bo_akl_line_start].[id])</expression>
       <remark></remark>
@@ -1429,7 +1429,7 @@
       <evaluateRule code="BR_ShowMessage1" />
     </sequence>
   </if>
-  <else isEnabled="True" isDebug="False">
+  <else isEnabled="False" isDebug="False">
     <define>
       <remark></remark>
     </define>
@@ -1439,33 +1439,33 @@
   </else>
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage2" instanceName="显示设置的提示信息_1" isNeedLog="False" isEnabled="True" isDebug="False">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"\"请先选中数据\"","type":"1"}}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"请先选中数据"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
-      <RuleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData1" instanceName="删除数据库中的记录" isNeedLog="False" isEnabled="True" isDebug="False">
+      <RuleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData1" instanceName="删除数据库中的记录" isNeedLog="False" isEnabled="False" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"dtChileMaps":[{"orderNo":"1","tableName":"bo_akl_line_start","dsWhere":[{"columnType":"1","field":"bo_akl_line_start.id","fieldType":"char","leftBracket":"(","logicOperation":"","operation":"=","rightBracket":")","value":"[bo_akl_line_start].[id]","valueType":"9"}]},{"orderNo":"2","tableName":"bo_akl_line_operation","dsWhere":[{"columnType":"1","field":"bo_akl_line_operation.lid","fieldType":"char","leftBracket":"(","logicOperation":"","operation":"=","rightBracket":")","value":"[bo_akl_line_start].[id]","valueType":"9"}]},{"orderNo":"3","tableName":"bo_akl_line_start_user","dsWhere":[{"columnType":"1","field":"bo_akl_line_start_user.lid","fieldType":"char","leftBracket":"(","logicOperation":"","operation":"=","rightBracket":")","value":"[bo_akl_line_start].[id]","valueType":"9"}]},{"orderNo":"4","tableName":"bo_akl_line_start_check","dsWhere":[{"columnType":"1","field":"bo_akl_line_start_check.lid","fieldType":"char","leftBracket":"(","logicOperation":"","operation":"=","rightBracket":")","value":"[bo_akl_line_start].[id]","valueType":"9"}]},{"orderNo":"5","tableName":"bo_akl_line_resourceOccupancy","dsWhere":[{"columnType":"1","field":"bo_akl_line_resourceOccupancy.lid","fieldType":"char","leftBracket":"(","logicOperation":"","operation":"=","rightBracket":")","value":"[bo_akl_line_start].[id]","valueType":"9"}]}],"treeStruct":null}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtConditionMaster><TableName>bo_akl_line_start</TableName><Condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_line_start.id</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>[bo_akl_line_start].[id]</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></Condition><OrderNo>1</OrderNo></dtConditionMaster><dtConditionMaster><TableName>bo_akl_line_operation</TableName><Condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_line_operation.lid</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>[bo_akl_line_start].[id]</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></Condition><OrderNo>2</OrderNo></dtConditionMaster><dtConditionMaster><TableName>bo_akl_line_start_user</TableName><Condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_line_start_user.lid</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>[bo_akl_line_start].[id]</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></Condition><OrderNo>3</OrderNo></dtConditionMaster><dtConditionMaster><TableName>bo_akl_line_start_check</TableName><Condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_line_start_check.lid</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>[bo_akl_line_start].[id]</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></Condition><OrderNo>4</OrderNo></dtConditionMaster><dtConditionMaster><TableName>bo_akl_line_resourceOccupancy</TableName><Condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_line_resourceOccupancy.lid</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>[bo_akl_line_start].[id]</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></Condition><OrderNo>5</OrderNo></dtConditionMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_执行窗体加载事件" isNeedLog="False" isEnabled="True" isDebug="False">
+      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_执行窗体加载事件" isNeedLog="False" isEnabled="False" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"filter":{"windowInstanceCode":""},"invokeTarget":{"sourceType":"client-ruleSet","invokeType":"local","ruleLocation":"window","componentCode":"","windowCode":"","ruleSetCode":"lineStart_list_FormLoadAction","isParallelism":"False"},"invokeParams":null,"returnMapping":null}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtFilter><windowInstanceCode /></dtFilter><dtInvokeTarget><sourceType>client-ruleSet</sourceType><invokeType>local</invokeType><ruleLocation>window</ruleLocation><componentCode /><windowCode /><ruleSetCode>lineStart_list_FormLoadAction</ruleSetCode><isParallelism>False</isParallelism></dtInvokeTarget></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False">
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="False" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"\"删除成功\"","type":"1"}}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"删除成功"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage2" instanceName="显示设置的提示信息_1" isNeedLog="False" isEnabled="False" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"\"请先选中数据\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"请先选中数据"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
     </RuleInstances>
   </Method>

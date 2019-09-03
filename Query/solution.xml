@@ -569,5 +569,19 @@
       <FileSystemObjectName>qualityQuestion</FileSystemObjectName>
       <SubNodes />
     </NavigationNode>
+    <NavigationNode>
+      <Code>dqqq</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>dqqq</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>e21122</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>e21122</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
   </Nodes>
 </NavigationInfo>

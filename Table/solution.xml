@@ -388,13 +388,6 @@
           <SubNodes />
         </NavigationNode>
         <NavigationNode>
-          <Code>Exchange</Code>
-          <NodeType>Table</NodeType>
-          <FileSystemObjectType>File</FileSystemObjectType>
-          <FileSystemObjectName>Exchange</FileSystemObjectName>
-          <SubNodes />
-        </NavigationNode>
-        <NavigationNode>
           <Code>MyExchange_old</Code>
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
@@ -448,6 +441,13 @@
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>fff</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>Exchange</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>Exchange</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>

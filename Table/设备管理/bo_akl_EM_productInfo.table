@@ -3,7 +3,7 @@
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-06-28 15:59:58]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-08-28 16:04:24]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-09-02 09:03:48]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -97,6 +97,10 @@
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
+    <Column id="6b3bbf0574bc4f01958f2759803498da" code="badGoal" name="不良率季度目标" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
   </Columns>
   <Indexes />
   <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
@@ -125,6 +129,7 @@
       <ColumnData code="OEE"><![CDATA[]]></ColumnData>
       <ColumnData code="minCompletionRate"><![CDATA[]]></ColumnData>
       <ColumnData code="price"><![CDATA[]]></ColumnData>
+      <ColumnData code="badGoal"><![CDATA[]]></ColumnData>
     </RowData>
     <RowData>
       <ColumnData code="id"><![CDATA[b4733255ded905f487676f5174062769]]></ColumnData>
@@ -150,6 +155,7 @@
       <ColumnData code="OEE"><![CDATA[]]></ColumnData>
       <ColumnData code="minCompletionRate"><![CDATA[]]></ColumnData>
       <ColumnData code="price"><![CDATA[]]></ColumnData>
+      <ColumnData code="badGoal"><![CDATA[]]></ColumnData>
     </RowData>
   </Data>
 </Table>

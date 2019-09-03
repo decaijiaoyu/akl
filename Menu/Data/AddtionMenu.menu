@@ -90,4 +90,12 @@
   <menuItem code="form_badReason" name="不良品原因" isDisabled="false" type="0" ruleName="" windowCode="form51" parameters="" />
   <menuItem code="prlineRepairRecode" name="产线工站维修历史记录" isDisabled="false" type="0" ruleName="" windowCode="personnel_matrix1" parameters="" />
   <menuItem code="badAnalysis" name="报废成本分析" isDisabled="false" type="0" ruleName="" windowCode="form53" parameters="" />
+  <menuItem code="everyQuestion" name="每日质量问题一览表" isDisabled="false" type="0" ruleName="" windowCode="form54" parameters="" />
+  <menuItem code="zsQuestionEveryday" name="注塑每日质量问题一览表" isDisabled="false" type="0" ruleName="" windowCode="form55" parameters="" />
+  <menuItem code="weekQualityQuestion" name="周质量问题一览表" isDisabled="false" type="0" ruleName="" windowCode="form56" parameters="" />
+  <menuItem code="IPQCcheckCycle" name="IPQC巡检记录表" isDisabled="false" type="0" ruleName="" windowCode="form57" parameters="" />
+  <menuItem code="scrapIndicator" name="过程不良报废指标" isDisabled="false" type="0" ruleName="" windowCode="form58" parameters="" />
+  <menuItem code="processIndicator" name="过程指标" isDisabled="false" type="0" ruleName="" windowCode="form59" parameters="" />
+  <menuItem code="weekScrapAndBad" name="每周不良和报废数据" isDisabled="false" type="0" ruleName="" windowCode="form60" parameters="" />
+  <menuItem code="scrapWeekMonthYear" name="报废周月年报表" isDisabled="false" type="0" ruleName="" windowCode="form62" parameters="" />
 </dir>

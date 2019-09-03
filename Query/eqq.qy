@@ -3,22 +3,50 @@
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-08-29 19:58:14]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-08-30 16:58:02]]></ModificationTime>
-  <VSql><![CDATA[alter table Exchange drop column 'id']]></VSql>
+  <ModificationTime><![CDATA[2019-09-03 10:17:19]]></ModificationTime>
+  <VSql><![CDATA[
+select bn.badGoal,bn.boxPartsNum,bn.materialNo,bn.blpcbadNum,bn.price,bn.prName,(bn.price*bn.blpcbadNum) as priceSum,bn.glcbadNum ,bn.materialType
+from
+(select mat.materialNo,SUM(ins.blpc) as blpcbadNum,SUM(ins.wsc) as glcbadNum,
+ep.price as price,ep.prName as prName,ep.boxPartsNum as boxPartsNum,ep.badGoal as badGoal,
+mat.materialType as materialType
+from (select case 
+			when st.stockType='不良品仓'  THEN sto.inStockNum 
+			else 0 end as blpc,
+		case 
+		when st.stockType='隔离仓'  THEN sto.inStockNum 
+		else 0 end as wsc,sto.*
+		from bo_akl_MM_inStockInfo as sto 
+		left join bo_akl_MM_stockType st on st.id=sto.stockTypeId)  
+	  as ins 
+	  left join bo_akl_MM_materialInfo as mat on ins.materialId=mat.id
+	  left join bo_akl_EM_productInfo as ep on mat.materialNo=ep.prNo  
+group by mat.materialNo
+)as bn
+where  bn.materialNo is not null]]></VSql>
   <Columns>
-    <Column id="Column_0" code="materialNo" name="" dataType="char" length="" precision="">
+    <Column id="Column_0" code="boxPartsNum" name="" dataType="integer" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_1" code="badNum" name="" dataType="number" length="" precision="">
+    <Column id="Column_1" code="materialNo" name="" dataType="char" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_2" code="price" name="" dataType="number" length="" precision="">
+    <Column id="Column_2" code="blpcbadNum" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_3" code="prName" name="" dataType="char" length="" precision="">
+    <Column id="Column_3" code="price" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_4" code="priceSum" name="" dataType="number" length="" precision="">
+    <Column id="Column_4" code="prName" name="" dataType="char" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_5" code="priceSum" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_6" code="glcbadNum" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_7" code="materialType" name="" dataType="char" length="" precision="">
       <Remark></Remark>
     </Column>
   </Columns>
@@ -33,6 +61,19 @@
     </Param>
   </Params>
   <DataItems>
-    <DataItem type="Table" key="Exchange" tokenIndexes="4" />
+    <DataItem type="Table" key="bo_akl_MM_inStockInfo" tokenIndexes="187" />
+    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="220" />
+    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="240" />
+    <DataItem type="Table" key="bo_akl_MM_stockType" tokenIndexes="197" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialNo" tokenIndexes="57,250,262" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.price" tokenIndexes="84" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prName" tokenIndexes="92" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.boxPartsNum" tokenIndexes="100" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.badGoal" tokenIndexes="108" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialType" tokenIndexes="117" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.inStockNum" tokenIndexes="142,169" />
+    <DataItem type="TableField" key="bo_akl_MM_inStockInfo.stockTypeId" tokenIndexes="209" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.id" tokenIndexes="234" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prNo" tokenIndexes="254" />
   </DataItems>
 </Query>
