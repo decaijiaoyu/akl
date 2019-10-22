@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_start" Name="开线主表" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_line_start" Name="开线主表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -340,7 +340,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="badProNum" Name="半成品各不良数" EntityType="" TableOrQueryCode="">
+    <Entity Code="badProNum" Name="半成品各不良数" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

@@ -108,7 +108,7 @@
           <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

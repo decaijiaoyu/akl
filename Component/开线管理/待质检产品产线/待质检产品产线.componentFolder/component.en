@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_start" Name="开线主表" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_line_start" Name="开线主表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -9,7 +9,7 @@
           <Length>128</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>startType</Code>
@@ -18,7 +18,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>startTypeId</Code>
@@ -27,7 +27,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>prolineUserName</Code>
@@ -36,7 +36,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>prolineUserCode</Code>
@@ -45,7 +45,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>prolineName</Code>
@@ -54,7 +54,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>prolineId</Code>
@@ -63,7 +63,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>equName</Code>
@@ -72,7 +72,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>equId</Code>
@@ -81,7 +81,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>planCode</Code>
@@ -90,7 +90,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>planId</Code>
@@ -99,7 +99,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>state</Code>
@@ -108,7 +108,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue>开线准备</DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>isLineUser</Code>
@@ -117,7 +117,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue>0</DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>isSqe</Code>
@@ -126,7 +126,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue>0</DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>userCheck</Code>
@@ -135,7 +135,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue>不通过</DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>inspectorId</Code>
@@ -144,7 +144,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>inspectorCode</Code>
@@ -153,7 +153,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>inspectorName</Code>
@@ -162,7 +162,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>classes</Code>
@@ -171,7 +171,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>startTime</Code>
@@ -180,7 +180,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>startClasses</Code>
@@ -189,7 +189,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>testNum</Code>
@@ -198,7 +198,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>testInterval</Code>
@@ -207,7 +207,7 @@
           <Length>50</Length>
           <Precision>1</Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>proTimeId</Code>
@@ -216,7 +216,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>proTimeTitle</Code>
@@ -225,7 +225,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>prepareStop</Code>
@@ -234,7 +234,7 @@
           <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>batchNum</Code>
@@ -243,7 +243,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>nextPullTest</Code>
@@ -252,7 +252,7 @@
           <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>pullTestNum</Code>
@@ -261,7 +261,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue>1</DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>pullTestState</Code>
@@ -270,7 +270,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>boxPartsNum</Code>
@@ -279,7 +279,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>parameterCheckState</Code>
@@ -288,7 +288,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>frozenType</Code>
@@ -297,7 +297,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>confirmBadProductState</Code>
@@ -306,7 +306,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>labelBindNum</Code>
@@ -315,7 +315,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>resetState</Code>
@@ -324,7 +324,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>resetTime</Code>
@@ -333,7 +333,7 @@
           <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>frozenState</Code>
@@ -342,7 +342,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>unusualStartClasses</Code>
@@ -351,7 +351,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>unusualStartClassesId</Code>
@@ -360,7 +360,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>returnMaterialState</Code>
@@ -369,7 +369,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>lineStartType</Code>
@@ -378,7 +378,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>qualityCheck</Code>
@@ -387,14 +387,14 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_LM_printProductLabel" Name="已打印产品标签" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_LM_printProductLabel" Name="已打印产品标签" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -403,7 +403,7 @@
           <Length>128</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>materialNo</Code>
@@ -412,7 +412,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>batch</Code>
@@ -421,7 +421,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>printTime</Code>
@@ -430,7 +430,7 @@
           <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>qrCodeInfo</Code>
@@ -439,7 +439,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>qrCodeSign</Code>
@@ -448,7 +448,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>startClasses</Code>
@@ -457,7 +457,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>lineStartId</Code>
@@ -466,7 +466,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>boxPartsNum</Code>
@@ -475,7 +475,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>cardBoardId</Code>
@@ -484,7 +484,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>materialName</Code>
@@ -493,7 +493,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>projectNo</Code>
@@ -502,7 +502,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>prodDate</Code>
@@ -511,7 +511,7 @@
           <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>planNO</Code>
@@ -520,7 +520,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>lineLeader</Code>
@@ -529,7 +529,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>inspector</Code>
@@ -538,7 +538,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>serialNum</Code>
@@ -547,7 +547,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>isInsulate</Code>
@@ -556,7 +556,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>labelType</Code>
@@ -565,7 +565,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>cusName</Code>
@@ -574,7 +574,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>cusaddress</Code>
@@ -583,7 +583,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>platform</Code>
@@ -592,7 +592,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>cusNo</Code>
@@ -601,7 +601,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>supNo</Code>
@@ -610,7 +610,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>ecn</Code>
@@ -619,14 +619,14 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_materialInfo" Name="物料信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_materialInfo" Name="物料信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -635,7 +635,7 @@
           <Length>128</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>materialNo</Code>
@@ -644,7 +644,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>materialName</Code>
@@ -653,7 +653,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>materialType</Code>
@@ -662,7 +662,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>unit</Code>
@@ -671,7 +671,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>bomUnit</Code>
@@ -680,7 +680,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>waterLevel</Code>
@@ -689,7 +689,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue>0</DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>remark</Code>
@@ -698,7 +698,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>packNum</Code>
@@ -707,7 +707,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>maxSendNum</Code>
@@ -716,7 +716,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>cusNo</Code>
@@ -725,7 +725,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>projectNo</Code>
@@ -734,7 +734,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>ecn</Code>
@@ -743,7 +743,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>minWaterLevel</Code>
@@ -752,7 +752,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>maxWaterLevel</Code>
@@ -761,7 +761,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

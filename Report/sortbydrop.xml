@@ -29,5 +29,75 @@
       <FileSystemObjectName>产线产出报表</FileSystemObjectName>
       <SubNodes />
     </NavigationNode>
+    <NavigationNode>
+      <Code>b001</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>01</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>IPQCcheck</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>PQC巡检记录表</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>badAnalysis</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>报销分析</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>weekQualityQuestion</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>每周质量问题一览</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>qualityQuestion</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>每日质量问题一览</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>modelQuaitQuestion</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>注塑每日质量问题一览表</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>repairRecode</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>维修记录</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>processBedGoal</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>过程不良报废指标</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>processGoalMonth</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>过程指标</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>processGoalYear</Code>
+      <NodeType />
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>过程指标(年)</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
   </Nodes>
 </NavigationInfo>

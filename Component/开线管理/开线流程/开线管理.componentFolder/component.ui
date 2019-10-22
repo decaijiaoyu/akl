@@ -33,6 +33,7 @@
     </JGPanel>
     <JGPanel Code="JGPanel2" Height="594" Width="20" PercentHeight="88.4%" PercentWidth="1.4%" Top="78" TabIndex="15" Dock="Left" BorderWidth="0" />
     <JGPanel Code="JGPanel1" Height="78" Width="1387" PercentHeight="11.6%" PercentWidth="100%" TabIndex="14" Dock="Top" BorderWidth="0">
+      <JGButton Code="JGButton26" LabelText="ws" PercentHeight="33.3%" PercentWidth="3.7%" Top="41" Left="1093" TabIndex="38" Visible="False" OnClick="JGButton26_OnClick" />
       <JGButton Code="JGButton25" LabelText="退" Width="40" PercentHeight="33.3%" PercentWidth="2.9%" Top="42" Left="858" TabIndex="37" Visible="False" OnClick="JGButton25_OnClick" />
       <JGButton Code="JGButton11" LabelText="成功" PercentHeight="33.3%" PercentWidth="3.7%" Top="42" Left="800" TabIndex="36" Visible="False" OnClick="JGButton11_OnClick_1" />
       <JGButton Code="JGButton10" LabelText="测试用别点" Height="25" Width="89" PercentHeight="32.1%" PercentWidth="6.4%" Top="10" Left="1062" TabIndex="35" RemindText="测试" OnClick="JGButton10_OnClick_1" />
@@ -60,7 +61,7 @@
       <JGButton Code="JGButton6" LabelText="停机" PercentHeight="33.3%" PercentWidth="3.7%" Top="10" Left="568" TabIndex="1405" BackColor="255, 0, 0" OnClick="JGButton6_OnClick" Enabled="False" />
       <JGButton Code="JGButton5" LabelText="开线流程状态" Width="102" PercentHeight="33.3%" PercentWidth="7.4%" Top="10" Left="460" TabIndex="1404" OnClick="JGButton5_OnClick" />
     </JGPanel>
-    <JGTimer Code="JGTimer1" LabelText="定时器" Interval="120" Height="26" Width="19" PercentHeight="33.3%" PercentWidth="1.4%" Top="41" Left="1093" TabIndex="32" TimerEvent="JGTimer1_TimerEvent" />
+    <JGTimer Code="JGTimer1" LabelText="定时器" Interval="6" Height="26" Width="19" PercentHeight="33.3%" PercentWidth="1.4%" Top="41" Left="1093" TabIndex="32" TimerEvent="JGTimer1_TimerEvent" />
   </controls>
   <outputs />
   <inputs />

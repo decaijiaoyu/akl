@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_productEntryRecode" Name="生产需求录入记录" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_productEntryRecode" Name="生产需求录入记录" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -61,7 +61,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_boardSchedule" Name="看板排程" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_boardSchedule" Name="看板排程" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -131,7 +131,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="firstWeekOfYear" Name="年第一周天" EntityType="" TableOrQueryCode="">
+    <Entity Code="firstWeekOfYear" Name="年第一周天" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

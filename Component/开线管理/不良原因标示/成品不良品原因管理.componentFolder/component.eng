@@ -4,10 +4,23 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>bo_akl_line_stationBadReason</Code>
-      <Top>91</Top>
-      <Left>192</Left>
+      <Top>106</Top>
+      <Left>145</Left>
       <Width>335</Width>
       <Height>249</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_line_badReason</Code>
+      <Top>136</Top>
+      <Left>526</Left>
+      <Width>277</Width>
+      <Height>212</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

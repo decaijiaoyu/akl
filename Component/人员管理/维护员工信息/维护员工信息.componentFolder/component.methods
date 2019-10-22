@@ -603,6 +603,7 @@
     <Description><![CDATA[]]></Description>
     <Remark><![CDATA[]]></Remark>
     <MethodChain><![CDATA[
+  <evaluateRule code="BR_DeleteConditionRelationData1_1" />
   <evaluateRule code="BR_ImportExcelToDB1" />
   <evaluateRule code="BR_CopyDataBetweenTables1" />
   <evaluateRule code="BR_DeleteConditionRelationData1" />
@@ -645,6 +646,13 @@
   <evaluateRule code="BR_ShowMessage1" />
 ]]></MethodChain>
     <RuleInstances>
+      <RuleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData1_1" instanceName="删除数据库中的记录_删除备用表数据_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-11 08:49:47">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dtChileMaps":[{"orderNo":"1","tableName":"bo_akl_base_staffInfo_clone","dsWhere":null}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtConditionMaster><TableName>bo_akl_base_staffInfo_clone</TableName><Condition><![CDATA[<NewDataSet />]]]]><![CDATA[></Condition><OrderNo>1</OrderNo></dtConditionMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
       <RuleInstance ruleCode="ImportExcelToDB" ruleName="Excel导入到数据库表" instanceCode="BR_ImportExcelToDB1" instanceName="Excel导入到数据库表_导入备用表" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>

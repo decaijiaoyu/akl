@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_materialBadProNum" Name="开线_物料不良品数" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_line_materialBadProNum" Name="开线_物料不良品数" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -79,6 +79,15 @@
           <Name>描述二</Name>
           <DataType>char</DataType>
           <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>bsTime</Code>
+          <Name>标识时间</Name>
+          <DataType>date</DataType>
+          <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
           <Expression></Expression>

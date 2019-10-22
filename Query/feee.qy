@@ -1,10 +1,10 @@
-﻿<Query id="d242b5a87eea47adae4d0c49d67b87ea" code="feee" name="123" type="SimpleWizard">
+﻿<Query id="d242b5a87eea47adae4d0c49d67b87ea" code="feee" name="123" type="SimpleWizard" APICode="">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-04-03 17:42:55]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-07-30 16:52:55]]></ModificationTime>
-  <VSql><![CDATA[select bo_akl_MM_materialInfo.materialType as materialType,bo_akl_line_start.id as id,bo_akl_line_start.prolineName as prolineName,bo_akl_line_start.prolineId as prolineId,bo_akl_line_start.equName as equName,bo_akl_line_start.equId as equId,bo_akl_line_start.planCode as planCode,bo_akl_line_start.planId as planId,bo_akl_line_start.state as state,bo_akl_line_start.startTime as startTime,bo_akl_line_start.startClasses as startClasses,bo_akl_line_start.batchNum as batchNum,bo_akl_line_start.boxPartsNum as boxPartsNum from bo_akl_MM_materialInfo bo_akl_MM_materialInfo inner join bo_akl_line_start bo_akl_line_start on  bo_akl_line_start.equName = bo_akl_MM_materialInfo.materialNo]]></VSql>
+  <ModificationTime><![CDATA[2019-09-10 09:04:40]]></ModificationTime>
+  <VSql><![CDATA[select bo_akl_MM_materialInfo.materialType as materialType,bo_akl_line_start.id as id,bo_akl_line_start.prolineName as prolineName,bo_akl_line_start.prolineId as prolineId,bo_akl_line_start.equName as equName,bo_akl_line_start.equId as equId,bo_akl_line_start.planCode as planCode,bo_akl_line_start.planId as planId,bo_akl_line_start.state as state,bo_akl_line_start.startTime as startTime,bo_akl_line_start.startClasses as startClasses,bo_akl_line_start.batchNum as batchNum,bo_akl_line_start.boxPartsNum as boxPartsNum from bo_akl_MM_materialInfo bo_akl_MM_materialInfo inner join bo_akl_line_start bo_akl_line_start on  bo_akl_line_start.equName = bo_akl_MM_materialInfo.materialNo order by bo_akl_line_start.startTime desc]]></VSql>
   <Columns>
     <Column id="Column_0" code="materialType" name="" dataType="char" length="" precision="">
       <Remark></Remark>
@@ -48,51 +48,22 @@
   </Columns>
   <Params />
   <DataItems>
-    <DataItem type="Table" key="bo_akl_line_start" tokenIndexes="2,10,18,26,34,42,50,58,66,74,82,90,98,106,114,122,130,138,146,154,162,170,178,186,194,202,210,218,226,234,242,250,258,266,274,282,290,298,306,314,322,340,342,354" />
-    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="330,348,350,360" />
-    <DataItem type="TableField" key="bo_akl_line_start.id" tokenIndexes="4" />
-    <DataItem type="TableField" key="bo_akl_line_start.startType" tokenIndexes="12" />
-    <DataItem type="TableField" key="bo_akl_line_start.startTypeId" tokenIndexes="20" />
-    <DataItem type="TableField" key="bo_akl_line_start.prolineUserName" tokenIndexes="28" />
-    <DataItem type="TableField" key="bo_akl_line_start.prolineUserCode" tokenIndexes="36" />
-    <DataItem type="TableField" key="bo_akl_line_start.prolineName" tokenIndexes="44" />
-    <DataItem type="TableField" key="bo_akl_line_start.prolineId" tokenIndexes="52" />
-    <DataItem type="TableField" key="bo_akl_line_start.equName" tokenIndexes="60,356" />
-    <DataItem type="TableField" key="bo_akl_line_start.equId" tokenIndexes="68" />
-    <DataItem type="TableField" key="bo_akl_line_start.planCode" tokenIndexes="76" />
-    <DataItem type="TableField" key="bo_akl_line_start.planId" tokenIndexes="84" />
-    <DataItem type="TableField" key="bo_akl_line_start.state" tokenIndexes="92" />
-    <DataItem type="TableField" key="bo_akl_line_start.isLineUser" tokenIndexes="100" />
-    <DataItem type="TableField" key="bo_akl_line_start.isSqe" tokenIndexes="108" />
-    <DataItem type="TableField" key="bo_akl_line_start.userCheck" tokenIndexes="116" />
-    <DataItem type="TableField" key="bo_akl_line_start.inspectorId" tokenIndexes="124" />
-    <DataItem type="TableField" key="bo_akl_line_start.inspectorCode" tokenIndexes="132" />
-    <DataItem type="TableField" key="bo_akl_line_start.inspectorName" tokenIndexes="140" />
-    <DataItem type="TableField" key="bo_akl_line_start.classes" tokenIndexes="148" />
-    <DataItem type="TableField" key="bo_akl_line_start.startTime" tokenIndexes="156" />
-    <DataItem type="TableField" key="bo_akl_line_start.startClasses" tokenIndexes="164" />
-    <DataItem type="TableField" key="bo_akl_line_start.testNum" tokenIndexes="172" />
-    <DataItem type="TableField" key="bo_akl_line_start.testInterval" tokenIndexes="180" />
-    <DataItem type="TableField" key="bo_akl_line_start.proTimeId" tokenIndexes="188" />
-    <DataItem type="TableField" key="bo_akl_line_start.proTimeTitle" tokenIndexes="196" />
-    <DataItem type="TableField" key="bo_akl_line_start.prepareStop" tokenIndexes="204" />
-    <DataItem type="TableField" key="bo_akl_line_start.batchNum" tokenIndexes="212" />
-    <DataItem type="TableField" key="bo_akl_line_start.nextPullTest" tokenIndexes="220" />
-    <DataItem type="TableField" key="bo_akl_line_start.pullTestNum" tokenIndexes="228" />
-    <DataItem type="TableField" key="bo_akl_line_start.pullTestState" tokenIndexes="236" />
-    <DataItem type="TableField" key="bo_akl_line_start.boxPartsNum" tokenIndexes="244" />
-    <DataItem type="TableField" key="bo_akl_line_start.parameterCheckState" tokenIndexes="252" />
-    <DataItem type="TableField" key="bo_akl_line_start.frozenType" tokenIndexes="260" />
-    <DataItem type="TableField" key="bo_akl_line_start.confirmBadProductState" tokenIndexes="268" />
-    <DataItem type="TableField" key="bo_akl_line_start.labelBindNum" tokenIndexes="276" />
-    <DataItem type="TableField" key="bo_akl_line_start.resetState" tokenIndexes="284" />
-    <DataItem type="TableField" key="bo_akl_line_start.resetTime" tokenIndexes="292" />
-    <DataItem type="TableField" key="bo_akl_line_start.frozenState" tokenIndexes="300" />
-    <DataItem type="TableField" key="bo_akl_line_start.unusualStartClasses" tokenIndexes="308" />
-    <DataItem type="TableField" key="bo_akl_line_start.unusualStartClassesId" tokenIndexes="316" />
-    <DataItem type="TableField" key="bo_akl_line_start.returnMaterialState" tokenIndexes="324" />
-    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialType" tokenIndexes="332" />
-    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialNo" tokenIndexes="362" />
+    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="2,108,110,128" />
+    <DataItem type="Table" key="bo_akl_line_start" tokenIndexes="10,18,26,34,42,50,58,66,74,82,90,98,116,118,122,136" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialType" tokenIndexes="4" />
+    <DataItem type="TableField" key="bo_akl_line_start.id" tokenIndexes="12" />
+    <DataItem type="TableField" key="bo_akl_line_start.prolineName" tokenIndexes="20" />
+    <DataItem type="TableField" key="bo_akl_line_start.prolineId" tokenIndexes="28" />
+    <DataItem type="TableField" key="bo_akl_line_start.equName" tokenIndexes="36,124" />
+    <DataItem type="TableField" key="bo_akl_line_start.equId" tokenIndexes="44" />
+    <DataItem type="TableField" key="bo_akl_line_start.planCode" tokenIndexes="52" />
+    <DataItem type="TableField" key="bo_akl_line_start.planId" tokenIndexes="60" />
+    <DataItem type="TableField" key="bo_akl_line_start.state" tokenIndexes="68" />
+    <DataItem type="TableField" key="bo_akl_line_start.startTime" tokenIndexes="76,138" />
+    <DataItem type="TableField" key="bo_akl_line_start.startClasses" tokenIndexes="84" />
+    <DataItem type="TableField" key="bo_akl_line_start.batchNum" tokenIndexes="92" />
+    <DataItem type="TableField" key="bo_akl_line_start.boxPartsNum" tokenIndexes="100" />
+    <DataItem type="TableField" key="bo_akl_MM_materialInfo.materialNo" tokenIndexes="130" />
   </DataItems>
   <SimpleWizardSelectedCols>
     <SimpleWizardSelectedCol sourceType="Table" sourceCode="bo_akl_MM_materialInfo" colCode="materialType" dataType="char" conditionOperator="" sortType="">
@@ -122,7 +93,7 @@
     <SimpleWizardSelectedCol sourceType="Table" sourceCode="bo_akl_line_start" colCode="state" dataType="char" conditionOperator="" sortType="">
       <Condition><![CDATA[]]></Condition>
     </SimpleWizardSelectedCol>
-    <SimpleWizardSelectedCol sourceType="Table" sourceCode="bo_akl_line_start" colCode="startTime" dataType="char" conditionOperator="" sortType="">
+    <SimpleWizardSelectedCol sourceType="Table" sourceCode="bo_akl_line_start" colCode="startTime" dataType="char" conditionOperator="" sortType="Descending">
       <Condition><![CDATA[]]></Condition>
     </SimpleWizardSelectedCol>
     <SimpleWizardSelectedCol sourceType="Table" sourceCode="bo_akl_line_start" colCode="startClasses" dataType="char" conditionOperator="" sortType="">

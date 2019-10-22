@@ -1,11 +1,12 @@
 ﻿<form type="1002" code="form15" IsLocked="False">
   <propertys>
-    <property name="Width"><![CDATA[1541]]></property>
-    <property name="Height"><![CDATA[867]]></property>
+    <property name="Width"><![CDATA[2072]]></property>
+    <property name="Height"><![CDATA[740]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
     <property name="LayoutType"><![CDATA[None]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[form15_FormLoadAction]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
     <property name="FormClosingAction"><![CDATA[]]></property>
     <property name="BackColor"><![CDATA[]]></property>
@@ -15,14 +16,16 @@
     <property name="WindowState"><![CDATA[Normal]]></property>
     <property name="MaximizeBox"><![CDATA[True]]></property>
     <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGButton Code="JGButton2" LabelText="工时产出模式" Left="463" OnClick="JGButton2_OnClick_1" PercentHeight="3%" PercentWidth="6.6%" TabIndex="22" Top="21" Width="102" />
-    <JGButton Code="JGButton6" LabelText="查看看板排程" Left="344" OnClick="JGButton6_OnClick" PercentHeight="3%" PercentWidth="6.6%" TabIndex="22" Top="21" Width="102" />
-    <JGButton Code="JGButton5" LabelText="查看周计划排程" Left="215" OnClick="JGButton5_OnClick" PercentHeight="3%" PercentWidth="7.4%" TabIndex="21" Top="21" Width="114" />
-    <JGButton Code="JGButton4" LabelText="周计划排期" Left="93" OnClick="JGButton4_OnClick" PercentHeight="3%" PercentWidth="6.6%" TabIndex="20" Top="21" Width="102" />
-    <JGButton BackColor="255, 0, 0" Code="JGButton1" LabelText="删除" Left="24" OnClick="JGButton1_OnClick" PercentHeight="3%" PercentWidth="3.4%" TabIndex="18" Top="21" />
-    <JGDataGrid AllowMerge="True" Code="JGDataGrid1" Height="634" LabelText="列表" Left="24" PercentHeight="73.1%" PercentWidth="94.2%" RowsFixedCount="2" TabIndex="0" TableName="bo_akl_MM_weeklyPlan_summary" Top="53" Width="1451">
+    <JGButton Code="JGButton2" LabelText="工时产出模式" Width="102" PercentHeight="3.5%" PercentWidth="4.9%" Top="21" Left="463" TabIndex="22" OnClick="JGButton2_OnClick_1" />
+    <JGButton Code="JGButton6" LabelText="查看看板排程" Width="102" PercentHeight="3.5%" PercentWidth="4.9%" Top="21" Left="344" TabIndex="22" OnClick="JGButton6_OnClick" />
+    <JGButton Code="JGButton5" LabelText="查看周计划排程" Width="114" PercentHeight="3.5%" PercentWidth="5.5%" Top="21" Left="215" TabIndex="21" OnClick="JGButton5_OnClick" />
+    <JGButton Code="JGButton4" LabelText="周计划排期" Width="102" PercentHeight="3.5%" PercentWidth="4.9%" Top="21" Left="93" TabIndex="20" OnClick="JGButton4_OnClick" />
+    <JGButton Code="JGButton1" LabelText="删除" PercentHeight="3.5%" PercentWidth="2.5%" Top="21" Left="24" TabIndex="18" BackColor="255, 0, 0" OnClick="JGButton1_OnClick" />
+    <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="2030" Height="634" PercentHeight="85.7%" PercentWidth="98%" Top="53" Left="24" TabIndex="0" RowsFixedCount="2" AllowMerge="True" TableName="bo_akl_MM_weeklyPlan_summary">
       <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="productType" LabelText="产品类型|产品类型" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="prLine" LabelText="产线|产线" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="prNo" LabelText="P/N产品型号|P/N产品型号" TableName="bo_akl_MM_weeklyPlan_summary" />
@@ -33,7 +36,7 @@
       <JGIntegerBoxColumn Code="JGIntegerBoxColumn5" ColumnName="maxWaterLevel" LabelText="最高水位|最高水位" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGIntegerBoxColumn Code="JGIntegerBoxColumn6" ColumnName="minWaterLevel" LabelText="最低水位|最低水位" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="standardWorkingHours" LabelText="节拍/s|节拍/s" TableName="bo_akl_MM_weeklyPlan_summary" />
-      <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="maxCapacity" LabelText="最大产能|最大产能" TableName="bo_akl_MM_weeklyPlan_summary" Width="320" />
+      <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="maxCapacity" LabelText="最大产能|最大产能" TableName="bo_akl_MM_weeklyPlan_summary" Width="426" />
       <JGIntegerBoxColumn Code="JGIntegerBoxColumn7" ColumnName="productDemandByWater" LabelText="按水位激活的生产需求|按水位激活的生产需求" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGIntegerBoxColumn Code="JGIntegerBoxColumn8" ColumnName="deliveryDemand" LabelText="发货需求量|发货需求量" TableName="bo_akl_MM_weeklyPlan_summary" />
       <JGFloatBoxColumn Code="JGFloatBoxColumn2" ColumnName="OEE" LabelText="目标OEE|目标OEE" TableName="bo_akl_MM_weeklyPlan_summary" />

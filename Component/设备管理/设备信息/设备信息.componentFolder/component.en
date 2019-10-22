@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="instrumentPictureForm" Name="设备信息_量检具图片表" EntityType="" TableOrQueryCode="">
+    <Entity Code="instrumentPictureForm" Name="设备信息_量检具图片表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -43,7 +43,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_EIMaintenancePlan" Name="设备信息_设备维保计划" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_EM_EIMaintenancePlan" Name="设备信息_设备维保计划" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -68,7 +68,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_recordOfTooling" Name="载具检测记录" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_EM_recordOfTooling" Name="载具检测记录" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -93,7 +93,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_EIChecklist" Name="设备信息_点检表" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_EM_EIChecklist" Name="设备信息_点检表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -118,7 +118,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_checkInfo" Name="点检记录表" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_base_checkInfo" Name="点检记录表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -143,7 +143,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_tending" Name="维护保养记录" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_base_tending" Name="维护保养记录" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -168,7 +168,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_calibrationRecords" Name="量检具校准记录" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_EM_calibrationRecords" Name="量检具校准记录" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -193,7 +193,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_productlines" Name="产线信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_base_productlines" Name="产线信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -218,7 +218,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="A" Name="" EntityType="" TableOrQueryCode="">
+    <Entity Code="A" Name="" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>type</Code>
@@ -234,7 +234,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_EquipmentInfo_clone" Name="暂存导入数据设备信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_EM_EquipmentInfo_clone" Name="暂存导入数据设备信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -349,7 +349,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_EquipmentInformation" Name="设备信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_EM_EquipmentInformation" Name="设备信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

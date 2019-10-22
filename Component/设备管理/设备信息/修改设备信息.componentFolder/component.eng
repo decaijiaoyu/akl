@@ -33,7 +33,7 @@
       <Top>100</Top>
       <Left>858.0001</Left>
       <Width>363</Width>
-      <Height>73</Height>
+      <Height>74</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -46,7 +46,7 @@
       <Top>100</Top>
       <Left>20</Left>
       <Width>363</Width>
-      <Height>73</Height>
+      <Height>74</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -112,6 +112,19 @@
       <Left>20</Left>
       <Width>355</Width>
       <Height>287</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_base_productlines</Code>
+      <Top>543</Top>
+      <Left>44</Left>
+      <Width>217</Width>
+      <Height>115</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

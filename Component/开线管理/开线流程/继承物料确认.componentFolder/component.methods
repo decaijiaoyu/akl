@@ -21,7 +21,23 @@
           <remark></remark>
         </define>
         <sequence>
-          <evaluateRule code="BR_ModifyDataBaseRecord2" />
+          <if isEnabled="True" isDebug="False" code="IfCode2">
+            <define>
+              <expression>LV.c.moveNum&gt;0</expression>
+              <remark />
+            </define>
+            <sequence>
+              <evaluateRule code="BR_ModifyDataBaseRecord2" />
+            </sequence>
+          </if>
+          <else isEnabled="True" isDebug="False">
+            <define>
+              <remark />
+            </define>
+            <sequence>
+              <evaluateRule code="BR_DeleteConditionRelationData1" />
+            </sequence>
+          </else>
         </sequence>
       </foreach>
       <foreach isEnabled="True" isDebug="False" code="ForeachCode5">
@@ -50,20 +66,6 @@
         <RuleConfig><![CDATA[{"showType":"3","time":null,"simpleChinesePrompt":{"msgnote":"\"是否已选完需继承的物料？\"","type":"1"}}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>3</MsgType><SimpleChinese>"是否已选完需继承的物料？"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="SetLoopVariant" ruleName="给循环变量赋值" instanceCode="BR_SetLoopVariant4" instanceName="给循环变量赋值_1" isNeedLog="False" isEnabled="True" isDebug="False">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"Fields":[{"Source":"LV.f.residueNum-LV.f.moveNum","SourceType":"expression","LoopVarField":"residueNum"},{"Source":"LV.f.residueNum","SourceType":"expression","LoopVarField":"returnNum"}],"LoopVar":"f","LoopEntity":"materialConfirm","LoopEntityType":"window"}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtLoopVar><LoopVar>f</LoopVar><LoopEntity>materialConfirm</LoopEntity><LoopEntityType>window</LoopEntityType></dtLoopVar><dtField><LoopVarField>residueNum</LoopVarField><SourceType>expression</SourceType><Source>LV.f.residueNum-LV.f.moveNum</Source></dtField><dtField><LoopVarField>returnNum</LoopVarField><SourceType>expression</SourceType><Source>LV.f.residueNum</Source></dtField></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
-      <RuleInstance ruleCode="ModifyDataBaseRecord" ruleName="修改数据库中的记录" instanceCode="BR_ModifyDataBaseRecord2" instanceName="修改数据库中的记录_更新基础数量" isNeedLog="False" isEnabled="True" isDebug="False">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"dataSourcesMapping":[{"condition":[{"columnType":"1","field":"bo_akl_line_materialConfirm.id","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.c.id","valueType":"9"}],"dataMap":[{"colName":"bo_akl_line_materialConfirm.startId","colValue":"@newlId","valueType":"expression"},{"colName":"bo_akl_line_materialConfirm.num","colValue":"LV.c.moveNum","valueType":"expression"}],"dataSource":"bo_akl_line_materialConfirm","opperType":"update"}]}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><orderNo>1</orderNo><destTableName>bo_akl_line_materialConfirm</destTableName><opperType>update</opperType><condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_line_materialConfirm.id</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.c.id</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></condition><dtField><![CDATA[<NewDataSet><dtField><destField>bo_akl_line_materialConfirm.startId</destField><sourceType>expression</sourceType><sourceField>@newlId</sourceField></dtField><dtField><destField>bo_akl_line_materialConfirm.num</destField><sourceType>expression</sourceType><sourceField>LV.c.moveNum</sourceField></dtField></NewDataSet>]]]]><![CDATA[></dtField></dtMaster></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
       <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1" instanceName="保存实体到数据库_物料继承确认" isNeedLog="False" isEnabled="False" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
@@ -85,7 +87,7 @@
         <RuleConfig><![CDATA[{"dataSourceMap":[{"dataMap":[{"colName":"bo_akl_MM_inheritMateriral.batchNo","colValue":"materialConfirm.batchNo","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.id","colValue":"materialConfirm.id","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.isInsulate","colValue":"materialConfirm.isInsulate","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.materialId","colValue":"materialConfirm.materialId","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.materialName","colValue":"materialConfirm.materialName","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.materialNo","colValue":"materialConfirm.materialNo","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.materialType","colValue":"materialConfirm.materialType","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.moveNum","colValue":"materialConfirm.moveNum","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.num","colValue":"materialConfirm.num","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.packNum","colValue":"materialConfirm.packNum","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.residueNum","colValue":"materialConfirm.residueNum","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.returnNum","colValue":"materialConfirm.returnNum","valueType":"entityField"},{"colName":"bo_akl_MM_inheritMateriral.startId","colValue":"materialConfirm.startId","valueType":"entityField"}],"dataSource":"materialConfirm","dataSourceType":"window","destTab":"bo_akl_MM_inheritMateriral","isSaveAll":true}],"treeStruct":null}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><ID>77ad460633b2478bb2026f6c3d7ccca1</ID><SourceName>materialConfirm</SourceName><SourceType>window</SourceType><SourceNameType>materialConfirm(界面实体)</SourceNameType><IsSaveAll>True</IsSaveAll><TableName>bo_akl_MM_inheritMateriral</TableName></dtMaster><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.batchNo</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.batchNo</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.id</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.id</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.isInsulate</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.isInsulate</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.materialId</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.materialId</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.materialName</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.materialName</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.materialNo</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.materialNo</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.materialType</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.materialType</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.moveNum</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.moveNum</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.num</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.num</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.packNum</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.packNum</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.residueNum</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.residueNum</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.returnNum</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.returnNum</Value></dtDetails><dtDetails><PID>77ad460633b2478bb2026f6c3d7ccca1</PID><SourceField>bo_akl_MM_inheritMateriral.startId</SourceField><DataFrom>entityField</DataFrom><Value>materialConfirm.startId</Value></dtDetails></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1_1_1" instanceName="保存实体到数据库_物料继承确认_不存在bom的退料" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-08-16 17:02:37">
+      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1_1_1" instanceName="保存实体到数据库_物料继承确认_不存在bom的退料" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
@@ -98,6 +100,27 @@
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"SelectionConfirm":"1"}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><SelectionConfirm>1</SelectionConfirm></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetLoopVariant" ruleName="给循环变量赋值" instanceCode="BR_SetLoopVariant4" instanceName="给循环变量赋值_1" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"Fields":[{"Source":"LV.f.residueNum-LV.f.moveNum","SourceType":"expression","LoopVarField":"residueNum"},{"Source":"LV.f.residueNum","SourceType":"expression","LoopVarField":"returnNum"}],"LoopVar":"f","LoopEntity":"materialConfirm","LoopEntityType":"window"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtLoopVar><LoopVar>f</LoopVar><LoopEntity>materialConfirm</LoopEntity><LoopEntityType>window</LoopEntityType></dtLoopVar><dtField><LoopVarField>residueNum</LoopVarField><SourceType>expression</SourceType><Source>LV.f.residueNum-LV.f.moveNum</Source></dtField><dtField><LoopVarField>returnNum</LoopVarField><SourceType>expression</SourceType><Source>LV.f.residueNum</Source></dtField></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ModifyDataBaseRecord" ruleName="修改数据库中的记录" instanceCode="BR_ModifyDataBaseRecord2" instanceName="修改数据库中的记录_更新基础数量" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourcesMapping":[{"condition":[{"columnType":"1","field":"bo_akl_line_materialConfirm.id","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"LV.c.id","valueType":"9"}],"dataMap":[{"colName":"bo_akl_line_materialConfirm.startId","colValue":"@newlId","valueType":"expression"},{"colName":"bo_akl_line_materialConfirm.num","colValue":"LV.c.moveNum","valueType":"expression"}],"dataSource":"bo_akl_line_materialConfirm","opperType":"update"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><orderNo>1</orderNo><destTableName>bo_akl_line_materialConfirm</destTableName><opperType>update</opperType><condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_line_materialConfirm.id</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.c.id</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></condition><dtField><![CDATA[<NewDataSet><dtField><destField>bo_akl_line_materialConfirm.startId</destField><sourceType>expression</sourceType><sourceField>@newlId</sourceField></dtField><dtField><destField>bo_akl_line_materialConfirm.num</destField><sourceType>expression</sourceType><sourceField>LV.c.moveNum</sourceField></dtField></NewDataSet>]]]]><![CDATA[></dtField></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData1" instanceName="删除数据库中的记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-09-25 00:20:49">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dtChileMaps":[{"orderNo":"1","tableName":"bo_akl_line_materialConfirm","dsWhere":[{"columnType":"1","field":"bo_akl_line_materialConfirm.id","fieldType":"char","leftBracket":"(","logicOperation":"","operation":"=","rightBracket":")","value":"LV.c.id","valueType":"9"}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtConditionMaster><TableName>bo_akl_line_materialConfirm</TableName><Condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_line_materialConfirm.id</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>LV.c.id</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></Condition><OrderNo>1</OrderNo></dtConditionMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
     </RuleInstances>
     <Variables>

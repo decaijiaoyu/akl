@@ -3,7 +3,7 @@
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2019-01-24 20:09:27]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-08-29 22:34:08]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-10-17 16:32:14]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -50,6 +50,10 @@
       <Remark><![CDATA[]]></Remark>
     </Column>
     <Column id="dad2d8296a4244ee8535e717c469c3a8" code="bsTime" name="标示时间" domain="" dataType="date" length="" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="60c3278f187f407ca039d197f1981849" code="cName" name="工站作业内容" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>

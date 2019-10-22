@@ -1,4 +1,5 @@
-﻿<form type="1002" code="lineStart_list_inspector" IsLocked="False">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<form type="1002" code="lineStart_list_inspector" IsLocked="False" owner="">
   <propertys>
     <property name="Width"><![CDATA[1170]]></property>
     <property name="Height"><![CDATA[480]]></property>
@@ -10,7 +11,7 @@
     <property name="FormClosingAction"><![CDATA[]]></property>
     <property name="BackColor"><![CDATA[]]></property>
     <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
-    <property name="Name"><![CDATA[开线管理_巡检员]]></property>
+    <property name="Name"><![CDATA[线外测试管理]]></property>
     <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
     <property name="WindowState"><![CDATA[Normal]]></property>
     <property name="MaximizeBox"><![CDATA[True]]></property>

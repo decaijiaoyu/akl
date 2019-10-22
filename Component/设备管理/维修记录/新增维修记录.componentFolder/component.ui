@@ -6,6 +6,7 @@
     <property name="LayoutType"><![CDATA[None]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[form42_FormLoadAction]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
     <property name="FormClosingAction"><![CDATA[]]></property>
     <property name="BackColor"><![CDATA[]]></property>
@@ -15,18 +16,20 @@
     <property name="WindowState"><![CDATA[Normal]]></property>
     <property name="MaximizeBox"><![CDATA[True]]></property>
     <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGBaseDictBox Code="JGBaseDictBox4" ColumnName="equipCode" IDColumnName="equipCode" LabelText="设备编号" Left="51" OpenModuleAction="JGBaseDictBox4_OpenModuleAction" PercentHeight="5.6%" PercentWidth="35.3%" TabIndex="10" TableName="bo_akl_EM_maintainRecord" Top="165" Visible="False" />
-    <JGBaseDictBox Code="JGBaseDictBox3" ColumnName="repairMan" IDColumnName="repairMan" LabelText="维修人" LabelTextAlign="Center" Left="363" OpenModuleAction="JGBaseDictBox3_OpenModuleAction" PercentHeight="5.6%" PercentWidth="35.3%" TabIndex="10" TableName="bo_akl_EM_maintainRecord" Top="91" />
-    <JGBaseDictBox Code="JGBaseDictBox2" ColumnName="wsNo" IDColumnName="wsNo" LabelText="工站" Left="363" OpenModuleAction="JGBaseDictBox2_OpenModuleAction" PercentHeight="5.6%" PercentWidth="35.3%" TabIndex="10" TableName="bo_akl_EM_maintainRecord" Top="216" Visible="False" />
-    <JGBaseDictBox Code="JGBaseDictBox1" ColumnName="pNo" IDColumnName="pNo" LabelText="产线" Left="51" OpenModuleAction="JGBaseDictBox1_OpenModuleAction" PercentHeight="5.6%" PercentWidth="35.3%" TabIndex="10" TableName="bo_akl_EM_maintainRecord" Top="216" Visible="False" />
-    <JGComboBox Code="JGComboBox1" DropDownSource="{&quot;DataSourceSetting&quot;:{&quot;DataConfig&quot;:{&quot;DefaultSaveColumn&quot;:null,&quot;DefaultShowColumn&quot;:null,&quot;SourceType&quot;:null,&quot;SourceID&quot;:null,&quot;SourceName&quot;:null,&quot;MapTable&quot;:null,&quot;SaveColumn&quot;:null,&quot;ShowColumn&quot;:null,&quot;SortField&quot;:null,&quot;SortType&quot;:null,&quot;MaxRecCount&quot;:0,&quot;QueryField&quot;:null,&quot;QueryMethod&quot;:null,&quot;IsPickListFields&quot;:false,&quot;ConstData&quot;:[{&quot;id&quot;:&quot;产线维修&quot;,&quot;text&quot;:&quot;产线维修&quot;,&quot;selected&quot;:&quot;False&quot;},{&quot;id&quot;:&quot;设备维修&quot;,&quot;text&quot;:&quot;设备维修&quot;,&quot;selected&quot;:&quot;False&quot;}],&quot;SqlQueryConstData&quot;:null,&quot;EntityConstData&quot;:null,&quot;Condition&quot;:null,&quot;QueryParam&quot;:null,&quot;PickListFields&quot;:null},&quot;DataSourceType&quot;:&quot;CustomConst&quot;}}" IDColumnName="repairType" LabelText="维修类型" Left="51" OnValueChanged="JGComboBox1_OnValueChanged" PercentHeight="5.6%" PercentWidth="35.3%" TabIndex="10" TableName="bo_akl_EM_maintainRecord" Top="91" />
-    <JGButton Code="JGButton1" Height="29" LabelText="确认提交" Left="277" OnClick="JGButton1_OnClick" PercentHeight="6.2%" PercentWidth="11.6%" TabIndex="9" Top="413" Width="77" />
-    <JGDateTimePicker Code="JGDateTimePicker1" ColumnName="startDate" LabelText="开始维修时间" Left="51" PercentHeight="5.6%" PercentWidth="35.3%" TabIndex="0" TableName="bo_akl_EM_maintainRecord" Top="263" />
-    <JGDateTimePicker Code="JGDateTimePicker2" ColumnName="endDate" LabelText="结束维修时间" Left="363" PercentHeight="5.6%" PercentWidth="35.3%" TabIndex="0" TableName="bo_akl_EM_maintainRecord" Top="263" />
-    <JGTextBox Code="JGTextBox5" ColumnName="phenomenon" LabelText="故障现象" Left="51" PercentHeight="5.6%" PercentWidth="82.1%" TabIndex="0" TableName="bo_akl_EM_maintainRecord" Top="312" Width="547" />
-    <JGTextBox Code="JGTextBox6" ColumnName="repaircontent" LabelText="维修内容" Left="51" PercentHeight="5.6%" PercentWidth="82.1%" TabIndex="0" TableName="bo_akl_EM_maintainRecord" Top="360" Width="547" />
+    <JGComboBox Code="JGComboBox2" LabelText="维修类型" PercentHeight="5.6%" PercentWidth="35.3%" Top="91" Left="51" TabIndex="10" OnValueChanged="JGComboBox1_OnValueChanged" TableName="bo_akl_EM_maintainRecord" IDColumnName="repairType" DropDownSource="{&quot;DataSourceSetting&quot;:{&quot;DataConfig&quot;:{&quot;DefaultSaveColumn&quot;:null,&quot;DefaultShowColumn&quot;:null,&quot;SourceType&quot;:null,&quot;SourceID&quot;:null,&quot;SourceName&quot;:null,&quot;MapTable&quot;:null,&quot;SaveColumn&quot;:null,&quot;ShowColumn&quot;:null,&quot;SortField&quot;:null,&quot;SortType&quot;:null,&quot;MaxRecCount&quot;:0,&quot;QueryField&quot;:null,&quot;QueryMethod&quot;:null,&quot;IsPickListFields&quot;:false,&quot;ConstData&quot;:[{&quot;id&quot;:&quot;产线维修&quot;,&quot;text&quot;:&quot;产线维修&quot;,&quot;selected&quot;:&quot;False&quot;},{&quot;id&quot;:&quot;设备维修&quot;,&quot;text&quot;:&quot;设备维修&quot;,&quot;selected&quot;:&quot;False&quot;}],&quot;SqlQueryConstData&quot;:null,&quot;EntityConstData&quot;:null,&quot;Condition&quot;:null,&quot;QueryParam&quot;:null,&quot;PickListFields&quot;:null},&quot;DataSourceType&quot;:&quot;CustomConst&quot;}}" />
+    <JGBaseDictBox Code="JGBaseDictBox4" LabelText="设备编号" PercentHeight="5.6%" PercentWidth="35.3%" Top="165" Left="51" TabIndex="10" Visible="False" OpenModuleAction="JGBaseDictBox4_OpenModuleAction" TableName="bo_akl_EM_maintainRecord" IDColumnName="equipCode" ColumnName="equipCode" />
+    <JGBaseDictBox Code="JGBaseDictBox3" LabelText="维修人" PercentHeight="5.6%" PercentWidth="35.3%" Top="91" Left="363" TabIndex="10" LabelTextAlign="Center" OpenModuleAction="JGBaseDictBox3_OpenModuleAction" TableName="bo_akl_EM_maintainRecord" IDColumnName="repairMan" ColumnName="repairMan" IsMust="True" />
+    <JGBaseDictBox Code="JGBaseDictBox2" LabelText="工站" PercentHeight="5.6%" PercentWidth="35.3%" Top="216" Left="363" TabIndex="10" Visible="False" OpenModuleAction="JGBaseDictBox2_OpenModuleAction" TableName="bo_akl_EM_maintainRecord" IDColumnName="wsNo" ColumnName="wsNo" />
+    <JGBaseDictBox Code="JGBaseDictBox1" LabelText="产线" PercentHeight="5.6%" PercentWidth="35.3%" Top="216" Left="51" TabIndex="10" Visible="False" OpenModuleAction="JGBaseDictBox1_OpenModuleAction" TableName="bo_akl_EM_maintainRecord" IDColumnName="pNo" ColumnName="pNo" />
+    <JGButton Code="JGButton1" LabelText="确认提交" Height="29" Width="77" PercentHeight="6.2%" PercentWidth="11.6%" Top="413" Left="277" TabIndex="9" OnClick="JGButton1_OnClick" />
+    <JGDateTimePicker Code="JGDateTimePicker1" LabelText="开始维修时间" PercentHeight="5.6%" PercentWidth="35.3%" Top="263" Left="51" TabIndex="0" TableName="bo_akl_EM_maintainRecord" ColumnName="startDate" IsMust="True" />
+    <JGDateTimePicker Code="JGDateTimePicker2" LabelText="结束维修时间" PercentHeight="5.6%" PercentWidth="35.3%" Top="263" Left="363" TabIndex="0" TableName="bo_akl_EM_maintainRecord" ColumnName="endDate" IsMust="True" />
+    <JGTextBox Code="JGTextBox5" LabelText="故障现象" Width="547" PercentHeight="5.6%" PercentWidth="82.1%" Top="312" Left="51" TabIndex="0" TableName="bo_akl_EM_maintainRecord" ColumnName="phenomenon" />
+    <JGTextBox Code="JGTextBox6" LabelText="维修内容" Width="547" PercentHeight="5.6%" PercentWidth="82.1%" Top="360" Left="51" TabIndex="0" TableName="bo_akl_EM_maintainRecord" ColumnName="repaircontent" />
   </controls>
   <outputs />
   <inputs>

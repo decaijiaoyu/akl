@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_staffInfo" Name="员工信息" EntityType="" TableOrQueryCode="bo_akl_base_staffInfo">
+    <Entity Code="bo_akl_base_staffInfo" Name="员工信息" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_base_staffInfo" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -113,7 +113,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_line_resourceOccupancy" Name="产线人力资源占用表" EntityType="" TableOrQueryCode="bo_akl_line_resourceOccupancy">
+    <Entity Code="bo_akl_line_resourceOccupancy" Name="产线人力资源占用表" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_line_resourceOccupancy" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

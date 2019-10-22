@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status" Name="产线状态图" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status" Name="产线状态图" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -142,7 +142,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_abs9w1" Name="产线状态图" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_abs9w1" Name="产线状态图" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -284,7 +284,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_abs9w2" Name="产线状态图" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_abs9w2" Name="产线状态图" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -426,7 +426,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_wsm3" Name="产线状态图" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_wsm3" Name="产线状态图" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -568,7 +568,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_ahc" Name="产线状态图" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_ahc" Name="产线状态图" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -710,7 +710,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_nsa2" Name="产线状态图" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_nsa2" Name="产线状态图" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -852,7 +852,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_evo" Name="" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_evo" Name="" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -994,7 +994,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_gbmw1" Name="gbmw1" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_gbmw1" Name="gbmw1" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -1136,7 +1136,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_fpc5w1" Name="fpc5w1" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_fpc5w1" Name="fpc5w1" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -1278,7 +1278,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_nsaw1" Name="nsaw1" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_nsaw1" Name="nsaw1" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -1420,7 +1420,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_fpg2w1" Name="_fpg2w1" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_fpg2w1" Name="_fpg2w1" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -1562,7 +1562,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_m34w1" Name="m34w1" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_m34w1" Name="m34w1" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -1704,7 +1704,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_ecsw1" Name="ecsw1" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_ecsw1" Name="ecsw1" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -1846,7 +1846,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_ebc460w1" Name="ebc460w1" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_ebc460w1" Name="ebc460w1" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>
@@ -1988,7 +1988,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="proline_status_fpg2evow1" Name="产线状态图" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_status_fpg2evow1" Name="产线状态图" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>proLineName</Code>

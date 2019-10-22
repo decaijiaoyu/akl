@@ -3,7 +3,7 @@
     <property name="Width"><![CDATA[960]]></property>
     <property name="Height"><![CDATA[450]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
-    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[form53_FormLoadAction]]></property>
     <property name="ResizeAction"><![CDATA[]]></property>

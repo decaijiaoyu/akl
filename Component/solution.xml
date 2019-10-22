@@ -526,7 +526,7 @@
               <Code>lineStart_list_inspector</Code>
               <NodeType>Component</NodeType>
               <FileSystemObjectType>File</FileSystemObjectType>
-              <FileSystemObjectName>开线管理_巡检员</FileSystemObjectName>
+              <FileSystemObjectName>线外测试管理</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
             <NavigationNode>
@@ -844,6 +844,20 @@
               <FileSystemObjectName>开线退料</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
+            <NavigationNode>
+              <Code>form_mantissaInput2</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>尾数录入记录2</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form66</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>拉力测试历史记录</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
@@ -1087,6 +1101,20 @@
               <NodeType>Component</NodeType>
               <FileSystemObjectType>File</FileSystemObjectType>
               <FileSystemObjectName>半成品不良品原因管理</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form64</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>不良品原因选择</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form_badCauseMarkPage1</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>不良原因标示页面_历史</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
           </SubNodes>
@@ -1906,6 +1934,13 @@
               <FileSystemObjectName>编辑维修记录</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
+            <NavigationNode>
+              <Code>sbxxxz1</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>设备信息选择</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
@@ -2050,6 +2085,42 @@
           <FileSystemObjectName>报废周月年报表</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
+        <NavigationNode>
+          <Code>form63</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>内部选别不良措施跟进表</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\数据报表\NSA系列报表</Code>
+          <NodeType>Folder</NodeType>
+          <FileSystemObjectType>Directory</FileSystemObjectType>
+          <FileSystemObjectName>NSA系列报表</FileSystemObjectName>
+          <SubNodes>
+            <NavigationNode>
+              <Code>form67</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>内部缺陷(ppm)</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form68</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>HourlyCount</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form73</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>产量</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+          </SubNodes>
+        </NavigationNode>
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
@@ -2091,6 +2162,34 @@
           <NodeType>Component</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>新增推送记录</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>form69</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>报表用月天数</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>form70</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>报表用年数</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>form71</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>报表用月数</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>form72</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>报表用小时数量</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>
@@ -2850,6 +2949,21 @@
               <NodeType>Component</NodeType>
               <FileSystemObjectType>File</FileSystemObjectType>
               <FileSystemObjectName>erp系统库存</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+          </SubNodes>
+        </NavigationNode>
+        <NavigationNode>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\物料管理\扫码物料情况</Code>
+          <NodeType>Folder</NodeType>
+          <FileSystemObjectType>Directory</FileSystemObjectType>
+          <FileSystemObjectName>扫码物料情况</FileSystemObjectName>
+          <SubNodes>
+            <NavigationNode>
+              <Code>form65</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>扫码物料情况</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
           </SubNodes>

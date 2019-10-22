@@ -468,7 +468,7 @@
   <if isEnabled="True" isDebug="False" code="IfCode1">
     <define>
       <expression>!IsEmpty([bo_akl_line_start].[id])</expression>
-      <remark />
+      <remark></remark>
     </define>
     <sequence>
       <evaluateRule code="BR_OpenComponentReturnData1" />
@@ -476,7 +476,7 @@
   </if>
   <else isEnabled="True" isDebug="False">
     <define>
-      <remark />
+      <remark></remark>
     </define>
     <sequence>
       <evaluateRule code="BR_ShowMessage1" />
@@ -484,14 +484,14 @@
   </else>
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20180828002" lastModifiedTime="2018-12-14 15:47:38">
+      <RuleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-07 20:41:11">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"openType":"appoint","windowCode":"form_parameterCheck","windowName":"参数点检","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"\"查看参数点检\"","browerWindowFlag":"","windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":[{"paramName":"lid","paramType":"expression","paramValue":"[bo_akl_line_start].[id]","paramEntityType":"","entityFieldMapping":null},{"paramName":"see","paramType":"expression","paramValue":"\"see\"","paramEntityType":"","entityFieldMapping":null}],"returnMapping":null}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OpenType>appoint</OpenType><WindowCode>form_parameterCheck</WindowCode><WindowName>参数点检</WindowName><TargetContainerType>dialogWindow</TargetContainerType><BrowerWindowTitle>"查看参数点检"</BrowerWindowTitle><IsChooseLanguage>False</IsChooseLanguage><HeightExp /><WidthExp /><IsAsyn>False</IsAsyn></dtMaster><dtParam><WindowVariant>lid</WindowVariant><SourceType>expression</SourceType><SourceTypeDisplayText>表达式</SourceTypeDisplayText><SourceValue>[bo_akl_line_start].[id]</SourceValue></dtParam><dtParam><WindowVariant>see</WindowVariant><SourceType>expression</SourceType><SourceTypeDisplayText>表达式</SourceTypeDisplayText><SourceValue>"see"</SourceValue></dtParam></dsConfig>]]></XmlRuleConfig>
+        <RuleConfig><![CDATA[{"openType":"appoint","windowCode":"form_parameterCheck","windowName":"参数点检","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"\"查看参数点检\"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":[{"paramName":"lid","paramType":"expression","paramValue":"[bo_akl_line_start].[id]","paramEntityType":"","entityFieldMapping":null},{"paramName":"see","paramType":"expression","paramValue":"\"see\"","paramEntityType":"","entityFieldMapping":null}],"returnMapping":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OpenType>appoint</OpenType><WindowCode>form_parameterCheck</WindowCode><WindowName>参数点检</WindowName><TargetContainerType>dialogWindow</TargetContainerType><BrowerWindowTitle>"查看参数点检"</BrowerWindowTitle><IsDynamicContainer>False</IsDynamicContainer><IsChooseLanguage>False</IsChooseLanguage><HeightExp /><WidthExp /><IsAsyn>False</IsAsyn></dtMaster><dtParam><WindowVariant>lid</WindowVariant><SourceType>expression</SourceType><SourceTypeDisplayText>表达式</SourceTypeDisplayText><SourceValue>[bo_akl_line_start].[id]</SourceValue></dtParam><dtParam><WindowVariant>see</WindowVariant><SourceType>expression</SourceType><SourceTypeDisplayText>表达式</SourceTypeDisplayText><SourceValue>"see"</SourceValue></dtParam></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20180828002" lastModifiedTime="2018-12-14 15:47:38">
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
@@ -536,6 +536,86 @@
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"openType":"appoint","windowCode":"form_badCauseMark","windowName":"不良原因标示","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"\"不良品记录\"","browerWindowFlag":"","windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":[{"paramName":"lId","paramType":"expression","paramValue":"[bo_akl_line_start].[id]","paramEntityType":"","entityFieldMapping":null},{"paramName":"see","paramType":"expression","paramValue":"\"see\"","paramEntityType":"","entityFieldMapping":null}],"returnMapping":null}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OpenType>appoint</OpenType><WindowCode>form_badCauseMark</WindowCode><WindowName>不良原因标示</WindowName><TargetContainerType>dialogWindow</TargetContainerType><BrowerWindowTitle>"不良品记录"</BrowerWindowTitle><IsChooseLanguage>False</IsChooseLanguage><HeightExp /><WidthExp /><IsAsyn>False</IsAsyn></dtMaster><dtParam><WindowVariant>lId</WindowVariant><SourceType>expression</SourceType><SourceTypeDisplayText>表达式</SourceTypeDisplayText><SourceValue>[bo_akl_line_start].[id]</SourceValue></dtParam><dtParam><WindowVariant>see</WindowVariant><SourceType>expression</SourceType><SourceTypeDisplayText>表达式</SourceTypeDisplayText><SourceValue>"see"</SourceValue></dtParam></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton14_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <if isEnabled="True" isDebug="False" code="IfCode1">
+    <define>
+      <expression>IsEmpty([bo_akl_line_start].[id])</expression>
+      <remark></remark>
+    </define>
+    <sequence>
+      <evaluateRule code="BR_ShowMessage1_1" />
+      <evaluateRule code="BR_AbortRule1" />
+    </sequence>
+  </if>
+  <evaluateRule code="BR_OpenComponentReturnData1_1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1_1" instanceName="打开窗体并返回数据_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-07 15:11:35">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"openType":"appoint","windowCode":"form_materialConfirm2","windowName":"物料确认_查看信息","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"\"物料信息\"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":[{"paramName":"startId","paramType":"expression","paramValue":"[bo_akl_line_start].[id]","paramEntityType":"","entityFieldMapping":null}],"returnMapping":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OpenType>appoint</OpenType><WindowCode>form_materialConfirm2</WindowCode><WindowName>物料确认_查看信息</WindowName><TargetContainerType>dialogWindow</TargetContainerType><BrowerWindowTitle>"物料信息"</BrowerWindowTitle><IsDynamicContainer>False</IsDynamicContainer><IsChooseLanguage>False</IsChooseLanguage><HeightExp /><WidthExp /><IsAsyn>False</IsAsyn></dtMaster><dtParam><WindowVariant>startId</WindowVariant><SourceType>expression</SourceType><SourceTypeDisplayText>表达式</SourceTypeDisplayText><SourceValue>[bo_akl_line_start].[id]</SourceValue></dtParam></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1_1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-07 15:10:14">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"\"请先选中要物料确认的开线数据\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"请先选中要物料确认的开线数据"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AbortRule" ruleName="中断规则" instanceCode="BR_AbortRule1" instanceName="中断规则" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-07 15:10:14">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"abortType":"CURRENT","msgnote":""}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><AbortType>CURRENT</AbortType></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton19_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <if isEnabled="True" isDebug="False" code="IfCode1">
+    <define>
+      <expression>IsEmpty([bo_akl_line_start].[id])</expression>
+      <remark></remark>
+    </define>
+    <sequence>
+      <evaluateRule code="BR_ShowMessage1_1" />
+      <evaluateRule code="BR_AbortRule1" />
+    </sequence>
+  </if>
+  <evaluateRule code="BR_OpenComponentReturnData1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据_查看开线录入历史记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-11 16:47:49">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"openType":"appoint","windowCode":"form_mantissaInput2","windowName":"尾数录入记录2","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"\"尾数录入历史记录\"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":[{"paramName":"startId","paramType":"expression","paramValue":"[bo_akl_line_start].[id]","paramEntityType":"","entityFieldMapping":null}],"returnMapping":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OpenType>appoint</OpenType><WindowCode>form_mantissaInput2</WindowCode><WindowName>尾数录入记录2</WindowName><TargetContainerType>dialogWindow</TargetContainerType><BrowerWindowTitle>"尾数录入历史记录"</BrowerWindowTitle><IsDynamicContainer>False</IsDynamicContainer><IsChooseLanguage>False</IsChooseLanguage><HeightExp /><WidthExp /><IsAsyn>False</IsAsyn></dtMaster><dtParam><WindowVariant>startId</WindowVariant><SourceType>expression</SourceType><SourceTypeDisplayText>表达式</SourceTypeDisplayText><SourceValue>[bo_akl_line_start].[id]</SourceValue></dtParam></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1_1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"\"请先选中要尾数录入的开线数据\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"请先选中要尾数录入的开线数据"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AbortRule" ruleName="中断规则" instanceCode="BR_AbortRule1" instanceName="中断规则" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"abortType":"CURRENT","msgnote":""}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><AbortType>CURRENT</AbortType></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
     </RuleInstances>
   </Method>

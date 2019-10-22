@@ -98,4 +98,13 @@
   <menuItem code="processIndicator" name="过程指标" isDisabled="false" type="0" ruleName="" windowCode="form59" parameters="" />
   <menuItem code="weekScrapAndBad" name="每周不良和报废数据" isDisabled="false" type="0" ruleName="" windowCode="form60" parameters="" />
   <menuItem code="scrapWeekMonthYear" name="报废周月年报表" isDisabled="false" type="0" ruleName="" windowCode="form62" parameters="" />
+  <menuItem code="sortingfailure" name="内部选别不良措施跟进" isDisabled="false" type="0" ruleName="" windowCode="form63" parameters="" />
+  <menuItem code="sweepingMaterial" name="扫码物料情况" isDisabled="false" type="0" ruleName="" windowCode="form65" parameters="" />
+  <menuItem code="internalNsa" name="内部缺陷" isDisabled="false" type="0" ruleName="" windowCode="form67" parameters="" />
+  <menuItem code="HourlyCount" name="小时产量" isDisabled="false" type="0" ruleName="" windowCode="form68" parameters="" />
+  <menuItem code="baseday" name="基础月天数" isDisabled="false" type="0" ruleName="" windowCode="form69" parameters="" />
+  <menuItem code="baseMonth" name="基础月数" isDisabled="false" type="0" ruleName="" windowCode="form71" parameters="" />
+  <menuItem code="baseYear" name="基础年数" isDisabled="false" type="0" ruleName="" windowCode="form70" parameters="" />
+  <menuItem code="baseHour" name="基础小时数" isDisabled="false" type="0" ruleName="" windowCode="form72" parameters="" />
+  <menuItem code="productNum" name="产量" isDisabled="false" type="0" ruleName="" windowCode="form73" parameters="" />
 </dir>

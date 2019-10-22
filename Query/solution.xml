@@ -583,5 +583,131 @@
       <FileSystemObjectName>e21122</FileSystemObjectName>
       <SubNodes />
     </NavigationNode>
+    <NavigationNode>
+      <Code>weekQuailtyQuestion</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>weekQuailtyQuestion</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>modelQualityQuestion</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>modelQualityQuestion</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>IPQCcheck</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>IPQCcheck</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>processBadGoal</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>processBadGoal</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>processGoalMonth</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>processGoalMonth</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>processGoalYear</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>processGoalYear</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>everyWeedatebase</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>everyWeedatebase</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>scrapWeekMonthYear</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>scrapWeekMonthYear</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>sortingfailure</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>sortingfailure</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>sweepingMaterialView</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>sweepingMaterialView</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>getBomserach</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>getBomserach</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>wqd</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>wqd</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>HourlyCount</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>HourlyCount</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>fww</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>fww</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>everyDayProduct</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>everyDayProduct</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>everyDayProductYear</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>everyDayProductYear</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>everyDayProductMonth</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>everyDayProductMonth</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+    <NavigationNode>
+      <Code>prolificacy</Code>
+      <NodeType>Query</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>prolificacy</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
   </Nodes>
 </NavigationInfo>

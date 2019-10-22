@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="qrCodeInfo" Name="二维码信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="qrCodeInfo" Name="二维码信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>outStockInfo</Code>
@@ -34,7 +34,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_stockInfo" Name="库存信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_stockInfo" Name="库存信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -86,7 +86,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="outStockInfo_clone" Name="出库信息_整合" EntityType="" TableOrQueryCode="">
+    <Entity Code="outStockInfo_clone" Name="出库信息_整合" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -138,7 +138,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="mantissaInput" Name="尾数录入" EntityType="" TableOrQueryCode="">
+    <Entity Code="mantissaInput" Name="尾数录入" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>materialNo</Code>
@@ -217,7 +217,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="outStockInfo" Name="出库信息" EntityType="" TableOrQueryCode="">
+    <Entity Code="outStockInfo" Name="出库信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>materialNo</Code>

@@ -92,5 +92,18 @@
       <FontColor />
       <IsCollapsed>false</IsCollapsed>
     </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_line_pullTestHostory</Code>
+      <Top>859.0981</Top>
+      <Left>368</Left>
+      <Width>275</Width>
+      <Height>587</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
   </Graphs>
 </EntityGraphConfig>

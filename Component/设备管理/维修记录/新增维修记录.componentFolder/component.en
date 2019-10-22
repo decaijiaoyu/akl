@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="pId" Name="产线id" EntityType="" TableOrQueryCode="">
+    <Entity Code="pId" Name="产线id" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>pid</Code>
@@ -16,7 +16,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_maintainRecord" Name="设备维修记录" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_EM_maintainRecord" Name="设备维修记录" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

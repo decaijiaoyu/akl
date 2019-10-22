@@ -4,10 +4,10 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>bo_akl_line_badReason</Code>
-      <Top>176</Top>
-      <Left>210</Left>
-      <Width>132</Width>
-      <Height>82</Height>
+      <Top>139</Top>
+      <Left>165</Left>
+      <Width>178</Width>
+      <Height>113</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

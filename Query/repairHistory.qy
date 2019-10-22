@@ -3,9 +3,12 @@
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-08-24 17:22:12]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-08-28 11:12:46]]></ModificationTime>
-  <VSql><![CDATA[select r.id,r.repairType,r.equipCode,r.pNo,r.wsNo,r.startDate,r.endDate,r.phenomenon,r.repaircontent,r.repairMan,r.repairNo,datediff(r.startDate,r.endDate,'hour') as diffHour
-from bo_akl_EM_maintainRecord r]]></VSql>
+  <ModificationTime><![CDATA[2019-09-10 10:26:02]]></ModificationTime>
+  <VSql><![CDATA[select r.id,r.repairType,r.equipCode,r.pNo,r.wsNo,r.startDate,r.endDate,r.phenomenon,
+r.repaircontent,
+r.repairMan,
+r.repairNo,datediff(r.startDate,r.endDate,'hour') as diffHour
+from bo_akl_EM_maintainRecord as r]]></VSql>
   <Columns>
     <Column id="Column_0" code="id" name="" dataType="char" length="" precision="">
       <Remark></Remark>
@@ -46,6 +49,17 @@ from bo_akl_EM_maintainRecord r]]></VSql>
   </Columns>
   <Params />
   <DataItems>
-    <DataItem type="Table" key="bo_akl_EM_maintainRecord" tokenIndexes="65" />
+    <DataItem type="Table" key="bo_akl_EM_maintainRecord" tokenIndexes="68" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.id" tokenIndexes="4" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.repairType" tokenIndexes="8" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.equipCode" tokenIndexes="12" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.pNo" tokenIndexes="16" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.wsNo" tokenIndexes="20" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.startDate" tokenIndexes="24,53" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.endDate" tokenIndexes="28,57" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.phenomenon" tokenIndexes="32" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.repaircontent" tokenIndexes="37" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.repairMan" tokenIndexes="42" />
+    <DataItem type="TableField" key="bo_akl_EM_maintainRecord.repairNo" tokenIndexes="47" />
   </DataItems>
 </Query>

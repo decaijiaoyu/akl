@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_productionPlanSub" Name="生产计划关联BOM" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_productionPlanSub" Name="生产计划关联BOM" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -108,7 +108,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>materialType</Code>
@@ -117,7 +117,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

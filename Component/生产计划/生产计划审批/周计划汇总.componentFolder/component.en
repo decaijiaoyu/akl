@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_productEntryRecode" Name="生产需求录入记录" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_productEntryRecode" Name="生产需求录入记录" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -70,7 +70,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_weeklyPlan_summary" Name="生产周计划汇总" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_weeklyPlan_summary" Name="生产周计划汇总" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -248,7 +248,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_weeklyPlan_summary_1" Name="生产周计划汇总" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_weeklyPlan_summary_1" Name="生产周计划汇总" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -426,7 +426,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_productPlanlog" Name="生产计划审批修改日志" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_productPlanlog" Name="生产计划审批修改日志" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

@@ -101,6 +101,24 @@
           <DefaultValue></DefaultValue>
           <Expression></Expression>
         </Column>
+        <Column>
+          <Code>bsTime</Code>
+          <Name>标示时间</Name>
+          <DataType>date</DataType>
+          <Length></Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>cName</Code>
+          <Name>工站作业内容</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+        </Column>
       </Columns>
       <Events>
         <EntityEvent Code="OnLoaded" Value="" />

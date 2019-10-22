@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_applyRemoveInsulate" Name="申请解除隔离记录" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_applyRemoveInsulate" Name="申请解除隔离记录" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -70,7 +70,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_applyInsulateMe" Name="申请解除隔离的物料" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_applyInsulateMe" Name="申请解除隔离的物料" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -104,7 +104,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_applyAttachment" Name="申请解除隔离附件" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_applyAttachment" Name="申请解除隔离附件" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -147,7 +147,93 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_MM_applyAttachment_1" Name="申请解除隔离附件" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_MM_applyAttachment_1" Name="申请解除隔离附件" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>applyId</Code>
+          <Name>申请Id</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>attachmentSign</Code>
+          <Name>附件标识</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>attachmentName</Code>
+          <Name>附件名称</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+    <Entity Code="bo_akl_MM_applyAttachment_2" Name="申请解除隔离附件" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>applyId</Code>
+          <Name>申请Id</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>attachmentSign</Code>
+          <Name>附件标识</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>attachmentName</Code>
+          <Name>附件名称</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+    <Entity Code="bo_akl_MM_applyAttachment_3" Name="申请解除隔离附件" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

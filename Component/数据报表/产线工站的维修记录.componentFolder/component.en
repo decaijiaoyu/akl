@@ -9,7 +9,7 @@
           <Length>128</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>repairType</Code>
@@ -18,7 +18,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>equipCode</Code>
@@ -27,7 +27,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>pNo</Code>
@@ -36,7 +36,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>wsNo</Code>
@@ -45,7 +45,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>startDate</Code>
@@ -54,7 +54,7 @@
           <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>endDate</Code>
@@ -63,7 +63,7 @@
           <Length></Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>phenomenon</Code>
@@ -72,7 +72,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>repaircontent</Code>
@@ -81,7 +81,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>repairMan</Code>
@@ -90,7 +90,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>repairNo</Code>
@@ -99,7 +99,7 @@
           <Length>255</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>diffHour</Code>
@@ -107,8 +107,8 @@
           <DataType>char</DataType>
           <Length>255</Length>
           <Precision></Precision>
-          <DefaultValue />
-          <Expression />
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

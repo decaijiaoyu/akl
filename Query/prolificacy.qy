@@ -1,0 +1,85 @@
+﻿<Query id="0ed7509441374fbba0ad568ac731691b" code="prolificacy" name="生产力" type="VSql" APICode="">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[user_20190304004]]></Creator>
+  <CreationTime><![CDATA[2019-10-21 17:33:14]]></CreationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-10-21 23:00:19]]></ModificationTime>
+  <VSql><![CDATA[
+select 
+	md.tday, --日期day
+	sopena.opdiff, --生产时间
+	proNums.cpc
+	from monthDay as md
+	left join(
+			select opema.tday,SUM(opema.diffhour) as opdiff from (
+					select 
+					ROUND(CAST(DATEDIFF(MIN(opert.opTime),MAX(opert.opTime),'minute'),'DECIMAL',10,2)/60,2) as diffhour,
+					opert.lid,DAYOFMONTH(MIN(opert.opTime))as tday
+					from bo_akl_line_operation as opert 
+					right join bo_akl_line_start as lineSt on lineSt.id=opert.lid
+					where 
+					lineSt.prolineName='cx_001' 
+					group by opert.lid
+			)as opema group by opema.tday
+		)as sopena on sopena.tday=md.tday
+	left join(
+	select md.tday,edp.cpc from monthDay as md
+	left join(
+		SELECT 
+	DAYOFMONTH(sto.operateTime) as optime,
+	sum(sto.inStockNum)  AS cpc,
+	mat.materialNo
+	FROM bo_akl_MM_inStockInfo AS sto
+	LEFT JOIN bo_akl_MM_stockType AS st ON st.id = sto.stockTypeId
+	LEFT join bo_akl_MM_materialInfo AS mat ON sto.materialId = mat.id
+	 left join bo_akl_EM_productInfo as ep on mat.materialNo=ep.prNo
+	where 
+	ep.prLine='cx_001' and
+	st.stockType = '成品仓' 
+	--时间
+	group by DAYOFMONTH(sto.operateTime)
+	) as edp
+	on edp.optime=md.tday
+	) as proNums on md.tday=proNums.tday
+	
+
+select DATEDIFF(MIN(opert.opTime),MAX(opert.opTime),'hour') as diffhour,opert.lid,lineSt.prolineName
+from bo_akl_line_operation as opert 
+left join bo_akl_line_start as lineSt on lineSt.id=opert.lid
+where (opert.remark like '%开线成功' or opert.remark like '%停机成功')
+and lineSt.prolineName='cx_001' group by opert.lid,lineSt.prolineName]]></VSql>
+  <Columns>
+    <Column id="Column_0" code="tday" name="" dataType="integer" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_1" code="opdiff" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_2" code="cpc" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
+  </Columns>
+  <Params>
+    <Param code="prlineNo" name="产线编号" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+  </Params>
+  <DataItems>
+    <DataItem type="Table" key="monthDay" tokenIndexes="23,203" />
+    <DataItem type="Table" key="bo_akl_line_operation" tokenIndexes="116,414" />
+    <DataItem type="Table" key="bo_akl_line_start" tokenIndexes="126,424" />
+    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="300" />
+    <DataItem type="Table" key="bo_akl_MM_inStockInfo" tokenIndexes="246" />
+    <DataItem type="Table" key="bo_akl_MM_stockType" tokenIndexes="256" />
+    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="278" />
+    <DataItem type="TableField" key="monthDay.tday" tokenIndexes="5,184,195,361,373" />
+    <DataItem type="TableField" key="bo_akl_line_operation.opTime" tokenIndexes="67,74,107,387,394" />
+    <DataItem type="TableField" key="bo_akl_line_operation.lid" tokenIndexes="99,140,156,406,438,476" />
+    <DataItem type="TableField" key="bo_akl_line_start.id" tokenIndexes="136,434" />
+    <DataItem type="TableField" key="bo_akl_line_start.prolineName" tokenIndexes="146,410,466,480" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prNo" tokenIndexes="314" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prLine" tokenIndexes="320" />
+    <DataItem type="TableField" key="bo_akl_line_operation.remark" tokenIndexes="445,455" />
+  </DataItems>
+</Query>

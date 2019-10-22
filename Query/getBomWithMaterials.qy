@@ -1,11 +1,11 @@
-﻿<Query id="87637c4cdfed4b718b8a5dd7a65fc172" code="getBomWithMaterials" name="关联物料查询Bom" type="VSql">
+﻿<Query id="87637c4cdfed4b718b8a5dd7a65fc172" code="getBomWithMaterials" name="关联物料查询Bom" type="VSql" APICode="">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-07-19 10:44:42]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-07-19 10:48:58]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-10-17 19:39:08]]></ModificationTime>
   <VSql><![CDATA[SELECT b.*,m.materialType from bo_akl_MM_bomInfo AS b left join bo_akl_MM_materialInfo AS m 
-ON b.materialNo=m.materialNo]]></VSql>
+ON b.materialNo=m.materialNo order by materialNo asc]]></VSql>
   <Columns>
     <Column id="Column_0" code="materialType" name="" dataType="char" length="" precision="">
       <Remark></Remark>

@@ -682,6 +682,20 @@
           <FileSystemObjectName>bo_akl_line_materialBadReason</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_line_pullTestHistory</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_line_pullTestHistory</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>bo_akl_line_badReason_clone</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>bo_akl_line_badReason_clone</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
@@ -1271,6 +1285,34 @@
           <NodeType>Table</NodeType>
           <FileSystemObjectType>File</FileSystemObjectType>
           <FileSystemObjectName>bo_akl_base_equmainuser_clone</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>monthDay</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>monthDay</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>baseYear</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>baseYear</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>baseMonth</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>baseMonth</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>baseHour</Code>
+          <NodeType>Table</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>baseHour</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
       </SubNodes>

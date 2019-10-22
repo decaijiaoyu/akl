@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_productlines" Name="产线信息" EntityType="" TableOrQueryCode="bo_akl_base_productlines">
+    <Entity Code="bo_akl_base_productlines" Name="产线信息" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_base_productlines" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -77,7 +77,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_projectInfo" Name="项目信息" EntityType="" TableOrQueryCode="bo_akl_base_projectInfo">
+    <Entity Code="bo_akl_base_projectInfo" Name="项目信息" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_base_projectInfo" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -127,7 +127,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_positionType" Name="维护岗位性质" EntityType="" TableOrQueryCode="bo_akl_base_positionType">
+    <Entity Code="bo_akl_base_positionType" Name="维护岗位性质" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_base_positionType" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -159,7 +159,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_examEmployee" Name="考核员工" EntityType="" TableOrQueryCode="bo_akl_base_examEmployee">
+    <Entity Code="bo_akl_base_examEmployee" Name="考核员工" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_base_examEmployee" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -200,7 +200,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_staffInfo" Name="员工信息" EntityType="" TableOrQueryCode="bo_akl_base_staffInfo">
+    <Entity Code="bo_akl_base_staffInfo" Name="员工信息" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_base_staffInfo" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -304,7 +304,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_PM_TCSkillsTraining" Name="培训内容_技能培训" EntityType="" TableOrQueryCode="bo_akl_PM_TCSkillsTraining">
+    <Entity Code="bo_akl_PM_TCSkillsTraining" Name="培训内容_技能培训" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_PM_TCSkillsTraining" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>postNature</Code>
@@ -372,7 +372,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_productling_ws" Name="产线工站信息" EntityType="" TableOrQueryCode="bo_akl_base_productling_ws">
+    <Entity Code="bo_akl_base_productling_ws" Name="产线工站信息" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_base_productling_ws" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -485,7 +485,7 @@
       </Columns>
       <Events />
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_examRecordLB" Name="考核记录_技能培训" EntityType="" TableOrQueryCode="bo_akl_base_examRecordLB">
+    <Entity Code="bo_akl_base_examRecordLB" Name="考核记录_技能培训" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_base_examRecordLB" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>teId</Code>

@@ -19,6 +19,7 @@
   <Method MethodDir="ComponentServerMethod" FileName="pullTest.method" Code="pullTest" Name="拉力测试任务推送" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="rds_setsql.method" Code="rds_setsql" Name="" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="resetCheck.method" Code="resetCheck" Name="手动复位超时检查" SourceType="Common" />
+  <Method MethodDir="ComponentServerMethod" FileName="startLine_4hPush.method" Code="startLine_4hPush" Name="开线4h,过程测试" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="three_dimensional.method" Code="three_dimensional" Name="三次元报告任务推送" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="timeTaskMgr.method" Code="timeTaskMgr" Name="定时任务管理" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="tpm_carrierCheck.method" Code="tpm_carrierCheck" Name="载具检测任务推送" SourceType="Common" />
@@ -29,11 +30,11 @@
   <Method MethodDir="ComponentServerMethod" FileName="tpm_mouldLifeUpkeep.method" Code="tpm_mouldLifeUpkeep" Name="模具寿命保养任务推送" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="tpm_publicEquUpkeep.method" Code="tpm_publicEquUpkeep" Name="公共设备保养任务推送" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="tpm_wb.method" Code="tpm_wb" Name="TPM_产线设备维保" SourceType="Common" />
+  <Method MethodDir="ComponentServerMethod" FileName="updateBatchNum.method" Code="updateBatchNum" Name="每小时更新开线的批次号" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="updateNextPullTestTime.method" Code="updateNextPullTestTime" Name="更新下次拉力测试时间" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="updateProductPlan.method" Code="updateProductPlan" Name="定时更新生产计划" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="waterLevelReminder.method" Code="waterLevelReminder" Name="水位提醒" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="weekEquCheckFinish.method" Code="weekEquCheckFinish" Name="每周设备点检任务是否完成" SourceType="Common" />
-  <Method MethodDir="ComponentServerMethod" FileName="startLine_4hPush.method" Code="startLine_4hPush" Name="开线4h,过程测试" SourceType="Common" />
   <MethodFolder MethodDir="ComponentServerMethod" Name="machineAPI" ChineseName="machineAPI" Remark="" />
   <Method MethodDir="ComponentServerMethod" FileName="machineAPI\manualReset.method" Code="manualReset" Name="手动复位" SourceType="Common" />
   <Method MethodDir="ComponentServerMethod" FileName="machineAPI\testAPI.method" Code="testAPI" Name="测试API" SourceType="Common" />

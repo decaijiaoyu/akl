@@ -563,7 +563,23 @@
     <Remark><![CDATA[]]></Remark>
     <MethodChain><![CDATA[
   <evaluateRule code="BR_CursorJumpControl1" />
-  <evaluateRule code="BR_ExecuteRuleSet1" />
+  <if isEnabled="True" isDebug="False" code="IfCode1">
+    <define>
+      <expression>!IsEmpty(CC.JGTextBox1.Value) &amp;&amp; Contains(CC.JGTextBox1.Value,"@")</expression>
+      <remark></remark>
+    </define>
+    <sequence>
+      <evaluateRule code="BR_ExecuteRuleSet1" />
+    </sequence>
+  </if>
+  <else isEnabled="True" isDebug="False">
+    <define>
+      <remark />
+    </define>
+    <sequence>
+      <evaluateRule code="BR_CursorJumpControl1_1" />
+    </sequence>
+  </else>
 ]]></MethodChain>
     <RuleInstances>
       <RuleInstance ruleCode="CursorJumpControl" ruleName="光标跳转控制" instanceCode="BR_CursorJumpControl1" instanceName="光标跳转控制" isNeedLog="False" isEnabled="True" isDebug="False">
@@ -573,12 +589,19 @@
         <RuleConfig><![CDATA[{"ControlCode":"JGTextBox2"}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><ControlCode>JGTextBox2</ControlCode><ControlDisplayName>JGTextBox2(转移光标)</ControlDisplayName></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_JGButton5_OnClick(生成记录)" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20180828002" lastModifiedTime="2018-12-03 19:17:16">
+      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_JGButton5_OnClick(生成记录)" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"filter":{"windowInstanceCode":""},"invokeTarget":{"sourceType":"client-ruleSet","invokeType":"local","ruleLocation":"window","componentCode":"","windowCode":"","ruleSetCode":"JGButton5_OnClick","isParallelism":"False"},"invokeParams":null,"returnMapping":null}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtFilter><windowInstanceCode /></dtFilter><dtInvokeTarget><sourceType>client-ruleSet</sourceType><invokeType>local</invokeType><ruleLocation>window</ruleLocation><componentCode /><windowCode /><ruleSetCode>JGButton5_OnClick</ruleSetCode><isParallelism>False</isParallelism></dtInvokeTarget></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="CursorJumpControl" ruleName="光标跳转控制" instanceCode="BR_CursorJumpControl1_1" instanceName="光标跳转控制_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-21 16:45:25">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"ControlCode":"JGTextBox1"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><ControlCode>JGTextBox1</ControlCode><ControlDisplayName>JGTextBox1(二维码输入)</ControlDisplayName></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
     </RuleInstances>
   </Method>

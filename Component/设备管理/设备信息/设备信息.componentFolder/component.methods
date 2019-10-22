@@ -304,10 +304,10 @@
     <Remark><![CDATA[]]></Remark>
     <MethodChain><![CDATA[
   <evaluateRule code="BR_OpenComponentReturnData1" />
-  <if isEnabled="True" isDebug="False" code="IfCode1">
+  <if isEnabled="False" isDebug="False" code="IfCode1">
     <define>
       <expression>BR_OUT.BR_OpenComponentReturnData1.isConfirmSelectionOnClose</expression>
-      <remark />
+      <remark></remark>
     </define>
     <sequence>
       <evaluateRule code="BR_DataBaseDataToInterfaceEntity1" />
@@ -322,7 +322,7 @@
         <RuleConfig><![CDATA[{"openType":"appoint","windowCode":"changeEquipInfo","windowName":"修改设备信息","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"","browerWindowFlag":"","windowContainer":"","heightExp":"741","widthExp":"960","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":[{"paramName":"equipInfoId","paramType":"expression","paramValue":"[bo_akl_EM_EquipmentInformation].[id]","paramEntityType":"","entityFieldMapping":null}],"returnMapping":null}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OpenType>appoint</OpenType><WindowCode>changeEquipInfo</WindowCode><WindowName>修改设备信息</WindowName><TargetContainerType>dialogWindow</TargetContainerType><BrowerWindowTitle /><IsChooseLanguage>False</IsChooseLanguage><HeightExp>741</HeightExp><WidthExp>960</WidthExp><IsAsyn>False</IsAsyn></dtMaster><dtParam><WindowVariant>equipInfoId</WindowVariant><SourceType>expression</SourceType><SourceTypeDisplayText>表达式</SourceTypeDisplayText><SourceValue>[bo_akl_EM_EquipmentInformation].[id]</SourceValue></dtParam></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" isDebug="False">
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="False" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>

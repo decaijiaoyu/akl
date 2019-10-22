@@ -20,7 +20,7 @@
       <if isEnabled="True" isDebug="False" code="IfCode2">
         <define>
           <expression>GetEntityRowCount("badProNum")&gt;0</expression>
-          <remark />
+          <remark></remark>
         </define>
         <sequence>
           <foreach isEnabled="True" isDebug="False" code="ForeachCode1">
@@ -28,7 +28,7 @@
               <varCode>b</varCode>
               <entityType>window</entityType>
               <entityCode>badProNum</entityCode>
-              <remark />
+              <remark></remark>
             </define>
             <sequence>
               <evaluateRule code="BR_ExecuteRuleSet1" />
@@ -42,12 +42,19 @@
   </if>
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="CheckRequired" ruleName="必填项检查" instanceCode="BR_CheckRequired1" instanceName="必填项检查" isNeedLog="False" isEnabled="True" isDebug="False">
+      <RuleInstance ruleCode="CheckRequired" ruleName="必填项检查" instanceCode="BR_CheckRequired1" instanceName="必填项检查" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-09-04 13:53:47">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"fieldList":[{"field":"badProNum.badProNum","fieldName":"不良品数"}],"type":"0"}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtColumn><Code>badProNum.badProNum</Code><Name>不良品数</Name></dtColumn><dtType><Type>0</Type></dtType></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_badProductInStock(不良品入库)" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"filter":{"windowInstanceCode":""},"invokeTarget":{"sourceType":"client-ruleSet","invokeType":"local","ruleLocation":"window","componentCode":"","windowCode":"","ruleSetCode":"badProductInStock","isParallelism":"False"},"invokeParams":[{"paramCode":"materialNum","paramType":"expression","paramValue":"LV.b.badProNum","paramSource":"","dataFilterType":"","paramFieldMapping":null},{"paramCode":"materialNo","paramType":"expression","paramValue":"LV.b.materialNo","paramSource":"","dataFilterType":"","paramFieldMapping":null},{"paramCode":"batch","paramType":"expression","paramValue":"LV.b.batch","paramSource":"","dataFilterType":"","paramFieldMapping":null}],"returnMapping":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFilter><windowInstanceCode /></dtFilter><dtInvokeTarget><sourceType>client-ruleSet</sourceType><invokeType>local</invokeType><ruleLocation>window</ruleLocation><componentCode /><windowCode /><ruleSetCode>badProductInStock</ruleSetCode><isParallelism>False</isParallelism></dtInvokeTarget><dtInvokeParams><paramCode>materialNum</paramCode><paramType>expression</paramType><paramValue>LV.b.badProNum</paramValue><paramSource /><paramSourceDisplayText>表达式</paramSourceDisplayText></dtInvokeParams><dtInvokeParams><paramCode>materialNo</paramCode><paramType>expression</paramType><paramValue>LV.b.materialNo</paramValue><paramSource /><paramSourceDisplayText>表达式</paramSourceDisplayText></dtInvokeParams><dtInvokeParams><paramCode>batch</paramCode><paramType>expression</paramType><paramValue>LV.b.batch</paramValue><paramSource /><paramSourceDisplayText>表达式</paramSourceDisplayText></dtInvokeParams></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
       <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet2" instanceName="执行方法_API_QueryLoginInfo(API_查询登录信息)" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
@@ -77,7 +84,7 @@
         <RuleConfig><![CDATA[{"dataSourcesMapping":[{"dataMap":[{"colName":"bo_akl_line_operation.lid","colValue":"[bo_akl_line_start].[id]","valueType":"expression"},{"colName":"bo_akl_line_operation.proLineState","colValue":"[bo_akl_line_start].[state]","valueType":"expression"},{"colName":"bo_akl_line_operation.opTime","colValue":"DateTimeNow()","valueType":"expression"},{"colName":"bo_akl_line_operation.opUserId","colValue":"BR_VAR_PARENT.[user].[userNo]","valueType":"expression"},{"colName":"bo_akl_line_operation.opUserName","colValue":"BR_VAR_PARENT.[user].[userName]","valueType":"expression"},{"colName":"bo_akl_line_operation.remark","colValue":"\"确认不良品（半成品）通过\"","valueType":"expression"}],"dataSource":"bo_akl_line_operation"}]}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><TableName>bo_akl_line_operation</TableName><ID>d20bb3b0-2e3d-4ab4-93b0-1853d59d7fdb</ID></dtMaster><dtTableColumns><MasterID>d20bb3b0-2e3d-4ab4-93b0-1853d59d7fdb</MasterID><TargetField>bo_akl_line_operation.lid</TargetField><ValueType>expression</ValueType><ValueField>[bo_akl_line_start].[id]</ValueField></dtTableColumns><dtTableColumns><MasterID>d20bb3b0-2e3d-4ab4-93b0-1853d59d7fdb</MasterID><TargetField>bo_akl_line_operation.proLineState</TargetField><ValueType>expression</ValueType><ValueField>[bo_akl_line_start].[state]</ValueField></dtTableColumns><dtTableColumns><MasterID>d20bb3b0-2e3d-4ab4-93b0-1853d59d7fdb</MasterID><TargetField>bo_akl_line_operation.opTime</TargetField><ValueType>expression</ValueType><ValueField>DateTimeNow()</ValueField></dtTableColumns><dtTableColumns><MasterID>d20bb3b0-2e3d-4ab4-93b0-1853d59d7fdb</MasterID><TargetField>bo_akl_line_operation.opUserId</TargetField><ValueType>expression</ValueType><ValueField>BR_VAR_PARENT.[user].[userNo]</ValueField></dtTableColumns><dtTableColumns><MasterID>d20bb3b0-2e3d-4ab4-93b0-1853d59d7fdb</MasterID><TargetField>bo_akl_line_operation.opUserName</TargetField><ValueType>expression</ValueType><ValueField>BR_VAR_PARENT.[user].[userName]</ValueField></dtTableColumns><dtTableColumns><MasterID>d20bb3b0-2e3d-4ab4-93b0-1853d59d7fdb</MasterID><TargetField>bo_akl_line_operation.remark</TargetField><ValueType>expression</ValueType><ValueField>"确认不良品（半成品）通过"</ValueField></dtTableColumns></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1" instanceName="保存实体到数据库_物料不良品数" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20180828002" lastModifiedTime="2019-02-16 14:45:53">
+      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1" instanceName="保存实体到数据库_物料不良品数" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
@@ -97,13 +104,6 @@
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"SelectionConfirm":"1"}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><SelectionConfirm>1</SelectionConfirm></dtMaster></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
-      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_badProductInStock(不良品入库)" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20180828002" lastModifiedTime="2019-02-16 14:48:04">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"filter":{"windowInstanceCode":""},"invokeTarget":{"sourceType":"client-ruleSet","invokeType":"local","ruleLocation":"window","componentCode":"","windowCode":"","ruleSetCode":"badProductInStock","isParallelism":"False"},"invokeParams":[{"paramCode":"materialNum","paramType":"expression","paramValue":"LV.b.badProNum","paramSource":"","dataFilterType":"","paramFieldMapping":null},{"paramCode":"materialNo","paramType":"expression","paramValue":"LV.b.materialNo","paramSource":"","dataFilterType":"","paramFieldMapping":null},{"paramCode":"batch","paramType":"expression","paramValue":"LV.b.batch","paramSource":"","dataFilterType":"","paramFieldMapping":null}],"returnMapping":null}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtFilter><windowInstanceCode /></dtFilter><dtInvokeTarget><sourceType>client-ruleSet</sourceType><invokeType>local</invokeType><ruleLocation>window</ruleLocation><componentCode /><windowCode /><ruleSetCode>badProductInStock</ruleSetCode><isParallelism>False</isParallelism></dtInvokeTarget><dtInvokeParams><paramCode>materialNum</paramCode><paramType>expression</paramType><paramValue>LV.b.badProNum</paramValue><paramSource /><paramSourceDisplayText>表达式</paramSourceDisplayText></dtInvokeParams><dtInvokeParams><paramCode>materialNo</paramCode><paramType>expression</paramType><paramValue>LV.b.materialNo</paramValue><paramSource /><paramSourceDisplayText>表达式</paramSourceDisplayText></dtInvokeParams><dtInvokeParams><paramCode>batch</paramCode><paramType>expression</paramType><paramValue>LV.b.batch</paramValue><paramSource /><paramSourceDisplayText>表达式</paramSourceDisplayText></dtInvokeParams></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
     </RuleInstances>
     <Variables>

@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="MyExchange_Journal" Name="产线设备数据变更日志" EntityType="" TableOrQueryCode="MyExchange_Journal">
+    <Entity Code="MyExchange_Journal" Name="产线设备数据变更日志" IsExtendable="false" EntityType="" TableOrQueryCode="MyExchange_Journal" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

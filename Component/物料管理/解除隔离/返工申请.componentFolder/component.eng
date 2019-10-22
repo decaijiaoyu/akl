@@ -20,7 +20,7 @@
       <Top>227</Top>
       <Left>434.999969</Left>
       <Width>395</Width>
-      <Height>88</Height>
+      <Height>89</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -73,6 +73,32 @@
       <Left>20</Left>
       <Width>395</Width>
       <Height>107</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_applyAttachment_4</Code>
+      <Top>380</Top>
+      <Left>438</Left>
+      <Width>395</Width>
+      <Height>108</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_MM_applyAttachment_5</Code>
+      <Top>367</Top>
+      <Left>11</Left>
+      <Width>395</Width>
+      <Height>108</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
