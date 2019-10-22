@@ -9,7 +9,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>pNum</Code>
@@ -18,7 +18,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>
@@ -34,7 +34,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>pNum</Code>
@@ -43,7 +43,7 @@
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>
@@ -54,21 +54,21 @@
       <Columns>
         <Column>
           <Code>tyear</Code>
-          <Name />
+          <Name></Name>
           <DataType>integer</DataType>
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>pNum</Code>
-          <Name />
+          <Name></Name>
           <DataType>integer</DataType>
           <Length>50</Length>
           <Precision></Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

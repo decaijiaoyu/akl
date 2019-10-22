@@ -7,19 +7,6 @@
       <Top>133</Top>
       <Left>38</Left>
       <Width>278</Width>
-      <Height>82</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
-      <Code>prolificacyMonth</Code>
-      <Top>132</Top>
-      <Left>343</Left>
-      <Width>251</Width>
       <Height>83</Height>
       <Background />
       <BorderColor />
@@ -33,7 +20,20 @@
       <Top>130</Top>
       <Left>618</Left>
       <Width>272</Width>
-      <Height>83</Height>
+      <Height>84</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>prolificacyMonth</Code>
+      <Top>132</Top>
+      <Left>343</Left>
+      <Width>251</Width>
+      <Height>84</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
