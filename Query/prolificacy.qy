@@ -1,14 +1,17 @@
-﻿<Query id="0ed7509441374fbba0ad568ac731691b" code="prolificacy" name="生产力" type="VSql" APICode="">
+﻿<Query id="0ed7509441374fbba0ad568ac731691b" code="prolificacy" name="31天生产力" type="VSql" APICode="">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-10-21 17:33:14]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-10-21 23:00:19]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-10-22 10:02:18]]></ModificationTime>
   <VSql><![CDATA[
 select 
 	md.tday, --日期day
-	sopena.opdiff, --生产时间
-	proNums.cpc
+	sopena.opdiff, --生产时间h
+	proNums.cpc, --产量
+	suss.dsa, --人工数量
+	case when CAST(sopena.opdiff,'varchar')='' or CAST(suss.dsa,'varchar')=''
+	then 0 else ROUND(proNums.cpc/sopena.opdiff/suss.dsa,2) end as scl --生产力
 	from monthDay as md
 	left join(
 			select opema.tday,SUM(opema.diffhour) as opdiff from (
@@ -18,7 +21,9 @@ select
 					from bo_akl_line_operation as opert 
 					right join bo_akl_line_start as lineSt on lineSt.id=opert.lid
 					where 
-					lineSt.prolineName='cx_001' 
+					YEAR(opert.opTime)=:inputYear and 
+					MONTH(opert.opTime)=:inputMonth and
+					lineSt.prolineName=:prlineNo 
 					group by opert.lid
 			)as opema group by opema.tday
 		)as sopena on sopena.tday=md.tday
@@ -34,20 +39,27 @@ select
 	LEFT join bo_akl_MM_materialInfo AS mat ON sto.materialId = mat.id
 	 left join bo_akl_EM_productInfo as ep on mat.materialNo=ep.prNo
 	where 
-	ep.prLine='cx_001' and
+	YEAR(sto.operateTime)=:inputYear and 
+	MONTH(sto.operateTime)=:inputMonth and
+	ep.prLine=:prlineNo and
 	st.stockType = '成品仓' 
 	--时间
 	group by DAYOFMONTH(sto.operateTime)
 	) as edp
 	on edp.optime=md.tday
 	) as proNums on md.tday=proNums.tday
-	
-
-select DATEDIFF(MIN(opert.opTime),MAX(opert.opTime),'hour') as diffhour,opert.lid,lineSt.prolineName
-from bo_akl_line_operation as opert 
-left join bo_akl_line_start as lineSt on lineSt.id=opert.lid
-where (opert.remark like '%开线成功' or opert.remark like '%停机成功')
-and lineSt.prolineName='cx_001' group by opert.lid,lineSt.prolineName]]></VSql>
+	left join (
+			select md.tday,sus.dsa from monthDay as md
+			left JOIN(
+			select DAYOFMONTH(sline.startTime) as tday,COUNT(*) as dsa from 
+			bo_akl_line_start_user as suser
+			left join bo_akl_line_start as  sline on suser.lid=sline.id
+			where sline.prolineName=:prlineNo
+			and YEAR(sline.startTime)=:inputYear and MONTH(sline.startTime)=:inputMonth
+			group by DAYOFMONTH(sline.startTime)
+			) as sus on sus.tday=md.tday
+		) as suss on suss.tday=md.tday 
+]]></VSql>
   <Columns>
     <Column id="Column_0" code="tday" name="" dataType="integer" length="" precision="">
       <Remark></Remark>
@@ -58,28 +70,47 @@ and lineSt.prolineName='cx_001' group by opert.lid,lineSt.prolineName]]></VSql>
     <Column id="Column_2" code="cpc" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
+    <Column id="Column_3" code="dsa" name="" dataType="integer" length="" precision="">
+      <Remark></Remark>
+    </Column>
+    <Column id="Column_4" code="scl" name="" dataType="number" length="" precision="">
+      <Remark></Remark>
+    </Column>
   </Columns>
   <Params>
     <Param code="prlineNo" name="产线编号" dataType="char">
       <InitValue><![CDATA[]]></InitValue>
       <Remark><![CDATA[]]></Remark>
     </Param>
+    <Param code="inputYear" name="年" dataType="integer">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="inputMonth" name="月" dataType="integer">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
   </Params>
   <DataItems>
-    <DataItem type="Table" key="monthDay" tokenIndexes="23,203" />
-    <DataItem type="Table" key="bo_akl_line_operation" tokenIndexes="116,414" />
-    <DataItem type="Table" key="bo_akl_line_start" tokenIndexes="126,424" />
-    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="300" />
-    <DataItem type="Table" key="bo_akl_MM_inStockInfo" tokenIndexes="246" />
-    <DataItem type="Table" key="bo_akl_MM_stockType" tokenIndexes="256" />
-    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="278" />
-    <DataItem type="TableField" key="monthDay.tday" tokenIndexes="5,184,195,361,373" />
-    <DataItem type="TableField" key="bo_akl_line_operation.opTime" tokenIndexes="67,74,107,387,394" />
-    <DataItem type="TableField" key="bo_akl_line_operation.lid" tokenIndexes="99,140,156,406,438,476" />
-    <DataItem type="TableField" key="bo_akl_line_start.id" tokenIndexes="136,434" />
-    <DataItem type="TableField" key="bo_akl_line_start.prolineName" tokenIndexes="146,410,466,480" />
-    <DataItem type="TableField" key="bo_akl_EM_productInfo.prNo" tokenIndexes="314" />
-    <DataItem type="TableField" key="bo_akl_EM_productInfo.prLine" tokenIndexes="320" />
-    <DataItem type="TableField" key="bo_akl_line_operation.remark" tokenIndexes="445,455" />
+    <DataItem type="Table" key="monthDay" tokenIndexes="92,297,516" />
+    <DataItem type="Table" key="bo_akl_line_operation" tokenIndexes="185" />
+    <DataItem type="Table" key="bo_akl_line_start" tokenIndexes="195,561" />
+    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="394" />
+    <DataItem type="Table" key="bo_akl_line_start_user" tokenIndexes="551" />
+    <DataItem type="Table" key="bo_akl_MM_inStockInfo" tokenIndexes="340" />
+    <DataItem type="Table" key="bo_akl_MM_stockType" tokenIndexes="350" />
+    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="372" />
+    <DataItem type="TableField" key="monthDay.tday" tokenIndexes="5,278,289,480,492,508,635,651" />
+    <DataItem type="TableField" key="bo_akl_line_operation.opTime" tokenIndexes="136,143,176,217,229" />
+    <DataItem type="TableField" key="bo_akl_line_operation.lid" tokenIndexes="168,209,250" />
+    <DataItem type="TableField" key="bo_akl_line_start.id" tokenIndexes="205,575" />
+    <DataItem type="TableField" key="bo_akl_line_start.prolineName" tokenIndexes="239,581" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prNo" tokenIndexes="408" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prLine" tokenIndexes="438" />
+    <DataItem type="TableField" key="bo_akl_line_start.startTime" tokenIndexes="533,592,604,618" />
+    <DataItem type="TableField" key="bo_akl_line_start_user.lid" tokenIndexes="571" />
+    <DataItem type="QueryParam" key="inputYear" tokenIndexes="221,420,596" />
+    <DataItem type="QueryParam" key="inputMonth" tokenIndexes="233,432,608" />
+    <DataItem type="QueryParam" key="prlineNo" tokenIndexes="242,441,584" />
   </DataItems>
 </Query>

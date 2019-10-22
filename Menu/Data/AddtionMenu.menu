@@ -107,4 +107,5 @@
   <menuItem code="baseYear" name="基础年数" isDisabled="false" type="0" ruleName="" windowCode="form70" parameters="" />
   <menuItem code="baseHour" name="基础小时数" isDisabled="false" type="0" ruleName="" windowCode="form72" parameters="" />
   <menuItem code="productNum" name="产量" isDisabled="false" type="0" ruleName="" windowCode="form73" parameters="" />
+  <menuItem code="prolificacy" name="生产力" isDisabled="false" type="0" ruleName="" windowCode="form74" parameters="" />
 </dir>

@@ -2119,6 +2119,13 @@
               <FileSystemObjectName>产量</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
+            <NavigationNode>
+              <Code>form74</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>生产力</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
           </SubNodes>
         </NavigationNode>
       </SubNodes>
