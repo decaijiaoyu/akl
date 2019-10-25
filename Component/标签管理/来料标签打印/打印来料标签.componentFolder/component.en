@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_LM_inMaterialLabelSub" Name="打印来料标签子表" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_LM_inMaterialLabelSub" Name="打印来料标签子表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -142,7 +142,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_LM_printInMaterialLabel" Name="打印来料标签" EntityType="" TableOrQueryCode="">
+    <Entity Code="bo_akl_LM_printInMaterialLabel" Name="打印来料标签" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -248,7 +248,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="inMaterialLabelSub_all" Name="打印来料标签子表" EntityType="" TableOrQueryCode="">
+    <Entity Code="inMaterialLabelSub_all" Name="打印来料标签子表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -2136,7 +2136,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity TemplateId="" TemplateCode="" Code="inMaterialLabelSub_all_clone" Name="打印来料标签子表" EntityType="" TableOrQueryCode="">
+    <Entity Code="inMaterialLabelSub_all_clone" Name="打印来料标签子表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

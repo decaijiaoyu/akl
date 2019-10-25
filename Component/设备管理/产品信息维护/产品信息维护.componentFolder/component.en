@@ -656,7 +656,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>badGoal</Code>
@@ -665,7 +665,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events />
