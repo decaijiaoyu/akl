@@ -20,14 +20,14 @@
     <property name="ThemeVar"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGPanel Code="JGPanel3" Height="434" Width="1336" PercentHeight="90.4%" PercentWidth="98.5%" Top="46" Left="20" TabIndex="17" Dock="Fill">
-      <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="1336" Height="434" PercentHeight="100%" PercentWidth="100%" TabIndex="1" Dock="Fill" FetchMode="paged" OnDoubleClick="JGButton2_OnClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" TableName="bo_akl_EM_productInfo" ReadOnly="True" ChooseMode="3">
+    <JGPanel Code="JGPanel3" Height="434" Width="1336" PercentHeight="90.4%" PercentWidth="98.5%" Top="46" Left="20" TabIndex="17" Dock="Fill" LayoutType="BorderLayout">
+      <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="1336" Height="434" PercentHeight="100%" PercentWidth="100%" TabIndex="1" Dock="Fill" FetchMode="paged" RowWidthMode="PercentWidth" OnDoubleClick="JGButton2_OnClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" TableName="bo_akl_EM_productInfo" ReadOnly="True" ChooseMode="3">
         <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="prNoFor" LabelText="型号简称" TableName="bo_akl_EM_productInfo" />
-        <JGTextBoxColumn Code="JGTextBoxColumn5" ColumnName="prNo" LabelText="产品型号" TableName="bo_akl_EM_productInfo" />
+        <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn5" ColumnName="prNo" LabelText="产品型号" TableName="bo_akl_EM_productInfo" />
         <JGFloatBoxColumn Code="JGFloatBoxColumn3" ColumnName="standardWorkingHours" LabelText="标准工时" TableName="bo_akl_EM_productInfo" />
         <JGIntegerBoxColumn Code="JGIntegerBoxColumn8" ColumnName="standardProductivity" LabelText="标准生产力" TableName="bo_akl_EM_productInfo" />
         <JGTextBoxColumn Code="JGTextBoxColumn8" ColumnName="prName" LabelText="产品名称" TableName="bo_akl_EM_productInfo" TextLength="128" />
-        <JGTextBoxColumn Code="JGTextBoxColumn9" ColumnName="prLine" LabelText="所属产线" TableName="bo_akl_EM_productInfo" TextLength="128" />
+        <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn9" ColumnName="prLine" LabelText="所属产线" TableName="bo_akl_EM_productInfo" TextLength="128" />
         <JGIntegerBoxColumn Code="JGIntegerBoxColumn9" ColumnName="boxPartsNum" LabelText="每箱零件数" TableName="bo_akl_EM_productInfo" />
         <JGIntegerBoxColumn Code="JGIntegerBoxColumn10" ColumnName="testNum" LabelText="数量要求" TableName="bo_akl_EM_productInfo" />
         <JGFloatBoxColumn Code="JGFloatBoxColumn4" ColumnName="testInterval" LabelText="测试间隔" TableName="bo_akl_EM_productInfo" />

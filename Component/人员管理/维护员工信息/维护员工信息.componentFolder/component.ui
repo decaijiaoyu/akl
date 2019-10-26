@@ -20,8 +20,8 @@
     <property name="ThemeVar"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGPanel Code="JGPanel3" Height="663" Width="1213" PercentHeight="89.5%" PercentWidth="98.4%" Top="78" Left="20" TabIndex="27" Dock="Fill">
-      <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="1213" Height="663" PercentHeight="100%" PercentWidth="100%" TabIndex="15" Dock="Fill" FetchMode="paged" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" CriteriaStyle="[{&quot;Criteria&quot;:&quot;[bo_akl_base_staffInfo].[sStatus]==\&quot;离职\&quot;&quot;,&quot;ValueForeColor&quot;:&quot;255,0,0&quot;,&quot;ValueBackColor&quot;:null,&quot;ValueFontStyle&quot;:null,&quot;Columns&quot;:[&quot;JGTextBoxColumn12&quot;]}]" OnDoubleClick="JGDataGrid1_OnDoubleClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" TableName="bo_akl_base_staffInfo" ReadOnly="True" ChooseMode="3">
+    <JGPanel Code="JGPanel3" Height="663" Width="1213" PercentHeight="89.5%" PercentWidth="98.4%" Top="78" Left="20" TabIndex="27" Dock="Fill" LayoutType="BorderLayout">
+      <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="1213" Height="663" PercentHeight="100%" PercentWidth="100%" TabIndex="15" Dock="Fill" FetchMode="paged" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:50}" CriteriaStyle="[{&quot;Criteria&quot;:&quot;[bo_akl_base_staffInfo].[sStatus]==\&quot;离职\&quot;&quot;,&quot;ValueForeColor&quot;:&quot;255,0,0&quot;,&quot;ValueBackColor&quot;:null,&quot;ValueFontStyle&quot;:null,&quot;Columns&quot;:[&quot;JGTextBoxColumn12&quot;]}]" RowWidthMode="PercentWidth" OnDoubleClick="JGDataGrid1_OnDoubleClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" TableName="bo_akl_base_staffInfo" ReadOnly="True" ChooseMode="3">
         <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn2" ColumnName="sNo" LabelText="员工号" TableName="bo_akl_base_staffInfo" TextLength="128" Width="100" />
         <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn9" ColumnName="sName" LabelText="员工姓名" TableName="bo_akl_base_staffInfo" TextLength="128" Width="100" />
         <JGTextBoxColumn Code="JGTextBoxColumn10" ColumnName="sSex" LabelText="性别" TableName="bo_akl_base_staffInfo" TextLength="128" Width="100" />
@@ -35,7 +35,7 @@
       </JGDataGrid>
     </JGPanel>
     <JGPanel Code="JGPanel2" Height="663" Width="20" PercentHeight="89.5%" PercentWidth="1.6%" Top="78" TabIndex="26" Dock="Left" BorderWidth="0" />
-    <JGPanel Code="JGPanel1" Height="78" Width="1233" PercentHeight="10.5%" PercentWidth="100%" TabIndex="25" Dock="Top" BorderWidth="0">
+    <JGPanel Code="JGPanel1" Height="78" Width="1233" PercentHeight="10.5%" PercentWidth="100%" TabIndex="25" Dock="Top" BorderWidth="0" LayoutType="BorderLayout">
       <JGButton Code="JGButton2" LabelText="新建" PercentHeight="33.3%" PercentWidth="4.2%" Top="10" Left="20" TabIndex="1" OnClick="JGButton2_OnClick" />
       <JGButton Code="JGButton12" LabelText="查看工人工作记录" Width="126" PercentHeight="33.3%" PercentWidth="10.2%" Top="42" Left="20" TabIndex="10" OnClick="JGButton12_OnClick" />
       <JGLocateBox Code="JGLocateBox1" PercentHeight="35.9%" PercentWidth="17.8%" Top="8" Left="638" TabIndex="8" OnClick="JGLocateBox1_OnKeyDown" />

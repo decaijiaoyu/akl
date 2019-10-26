@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="bo_akl_base_examStaffMaintain" Name="考核人员维护" EntityType="" TableOrQueryCode="bo_akl_base_examStaffMaintain">
+    <Entity Code="bo_akl_base_examStaffMaintain" Name="考核人员维护" IsExtendable="false" EntityType="" TableOrQueryCode="bo_akl_base_examStaffMaintain" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>id</Code>

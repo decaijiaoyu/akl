@@ -8,7 +8,7 @@
   <evaluateRule code="BR_DataBaseDataToInterfaceEntity1" />
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20180828002" lastModifiedTime="2019-01-07 20:23:46">
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
