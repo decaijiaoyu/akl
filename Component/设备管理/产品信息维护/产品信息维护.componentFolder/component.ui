@@ -21,7 +21,7 @@
   </propertys>
   <controls>
     <JGPanel Code="JGPanel3" Height="434" Width="1336" PercentHeight="90.4%" PercentWidth="98.5%" Top="46" Left="20" TabIndex="17" Dock="Fill" LayoutType="BorderLayout">
-      <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="1336" Height="434" PercentHeight="100%" PercentWidth="100%" TabIndex="1" Dock="Fill" FetchMode="paged" RowWidthMode="PercentWidth" OnDoubleClick="JGButton2_OnClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" TableName="bo_akl_EM_productInfo" ReadOnly="True" ChooseMode="3">
+      <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="1336" Height="434" PercentHeight="100%" PercentWidth="100%" TabIndex="1" Dock="Fill" FetchMode="paged" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,100],&quot;DefaultPageSize&quot;:100}" RowWidthMode="PercentWidth" OnDoubleClick="JGButton2_OnClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" TableName="bo_akl_EM_productInfo" ReadOnly="True" ChooseMode="3">
         <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="prNoFor" LabelText="型号简称" TableName="bo_akl_EM_productInfo" />
         <JGTextBoxColumn AllowSort="True" Code="JGTextBoxColumn5" ColumnName="prNo" LabelText="产品型号" TableName="bo_akl_EM_productInfo" />
         <JGFloatBoxColumn Code="JGFloatBoxColumn3" ColumnName="standardWorkingHours" LabelText="标准工时" TableName="bo_akl_EM_productInfo" />

@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<form type="1002" code="lineStart_list_inspector" IsLocked="False" owner="">
+﻿<form type="1002" code="lineStart_list_inspector" IsLocked="False" owner="">
   <propertys>
     <property name="Width"><![CDATA[1170]]></property>
     <property name="Height"><![CDATA[480]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
-    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[lineStart_list_FormLoadAction]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
     <property name="FormClosingAction"><![CDATA[]]></property>
     <property name="BackColor"><![CDATA[]]></property>
@@ -16,10 +16,12 @@
     <property name="WindowState"><![CDATA[Normal]]></property>
     <property name="MaximizeBox"><![CDATA[True]]></property>
     <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGPanel Code="JGPanel3" Dock="Fill" Height="434" Left="20" PercentHeight="90.4%" PercentWidth="98.3%" TabIndex="10" Top="46" Width="1150">
-      <JGDataGrid Code="JGDataGrid1" Dock="Fill" FetchMode="paged" Height="434" LabelText="列表" OnDoubleClick="JGDataGrid1_OnDoubleClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" PercentHeight="100%" PercentWidth="100%" ReadOnly="True" TabIndex="2" TableName="bo_akl_line_start" Width="1150">
+    <JGPanel Code="JGPanel3" Height="434" Width="1150" PercentHeight="90.4%" PercentWidth="98.3%" Top="46" Left="20" TabIndex="10" Dock="Fill" LayoutType="BorderLayout">
+      <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="1150" Height="434" PercentHeight="100%" PercentWidth="100%" TabIndex="2" Dock="Fill" FetchMode="paged" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50],&quot;DefaultPageSize&quot;:50}" RowWidthMode="PercentWidth" OnDoubleClick="JGDataGrid1_OnDoubleClick" OnSelectionChanged="JGDataGrid1_OnSelectionChanged" TableName="bo_akl_line_start" ReadOnly="True">
         <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="startClasses" LabelText="开线班次" TableName="bo_akl_line_start" Width="300" />
         <JGTextBoxColumn Code="JGTextBoxColumn7" ColumnName="startType" LabelText="启动类型" TableName="bo_akl_line_start" />
         <JGTextBoxColumn Code="JGTextBoxColumn8" ColumnName="inspectorCode" LabelText="巡检员员工编号" TableName="bo_akl_line_start" />
@@ -29,12 +31,12 @@
         <JGTextBoxColumn Code="JGTextBoxColumn12" ColumnName="state" LabelText="开线状态" TableName="bo_akl_line_start" Width="187" />
       </JGDataGrid>
     </JGPanel>
-    <JGPanel BorderWidth="0" Code="JGPanel2" Dock="Left" Height="434" PercentHeight="90.4%" PercentWidth="1.7%" TabIndex="9" Top="46" Width="20" />
-    <JGPanel BorderWidth="0" Code="JGPanel1" Dock="Top" Height="46" PercentHeight="9.6%" PercentWidth="100%" TabIndex="8" Width="1170">
-      <JGButton Code="JGButton2" LabelText="查看拉力测试记录" Left="103" OnClick="JGButton2_OnClick" PercentHeight="56.5%" PercentWidth="10.8%" TabIndex="14" Top="10" Width="126" />
-      <JGButton Code="JGButton1" LabelText="重置" Left="1026" OnClick="lineStart_list_FormLoadAction" PercentHeight="56.5%" PercentWidth="4.4%" TabIndex="12" Top="10" />
-      <JGLocateBox Code="JGLocateBox1" Left="800" OnClick="JGLocateBox1_OnClick" PercentHeight="60.9%" PercentWidth="18.8%" TabIndex="11" Top="8" />
-      <JGButton Code="JGButton4" Enabled="False" LabelText="拉力测试" Left="20" OnClick="JGButton4_OnClick" PercentHeight="56.5%" PercentWidth="6.6%" TabIndex="1" Top="10" Width="77" />
+    <JGPanel Code="JGPanel2" Height="434" Width="20" PercentHeight="90.4%" PercentWidth="1.7%" Top="46" TabIndex="9" Dock="Left" BorderWidth="0" />
+    <JGPanel Code="JGPanel1" Height="46" Width="1170" PercentHeight="9.6%" PercentWidth="100%" TabIndex="8" Dock="Top" BorderWidth="0">
+      <JGButton Code="JGButton2" LabelText="查看拉力测试记录" Width="126" PercentHeight="56.5%" PercentWidth="10.8%" Top="10" Left="103" TabIndex="14" OnClick="JGButton2_OnClick" />
+      <JGButton Code="JGButton1" LabelText="重置" PercentHeight="56.5%" PercentWidth="4.4%" Top="10" Left="1026" TabIndex="12" OnClick="lineStart_list_FormLoadAction" />
+      <JGLocateBox Code="JGLocateBox1" PercentHeight="60.9%" PercentWidth="18.8%" Top="8" Left="800" TabIndex="11" OnClick="JGLocateBox1_OnClick" />
+      <JGButton Code="JGButton4" LabelText="拉力测试" Width="77" PercentHeight="56.5%" PercentWidth="6.6%" Top="10" Left="20" TabIndex="1" OnClick="JGButton4_OnClick" Enabled="False" />
     </JGPanel>
   </controls>
   <outputs />
