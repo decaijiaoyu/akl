@@ -103,12 +103,12 @@
         </Column>
         <Column>
           <Code>repairTime</Code>
-          <Name>维修时长(min)</Name>
-          <DataType>number</DataType>
+          <Name>维修时长</Name>
+          <DataType>integer</DataType>
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression></Expression>
+          <Expression />
         </Column>
       </Columns>
       <Events>

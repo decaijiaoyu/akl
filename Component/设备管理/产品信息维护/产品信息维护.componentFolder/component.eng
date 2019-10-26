@@ -43,10 +43,10 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>bo_akl_EM_productInfo</Code>
-      <Top>100</Top>
-      <Left>826</Left>
+      <Top>60</Top>
+      <Left>772</Left>
       <Width>315</Width>
-      <Height>467</Height>
+      <Height>567</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -59,7 +59,7 @@
       <Top>227</Top>
       <Left>347</Left>
       <Width>396</Width>
-      <Height>507</Height>
+      <Height>607</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

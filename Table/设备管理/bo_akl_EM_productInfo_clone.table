@@ -3,7 +3,7 @@
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-07-16 19:57:56]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-09-02 09:09:13]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-10-24 10:51:45]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -98,6 +98,26 @@
       <Remark><![CDATA[]]></Remark>
     </Column>
     <Column id="883fbe1d768d43b28b3d56733e4b396b" code="badGoal" name="不良率季度目标" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="1d5b129c5f8140cb84b79f4af61b070d" code="technologyOee" name="技术损失oee" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="b8a65dcafb9b4f4bae91b47dccc5696d" code="performanceOee" name="性能损失oee" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="6c5393bc3780463d93afeac0c391f523" code="qualityOee" name="质量损失oee" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="0f0f43976f3b4735b2cf8114ed6c99c4" code="changeover" name="换型损失oee" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="cdb42faf7f80421f89a43270c93220f9" code="internalDefect" name="内部缺陷ppm" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>

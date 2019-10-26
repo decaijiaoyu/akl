@@ -3,7 +3,7 @@
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-06-28 15:59:58]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-09-02 09:03:48]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-10-24 20:34:17]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -101,6 +101,26 @@
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
+    <Column id="537f0976d7a149e18ffdbbf34e5aca95" code="technologyOee" name="技术损失oee" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="258220c3a73446c7a8ade5f5cefee802" code="performanceOee" name="性能损失oee" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="3bb739d9b9b342deaf68b44d08ecb18a" code="qualityOee" name="质量损失oee" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="2bd0d9d7659c430083183a6a3597f3e1" code="changeover" name="换型损失oee" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="5e40a1e8d696410793ba3586718f68f2" code="internalDefect" name="内部缺陷ppm" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
   </Columns>
   <Indexes />
   <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
@@ -130,6 +150,11 @@
       <ColumnData code="minCompletionRate"><![CDATA[]]></ColumnData>
       <ColumnData code="price"><![CDATA[]]></ColumnData>
       <ColumnData code="badGoal"><![CDATA[]]></ColumnData>
+      <ColumnData code="technologyOee"><![CDATA[]]></ColumnData>
+      <ColumnData code="performanceOee"><![CDATA[]]></ColumnData>
+      <ColumnData code="qualityOee"><![CDATA[]]></ColumnData>
+      <ColumnData code="changeover"><![CDATA[]]></ColumnData>
+      <ColumnData code="internalDefect"><![CDATA[]]></ColumnData>
     </RowData>
     <RowData>
       <ColumnData code="id"><![CDATA[b4733255ded905f487676f5174062769]]></ColumnData>
@@ -156,6 +181,11 @@
       <ColumnData code="minCompletionRate"><![CDATA[]]></ColumnData>
       <ColumnData code="price"><![CDATA[]]></ColumnData>
       <ColumnData code="badGoal"><![CDATA[]]></ColumnData>
+      <ColumnData code="technologyOee"><![CDATA[]]></ColumnData>
+      <ColumnData code="performanceOee"><![CDATA[]]></ColumnData>
+      <ColumnData code="qualityOee"><![CDATA[]]></ColumnData>
+      <ColumnData code="changeover"><![CDATA[]]></ColumnData>
+      <ColumnData code="internalDefect"><![CDATA[]]></ColumnData>
     </RowData>
   </Data>
 </Table>

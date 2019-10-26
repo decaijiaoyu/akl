@@ -300,8 +300,6 @@
             </sequence>
           </if>
           <evaluateRule code="BR_ModifyDataBaseRecord1" />
-          <evaluateRule code="BR_ShowMessage1" />
-          <evaluateRule code="BR_ShowMessage2" />
           <evaluateRule code="BR_SetEntityVarControlValue3" />
           <evaluateRule code="BR_UpdateRecord2_1" />
           <evaluateRule code="BR_SetEntityVarControlValue1" />
@@ -321,54 +319,12 @@
         <RuleConfig><![CDATA[{"isBackgroudCheck":true,"entityName":"bo_akl_base_productlines","tableName":"bo_akl_base_productlines","isAutoSelectRepeatRow":false,"checkFields":[{"entityFiled":"bo_akl_base_productlines.pNo","tableField":"bo_akl_base_productlines.pNo"}],"dsWhere":null}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><IsBackgroudCheck>true</IsBackgroudCheck><EntityName>bo_akl_base_productlines</EntityName><TableName>bo_akl_base_productlines</TableName><IsAutoSelectRepeatRow>false</IsAutoSelectRepeatRow><Condition><![CDATA[<NewDataSet />]]]]><![CDATA[></Condition></dtMaster><dtCheckFields><EntityField>bo_akl_base_productlines.pNo</EntityField><TableField>bo_akl_base_productlines.pNo</TableField></dtCheckFields></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_createQRCode(生成二维码图片)" isNeedLog="False" isEnabled="True" isDebug="False">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"filter":{"windowInstanceCode":""},"invokeTarget":{"sourceType":"server-ruleSet","invokeType":"local","ruleLocation":"component","componentCode":"","windowCode":"","ruleSetCode":"createQRCode","isParallelism":"False"},"invokeParams":[{"paramCode":"qrCodeInfo","paramType":"expression","paramValue":"[bo_akl_base_productlines].[resetPassword]","paramSource":"","dataFilterType":"","paramFieldMapping":null}],"returnMapping":[{"destType":"ruleSetVariant","dest":"qrCodeSign","srcType":"returnValue","src":"qrCodeSign","updateDestEntityMethod":"","isCleanDestEntityData":false,"destFieldMapping":null,"filterCondition":null,"orderBy":null}]}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtFilter><windowInstanceCode /></dtFilter><dtInvokeTarget><sourceType>server-ruleSet</sourceType><invokeType>local</invokeType><ruleLocation>component</ruleLocation><componentCode /><windowCode /><ruleSetCode>createQRCode</ruleSetCode><isParallelism>False</isParallelism></dtInvokeTarget><dtInvokeParams><paramCode>qrCodeInfo</paramCode><paramType>expression</paramType><paramValue>[bo_akl_base_productlines].[resetPassword]</paramValue><paramSource /><paramSourceDisplayText>表达式</paramSourceDisplayText></dtInvokeParams><dtReturnMapping><destType>ruleSetVariant</destType><dest>qrCodeSign</dest><srcType>returnValue</srcType><src>qrCodeSign</src></dtReturnMapping></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
-      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1_1" instanceName="给界面实体/控件/变量赋值_3" isNeedLog="False" isEnabled="True" isDebug="False">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"bo_akl_base_productlines.qrCodeSign","SourceType":"expression","SourceEntityType":"","Source":"BR_VAR_PARENT.qrCodeSign","entityFieldMapping":null}]}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>bo_akl_base_productlines.qrCodeSign</Target><SourceType>expression</SourceType><SourceEntityType /><Source>BR_VAR_PARENT.qrCodeSign</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
-      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage2_1" instanceName="显示设置的提示信息_1_1" isNeedLog="False" isEnabled="True" isDebug="False">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"\"已存在相同的产线编号！\"","type":"1"}}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"已存在相同的产线编号！"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
-      <RuleInstance ruleCode="CheckRequired" ruleName="必填项检查" instanceCode="BR_CheckRequired1_1" instanceName="必填项检查_1" isNeedLog="False" isEnabled="True" isDebug="False">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"fieldList":[{"field":"bo_akl_base_productlines.pNo","fieldName":"产线编号"},{"field":"bo_akl_base_productlines.equNo","fieldName":"设备编号"},{"field":"bo_akl_base_productlines.belongProjectName","fieldName":"项目名称"}],"type":"0"}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtColumn><Code>bo_akl_base_productlines.pNo</Code><Name>产线编号</Name></dtColumn><dtColumn><Code>bo_akl_base_productlines.equNo</Code><Name>设备编号</Name></dtColumn><dtColumn><Code>bo_akl_base_productlines.belongProjectName</Code><Name>项目名称</Name></dtColumn><dtType><Type>0</Type></dtType></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
       <RuleInstance ruleCode="ModifyDataBaseRecord" ruleName="修改数据库中的记录" instanceCode="BR_ModifyDataBaseRecord1" instanceName="修改数据库中的记录" isNeedLog="False" isEnabled="False" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"dataSourcesMapping":[{"condition":[{"columnType":"1","field":"bo_akl_EM_EquipmentInformation.pNo","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"[bo_akl_base_productlines].[pNo]","valueType":"9"}],"dataMap":[{"colName":"bo_akl_EM_EquipmentInformation.pNo","colValue":"\"\"","valueType":"expression"}],"dataSource":"bo_akl_EM_EquipmentInformation","opperType":"update"}]}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><orderNo>1</orderNo><destTableName>bo_akl_EM_EquipmentInformation</destTableName><opperType>update</opperType><condition><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>bo_akl_EM_EquipmentInformation.pNo</field><fieldType>char</fieldType><leftBracket>(</leftBracket><operation>=</operation><rightBracket>)</rightBracket><value>[bo_akl_base_productlines].[pNo]</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></condition><dtField><![CDATA[<NewDataSet><dtField><destField>bo_akl_EM_EquipmentInformation.pNo</destField><sourceType>expression</sourceType><sourceField>""</sourceField></dtField></NewDataSet>]]]]><![CDATA[></dtField></dtMaster></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
-      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-22 15:29:09">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"[bo_akl_base_productlines].[pNo]","type":"1"}}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>[bo_akl_base_productlines].[pNo]</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
-      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage2" instanceName="显示设置的提示信息_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-22 15:29:56">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"[bo_akl_EM_EquipmentInformation].[id]","type":"1"}}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>[bo_akl_EM_EquipmentInformation].[id]</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
       <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue3" instanceName="给界面实体/控件/变量赋值_2" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
@@ -377,7 +333,7 @@
         <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"bo_akl_EM_EquipmentInformation.pNo","SourceType":"expression","SourceEntityType":"","Source":"[bo_akl_base_productlines].[pNo]","entityFieldMapping":null}]}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>bo_akl_EM_EquipmentInformation.pNo</Target><SourceType>expression</SourceType><SourceEntityType /><Source>[bo_akl_base_productlines].[pNo]</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord2_1" instanceName="保存实体到数据库_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-10-22 15:27:23">
+      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord2_1" instanceName="保存实体到数据库_1" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
@@ -411,6 +367,34 @@
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"SelectionConfirm":"1"}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><SelectionConfirm>1</SelectionConfirm></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="CheckRequired" ruleName="必填项检查" instanceCode="BR_CheckRequired1_1" instanceName="必填项检查_1" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"fieldList":[{"field":"bo_akl_base_productlines.pNo","fieldName":"产线编号"},{"field":"bo_akl_base_productlines.equNo","fieldName":"设备编号"},{"field":"bo_akl_base_productlines.belongProjectName","fieldName":"项目名称"}],"type":"0"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtColumn><Code>bo_akl_base_productlines.pNo</Code><Name>产线编号</Name></dtColumn><dtColumn><Code>bo_akl_base_productlines.equNo</Code><Name>设备编号</Name></dtColumn><dtColumn><Code>bo_akl_base_productlines.belongProjectName</Code><Name>项目名称</Name></dtColumn><dtType><Type>0</Type></dtType></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_createQRCode(生成二维码图片)" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"filter":{"windowInstanceCode":""},"invokeTarget":{"sourceType":"server-ruleSet","invokeType":"local","ruleLocation":"component","componentCode":"","windowCode":"","ruleSetCode":"createQRCode","isParallelism":"False"},"invokeParams":[{"paramCode":"qrCodeInfo","paramType":"expression","paramValue":"[bo_akl_base_productlines].[resetPassword]","paramSource":"","dataFilterType":"","paramFieldMapping":null}],"returnMapping":[{"destType":"ruleSetVariant","dest":"qrCodeSign","srcType":"returnValue","src":"qrCodeSign","updateDestEntityMethod":"","isCleanDestEntityData":false,"destFieldMapping":null,"filterCondition":null,"orderBy":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFilter><windowInstanceCode /></dtFilter><dtInvokeTarget><sourceType>server-ruleSet</sourceType><invokeType>local</invokeType><ruleLocation>component</ruleLocation><componentCode /><windowCode /><ruleSetCode>createQRCode</ruleSetCode><isParallelism>False</isParallelism></dtInvokeTarget><dtInvokeParams><paramCode>qrCodeInfo</paramCode><paramType>expression</paramType><paramValue>[bo_akl_base_productlines].[resetPassword]</paramValue><paramSource /><paramSourceDisplayText>表达式</paramSourceDisplayText></dtInvokeParams><dtReturnMapping><destType>ruleSetVariant</destType><dest>qrCodeSign</dest><srcType>returnValue</srcType><src>qrCodeSign</src></dtReturnMapping></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1_1" instanceName="给界面实体/控件/变量赋值_3" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"bo_akl_base_productlines.qrCodeSign","SourceType":"expression","SourceEntityType":"","Source":"BR_VAR_PARENT.qrCodeSign","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>bo_akl_base_productlines.qrCodeSign</Target><SourceType>expression</SourceType><SourceEntityType /><Source>BR_VAR_PARENT.qrCodeSign</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage2_1" instanceName="显示设置的提示信息_1_1" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"\"已存在相同的产线编号！\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"已存在相同的产线编号！"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
     </RuleInstances>
     <Variables>

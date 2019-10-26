@@ -3,11 +3,11 @@
   <Graphs>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_base_staffInfo</Code>
-      <Top>34</Top>
-      <Left>82</Left>
-      <Width>238</Width>
-      <Height>382</Height>
+      <Code>pxppmYear</Code>
+      <Top>91</Top>
+      <Left>141</Left>
+      <Width>192</Width>
+      <Height>120</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -16,11 +16,24 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_MM_bomInfo</Code>
-      <Top>44</Top>
-      <Left>377</Left>
-      <Width>347</Width>
-      <Height>365</Height>
+      <Code>pxppmMonth</Code>
+      <Top>77</Top>
+      <Left>373</Left>
+      <Width>205</Width>
+      <Height>131</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>pxppmDay</Code>
+      <Top>96</Top>
+      <Left>601</Left>
+      <Width>205</Width>
+      <Height>132</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

@@ -54,7 +54,7 @@
       <Columns>
         <Column>
           <Code>tyear</Code>
-          <Name></Name>
+          <Name>年份</Name>
           <DataType>integer</DataType>
           <Length>50</Length>
           <Precision></Precision>
@@ -63,7 +63,7 @@
         </Column>
         <Column>
           <Code>pNum</Code>
-          <Name></Name>
+          <Name>产量</Name>
           <DataType>integer</DataType>
           <Length>50</Length>
           <Precision></Precision>

@@ -421,6 +421,51 @@
           <DefaultValue></DefaultValue>
           <Expression></Expression>
         </Column>
+        <Column>
+          <Code>technologyOee</Code>
+          <Name>技术损失oee</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+        </Column>
+        <Column>
+          <Code>performanceOee</Code>
+          <Name>性能损失oee</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+        </Column>
+        <Column>
+          <Code>qualityOee</Code>
+          <Name>质量损失oee</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+        </Column>
+        <Column>
+          <Code>changeover</Code>
+          <Name>换型损失oee</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+        </Column>
+        <Column>
+          <Code>internalDefect</Code>
+          <Name>内部缺陷ppm</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+        </Column>
       </Columns>
       <Events>
         <EntityEvent Code="OnLoaded" Value="" />

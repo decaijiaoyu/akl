@@ -30,10 +30,10 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>productNumYear</Code>
-      <Top>161</Top>
-      <Left>732</Left>
+      <Top>86</Top>
+      <Left>640</Left>
       <Width>132</Width>
-      <Height>83</Height>
+      <Height>84</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

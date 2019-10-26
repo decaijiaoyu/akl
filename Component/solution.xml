@@ -858,6 +858,13 @@
               <FileSystemObjectName>拉力测试历史记录</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
+            <NavigationNode>
+              <Code>form77</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>停线补充信息</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
           </SubNodes>
         </NavigationNode>
         <NavigationNode>
@@ -2124,6 +2131,27 @@
               <NodeType>Component</NodeType>
               <FileSystemObjectType>File</FileSystemObjectType>
               <FileSystemObjectName>生产力</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form75</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>设备维修时间</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form76</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>换型时间</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form78</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>OEE</FileSystemObjectName>
               <SubNodes />
             </NavigationNode>
           </SubNodes>

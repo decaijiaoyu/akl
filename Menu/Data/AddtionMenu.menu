@@ -108,4 +108,6 @@
   <menuItem code="baseHour" name="基础小时数" isDisabled="false" type="0" ruleName="" windowCode="form72" parameters="" />
   <menuItem code="productNum" name="产量" isDisabled="false" type="0" ruleName="" windowCode="form73" parameters="" />
   <menuItem code="prolificacy" name="生产力" isDisabled="false" type="0" ruleName="" windowCode="form74" parameters="" />
+  <menuItem code="equRepairTIme" name="设备维修时间" isDisabled="false" type="0" ruleName="" windowCode="form75" parameters="" />
+  <menuItem code="changeoverTime" name="换型时间" isDisabled="false" type="0" ruleName="" windowCode="form76" parameters="" />
 </dir>

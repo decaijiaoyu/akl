@@ -33,8 +33,8 @@
     </JGPanel>
     <JGPanel Code="JGPanel2" Height="594" Width="20" PercentHeight="88.4%" PercentWidth="1.4%" Top="78" TabIndex="15" Dock="Left" BorderWidth="0" />
     <JGPanel Code="JGPanel1" Height="78" Width="1387" PercentHeight="11.6%" PercentWidth="100%" TabIndex="14" Dock="Top" BorderWidth="0">
+      <JGButton Code="JGButton25" LabelText="停线信息" Width="77" PercentHeight="33.3%" PercentWidth="5.6%" Top="42" Left="858" TabIndex="38" OnClick="JGButton25_OnClick_1" />
       <JGButton Code="JGButton26" LabelText="ws" PercentHeight="33.3%" PercentWidth="3.7%" Top="41" Left="1093" TabIndex="38" Visible="False" OnClick="JGButton26_OnClick" />
-      <JGButton Code="JGButton25" LabelText="退" Width="40" PercentHeight="33.3%" PercentWidth="2.9%" Top="42" Left="858" TabIndex="37" Visible="False" OnClick="JGButton25_OnClick" />
       <JGButton Code="JGButton11" LabelText="成功" PercentHeight="33.3%" PercentWidth="3.7%" Top="42" Left="800" TabIndex="36" Visible="False" OnClick="JGButton11_OnClick_1" />
       <JGButton Code="JGButton10" LabelText="测试用别点" Height="25" Width="89" PercentHeight="32.1%" PercentWidth="6.4%" Top="10" Left="1062" TabIndex="35" RemindText="测试" OnClick="JGButton10_OnClick_1" />
       <JGButton Code="JGButton24" LabelText="手动复位" Width="77" PercentHeight="33.3%" PercentWidth="5.6%" Top="42" Left="717" TabIndex="36" Visible="False" OnClick="JGButton24_OnClick" />
@@ -51,7 +51,7 @@
       <JGButton Code="JGButton8" LabelText="重置" PercentHeight="33.3%" PercentWidth="3.7%" Top="10" Left="993" TabIndex="12" OnClick="lineStart_list_FormLoadAction" />
       <JGLocateBox Code="JGLocateBox1" PercentHeight="35.9%" PercentWidth="15.9%" Top="10" Left="767" TabIndex="11" OnClick="JGLocateBox1_OnClick" />
       <JGButton Code="JGButton13" LabelText="休息重启" Width="77" PercentHeight="33.3%" PercentWidth="5.6%" Top="42" Left="327" TabIndex="24" OnClick="JGButton13_OnClick" />
-      <JGButton Code="JGButton12" LabelText="过程样品点检" Width="102" PercentHeight="33.3%" PercentWidth="7.4%" Top="41" Left="902" TabIndex="23" Visible="False" OnClick="JGButton12_OnClick" Enabled="False" />
+      <JGButton Code="JGButton12" LabelText="过程样品点检" Width="54" PercentHeight="33.3%" PercentWidth="3.9%" Top="41" Left="950" TabIndex="23" Visible="False" OnClick="JGButton12_OnClick" Enabled="False" />
       <JGButton Code="JGButton9" LabelText="历史数据" Width="77" PercentHeight="33.3%" PercentWidth="5.6%" Top="10" Left="684" TabIndex="1407" OnClick="JGButton9_OnClick" />
       <JGButton Code="JGButton2" LabelText="开线" Width="59" PercentHeight="33.3%" PercentWidth="4.3%" Top="10" Left="20" TabIndex="1400" OnClick="JGButton2_OnClick" />
       <JGButton Code="JGButton7" LabelText="查看拉力测试" Width="102" PercentHeight="33.3%" PercentWidth="7.4%" Top="10" Left="244" TabIndex="1403" OnClick="JGButton4_OnClick" />
