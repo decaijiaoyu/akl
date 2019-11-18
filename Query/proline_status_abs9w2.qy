@@ -1,9 +1,9 @@
-﻿<Query id="c98bc639d2584423accf6a090b0ff90f" code="proline_status_abs9w2" name="proline_status_abs9w2" type="VSql" APICode="">
+﻿<Query id="c98bc639d2584423accf6a090b0ff90f" code="proline_status_abs9w2" name="proline_status_abs9w2" type="VSql">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2018-08-18 14:45:14]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-11-08 09:01:05]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-08-22 10:06:23]]></ModificationTime>
   <VSql><![CDATA[select
 proLineName,
 proEquName,
@@ -133,7 +133,7 @@ WHERE NAME = 'ABS9W2.Status'
     <Column id="Column_10" code="ratio" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_11" code="productivity" name="" dataType="number" length="" precision="">
+    <Column id="Column_11" code="productivity" name="" dataType="integer" length="" precision="">
       <Remark></Remark>
     </Column>
     <Column id="Column_12" code="productionTime" name="" dataType="number" length="" precision="">

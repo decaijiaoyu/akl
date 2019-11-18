@@ -1,21 +1,11 @@
-﻿<Query id="53de7d09d79b41189c2c89d0e2e0e7a5" code="proline_output" name="产线产出报表" type="VSql" APICode="">
+﻿<Query id="53de7d09d79b41189c2c89d0e2e0e7a5" code="proline_output" name="产线产出报表" type="VSql">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2018-08-21 11:01:21]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-11-07 16:37:03]]></ModificationTime>
-  <VSql><![CDATA[SELECT 
-outp.lineCode,--产线编号
-outp.equCode,  --物料编号
-FORMATDATE(outp.startTime, 'yyyy-mm-dd') AS startTime, --开线时间
-DAYNAME(outp.startTime) AS weekName,  --星期数
-outp.outputNum --产出数量
-FROM Line_output as outp
-left join bo_akl_line_start as sta on sta.id=outp.lineDataId
-left join bo_akl_base_productlines as prd on prd.id=sta.prolineId
-left join bo_akl_base_projectInfo as pji on pji.id=prd.belongProject
-where pji.pName=:jName
-order by startTime,lineCode,equCode
+  <ModificationTime><![CDATA[2019-08-22 10:06:23]]></ModificationTime>
+  <VSql><![CDATA[SELECT lineCode, equCode, FORMATDATE(startTime, 'yyyy-mm-dd') AS startTime, DAYNAME(startTime) AS weekName, outputNum
+FROM Line_output order by lineCode,equCode,startTime
 ]]></VSql>
   <Columns>
     <Column id="Column_0" code="lineCode" name="" dataType="char" length="" precision="">
@@ -34,28 +24,8 @@ order by startTime,lineCode,equCode
       <Remark></Remark>
     </Column>
   </Columns>
-  <Params>
-    <Param code="jName" name="项目名称" dataType="char">
-      <InitValue><![CDATA[]]></InitValue>
-      <Remark><![CDATA[]]></Remark>
-    </Param>
-  </Params>
+  <Params />
   <DataItems>
-    <DataItem type="Table" key="Line_output" tokenIndexes="49" />
-    <DataItem type="Table" key="bo_akl_line_start" tokenIndexes="59" />
-    <DataItem type="Table" key="bo_akl_base_productlines" tokenIndexes="79" />
-    <DataItem type="Table" key="bo_akl_base_projectInfo" tokenIndexes="99" />
-    <DataItem type="TableField" key="Line_output.lineCode" tokenIndexes="4" />
-    <DataItem type="TableField" key="Line_output.equCode" tokenIndexes="9" />
-    <DataItem type="TableField" key="Line_output.startTime" tokenIndexes="17,33" />
-    <DataItem type="TableField" key="Line_output.outputNum" tokenIndexes="44" />
-    <DataItem type="TableField" key="bo_akl_line_start.id" tokenIndexes="69" />
-    <DataItem type="TableField" key="Line_output.lineDataId" tokenIndexes="73" />
-    <DataItem type="TableField" key="bo_akl_base_productlines.id" tokenIndexes="89" />
-    <DataItem type="TableField" key="bo_akl_line_start.prolineId" tokenIndexes="93" />
-    <DataItem type="TableField" key="bo_akl_base_projectInfo.id" tokenIndexes="109" />
-    <DataItem type="TableField" key="bo_akl_base_productlines.belongProject" tokenIndexes="113" />
-    <DataItem type="TableField" key="bo_akl_base_projectInfo.pName" tokenIndexes="119" />
-    <DataItem type="QueryParam" key="jName" tokenIndexes="122" />
+    <DataItem type="Table" key="Line_output" tokenIndexes="35" />
   </DataItems>
 </Query>

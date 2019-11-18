@@ -33,7 +33,7 @@
       <Top>100</Top>
       <Left>858.0001</Left>
       <Width>363</Width>
-      <Height>77</Height>
+      <Height>74</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -46,7 +46,7 @@
       <Top>100</Top>
       <Left>20</Left>
       <Width>363</Width>
-      <Height>77</Height>
+      <Height>74</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>
@@ -125,32 +125,6 @@
       <Left>44</Left>
       <Width>217</Width>
       <Height>115</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
-      <Code>bo_akl_EM_mouldLifeUpkeepSub</Code>
-      <Top>721</Top>
-      <Left>444</Left>
-      <Width>403</Width>
-      <Height>168</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
-      <Code>bo_akl_EM_mouldLifeUpkeepRec</Code>
-      <Top>700</Top>
-      <Left>19.0000916</Left>
-      <Width>403</Width>
-      <Height>207</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

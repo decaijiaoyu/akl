@@ -3,7 +3,7 @@
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-10-19 10:37:56]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-11-06 20:55:26]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-10-21 15:42:19]]></ModificationTime>
   <VSql><![CDATA[SELECT lpl.materialNo, --产品名称
 	ep.standardWorkingHours, --节拍时间(秒)
 	case when ep.OEE>0 and ep.OEE<=100  then ROUND(lpl.csps*100/ep.OEE,0) else 0 end as oeeP, --计划产量oee为100
@@ -11,7 +11,7 @@
 	--ROUND(lpl.csps*100/ep.OEE,0) as oeeP, --计划产量oee为100
 	--ROUND(cassum.allcsps*100/ep.OEE,0) as oecaAp, --计划产量oee为100
 	lpl.csps, --产量
-	cassum.allcsps
+	cassum.allcsps --
 FROM (
 	select hc.materialNo,hc.cpc as csps from baseHour as bh
 	left join 
@@ -82,15 +82,15 @@ LEFT JOIN (
     </Param>
   </Params>
   <DataItems>
-    <DataItem type="Table" key="baseHour" tokenIndexes="145" />
-    <DataItem type="Table" key="bo_akl_MM_inStockInfo" tokenIndexes="189,415" />
-    <DataItem type="Table" key="bo_akl_MM_stockType" tokenIndexes="199,425" />
-    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="221,453" />
-    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="337" />
-    <DataItem type="TableField" key="baseHour.thour" tokenIndexes="325" />
-    <DataItem type="QueryParam" key="pNo" tokenIndexes="258,480" />
-    <DataItem type="QueryParam" key="inputyear" tokenIndexes="270" />
-    <DataItem type="QueryParam" key="inputmonth" tokenIndexes="282" />
-    <DataItem type="QueryParam" key="inputday" tokenIndexes="294" />
+    <DataItem type="Table" key="baseHour" tokenIndexes="146" />
+    <DataItem type="Table" key="bo_akl_MM_inStockInfo" tokenIndexes="190,416" />
+    <DataItem type="Table" key="bo_akl_MM_stockType" tokenIndexes="200,426" />
+    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="222,454" />
+    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="338" />
+    <DataItem type="TableField" key="baseHour.thour" tokenIndexes="326" />
+    <DataItem type="QueryParam" key="pNo" tokenIndexes="259,481" />
+    <DataItem type="QueryParam" key="inputyear" tokenIndexes="271" />
+    <DataItem type="QueryParam" key="inputmonth" tokenIndexes="283" />
+    <DataItem type="QueryParam" key="inputday" tokenIndexes="295" />
   </DataItems>
 </Query>

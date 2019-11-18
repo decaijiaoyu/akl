@@ -3,7 +3,7 @@
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-09-06 22:06:50]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-10-31 10:05:18]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-09-10 10:10:20]]></ModificationTime>
   <VSql><![CDATA[select 
  		mbn.optime,
 		ROUND((SUM(mbn.blpsl)/SUM(mbn.prcount)*1000000),2) as blprate,--周不良品率

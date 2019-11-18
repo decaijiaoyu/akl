@@ -111,7 +111,4 @@
   <menuItem code="equRepairTIme" name="设备维修时间" isDisabled="false" type="0" ruleName="" windowCode="form75" parameters="" />
   <menuItem code="changeoverTime" name="换型时间" isDisabled="false" type="0" ruleName="" windowCode="form76" parameters="" />
   <menuItem code="equOEE" name="整体设备利用率OEE" isDisabled="false" type="0" ruleName="" windowCode="form78" parameters="" />
-  <menuItem code="processTime" name="工序工时" isDisabled="false" type="0" ruleName="" windowCode="form79" parameters="" />
-  <menuItem code="calculatePronum" name="计件产一览表" isDisabled="false" type="0" ruleName="" windowCode="form82" parameters="" />
-  <menuItem code="processTimeReview" name="工序工时审核" isDisabled="false" type="0" ruleName="" windowCode="form791" parameters="" />
 </dir>

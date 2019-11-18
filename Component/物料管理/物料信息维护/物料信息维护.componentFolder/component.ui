@@ -28,7 +28,6 @@
           <JGTextBoxColumn Code="JGTextBoxColumn10" ColumnName="materialName" LabelText="物料名称" TableName="bo_akl_MM_materialInfo" Width="110" />
           <JGTextBoxColumn Code="JGTextBoxColumn11" ColumnName="materialType" LabelText="物料类型" TableName="bo_akl_MM_materialInfo" />
           <JGTextBoxColumn Code="JGTextBoxColumn12" ColumnName="unit" LabelText="单位" TableName="bo_akl_MM_materialInfo" />
-          <JGFloatBoxColumn Code="JGFloatBoxColumn2" ColumnName="price" LabelText="单价" TableName="bo_akl_MM_materialInfo" />
           <JGTextBoxColumn Code="JGTextBoxColumn13" ColumnName="bomUnit" LabelText="BOM单位" TableName="bo_akl_MM_materialInfo" />
           <JGIntegerBoxColumn Code="JGIntegerBoxColumn2" ColumnName="packNum" LabelText="包装数量" TableName="bo_akl_MM_materialInfo" />
           <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="maxSendNum" LabelText="最大允许发料量" TableName="bo_akl_MM_materialInfo" />

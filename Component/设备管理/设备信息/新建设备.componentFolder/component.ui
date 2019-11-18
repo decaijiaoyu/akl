@@ -120,7 +120,7 @@
         <JGIntegerBox Code="JGIntegerBox9" LabelText="寿命警报范围" PercentHeight="4.4%" PercentWidth="25.6%" Top="134" TabIndex="70" TableName="bo_akl_EM_EquipmentInformation" ColumnName="lifeAlarmRange" ToolTip="&quot;月&quot;" IsMust="True" Value="0" />
         <JGFloatBox Code="JGFloatBox1" LabelText="模具重量" PercentHeight="4.4%" PercentWidth="25.6%" Top="11" Left="348" TabIndex="80" TableName="bo_akl_EM_EquipmentInformation" ColumnName="mouldWeight" IsMust="True" />
         <JGLabel Code="JGLabel2" LabelText="保养计划" Width="103" PercentHeight="4.1%" PercentWidth="11.2%" Top="196" TabIndex="307" FontStyle="微软雅黑, 12pt, style=Bold" />
-        <JGIntegerBox Code="JGIntegerBox8" LabelText="上次保养数" PercentHeight="4.4%" PercentWidth="25.6%" Top="235" TabIndex="70" TableName="bo_akl_EM_EquipmentInformation" ColumnName="lastUpkeepNum" ReadOnly="True" Value="0" />
+        <JGIntegerBox Code="JGIntegerBox8" LabelText="上次保养数" PercentHeight="4.4%" PercentWidth="25.6%" Top="235" TabIndex="70" TableName="bo_akl_EM_EquipmentInformation" ColumnName="nextUpkeepNum" ReadOnly="True" Value="0" />
         <JGTextBox Code="JGTextBox20" LabelText="模具尺寸" PercentHeight="4.4%" PercentWidth="25.6%" Top="11" TabIndex="64" TableName="bo_akl_EM_EquipmentInformation" ColumnName="mouldSize" IsMust="True" />
         <JGDateTimePicker Code="JGDateTimePicker4" LabelText="制造日期" PercentHeight="4.4%" PercentWidth="25.6%" Top="11" Left="680" TabIndex="66" TableName="bo_akl_EM_EquipmentInformation" ColumnName="manufactureDate" IsMust="True" />
         <JGIntegerBox Code="JGIntegerBox7" LabelText="寿命" PercentHeight="4.4%" PercentWidth="25.6%" Top="52" Left="348" TabIndex="69" OnValueChanged="JGIntegerBox7_OnValueChanged" TableName="bo_akl_EM_EquipmentInformation" ColumnName="lifetime" IsMust="True" Value="0" />
@@ -129,7 +129,7 @@
         <JGIntegerBox Code="JGIntegerBox4" LabelText="剩余数" PercentHeight="4.4%" PercentWidth="25.6%" Top="93" TabIndex="70" TableName="bo_akl_EM_EquipmentInformation" ColumnName="residueNum" ReadOnly="True" Value="0" />
         <JGBaseDictBox Code="JGBaseDictBox1" LabelText="客户" PercentHeight="4.4%" PercentWidth="25.6%" Top="93" Left="348" TabIndex="67" OpenModuleAction="JGBaseDictBox1_OpenModuleAction" TableName="bo_akl_EM_EquipmentInformation" IDColumnName="clientName" ColumnName="clientName" IsMust="True" />
         <JGTextBox Code="JGTextBox2" LabelText="客户资产" PercentHeight="4.4%" PercentWidth="25.6%" Top="93" Left="680" TabIndex="65" TableName="bo_akl_EM_EquipmentInformation" ColumnName="clientAsset" IsMust="True" />
-        <JGIntegerBox Code="JGIntegerBox3" LabelText="下次保养数" PercentHeight="4.4%" PercentWidth="25.6%" Top="235" Left="680" TabIndex="70" TableName="bo_akl_EM_EquipmentInformation" ColumnName="nextUpkeepNum" ReadOnly="True" Value="0" />
+        <JGIntegerBox Code="JGIntegerBox3" LabelText="下次保养数" PercentHeight="4.4%" PercentWidth="25.6%" Top="235" Left="680" TabIndex="70" TableName="bo_akl_EM_EquipmentInformation" ColumnName="lastUpkeepNum" ReadOnly="True" Value="0" />
         <JGButton Code="JGButton2" LabelText="保存" Width="95" PercentHeight="4.4%" PercentWidth="10.3%" Top="300" Left="401" TabIndex="400" OnClick="saveButton_OnClick" />
       </JGTabPage>
       <JGTabPage Code="JGTabPage5" LabelText="公共设备" TabIndex="80">
