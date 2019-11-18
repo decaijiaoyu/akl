@@ -255,4 +255,20 @@
       </RuleInstance>
     </RuleInstances>
   </Method>
+  <Method Code="JGFloatBox1_OnLeave" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_SetEntityVarControlValue1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1" instanceName="给界面实体/控件/变量赋值" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-11-18 12:45:38">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"bo_akl_EM_maintainRecord.endDate","SourceType":"expression","SourceEntityType":"","Source":"DateAdd([bo_akl_EM_maintainRecord].[startDate],CC.JGFloatBox1.Value*60,\"H\")","entityFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>bo_akl_EM_maintainRecord.endDate</Target><SourceType>expression</SourceType><SourceEntityType /><Source>DateAdd([bo_akl_EM_maintainRecord].[startDate],CC.JGFloatBox1.Value*60,"H")</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
 </Methods>
