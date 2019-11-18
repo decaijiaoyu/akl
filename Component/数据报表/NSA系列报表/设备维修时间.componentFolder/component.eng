@@ -7,6 +7,19 @@
       <Top>149</Top>
       <Left>121</Left>
       <Width>132</Width>
+      <Height>83</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>equRepairYear</Code>
+      <Top>146</Top>
+      <Left>633</Left>
+      <Width>132</Width>
       <Height>84</Height>
       <Background />
       <BorderColor />
@@ -20,20 +33,7 @@
       <Top>108</Top>
       <Left>334</Left>
       <Width>132</Width>
-      <Height>85</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
-      <Code>equRepairYear</Code>
-      <Top>146</Top>
-      <Left>633</Left>
-      <Width>132</Width>
-      <Height>85</Height>
+      <Height>84</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

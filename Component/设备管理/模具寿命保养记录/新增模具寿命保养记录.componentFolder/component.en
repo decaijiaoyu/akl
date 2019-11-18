@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity Code="bo_akl_EM_mouldLifeUpkeepSub" Name="模具寿命保养子表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
+    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_mouldLifeUpkeepSub" Name="模具寿命保养子表" EntityType="" TableOrQueryCode="">
       <Columns>
         <Column>
           <Code>id</Code>
@@ -70,7 +70,7 @@
         <EntityEvent Code="OnLoaded" Value="" />
       </Events>
     </Entity>
-    <Entity Code="bo_akl_EM_mouldLifeUpkeepRec" Name="模具寿命保养记录" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
+    <Entity TemplateId="" TemplateCode="" Code="bo_akl_EM_mouldLifeUpkeepRec" Name="模具寿命保养记录" EntityType="" TableOrQueryCode="">
       <Columns>
         <Column>
           <Code>id</Code>

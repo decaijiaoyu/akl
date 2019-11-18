@@ -20,13 +20,13 @@
     <property name="ThemeVar"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGLabel Code="JGLabel311111" LabelText="利用率损失" Height="28" Width="119" PercentHeight="2.9%" PercentWidth="15%" Top="760" Left="18" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" />
+    <JGLabel Code="JGLabel311111" LabelText="利用率损失" Height="28" Width="119" PercentHeight="2.9%" PercentWidth="15%" Top="760" Left="18" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" OnClick="JGLabel3_OnClick" />
     <JGButton Code="JGButton1" LabelText="保存" Width="74" PercentHeight="2.7%" PercentWidth="9.3%" Top="27" Left="690" TabIndex="26" OnClick="JGButton1_OnClick" />
-    <JGLabel Code="JGLabel31111" LabelText="组织损失(min)" Height="28" Width="152" PercentHeight="2.9%" PercentWidth="19.1%" Top="586" Left="16" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" />
-    <JGLabel Code="JGLabel3111" LabelText="换型损失(min)" Height="28" Width="152" PercentHeight="2.9%" PercentWidth="19.1%" Top="433" Left="18" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" />
-    <JGLabel Code="JGLabel311" LabelText="技术损失(min)" Height="28" Width="152" PercentHeight="2.9%" PercentWidth="19.1%" Top="276" Left="16" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" />
-    <JGLabel Code="JGLabel31" LabelText="质量损失(pcs)" Height="28" Width="152" PercentHeight="2.9%" PercentWidth="19.1%" Top="169" Left="16" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" />
-    <JGLabel Code="JGLabel3" LabelText="计划停机时间和休息(min)" Height="28" Width="252" PercentHeight="2.9%" PercentWidth="31.7%" Top="25" Left="16" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" />
+    <JGLabel Code="JGLabel31111" LabelText="组织损失(min)" Height="28" Width="152" PercentHeight="2.9%" PercentWidth="19.1%" Top="586" Left="16" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" OnClick="JGLabel3_OnClick" />
+    <JGLabel Code="JGLabel3111" LabelText="换型损失(min)" Height="28" Width="152" PercentHeight="2.9%" PercentWidth="19.1%" Top="433" Left="18" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" OnClick="JGLabel3_OnClick" />
+    <JGLabel Code="JGLabel311" LabelText="技术损失(min)" Height="28" Width="152" PercentHeight="2.9%" PercentWidth="19.1%" Top="276" Left="16" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" OnClick="JGLabel3_OnClick" />
+    <JGLabel Code="JGLabel31" LabelText="质量损失(pcs)" Height="28" Width="152" PercentHeight="2.9%" PercentWidth="19.1%" Top="169" Left="16" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" OnClick="JGLabel3_OnClick" />
+    <JGLabel Code="JGLabel3" LabelText="计划停机时间和休息(min)" Height="28" Width="252" PercentHeight="2.9%" PercentWidth="31.7%" Top="25" Left="16" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" OnClick="JGLabel3_OnClick" />
     <JGFloatBox Code="JGFloatBox1" LabelText="用餐" PercentHeight="2.7%" PercentWidth="29.6%" Top="75" Left="16" TabIndex="0" TableName="stopLineStartInput" ColumnName="dining" />
     <JGFloatBox Code="JGFloatBox2" LabelText="TPM" PercentHeight="2.7%" PercentWidth="29.6%" Top="75" Left="273" TabIndex="0" TableName="stopLineStartInput" ColumnName="TPM" />
     <JGFloatBox Code="JGFloatBox3" LabelText="样件生产" PercentHeight="2.7%" PercentWidth="29.6%" Top="75" Left="529" TabIndex="0" TableName="stopLineStartInput" ColumnName="samplePro" />
@@ -54,10 +54,7 @@
   </controls>
   <outputs />
   <inputs>
-    <variable code="lid" name="开线id" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
-      <EnumValue><![CDATA[]]></EnumValue>
-    </variable>
-    <variable code="pNo" name="产品编号" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+    <variable code="lid" name="" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
       <EnumValue><![CDATA[]]></EnumValue>
     </variable>
   </inputs>

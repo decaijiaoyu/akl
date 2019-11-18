@@ -216,7 +216,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression></Expression>
+          <Expression />
         </Column>
         <Column>
           <Code>clearElectrode</Code>
@@ -225,7 +225,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression></Expression>
+          <Expression />
         </Column>
         <Column>
           <Code>powerOff</Code>
@@ -233,15 +233,6 @@
           <DataType>number</DataType>
           <Length>50</Length>
           <Precision>4</Precision>
-          <DefaultValue></DefaultValue>
-          <Expression></Expression>
-        </Column>
-        <Column>
-          <Code>pNo</Code>
-          <Name>产品编号</Name>
-          <DataType>char</DataType>
-          <Length>255</Length>
-          <Precision></Precision>
           <DefaultValue></DefaultValue>
           <Expression />
         </Column>

@@ -4,10 +4,10 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>stopLineStartInput</Code>
-      <Top>11</Top>
-      <Left>257</Left>
+      <Top>93</Top>
+      <Left>177</Left>
       <Width>282</Width>
-      <Height>707</Height>
+      <Height>682</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

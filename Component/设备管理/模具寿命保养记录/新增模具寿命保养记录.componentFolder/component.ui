@@ -6,7 +6,6 @@
     <property name="LayoutType"><![CDATA[BorderLayout]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[form_add_mouldLifeUpkeepRec_FormLoadAction]]></property>
-    <property name="ResizeAction"><![CDATA[]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
     <property name="FormClosingAction"><![CDATA[]]></property>
     <property name="BackColor"><![CDATA[]]></property>
@@ -16,34 +15,32 @@
     <property name="WindowState"><![CDATA[Normal]]></property>
     <property name="MaximizeBox"><![CDATA[True]]></property>
     <property name="RefResources"><![CDATA[]]></property>
-    <property name="ControlDocInfo"><![CDATA[]]></property>
-    <property name="ThemeVar"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGPanel Code="Pnl_Fill" Height="450" Width="638" PercentHeight="100%" PercentWidth="96.4%" Left="10" TabIndex="1" Dock="Fill" BorderStyle="None" LayoutType="BorderLayout">
-      <JGPanel Code="Pnl_Center" Height="426" Width="638" PercentHeight="94.7%" PercentWidth="100%" Top="12" TabIndex="5" Dock="Fill" BorderStyle="None" LayoutType="BorderLayout">
-        <JGIntegerBox Code="JGIntegerBox1" LabelText="当前保养数" PercentHeight="6.1%" PercentWidth="36.8%" Top="119" Left="6" TableName="bo_akl_EM_mouldLifeUpkeepRec" ColumnName="upkeepNum" ReadOnly="True" Value="0" />
-        <JGBaseDictBox Code="JGBaseDictBox1" LabelText="模具编号" PercentHeight="6.1%" PercentWidth="36.8%" Top="55" Left="6" TabIndex="16" OpenModuleAction="JGBaseDictBox1_OpenModuleAction" TableName="bo_akl_EM_mouldLifeUpkeepRec" IDColumnName="equipNo" ColumnName="equipNo" IsMust="True" />
-        <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="625" Height="208" PercentHeight="48.8%" PercentWidth="98%" Top="164" Left="6" TabIndex="14" TableName="bo_akl_EM_mouldLifeUpkeepSub" EditTrigger="click">
+    <JGPanel BorderStyle="None" Code="Pnl_Fill" Dock="Fill" Height="450" LayoutType="BorderLayout" Left="10" PercentHeight="100%" PercentWidth="96.4%" TabIndex="1" Width="638">
+      <JGPanel BorderStyle="None" Code="Pnl_Center" Dock="Fill" Height="426" LayoutType="BorderLayout" PercentHeight="94.7%" PercentWidth="100%" TabIndex="5" Top="12" Width="638">
+        <JGIntegerBox Code="JGIntegerBox1" ColumnName="upkeepNum" LabelText="当前保养数" Left="6" PercentHeight="6.1%" PercentWidth="36.8%" ReadOnly="True" TableName="bo_akl_EM_mouldLifeUpkeepRec" Top="119" Value="0" />
+        <JGBaseDictBox Code="JGBaseDictBox1" ColumnName="equipNo" IDColumnName="equipNo" IsMust="True" LabelText="模具编号" Left="6" OpenModuleAction="JGBaseDictBox1_OpenModuleAction" PercentHeight="6.1%" PercentWidth="36.8%" TabIndex="16" TableName="bo_akl_EM_mouldLifeUpkeepRec" Top="55" />
+        <JGDataGrid Code="JGDataGrid1" EditTrigger="click" Height="208" LabelText="列表" Left="6" PercentHeight="48.8%" PercentWidth="98%" TabIndex="14" TableName="bo_akl_EM_mouldLifeUpkeepSub" Top="164" Width="625">
           <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="checkItem" LabelText="检查项目" ReadOnly="True" TableName="bo_akl_EM_mouldLifeUpkeepSub" Width="150" />
           <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="mouldStatus" LabelText="模具状态" OnCellDoubleClick="JGTextBoxColumn2_OnCellDoubleClick" ReadOnly="True" TableName="bo_akl_EM_mouldLifeUpkeepSub" Width="100" />
           <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="remark" LabelText="备注" TableName="bo_akl_EM_mouldLifeUpkeepSub" Width="140" />
           <JGTextBoxColumn Code="JGImageColumn1" ColumnName="picture" LabelText="图片" OnClick="form_add_mouldLifeUpkeepRec_OnClick" ReadOnly="True" TableName="bo_akl_EM_mouldLifeUpkeepSub" Width="100" />
           <JGTextBoxColumn Code="JGTextBoxColumn4" ColumnName="upload" LabelText="操作" OnClick="JGTextBoxColumn4_OnClick" ReadOnly="True" TableName="bo_akl_EM_mouldLifeUpkeepSub" />
         </JGDataGrid>
-        <JGButton Code="JGButton1" LabelText="保存" PercentHeight="6.1%" PercentWidth="8.2%" Top="388" Left="293" TabIndex="16" OnClick="JGButton1_OnClick" />
-        <JGLabel Code="JGLabel1" LabelText="模具寿命保养记录" Height="43" Width="180" PercentHeight="10.1%" PercentWidth="28.2%" Top="6" Left="227" TabIndex="15" FontStyle="微软雅黑, 15.75pt, style=Bold" />
-        <JGDateTimePicker Code="JGDateTimePicker1" LabelText="保养时间" PercentHeight="6.1%" PercentWidth="36.8%" Top="87" Left="6" TabIndex="0" TableName="bo_akl_EM_mouldLifeUpkeepRec" ColumnName="upkeepDate" DefaultValue="DateTimeNow()" IsMust="True" />
-        <JGTextBox Code="JGTextBox1" LabelText="操作人" PercentHeight="6.1%" PercentWidth="36.8%" Top="87" Left="396" TabIndex="0" TableName="bo_akl_EM_mouldLifeUpkeepRec" ColumnName="operatorName" ReadOnly="True" />
-        <JGTextBox Code="JGTextBox4" LabelText="模具名称" PercentHeight="6.1%" PercentWidth="36.8%" Top="55" Left="396" TabIndex="0" TableName="bo_akl_EM_mouldLifeUpkeepRec" ColumnName="equipName" ReadOnly="True" />
+        <JGButton Code="JGButton1" LabelText="保存" Left="293" OnClick="JGButton1_OnClick" PercentHeight="6.1%" PercentWidth="8.2%" TabIndex="16" Top="388" />
+        <JGLabel Code="JGLabel1" FontStyle="微软雅黑, 15.75pt, style=Bold" Height="43" LabelText="模具寿命保养记录" Left="227" PercentHeight="10.1%" PercentWidth="28.2%" TabIndex="15" Top="6" Width="180" />
+        <JGDateTimePicker Code="JGDateTimePicker1" ColumnName="upkeepDate" DefaultValue="DateTimeNow()" IsMust="True" LabelText="保养时间" Left="6" PercentHeight="6.1%" PercentWidth="36.8%" TabIndex="0" TableName="bo_akl_EM_mouldLifeUpkeepRec" Top="87" />
+        <JGTextBox Code="JGTextBox1" ColumnName="operatorName" LabelText="操作人" Left="396" PercentHeight="6.1%" PercentWidth="36.8%" ReadOnly="True" TabIndex="0" TableName="bo_akl_EM_mouldLifeUpkeepRec" Top="87" />
+        <JGTextBox Code="JGTextBox4" ColumnName="equipName" LabelText="模具名称" Left="396" PercentHeight="6.1%" PercentWidth="36.8%" ReadOnly="True" TabIndex="0" TableName="bo_akl_EM_mouldLifeUpkeepRec" Top="55" />
       </JGPanel>
-      <JGPanel Code="Pnl_Top" Height="12" Width="638" PercentHeight="2.7%" PercentWidth="100%" TabIndex="1" Dock="Top" BorderStyle="None" LayoutType="BorderLayout" />
-      <JGPanel Code="Pnl_Bottom" Height="12" Width="638" PercentHeight="2.7%" PercentWidth="100%" Top="438" TabIndex="1" Dock="Bottom" BorderStyle="None" LayoutType="BorderLayout" />
+      <JGPanel BorderStyle="None" Code="Pnl_Top" Dock="Top" Height="12" LayoutType="BorderLayout" PercentHeight="2.7%" PercentWidth="100%" TabIndex="1" Width="638" />
+      <JGPanel BorderStyle="None" Code="Pnl_Bottom" Dock="Bottom" Height="12" LayoutType="BorderLayout" PercentHeight="2.7%" PercentWidth="100%" TabIndex="1" Top="438" Width="638" />
     </JGPanel>
-    <JGPanel Code="Pnl_Left" Height="450" Width="12" PercentHeight="100%" PercentWidth="1.8%" TabIndex="1" Dock="Left" BorderStyle="None" LayoutType="BorderLayout" />
-    <JGPanel Code="Pnl_Right" Height="450" Width="12" PercentHeight="100%" PercentWidth="1.8%" Left="948" TabIndex="1" Dock="Right" BorderStyle="None" LayoutType="BorderLayout">
-      <JGLabel Code="Lab_Help" LabelText="" Width="12" PercentHeight="5.3%" PercentWidth="100%" TabIndex="7" Dock="Top" FontStyle="微软雅黑, 6.75pt" ToolTip="&quot;帮助&quot;" />
-      <JGLabel Code="Lab_Info" LabelText="" Width="12" PercentHeight="5.3%" PercentWidth="100%" Top="330" TabIndex="6" Dock="Bottom" FontStyle="微软雅黑, 6.75pt" ToolTip="&quot;获取当前窗口信息&quot;" />
+    <JGPanel BorderStyle="None" Code="Pnl_Left" Dock="Left" Height="450" LayoutType="BorderLayout" PercentHeight="100%" PercentWidth="1.8%" TabIndex="1" Width="12" />
+    <JGPanel BorderStyle="None" Code="Pnl_Right" Dock="Right" Height="450" LayoutType="BorderLayout" Left="948" PercentHeight="100%" PercentWidth="1.8%" TabIndex="1" Width="12">
+      <JGLabel Code="Lab_Help" Dock="Top" FontStyle="微软雅黑, 6.75pt" LabelText="" PercentHeight="5.3%" PercentWidth="100%" TabIndex="7" ToolTip="&quot;帮助&quot;" Width="12" />
+      <JGLabel Code="Lab_Info" Dock="Bottom" FontStyle="微软雅黑, 6.75pt" LabelText="" PercentHeight="5.3%" PercentWidth="100%" TabIndex="6" ToolTip="&quot;获取当前窗口信息&quot;" Top="330" Width="12" />
     </JGPanel>
   </controls>
   <outputs />

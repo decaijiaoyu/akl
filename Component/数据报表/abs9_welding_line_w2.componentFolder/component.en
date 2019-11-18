@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity Code="abs9_welding_line" Name="abs9_welding_line" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
+    <Entity TemplateId="" TemplateCode="" Code="abs9_welding_line" Name="abs9_welding_line" EntityType="" TableOrQueryCode="">
       <Columns>
         <Column>
           <Code>lineCode</Code>

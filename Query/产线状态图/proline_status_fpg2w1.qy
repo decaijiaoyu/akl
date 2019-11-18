@@ -1,9 +1,9 @@
-﻿<Query id="bc7d59a1e76b4e92a76b91cefcf7dcc8" code="proline_status_fpg2w1" name="_fpg2w1" type="VSql" APICode="">
+﻿<Query id="bc7d59a1e76b4e92a76b91cefcf7dcc8" code="proline_status_fpg2w1" name="_fpg2w1" type="VSql">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2019-05-16 13:30:46]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-11-06 17:31:59]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-08-22 10:06:26]]></ModificationTime>
   <VSql><![CDATA[select
 proLineName,
 proEquName,
@@ -25,7 +25,7 @@ standardProductivity
 from (
 SELECT 
 'FPG2W1' AS proLineName,
-(SELECT value FROM Exchange WHERE NAME = 'FPG2W1.PD_Number')AS proEquName,
+(SELECT value FROM Exchange WHERE NAME = 'FPG2W1.PD_Number') AS proEquName,
 '0' AS productionNum, --投产数
 (SELECT value FROM Exchange WHERE NAME = 'FPG2W1.Product_count') AS acceptNum,--合格数
 (SELECT SUM(Value) AS AA
@@ -133,7 +133,7 @@ WHERE NAME = 'FPG2W1.Status'
     <Column id="Column_10" code="ratio" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_11" code="productivity" name="" dataType="number" length="" precision="">
+    <Column id="Column_11" code="productivity" name="" dataType="integer" length="" precision="">
       <Remark></Remark>
     </Column>
     <Column id="Column_12" code="productionTime" name="" dataType="number" length="" precision="">
@@ -148,14 +148,14 @@ WHERE NAME = 'FPG2W1.Status'
   </Columns>
   <Params />
   <DataItems>
-    <DataItem type="Table" key="Exchange" tokenIndexes="231,261,291,382,939" />
-    <DataItem type="Table" key="bo_akl_line_start_user" tokenIndexes="413" />
-    <DataItem type="Table" key="bo_akl_line_start" tokenIndexes="429,508,586,658,764,848" />
-    <DataItem type="Table" key="bo_akl_line_sample" tokenIndexes="492" />
-    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="570,642" />
-    <DataItem type="Table" key="bo_akl_base_productiontime" tokenIndexes="746" />
-    <DataItem type="Table" key="bo_akl_base_productlines" tokenIndexes="772" />
-    <DataItem type="Table" key="bo_akl_line_operation" tokenIndexes="865" />
-    <DataItem type="Query" key="a" tokenIndexes="950" />
+    <DataItem type="Table" key="Exchange" tokenIndexes="231,262,292,383,940" />
+    <DataItem type="Table" key="bo_akl_line_start_user" tokenIndexes="414" />
+    <DataItem type="Table" key="bo_akl_line_start" tokenIndexes="430,509,587,659,765,849" />
+    <DataItem type="Table" key="bo_akl_line_sample" tokenIndexes="493" />
+    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="571,643" />
+    <DataItem type="Table" key="bo_akl_base_productiontime" tokenIndexes="747" />
+    <DataItem type="Table" key="bo_akl_base_productlines" tokenIndexes="773" />
+    <DataItem type="Table" key="bo_akl_line_operation" tokenIndexes="866" />
+    <DataItem type="Query" key="a" tokenIndexes="951" />
   </DataItems>
 </Query>

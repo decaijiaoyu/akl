@@ -1322,13 +1322,6 @@
           <FileSystemObjectName>baseHour</FileSystemObjectName>
           <SubNodes />
         </NavigationNode>
-        <NavigationNode>
-          <Code>bo_akl_base_processTimes</Code>
-          <NodeType>Table</NodeType>
-          <FileSystemObjectType>File</FileSystemObjectType>
-          <FileSystemObjectName>bo_akl_base_processTimes</FileSystemObjectName>
-          <SubNodes />
-        </NavigationNode>
       </SubNodes>
     </NavigationNode>
   </Nodes>

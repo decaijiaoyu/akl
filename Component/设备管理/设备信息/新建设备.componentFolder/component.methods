@@ -1410,14 +1410,14 @@
   <evaluateRule code="BR_ExecuteRuleSet1" />
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1" instanceName="给剩余数和上次次保养数赋值" isNeedLog="False" isEnabled="True" isDebug="False">
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1" instanceName="给剩余数和上次次保养数赋值" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20180828002" lastModifiedTime="2018-11-28 15:22:47">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[IsNull([bo_akl_EM_EquipmentInformation].[hillNum],False)<>False && IsNull([bo_akl_EM_EquipmentInformation].[lifetime],False)<>False&&IsNull([bo_akl_EM_EquipmentInformation].[hasProducedNum],False)<>False]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"bo_akl_EM_EquipmentInformation.residueNum","SourceType":"expression","SourceEntityType":"","Source":"[bo_akl_EM_EquipmentInformation].[lifetime]*[bo_akl_EM_EquipmentInformation].[hillNum]-[bo_akl_EM_EquipmentInformation].[hasProducedNum]","entityFieldMapping":null},{"TargetType":"3","Target":"bo_akl_EM_EquipmentInformation.lastUpkeepNum","SourceType":"expression","SourceEntityType":"","Source":"[bo_akl_EM_EquipmentInformation].[residueNum]","entityFieldMapping":null}]}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>bo_akl_EM_EquipmentInformation.residueNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>[bo_akl_EM_EquipmentInformation].[lifetime]*[bo_akl_EM_EquipmentInformation].[hillNum]-[bo_akl_EM_EquipmentInformation].[hasProducedNum]</Source></dtFieldMap><dtFieldMap><TargetType>3</TargetType><Target>bo_akl_EM_EquipmentInformation.lastUpkeepNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>[bo_akl_EM_EquipmentInformation].[residueNum]</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
-      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_JGIntegerBox10_OnValueChanged(给下次保养数赋值)" isNeedLog="False" isEnabled="False" isDebug="False">
+      <RuleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="BR_ExecuteRuleSet1" instanceName="执行方法_JGIntegerBox10_OnValueChanged(给下次保养数赋值)" isNeedLog="False" isEnabled="True" isDebug="False">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
@@ -1431,22 +1431,14 @@
     <Remark><![CDATA[]]></Remark>
     <MethodChain><![CDATA[
   <evaluateRule code="BR_SetEntityVarControlValue1" />
-  <evaluateRule code="BR_SetEntityVarControlValue1_1" />
 ]]></MethodChain>
     <RuleInstances>
-      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1" instanceName="给下次保养数赋值" isNeedLog="False" isEnabled="False" isDebug="False">
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1" instanceName="给下次保养数赋值" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20180828002" lastModifiedTime="2018-11-28 15:26:55">
         <Remark><![CDATA[]]></Remark>
         <Condition><![CDATA[IsNull([bo_akl_EM_EquipmentInformation].[residueNum],False)<>False&&IsNull([bo_akl_EM_EquipmentInformation].[upkeepInterval],False)<>False]]></Condition>
         <DebugCondition><![CDATA[]]></DebugCondition>
         <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"bo_akl_EM_EquipmentInformation.nextUpkeepNum","SourceType":"expression","SourceEntityType":"","Source":"[bo_akl_EM_EquipmentInformation].[lastUpkeepNum]-[bo_akl_EM_EquipmentInformation].[upkeepInterval]","entityFieldMapping":null}]}]]></RuleConfig>
         <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>bo_akl_EM_EquipmentInformation.nextUpkeepNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>[bo_akl_EM_EquipmentInformation].[lastUpkeepNum]-[bo_akl_EM_EquipmentInformation].[upkeepInterval]</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
-      </RuleInstance>
-      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue1_1" instanceName="给上下次保养数赋值_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="user_20190304004" lastModifiedTime="2019-11-08 15:07:26">
-        <Remark><![CDATA[]]></Remark>
-        <Condition><![CDATA[IsNull([bo_akl_EM_EquipmentInformation].[residueNum],False)<>False&&IsNull([bo_akl_EM_EquipmentInformation].[upkeepInterval],False)<>False]]></Condition>
-        <DebugCondition><![CDATA[]]></DebugCondition>
-        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"3","Target":"bo_akl_EM_EquipmentInformation.nextUpkeepNum","SourceType":"expression","SourceEntityType":"","Source":"[bo_akl_EM_EquipmentInformation].[upkeepInterval]","entityFieldMapping":null},{"TargetType":"3","Target":"bo_akl_EM_EquipmentInformation.lastUpkeepNum","SourceType":"expression","SourceEntityType":"","Source":"0","entityFieldMapping":null}]}]]></RuleConfig>
-        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>3</TargetType><Target>bo_akl_EM_EquipmentInformation.nextUpkeepNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>[bo_akl_EM_EquipmentInformation].[upkeepInterval]</Source></dtFieldMap><dtFieldMap><TargetType>3</TargetType><Target>bo_akl_EM_EquipmentInformation.lastUpkeepNum</Target><SourceType>expression</SourceType><SourceEntityType /><Source>0</Source></dtFieldMap></dsConfig>]]></XmlRuleConfig>
       </RuleInstance>
     </RuleInstances>
   </Method>

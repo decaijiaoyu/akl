@@ -4,9 +4,9 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>bo_akl_base_productlines</Code>
-      <Top>92</Top>
-      <Left>54</Left>
-      <Width>328</Width>
+      <Top>127</Top>
+      <Left>106</Left>
+      <Width>208</Width>
       <Height>382</Height>
       <Background />
       <BorderColor />
@@ -17,9 +17,9 @@
     <GraphNodeFormat>
       <Type>Entity</Type>
       <Code>bo_akl_EM_productInfo</Code>
-      <Top>74</Top>
-      <Left>402</Left>
-      <Width>331</Width>
+      <Top>107</Top>
+      <Left>416</Left>
+      <Width>168</Width>
       <Height>482</Height>
       <Background />
       <BorderColor />
