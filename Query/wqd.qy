@@ -3,51 +3,104 @@
   <Creator><![CDATA[user_20190304004]]></Creator>
   <CreationTime><![CDATA[2019-10-18 09:57:20]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-10-18 10:13:45]]></ModificationTime>
-  <VSql><![CDATA[SELECT b.materialNo,b.useNum,b.remark,b.PID,b.OrderNo,
-	b.InnerCode,b.IsLeaf,b.id,m.materialType from bo_akl_MM_bomInfo AS b left join bo_akl_MM_materialInfo AS m 
-	ON b.materialNo=m.materialNo  where   b.materialNo='wl_04']]></VSql>
+  <ModificationTime><![CDATA[2019-11-07 12:36:33]]></ModificationTime>
+  <VSql><![CDATA[
+select 
+	md.tyear, --日期day
+	sopena.opdiff, --生产时间h
+	proNums.cpc, --产量
+	suss.dsa, --人工数量
+	case when CAST(sopena.opdiff,'varchar')='' or CAST(suss.dsa,'varchar')=''
+	then 0 else ROUND(proNums.cpc/sopena.opdiff/suss.dsa,2) end as scl --生产力
+	from baseYear as md
+	left join(
+				select opema.tyear,--月份
+				SUM(opema.diffhour) as opdiff --生产时间h
+				from (
+				select 
+				ROUND(CAST(DATEDIFF(MIN(opert.opTime),
+				MAX(opert.opTime),'minute'),'DECIMAL',10,2)/60,2) as diffhour,
+				opert.lid,
+				YEAR(MIN(opert.opTime))as tyear
+				from bo_akl_line_operation as opert 
+				right join bo_akl_line_start as lineSt on lineSt.id=opert.lid
+				group by opert.lid
+				)as opema group by opema.tyear
+	)as sopena on sopena.tyear=md.tyear
+	left join(
+			select md.tyear,edp.cpc from baseYear as md
+			left join(
+			SELECT 
+			YEAR(sto.operateTime) as optime,
+			sum(sto.inStockNum)  AS cpc
+			FROM bo_akl_MM_inStockInfo AS sto
+			LEFT JOIN bo_akl_MM_stockType AS st ON st.id = sto.stockTypeId
+			LEFT join bo_akl_MM_materialInfo AS mat ON sto.materialId = mat.id
+			 left join bo_akl_EM_productInfo as ep on mat.materialNo=ep.prNo
+			 where
+			st.stockType = '成品仓' 
+			--时间
+			group by YEAR(sto.operateTime)
+			) as edp
+			on edp.optime=md.tyear
+	)as proNums on md.tyear=proNums.tyear
+	left join (
+			select md.tyear,sus.dsa from baseYear as md
+			left JOIN(
+			select YEAR(sline.startTime) as tyear,COUNT(*) as dsa from 
+			bo_akl_line_start_user as suser
+			left join bo_akl_line_start as  sline on suser.lid=sline.id
+			group by YEAR(sline.startTime)
+			) as sus on sus.tyear=md.tyear
+		) as suss on suss.tyear=md.tyear 
+		order by md.tyear asc
+]]></VSql>
   <Columns>
-    <Column id="Column_0" code="materialNo" name="" dataType="char" length="" precision="">
+    <Column id="Column_0" code="tyear" name="" dataType="integer" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_1" code="useNum" name="" dataType="number" length="" precision="">
+    <Column id="Column_1" code="opdiff" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_2" code="remark" name="" dataType="char" length="" precision="">
+    <Column id="Column_2" code="cpc" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_3" code="PID" name="" dataType="char" length="" precision="">
+    <Column id="Column_3" code="dsa" name="" dataType="integer" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_4" code="OrderNo" name="" dataType="integer" length="" precision="">
-      <Remark></Remark>
-    </Column>
-    <Column id="Column_5" code="InnerCode" name="" dataType="char" length="" precision="">
-      <Remark></Remark>
-    </Column>
-    <Column id="Column_6" code="IsLeaf" name="" dataType="boolean" length="" precision="">
-      <Remark></Remark>
-    </Column>
-    <Column id="Column_7" code="id" name="" dataType="char" length="" precision="">
-      <Remark></Remark>
-    </Column>
-    <Column id="Column_8" code="materialType" name="" dataType="char" length="" precision="">
+    <Column id="Column_4" code="scl" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
   </Columns>
-  <Params />
+  <Params>
+    <Param code="inputYear" name="" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="inputMonth" name="" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+    <Param code="prlineNo" name="" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+  </Params>
   <DataItems>
-    <DataItem type="Table" key="bo_akl_MM_bomInfo" tokenIndexes="41" />
-    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="51" />
-    <DataItem type="Query" key="b" tokenIndexes="2,6,10,14,18,23,27,31,45,59,69" />
-    <DataItem type="QueryField" key="b.materialNo" tokenIndexes="4,61,71" />
-    <DataItem type="QueryField" key="b.useNum" tokenIndexes="8" />
-    <DataItem type="QueryField" key="b.remark" tokenIndexes="12" />
-    <DataItem type="QueryField" key="b.PID" tokenIndexes="16" />
-    <DataItem type="QueryField" key="b.OrderNo" tokenIndexes="20" />
-    <DataItem type="QueryField" key="b.InnerCode" tokenIndexes="25" />
-    <DataItem type="QueryField" key="b.IsLeaf" tokenIndexes="29" />
-    <DataItem type="QueryField" key="b.id" tokenIndexes="33" />
+    <DataItem type="Table" key="baseYear" tokenIndexes="92,270,450" />
+    <DataItem type="Table" key="bo_akl_line_operation" tokenIndexes="191" />
+    <DataItem type="Table" key="bo_akl_line_start" tokenIndexes="201,495" />
+    <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="362" />
+    <DataItem type="Table" key="bo_akl_line_start_user" tokenIndexes="485" />
+    <DataItem type="Table" key="bo_akl_MM_inStockInfo" tokenIndexes="308" />
+    <DataItem type="Table" key="bo_akl_MM_stockType" tokenIndexes="318" />
+    <DataItem type="Table" key="bo_akl_MM_materialInfo" tokenIndexes="340" />
+    <DataItem type="TableField" key="baseYear.tyear" tokenIndexes="5,251,262,415,426,442,536,552,560" />
+    <DataItem type="TableField" key="bo_akl_line_operation.opTime" tokenIndexes="140,148,182" />
+    <DataItem type="TableField" key="bo_akl_line_operation.lid" tokenIndexes="173,215,223" />
+    <DataItem type="TableField" key="bo_akl_line_start.id" tokenIndexes="211,509" />
+    <DataItem type="TableField" key="bo_akl_EM_productInfo.prNo" tokenIndexes="376" />
+    <DataItem type="TableField" key="bo_akl_line_start.startTime" tokenIndexes="467,519" />
+    <DataItem type="TableField" key="bo_akl_line_start_user.lid" tokenIndexes="505" />
   </DataItems>
 </Query>

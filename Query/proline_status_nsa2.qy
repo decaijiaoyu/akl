@@ -1,9 +1,9 @@
-﻿<Query id="03820eca8fc54b7ca0f1f2eb32061c46" code="proline_status_nsa2" name="" type="VSql">
+﻿<Query id="03820eca8fc54b7ca0f1f2eb32061c46" code="proline_status_nsa2" name="" type="VSql" APICode="">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2018-08-18 15:12:55]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-08-22 10:06:27]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-11-06 17:37:12]]></ModificationTime>
   <VSql><![CDATA[select
 proLineName,
 proEquName,
@@ -133,7 +133,7 @@ WHERE NAME = 'NSAW2.Status'
     <Column id="Column_10" code="ratio" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_11" code="productivity" name="" dataType="integer" length="" precision="">
+    <Column id="Column_11" code="productivity" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
     <Column id="Column_12" code="productionTime" name="" dataType="number" length="" precision="">

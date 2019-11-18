@@ -1,0 +1,65 @@
+﻿<form type="1002" code="form80" isEntendable="false" owner="15118148314" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[772]]></property>
+    <property name="Height"><![CDATA[1159]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form80_FormLoadAction]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[新增工序工时]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton21" LabelText="对比" Width="72" PercentHeight="2.2%" PercentWidth="9.3%" Top="825" Left="82" TabIndex="25" OnClick="JGButton2_OnClick_1" />
+    <JGLabel Code="JGLabel3111" LabelText="预期的数据与新工时对比" Height="28" Width="239" PercentHeight="2.4%" PercentWidth="31%" Top="675" Left="82" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" OnClick="JGLabel3_OnClick" />
+    <JGButton Code="JGButton2" LabelText="对比" Width="72" PercentHeight="2.2%" PercentWidth="9.3%" Top="582" Left="82" TabIndex="25" OnClick="JGButton2_OnClick" />
+    <JGButton Code="JGButton11" LabelText="保存" Width="83" PercentHeight="2.2%" PercentWidth="10.8%" Top="25" Left="617" TabIndex="23" OnClick="JGButton1_OnClick" />
+    <JGButton Code="JGButton1" LabelText="保存" Width="69" PercentHeight="2.2%" PercentWidth="8.9%" Top="1040" Left="328" TabIndex="23" OnClick="JGButton1_OnClick" />
+    <JGBaseDictBox Code="JGBaseDictBox1" LabelText="产品编号" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="70" Left="82" TabIndex="23" OpenModuleAction="JGBaseDictBox1_OpenModuleAction" TableName="bo_akl_base_processTimes" IDColumnName="pNo" ColumnName="pNo" />
+    <JGLabel Code="JGLabel311" LabelText="旧的设置" Height="28" Width="121" PercentHeight="2.4%" PercentWidth="15.7%" Top="328" Left="82" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" OnClick="JGLabel3_OnClick" />
+    <JGLabel Code="JGLabel31" LabelText="现有的设置" Height="28" Width="128" PercentHeight="2.4%" PercentWidth="16.6%" Top="25" Left="82" TabIndex="1" FontStyle="微软雅黑, 15pt, style=Bold" TextAlign="Right" OnClick="JGLabel3_OnClick" />
+    <JGTextBox Code="JGTextBox2" LabelText="描述" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="70" Left="438" TabIndex="0" TableName="bo_akl_base_processTimes" ColumnName="description" />
+    <JGFloatBox Code="JGFloatBox1" LabelText="标准计件人数" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="112" Left="82" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="standardCount" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox2" LabelText="标准工时/分钟*100件" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="112" Left="438" TabIndex="0" LabelWidth="133" OnValueChanged="JGFloatBox2_OnValueChanged" TableName="bo_akl_base_processTimes" ColumnName="standardWorkTimeMM" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox3" LabelText="标准工时/秒*件" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="156" Left="82" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="standardWorkTimeSS" />
+    <JGFloatBox Code="JGFloatBox4" LabelText="标准工作时间/小时" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="156" Left="438" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="stardardWorkTimeHour" />
+    <JGFloatBox Code="JGFloatBox5" LabelText="标准计件产出/pcs" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="202" Left="82" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="stardardCoountPro" />
+    <JGFloatBox Code="JGFloatBox6" LabelText="标准生产力/每小时*每人*pcs" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="202" Left="438" TabIndex="0" LabelWidth="166" TableName="bo_akl_base_processTimes" ColumnName="starderdProHour" />
+    <JGFloatBox Code="JGFloatBox7" LabelText="单价参数/RMB" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="247" Left="82" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="parameterPrice" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox8" LabelText="产品单价/pcs" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="247" Left="438" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="productPrice" />
+    <JGFloatBox Code="JGFloatBox9" LabelText="新标准计件人数" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="391" Left="82" TabIndex="0" OnEnter="JGFloatBox9_OnEnter" TableName="bo_akl_base_processTimes" ColumnName="standardCountNew" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox10" LabelText="新工时/分钟*100件" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="391" Left="438" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="standardWorkTimeMMNew" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox11" LabelText="新标准工时/秒*件" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="439" Left="82" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="standardWorkTimeSSNew" />
+    <JGFloatBox Code="JGFloatBox12" LabelText="新标准工作时间/小时" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="439" Left="438" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="stardardWorkTimeHourNew" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox13" LabelText="新标准计件产出/pcs" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="490" Left="82" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="stardardCoountProNew" />
+    <JGFloatBox Code="JGFloatBox14" LabelText="新标准生产力/每小时*每人*pcs" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="490" Left="438" TabIndex="0" LabelWidth="186" TableName="bo_akl_base_processTimes" ColumnName="starderdProHourNew" />
+    <JGFloatBox Code="JGFloatBox15" LabelText="新单价参数/RMB" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="534" Left="82" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="parameterPriceNew" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox16" LabelText="新产品单价/pcs" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="534" Left="438" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="productPriceNew" />
+    <JGFloatBox Code="JGFloatBox17" LabelText="标准生产力提升百分比(%)" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="629" Left="82" TabIndex="0" LabelWidth="166" TableName="bo_akl_base_processTimes" ColumnName="stardardProIncrease" />
+    <JGFloatBox Code="JGFloatBox18" LabelText="标准产出提升百分比/pcs(%)" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="629" Left="438" TabIndex="0" LabelWidth="166" TableName="bo_akl_base_processTimes" ColumnName="stardarOutputIncrease" />
+    <JGFloatBox Code="JGFloatBox19" LabelText="预计月度人均超产奖" Width="271" PercentHeight="2.2%" PercentWidth="35.1%" Top="922" Left="82" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="expectedBonus" />
+    <JGIntegerBox Code="JGIntegerBox1" LabelText="预期每班计件人数" Width="271" PercentHeight="2.2%" PercentWidth="35.1%" Top="725" Left="82" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="expectedCount" IsMust="True" Value="0" />
+    <JGFloatBox Code="JGFloatBox20" LabelText="预期每班工作时间/小时" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="725" Left="438" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="expectedWorkTimeHour" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox21" LabelText="预期月工作天数" Width="271" PercentHeight="2.2%" PercentWidth="35.1%" Top="775" Left="82" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="expectedWrokDay" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox22" LabelText="预期每班生产数量/pcs" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="775" Left="438" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="expectedProNum" IsMust="True" />
+    <JGFloatBox Code="JGFloatBox23" LabelText="预期每班生产力/每小时*每人*pcs" Width="271" PercentHeight="2.2%" PercentWidth="35.1%" Top="873" Left="82" TabIndex="0" LabelWidth="200" TableName="bo_akl_base_processTimes" ColumnName="expectedProductive" />
+    <JGTextBox Code="JGTextBox1" LabelText="预期每班生产效率" Width="262" PercentHeight="2.2%" PercentWidth="33.9%" Top="873" Left="438" TabIndex="0" LabelWidth="133" TableName="bo_akl_base_processTimes" ColumnName="expectedEfficiency" />
+  </controls>
+  <outputs />
+  <inputs>
+    <variable code="id" name="" fieldType="char" defaultValue="" description="" isRestore="false" isPrivate="false">
+      <EnumValue><![CDATA[]]></EnumValue>
+    </variable>
+  </inputs>
+  <remark><![CDATA[]]></remark>
+</form>

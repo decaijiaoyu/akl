@@ -1,0 +1,52 @@
+﻿<form type="1002" code="form791" isEntendable="false" owner="15118148314" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[1103]]></property>
+    <property name="Height"><![CDATA[516]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[BorderLayout]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form79_FormLoadAction]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[工序工时维护审核]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton2" LabelText="审核" Width="64" PercentHeight="5%" PercentWidth="5.8%" Top="22" Left="313" TabIndex="22" OnClick="JGButton2_OnClick_1" />
+    <JGButton Code="JGButton1" LabelText="查询" PercentHeight="5%" PercentWidth="4.7%" Top="22" Left="255" TabIndex="21" OnClick="JGButton1_OnClick" />
+    <JGTextBox Code="JGTextBox1" LabelText="产品编号" PercentHeight="5%" PercentWidth="21.3%" Top="22" Left="4" TabIndex="20" />
+    <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="1063" Height="455" PercentHeight="88.2%" PercentWidth="96.4%" Top="54" Left="3" TabIndex="0" FetchMode="paged" PageInfo="{&quot;PageList&quot;:[10,20,30,40,50,15],&quot;DefaultPageSize&quot;:15}" RowNumberFieldWidth="30" RowWidthMode="PercentWidth" OnDoubleClick="JGDataGrid1_OnDoubleClick" TableName="bo_akl_base_processTimes">
+      <JGTextBoxColumn Code="JGTextBoxColumn2" DefaultValue="&quot;未审核&quot;" LabelText="审核状态" TableName="bo_akl_base_processTimes" Width="73" />
+      <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="pNo" LabelText="产品编号" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn1" ColumnName="standardCount" LabelText="标准计件人数" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn2" ColumnName="standardWorkTimeMM" LabelText="标准工时" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn3" ColumnName="standardWorkTimeSS" LabelText="标准工时" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn4" ColumnName="stardardWorkTimeHour" LabelText="标准工作时间" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn5" ColumnName="stardardCoountPro" LabelText="标准计件产出" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn6" ColumnName="starderdProHour" LabelText="标准生产力" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn7" ColumnName="parameterPrice" LabelText="单价参数" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn8" ColumnName="productPrice" LabelText="产品单价" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn9" ColumnName="standardCountNew" LabelText="新标准计件人数" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn10" ColumnName="standardWorkTimeMMNew" LabelText="新工时" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn11" ColumnName="standardWorkTimeSSNew" LabelText="新标准工时" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn12" ColumnName="stardardWorkTimeHourNew" LabelText="新标准工作时间" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn13" ColumnName="stardardCoountProNew" LabelText="新标准计件产出" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn14" ColumnName="starderdProHourNew" LabelText="新标准生产力" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn15" ColumnName="parameterPriceNew" LabelText="新单价参数" TableName="bo_akl_base_processTimes" Width="84" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn16" ColumnName="productPriceNew" LabelText="新产品单价" TableName="bo_akl_base_processTimes" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn17" ColumnName="stardardProIncrease" LabelText="标准生产力提升百分比" TableName="bo_akl_base_processTimes" Width="135" />
+      <JGFloatBoxColumn Code="JGFloatBoxColumn18" ColumnName="stardarOutputIncrease" LabelText="标准产出提升百分比" TableName="bo_akl_base_processTimes" Width="148" />
+    </JGDataGrid>
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

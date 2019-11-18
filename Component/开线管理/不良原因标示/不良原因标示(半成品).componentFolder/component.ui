@@ -25,7 +25,7 @@
         <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="1090" Height="438" PercentHeight="100%" PercentWidth="100%" TabIndex="2" Dock="Fill" TableName="bo_akl_line_materialBadProNum" EditTrigger="click">
           <JGTextBoxColumn Code="JGTextBoxColumn8" ColumnName="materialNo" LabelText="物料型号" ReadOnly="True" TableName="bo_akl_line_materialBadProNum" Width="200" />
           <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="batch" LabelText="批次号" ReadOnly="True" TableName="bo_akl_line_materialBadProNum" />
-          <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="badProNum" LabelText="不良品数" ReadOnly="True" TableName="bo_akl_line_materialBadProNum" Width="110" />
+          <JGIntegerBoxColumn Code="JGIntegerBoxColumn1" ColumnName="badProNum" LabelText="不良品数" TableName="bo_akl_line_materialBadProNum" Width="110" />
           <JGBaseDictBoxColumn Code="JGTextBoxColumn9" ColumnName="remark" IDColumnName="remark" LabelText="不良原因" OpenModuleAction="JGTextBoxColumn9_OpenModuleAction_1" TableName="bo_akl_line_materialBadProNum" Width="262" />
         </JGDataGrid>
       </JGPanel>

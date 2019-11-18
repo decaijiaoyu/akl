@@ -133,19 +133,6 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>bo_akl_line_start_user</Code>
-      <Top>915</Top>
-      <Left>20</Left>
-      <Width>363</Width>
-      <Height>227</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
       <Code>bo_akl_MM_productEntryRecode</Code>
       <Top>1395.07056</Top>
       <Left>403</Left>
@@ -216,6 +203,19 @@
       <Left>420</Left>
       <Width>397</Width>
       <Height>357</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>bo_akl_line_start_user</Code>
+      <Top>915</Top>
+      <Left>20</Left>
+      <Width>363</Width>
+      <Height>247</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

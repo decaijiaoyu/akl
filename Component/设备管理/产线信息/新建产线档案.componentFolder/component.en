@@ -660,6 +660,15 @@
           <DefaultValue>1</DefaultValue>
           <Expression></Expression>
         </Column>
+        <Column>
+          <Code>isBadConfirm</Code>
+          <Name>是否需要不良品确认</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
       </Columns>
       <Events>
         <EntityEvent Code="OnLoaded" Value="" />
