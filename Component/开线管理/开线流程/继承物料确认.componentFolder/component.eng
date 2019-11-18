@@ -94,19 +94,6 @@
     </GraphNodeFormat>
     <GraphNodeFormat>
       <Type>Entity</Type>
-      <Code>materialConfirm</Code>
-      <Top>100</Top>
-      <Left>806.2576</Left>
-      <Width>323</Width>
-      <Height>307</Height>
-      <Background />
-      <BorderColor />
-      <FontSize>0</FontSize>
-      <FontColor />
-      <IsCollapsed>false</IsCollapsed>
-    </GraphNodeFormat>
-    <GraphNodeFormat>
-      <Type>Entity</Type>
       <Code>materialConfirm_1</Code>
       <Top>1227</Top>
       <Left>560.27</Left>
@@ -138,6 +125,19 @@
       <Left>587</Left>
       <Width>315</Width>
       <Height>157</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>materialConfirm</Code>
+      <Top>100</Top>
+      <Left>806.2576</Left>
+      <Width>323</Width>
+      <Height>367</Height>
       <Background />
       <BorderColor />
       <FontSize>0</FontSize>

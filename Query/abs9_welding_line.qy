@@ -1,9 +1,9 @@
-﻿<Query id="7698e94243224ad0a6b82602ee299c33" code="abs9_welding_line" name="abs9_welding_line" type="VSql">
+﻿<Query id="7698e94243224ad0a6b82602ee299c33" code="abs9_welding_line" name="abs9_welding_line" type="VSql" APICode="">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2018-08-21 17:16:39]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2018-09-11 14:39:21]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-10-30 11:06:18]]></ModificationTime>
   <VSql><![CDATA[select 
 startTime,equCode,dayShift,nightShift,workTime,
 dayOutput,nightOutput,actualTotal,
@@ -38,8 +38,8 @@ CASE WHEN a.clesses = '晚班' THEN ROUND(CAST(a.outputNum,'Decimal',10,4)*stand
 '' as bline,
 '' as otherTime
 FROM Line_output a 
-left join (select * from bo_akl_EM_productInfo where prLine = 'ABS9W1') b on a.equCode = b.prNo
-WHERE a.lineCode = 'ABS9W1' 
+left join (select * from bo_akl_EM_productInfo where prLine = :lineCode) b on a.equCode = b.prNo
+WHERE a.lineCode = :lineCode 
 )aa 
 group by startTime,equCode order by startTime desc
 )a]]></VSql>
@@ -102,19 +102,25 @@ group by startTime,equCode order by startTime desc
       <Remark></Remark>
     </Column>
   </Columns>
-  <Params />
+  <Params>
+    <Param code="lineCode" name="产线编号" dataType="char">
+      <InitValue><![CDATA[]]></InitValue>
+      <Remark><![CDATA[]]></Remark>
+    </Param>
+  </Params>
   <DataItems>
     <DataItem type="Table" key="Line_output" tokenIndexes="724" />
     <DataItem type="Table" key="bo_akl_EM_productInfo" tokenIndexes="739" />
-    <DataItem type="Query" key="a" tokenIndexes="311,316,323,338,348,352,366,382,386,420,436,440,474,484,503,513,533,547,564,568,602,616,633,637,726,754,766,794" />
-    <DataItem type="Query" key="b" tokenIndexes="357,750,760" />
-    <DataItem type="QueryField" key="a.lineCode" tokenIndexes="313,768" />
-    <DataItem type="QueryField" key="a.equCode" tokenIndexes="318,756" />
+    <DataItem type="Query" key="a" tokenIndexes="311,316,323,338,348,352,366,382,386,420,436,440,474,484,503,513,533,547,564,568,602,616,633,637,726,755,767,796" />
+    <DataItem type="Query" key="b" tokenIndexes="357,751,761" />
+    <DataItem type="QueryField" key="a.lineCode" tokenIndexes="313,769" />
+    <DataItem type="QueryField" key="a.equCode" tokenIndexes="318,757" />
     <DataItem type="QueryField" key="a.startTime" tokenIndexes="325,340,384,438,566,635" />
     <DataItem type="QueryField" key="a.outputNum" tokenIndexes="350,486,515,549,618" />
     <DataItem type="QueryField" key="a.clesses" tokenIndexes="354,368,422,476,505,535,604" />
     <DataItem type="QueryField" key="b.standardWorkingHours" tokenIndexes="359" />
     <DataItem type="QueryField" key="a.closeTime" tokenIndexes="388,442,570,639" />
-    <DataItem type="QueryField" key="b.prNo" tokenIndexes="762" />
+    <DataItem type="QueryField" key="b.prNo" tokenIndexes="763" />
+    <DataItem type="QueryParam" key="lineCode" tokenIndexes="748,774" />
   </DataItems>
 </Query>

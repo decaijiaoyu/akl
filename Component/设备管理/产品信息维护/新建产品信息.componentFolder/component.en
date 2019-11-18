@@ -428,7 +428,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>performanceOee</Code>
@@ -437,7 +437,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>qualityOee</Code>
@@ -446,7 +446,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>changeover</Code>
@@ -455,7 +455,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
         <Column>
           <Code>internalDefect</Code>
@@ -464,7 +464,7 @@
           <Length>50</Length>
           <Precision>4</Precision>
           <DefaultValue></DefaultValue>
-          <Expression />
+          <Expression></Expression>
         </Column>
       </Columns>
       <Events>

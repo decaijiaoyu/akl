@@ -3,7 +3,7 @@
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2019-10-24 11:26:41]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-10-24 14:42:28]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-10-31 10:19:15]]></ModificationTime>
   <Columns>
     <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
@@ -106,6 +106,10 @@
       <Remark><![CDATA[]]></Remark>
     </Column>
     <Column id="505a4c69a51549578eae40a2f000e60f" code="powerOff" name="断电时间" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="4835c66418594c68b20988222fe59054" code="pNo" name="产品编号" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>

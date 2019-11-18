@@ -1,11 +1,12 @@
 ﻿<form type="1002" code="form45" IsLocked="False">
   <propertys>
-    <property name="Width"><![CDATA[761]]></property>
-    <property name="Height"><![CDATA[450]]></property>
+    <property name="Width"><![CDATA[749]]></property>
+    <property name="Height"><![CDATA[442]]></property>
     <property name="HeightSet"><![CDATA[StaticHeight]]></property>
     <property name="LayoutType"><![CDATA[None]]></property>
     <property name="TableName"><![CDATA[]]></property>
     <property name="FormLoadAction"><![CDATA[form45_FormLoadAction]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
     <property name="FormCloseAction"><![CDATA[]]></property>
     <property name="FormClosingAction"><![CDATA[]]></property>
     <property name="BackColor"><![CDATA[]]></property>
@@ -15,10 +16,12 @@
     <property name="WindowState"><![CDATA[Normal]]></property>
     <property name="MaximizeBox"><![CDATA[True]]></property>
     <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
   </propertys>
   <controls>
-    <JGButton Code="JGButton1" LabelText="选择" Left="651" OnClick="JGButton1_OnClick" PercentHeight="5.8%" PercentWidth="11.2%" TabIndex="5" Top="28" Width="85" />
-    <JGDataGrid Code="JGDataGrid1" FetchMode="paged" Height="371" LabelText="列表" Left="3" PercentHeight="82.4%" PercentWidth="96.3%" TabIndex="0" TableName="bo_akl_base_equmainuser" Top="60" Width="733">
+    <JGButton Code="JGButton1" LabelText="选择" Width="85" PercentHeight="5.9%" PercentWidth="11.3%" Top="12" Left="651" TabIndex="5" OnClick="JGButton1_OnClick" />
+    <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="733" Height="371" PercentHeight="83.9%" PercentWidth="97.9%" Top="44" Left="3" TabIndex="0" FetchMode="paged" TableName="bo_akl_base_equmainuser">
       <JGTextBoxColumn Code="JGTextBoxColumn1" ColumnName="userName" LabelText="维保人姓名" TableName="bo_akl_base_equmainuser" Width="155" />
       <JGTextBoxColumn Code="JGTextBoxColumn2" ColumnName="userNo" LabelText="维保人编号" TableName="bo_akl_base_equmainuser" Width="180" />
       <JGTextBoxColumn Code="JGTextBoxColumn3" ColumnName="equName" LabelText="设备名称" TableName="bo_akl_base_equmainuser" Width="146" />

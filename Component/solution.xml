@@ -303,40 +303,40 @@
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
+      <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开机检测项维护</Code>
+      <NodeType>Folder</NodeType>
+      <FileSystemObjectType>Directory</FileSystemObjectType>
+      <FileSystemObjectName>开机检测项维护</FileSystemObjectName>
+      <SubNodes>
+        <NavigationNode>
+          <Code>checkInfo</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>开线点检项维护</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>changeCheckInfo</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>修改开机检测项信息</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+        <NavigationNode>
+          <Code>chooseStartType1</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>选择启动类型</FileSystemObjectName>
+          <SubNodes />
+        </NavigationNode>
+      </SubNodes>
+    </NavigationNode>
+    <NavigationNode>
       <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理</Code>
       <NodeType>Folder</NodeType>
       <FileSystemObjectType>Directory</FileSystemObjectType>
       <FileSystemObjectName>开线管理</FileSystemObjectName>
       <SubNodes>
-        <NavigationNode>
-          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\开机检测项维护</Code>
-          <NodeType>Folder</NodeType>
-          <FileSystemObjectType>Directory</FileSystemObjectType>
-          <FileSystemObjectName>开机检测项维护</FileSystemObjectName>
-          <SubNodes>
-            <NavigationNode>
-              <Code>checkInfo</Code>
-              <NodeType>Component</NodeType>
-              <FileSystemObjectType>File</FileSystemObjectType>
-              <FileSystemObjectName>开线点检项维护</FileSystemObjectName>
-              <SubNodes />
-            </NavigationNode>
-            <NavigationNode>
-              <Code>changeCheckInfo</Code>
-              <NodeType>Component</NodeType>
-              <FileSystemObjectType>File</FileSystemObjectType>
-              <FileSystemObjectName>修改开机检测项信息</FileSystemObjectName>
-              <SubNodes />
-            </NavigationNode>
-            <NavigationNode>
-              <Code>chooseStartType1</Code>
-              <NodeType>Component</NodeType>
-              <FileSystemObjectType>File</FileSystemObjectType>
-              <FileSystemObjectName>选择启动类型</FileSystemObjectName>
-              <SubNodes />
-            </NavigationNode>
-          </SubNodes>
-        </NavigationNode>
         <NavigationNode>
           <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\开线管理\拉力测试维护</Code>
           <NodeType>Folder</NodeType>
@@ -1979,6 +1979,49 @@
             </NavigationNode>
           </SubNodes>
         </NavigationNode>
+        <NavigationNode>
+          <Code>D:\plan C\svn\akl_bf\DataBackup\lmes\Component\设备管理\工序工时</Code>
+          <NodeType>Folder</NodeType>
+          <FileSystemObjectType>Directory</FileSystemObjectType>
+          <FileSystemObjectName>工序工时</FileSystemObjectName>
+          <SubNodes>
+            <NavigationNode>
+              <Code>form79</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>工序工时维护</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form80</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>新增工序工时</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form121</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>选择产品</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form791</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>工序工时维护审核</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+            <NavigationNode>
+              <Code>form83</Code>
+              <NodeType>Component</NodeType>
+              <FileSystemObjectType>File</FileSystemObjectType>
+              <FileSystemObjectName>审核通过</FileSystemObjectName>
+              <SubNodes />
+            </NavigationNode>
+          </SubNodes>
+        </NavigationNode>
       </SubNodes>
     </NavigationNode>
     <NavigationNode>
@@ -2155,6 +2198,13 @@
               <SubNodes />
             </NavigationNode>
           </SubNodes>
+        </NavigationNode>
+        <NavigationNode>
+          <Code>form82</Code>
+          <NodeType>Component</NodeType>
+          <FileSystemObjectType>File</FileSystemObjectType>
+          <FileSystemObjectName>计件产一览表</FileSystemObjectName>
+          <SubNodes />
         </NavigationNode>
       </SubNodes>
     </NavigationNode>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Methods>
+  <Method MethodDir="WindowMethod" FileName="form79_FormLoadAction.method" Code="form79_FormLoadAction" Name="form79_窗体加载事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton1_OnClick.method" Code="JGButton1_OnClick" Name="JGButton1_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton2_OnClick.method" Code="JGButton2_OnClick" Name="JGButton2_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton2_OnClick_1.method" Code="JGButton2_OnClick_1" Name="JGButton2_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton3_OnClick.method" Code="JGButton3_OnClick" Name="JGButton3_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGDataGrid1_OnDoubleClick.method" Code="JGDataGrid1_OnDoubleClick" Name="JGDataGrid1_双击事件" SourceType="Common" />
+</Methods>

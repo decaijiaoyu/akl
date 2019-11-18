@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Methods>
+  <Method MethodDir="WindowMethod" FileName="form80_FormLoadAction.method" Code="form80_FormLoadAction" Name="form80_窗体加载事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGBaseDictBox1_OpenModuleAction.method" Code="JGBaseDictBox1_OpenModuleAction" Name="JGBaseDictBox1_链接事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton1_OnClick.method" Code="JGButton1_OnClick" Name="JGButton1_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton2_OnClick.method" Code="JGButton2_OnClick" Name="JGButton2_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton2_OnClick_1.method" Code="JGButton2_OnClick_1" Name="JGButton21_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGFloatBox2_OnValueChanged.method" Code="JGFloatBox2_OnValueChanged" Name="JGFloatBox2_值改变事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGFloatBox9_OnEnter.method" Code="JGFloatBox9_OnEnter" Name="JGFloatBox9_获取焦点" SourceType="Common" />
+</Methods>

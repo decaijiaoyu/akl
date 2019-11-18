@@ -2,48 +2,52 @@
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[]]></Creator>
   <CreationTime><![CDATA[2018-06-25 11:10:33]]></CreationTime>
-  <Modifier><![CDATA[liub]]></Modifier>
-  <ModificationTime><![CDATA[2019-04-02 11:08:37]]></ModificationTime>
+  <Modifier><![CDATA[user_20190304004]]></Modifier>
+  <ModificationTime><![CDATA[2019-10-28 16:40:48]]></ModificationTime>
   <Columns>
-    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isPrimaryKey="true" isMandratory="true">
+    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="18fd787a36ec4cb39fa3bf0e8c4e2179" code="lid" name="开线主表id" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="18fd787a36ec4cb39fa3bf0e8c4e2179" code="lid" name="开线主表id" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="9af342b3604d4fce95e66d9986563dd8" code="isAutomatic" name="是否自动工站" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="9af342b3604d4fce95e66d9986563dd8" code="isAutomatic" name="是否自动工站" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[否]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="683104a92e5c4f428f47a30c9e0351a7" code="workStation" name="工站" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="683104a92e5c4f428f47a30c9e0351a7" code="workStation" name="工站" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="1c2eca5c31e84ddfba0857ac8d01e44f" code="workStationId" name="工站id" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="1c2eca5c31e84ddfba0857ac8d01e44f" code="workStationId" name="工站id" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="0eb9a5414ad249008c7a6053b386f19b" code="workerName" name="工人" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="0eb9a5414ad249008c7a6053b386f19b" code="workerName" name="工人" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="f3d0299a47f9414ca47302dad7be1df6" code="workerId" name="工人编号" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="f3d0299a47f9414ca47302dad7be1df6" code="workerId" name="工人编号" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="5b1263697fc34674851bba0e632d074e" code="workerAssistName" name="工人(辅助)" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="5b1263697fc34674851bba0e632d074e" code="workerAssistName" name="工人(辅助)" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="42e55e8f89fb452a83cbecdd50aeda80" code="workStationName" name="工站名称" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="42e55e8f89fb452a83cbecdd50aeda80" code="workStationName" name="工站名称" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
     </Column>
-    <Column id="c3678b1a93ae4121a61caed5632e5ff0" code="sName" name="工站名称" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+    <Column id="c3678b1a93ae4121a61caed5632e5ff0" code="sName" name="工站名称" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
       <DefaultValue><![CDATA[]]></DefaultValue>
       <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="0cf6e15f26a64c38b0beca83ec7fed8f" code="piece" name="是否计件" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[计件/时间]]></Remark>
     </Column>
   </Columns>
   <Indexes />

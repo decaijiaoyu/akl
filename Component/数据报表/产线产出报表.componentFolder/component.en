@@ -1,6 +1,6 @@
 ﻿<EntityConfig version="2.0">
   <Entitys>
-    <Entity TemplateId="" TemplateCode="" Code="proline_output" Name="产线产出报表" EntityType="" TableOrQueryCode="">
+    <Entity Code="proline_output" Name="产线产出报表" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="" CreatedFrom="">
       <Columns>
         <Column>
           <Code>lineCode</Code>

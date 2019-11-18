@@ -1,9 +1,9 @@
-﻿<Query id="87ff29a21c824171a569bd41d6f86047" code="proline_status_ebc460w1" name="ebc460w1" type="VSql">
+﻿<Query id="87ff29a21c824171a569bd41d6f86047" code="proline_status_ebc460w1" name="ebc460w1" type="VSql" APICode="">
   <Remark><![CDATA[]]></Remark>
   <Creator><![CDATA[liub]]></Creator>
   <CreationTime><![CDATA[2019-05-16 13:32:51]]></CreationTime>
   <Modifier><![CDATA[user_20190304004]]></Modifier>
-  <ModificationTime><![CDATA[2019-08-22 10:06:26]]></ModificationTime>
+  <ModificationTime><![CDATA[2019-11-06 17:32:52]]></ModificationTime>
   <VSql><![CDATA[select
 proLineName,
 proEquName,
@@ -133,7 +133,7 @@ WHERE NAME = 'EBC460W1.Status'
     <Column id="Column_10" code="ratio" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
-    <Column id="Column_11" code="productivity" name="" dataType="integer" length="" precision="">
+    <Column id="Column_11" code="productivity" name="" dataType="number" length="" precision="">
       <Remark></Remark>
     </Column>
     <Column id="Column_12" code="productionTime" name="" dataType="number" length="" precision="">
